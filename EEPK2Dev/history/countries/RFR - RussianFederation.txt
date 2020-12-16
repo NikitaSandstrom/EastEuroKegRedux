@@ -1,0 +1,70 @@
+﻿capital = 219
+
+#oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 75
+	fascism = 1
+	communism = 1
+	neutrality = 23
+}
+
+create_country_leader = {
+	
+	name = "Alexander Kolchak"
+	picture = "gfx/leaders/RFR/Portrait_Russia_Alexander_Kolchak.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	
+	name = "Alexei Rykov"
+	picture = "gfx/leaders/RFR/Portrait_Russia_Alexei_Rykov.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	
+	name = "Konstantin Rodzaevsky"
+	picture = "gfx/leaders/RFR/Portrait_Russia_Konstantin_Rodzaevsky.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	
+	name = "Duchess Xenia Alexandrova" #Reminder to change title to Tsarina after taking power
+	picture = "gfx/leaders/RFR/Portrait_Russia_Xenia_Alexandrova.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+
+}

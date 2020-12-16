@@ -1,0 +1,73 @@
+﻿capital = 231
+
+#oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 5
+	fascism = 76
+	communism = 13
+	neutrality = 6
+}
+
+
+
+#LEADERS#
+create_country_leader = {
+	
+	name = "Lavrentiy Beria"
+	picture = "gfx/leaders/TCA/Portrait_Transcaucasia_Lavrentiy_Beria.dds"
+	expire = "1965.1.1"
+	ideology = anti_revisionism
+	traits = {
+		#
+	}
+
+}
+
+create_country_leader = {
+
+	name = "Akaki Chkenkeli"
+	picture = "gfx/leaders/TCA/Portrait_Transcaucasia_Akaki_Chkhenkeli.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+
+}
+
+create_country_leader = {
+
+	name = "Nikolai Demet'ev"
+	picture = "gfx/leaders/TCA/Portrait_Transcaucasia_Nikolai_Demetev.dds"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		#
+	}
+
+}
+
+create_country_leader = {
+
+	name = "Papadjanov Mikael"
+	picture = "gfx/leaders/TCA/Portrait_Transcaucasia_Papadjanov_Mikael.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}

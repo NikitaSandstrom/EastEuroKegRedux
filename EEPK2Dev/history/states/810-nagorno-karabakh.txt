@@ -1,0 +1,44 @@
+state={
+	id=810
+	name="STATE_810"
+	resources={
+		oil=10
+		steel=3
+	}
+
+	history={
+		owner = TCA
+
+		victory_points = {
+			1539 1
+		}
+		victory_points = {
+			1467 1 
+		}
+
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			1539 = {
+				bunker = 1
+			}
+			1467 = {
+				bunker = 1
+			}
+			9715 = {
+				bunker = 1
+			}
+		}
+		add_core_of = TCA
+		add_core_of = AZR
+		add_core_of = ARM
+
+	}
+
+	provinces={
+		1467 1539 1610 9715 11674 
+	}
+	manpower=130000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

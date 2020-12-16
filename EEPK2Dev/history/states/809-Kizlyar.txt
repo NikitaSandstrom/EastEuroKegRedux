@@ -1,0 +1,24 @@
+state={
+	id=809
+	name="STATE_809"
+	provinces={
+		683 700 712 728 6702 6730 6748 11632 11690 11693 
+	}
+
+	history={
+		owner = RFR
+		victory_points = {
+			6730 3
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+
+		}
+		add_core_of = RFR
+	}
+
+	manpower=165320
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

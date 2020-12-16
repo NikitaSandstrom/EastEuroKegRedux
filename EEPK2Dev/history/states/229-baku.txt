@@ -1,0 +1,42 @@
+
+state={
+	id=229
+	name="STATE_229"
+	resources={
+		oil=90 # Was 70
+	}
+
+	history={
+		owner = TCA
+		victory_points = {
+			7661 7 
+		}
+		victory_points = {
+			4473 3 
+		}
+		victory_points = {
+			6763 1 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			fuel_silo = 1
+			11645 = {
+				bunker = 1
+			}
+			4473 = {
+				bunker = 1
+			}
+		}
+		add_core_of = TCA
+		add_core_of = AZR
+
+	}
+
+	provinces={
+		1536 4458 4473 4477 4545 4614 6763 7495 7661 11645 11704 12434 
+	}
+	manpower=2771049
+	buildings_max_level_factor=1.000
+	state_category=city
+}

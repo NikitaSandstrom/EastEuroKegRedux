@@ -1,0 +1,30 @@
+
+state={
+	id=236
+	name="STATE_236"
+	manpower = 647208
+	
+	state_category = rural
+
+	history={
+		owner = RFR
+		victory_points = {
+			9753 3 
+		}
+		victory_points = {
+			6516 1
+		}
+		victory_points = {
+			3726 1
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+		}
+		add_core_of = RFR
+	}
+
+	provinces={
+		618 757 3435 3461 3487 3726 6486 6516 6620 6758 6760 9440 9455 9592 9735 9753 11429 11579 11706 11736 
+	}
+}

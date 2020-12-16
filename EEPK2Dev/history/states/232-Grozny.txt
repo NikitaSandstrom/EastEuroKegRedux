@@ -1,0 +1,39 @@
+
+state={
+	id=232
+	name="STATE_232"
+	resources={
+		oil=25
+		steel = 6
+	}
+
+	history={
+		owner = TCA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			3672 = {
+				bunker = 3
+			}
+		}
+		
+		victory_points = {
+			3672 5 
+		}
+		victory_points = {
+			3668 1 
+		}
+		victory_points = {
+			7624 1 
+		}
+		add_core_of = TCA
+
+	}
+
+	provinces={
+		1450 3668 3672 3682 3711 4463 6689 6701 7554 7624 9645 
+	}
+	manpower=1492462
+	buildings_max_level_factor=1.000
+	state_category=town
+}
