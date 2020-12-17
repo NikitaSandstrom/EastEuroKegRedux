@@ -4966,12 +4966,61 @@ spriteTypes = {
 
 
 	SpriteType = {
+		name = "GFX_RFR_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/RFR_improvedLightTank.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAU_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/RFR_improvedLightTank.dds"
+	}
+
+
+
+	SpriteType = {
+		name = "GFX_RFR_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/RFR_basicMediumTank.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAU_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/RFR_basicMediumTank.dds"
+	}
+
+
+
+	SpriteType = {
 		name = "GFX_RFR_basic_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/RFR_basicHeavyTank.dds"
 	}
 	SpriteType = {
 		name = "GFX_RAU_basic_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/RFR_basicHeavyTank.dds"
+	}
+	SpriteType = {
+		name = "GFX_RFR_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/RFR_improvedHeavyTank.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAU_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/RFR_improvedHeavyTank.dds"
+	}
+
+
+
+	SpriteType = {
+		name = "GFX_RFR_amphibious_tank_medium"
+		texturefile = "gfx/interface/technologies/RFR_basicAmphibTank.dds"
+	}
+	SpriteType = {
+		name = "GFX_RFR_amphibious_tank_2_medium"
+		texturefile = "gfx/interface/technologies/RFR_improvedAmphibTank.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAU_amphibious_tank_medium"
+		texturefile = "gfx/interface/technologies/RFR_basicAmphibTank.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAU_amphibious_tank_2_medium"
+		texturefile = "gfx/interface/technologies/RFR_improvedAmphibTank.dds"
 	}
 
 
@@ -5279,21 +5328,14 @@ spriteTypes = {
 	
 	
 
-	# TANKS #
-	SpriteType = {
-		name = "GFX_RFR_improved_light_tank_medium"
-		texturefile = "gfx/interface/technologies/RFR_improvedLightTank.dds"
-	}	
+	# TANKS #	
 	SpriteType = {
 		name = "GFX_RFR_advanced_light_tank_medium"
 		texturefile = "gfx/interface/technologies/RFR_advancedLightTank.dds"
 	}
 
 	
-	SpriteType = {
-		name = "GFX_RFR_basic_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/RFR_basicMediumTank.dds"
-	}
+	
 	SpriteType = {
 		name = "GFX_RFR_improved_medium_tank_medium"
 		texturefile = "gfx/interface/technologies/RFR_improvedMediumTank.dds"
@@ -5308,10 +5350,7 @@ spriteTypes = {
 	}
 
 
-	SpriteType = {
-		name = "GFX_RFR_improved_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/RFR_improvedHeavyTank.dds"
-	}
+	
 	SpriteType = {
 		name = "GFX_RFR_advanced_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/RFR_advancedHeavyTank.dds"
@@ -5319,16 +5358,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_RFR_super_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/RFR_superHeavyTank.dds"
-	}
-
-
-	SpriteType = {
-		name = "GFX_RFR_amphibious_tank_medium"
-		texturefile = "gfx/interface/technologies/RFR_basicAmphibTank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RFR_amphibious_tank_2_medium"
-		texturefile = "gfx/interface/technologies/RFR_improvedAmphibTank.dds"
 	}
 
 
@@ -5470,6 +5499,36 @@ spriteTypes = {
 	# ARTILLERY #
 
 	# TANKS #
+	SpriteType = {
+		name = "GFX_RAU_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/RAU_advancedLightTank.dds"
+	}
+
+
+
+	SpriteType = {
+		name = "GFX_RAU_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/RAU_improvedMediumTank.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAU_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/RAU_advancedMediumTank.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAU_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/RAU_MainBattleTank.dds"
+	}
+
+
+
+	SpriteType = {
+		name = "GFX_RAU_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/RAU_advancedHeavyTank.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAU_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/RAU_superHeavyTank.dds"
+	}
 
 	# PLANES #
 	
