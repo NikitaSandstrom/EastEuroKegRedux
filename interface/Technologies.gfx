@@ -4927,19 +4927,20 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_RFR_interwar_antiair_medium"
 		texturefile = "gfx/interface/technologies/RFR_AA1.dds"
-	}	
+	}
+	SpriteType = {
+		name = "GFX_RAU_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/RFR_AA1.dds"
+	}
 	SpriteType = {
 		name = "GFX_RFR_antiair2_medium"
 		texturefile = "gfx/interface/technologies/RFR_AA2.dds"
 	}	
 	SpriteType = {
 		name = "GFX_RAU_antiair2_medium"
-		texturefile = "gfx/interface/technologies/RFR_AA1.dds"
-	}	
-	SpriteType = {
-		name = "GFX_RAU_interwar_antiair_medium"
 		texturefile = "gfx/interface/technologies/RFR_AA2.dds"
-	}
+	}	
+	
 
 
 	# TANKS #
@@ -5531,6 +5532,120 @@ spriteTypes = {
 	}
 
 	# PLANES #
+	SpriteType = {
+		name = "GFX_RAU_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/RFR_TAC1.dds"
+	}		
+	SpriteType = {
+		name = "GFX_RAU_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/RFR_TAC2.dds"
+	}		
+	SpriteType = {
+		name = "GFX_RAU_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/RFR_TAC3.dds"
+	}		
 	
+
+	SpriteType = {
+		name = "GFX_RAU_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/RFR_STRAT1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RAU_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/RFR_STRAT2.dds"
+	}		
+	SpriteType = {
+		name = "GFX_RAU_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/RAU_STRAT3.dds"
+	}		
+	
+
+	SpriteType = {
+		name = "GFX_RAU_CAS1_medium"
+		texturefile = "gfx/interface/technologies/RFR_CAS1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RAU_CAS2_medium"
+		texturefile = "gfx/interface/technologies/RAU_CAS2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RAU_CAS3_medium"
+		texturefile = "gfx/interface/technologies/RAU_CAS3.dds"
+	}		
+		
+		
+	SpriteType = {
+		name = "GFX_RAU_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/RFR_HeavyFighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAU_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/RFR_HeavyFighter2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RAU_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/RAU_HeavyFighter3.dds"
+	}
+	
+
+	SpriteType = {
+		name = "GFX_RAU_fighter1_medium"
+		texturefile = "gfx/interface/technologies/RFR_Fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAU_fighter2_medium"
+		texturefile = "gfx/interface/technologies/RFR_Fighter2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RAU_fighter3_medium"
+		texturefile = "gfx/interface/technologies/RAU_Fighter3.dds"
+	}
+	
+
+	SpriteType = {
+		name = "GFX_RAU_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/RFR_NAV1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RAU_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/RAU_NAV2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RAU_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/RAU_NAV3.dds"
+	}	
+	
+	
+
+	SpriteType = {
+		name = "GFX_RAU_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/RAU_JetFighter2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RAU_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/RAU_JetFighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAU_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/RAU_JetSTRAT.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAU_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/RAU_JetTAC2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RAU_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/RAU_JetTAC1.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_RAU_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/RFR_Scout1.dds"
+	}		
+	SpriteType = {
+		name = "GFX_RAU_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/RAU_Scout2.dds"
+	}
 	
 }
