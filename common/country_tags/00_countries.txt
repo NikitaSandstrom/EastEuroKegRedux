@@ -214,9 +214,9 @@ TRA = "countries/Transylvania.txt"
 
 # NEW MODDED NATIONS #
 
-PAU = "countries/PolishAlignedUkraine.txt"
-RAU = "countries/RussianAlignedUkraine.txt"
-BOC = "countries/BessarabianConfederation.txt"
+KYI = "countries/Kyiv.txt"
+NOV = "countries/Novorossiya.txt"
+ZHY = "countries/NovoOdessa.txt"
 WRU = "countries/WhiteRuthenia.txt"
 RFR = "countries/RussianFederation.txt"
 TCA = "countries/Transcaucasia.txt"
@@ -224,3 +224,4 @@ LSO = "countries/LeningradSoviet.txt"
 MFC = "countries/MoscowFedCouncil.txt"
 RCT = "countries/RoyalistCouncil.txt"
 KFT = "countries/KubanTerritories.txt"
+TAT = "countries/Tatarstan.txt"

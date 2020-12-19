@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = RAU
+		owner = NOV
 		victory_points = {
 			418 10
 		}
@@ -23,7 +23,7 @@ state={
 			arms_factory = 1
 			air_base = 5
 		}
-		add_core_of = RAU
+		add_core_of = NOV
 	}
 
 	provinces={

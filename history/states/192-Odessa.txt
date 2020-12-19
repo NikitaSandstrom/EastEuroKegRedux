@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = BOC
+		owner = ZHY
 		victory_points = {
 			11670 10 
 		}
@@ -23,7 +23,7 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = BOC
+		add_core_of = ZHY
 	}
 
 	provinces={

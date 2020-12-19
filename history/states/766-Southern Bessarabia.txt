@@ -13,7 +13,7 @@ state=
 		victory_points = {
 			3704 1
 		}
-		owner = BOC
+		owner = ZHY
 		buildings = {
 			infrastructure = 4
 			dockyard = 1
@@ -21,7 +21,7 @@ state=
 				naval_base = 3
 			}
 		}
-		add_core_of = BOC
+		add_core_of = ZHY
 	}
 	provinces= { 3701 3704 6727 6743 }
 }

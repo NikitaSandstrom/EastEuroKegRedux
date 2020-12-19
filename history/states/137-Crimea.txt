@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = RFR
+		owner = TAT
 		victory_points = {
 			3686 15
 		}
@@ -33,7 +33,7 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = RFR
+		add_core_of = TAT
 
 	}
 

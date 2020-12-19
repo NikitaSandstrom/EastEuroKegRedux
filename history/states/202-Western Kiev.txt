@@ -11,7 +11,7 @@ state={
 	state_category = city
 
 	history={
-		owner = PAU
+		owner = KYI
 		victory_points = {
 			525 20
 		}
@@ -29,7 +29,7 @@ state={
 			fuel_silo = 1
 			air_base = 8
 		}
-		add_core_of = PAU
+		add_core_of = KYI
 	}
 
 	provinces={

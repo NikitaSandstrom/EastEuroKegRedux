@@ -4814,19 +4814,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_DefensiveGuns1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_support_weapons4_medium"
+		name = "GFX_NOV_support_weapons4_medium"
 		texturefile = "gfx/interface/technologies/RFR_DefensiveGuns4.dds"
 	}	
 	SpriteType = {
-		name = "GFX_RAU_support_weapons3_medium"
+		name = "GFX_NOV_support_weapons3_medium"
 		texturefile = "gfx/interface/technologies/RFR_DefensiveGuns3.dds"
 	}	
 	SpriteType = {
-		name = "GFX_RAU_support_weapons2_medium"
+		name = "GFX_NOV_support_weapons2_medium"
 		texturefile = "gfx/interface/technologies/RFR_DefensiveGuns2.dds"
 	}	
 	SpriteType = {
-		name = "GFX_RAU_support_weapons_medium"
+		name = "GFX_NOV_support_weapons_medium"
 		texturefile = "gfx/interface/technologies/RFR_DefensiveGuns1.dds"
 	}
 
@@ -4846,15 +4846,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_INF1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_improved_infantry_weapons_medium"
+		name = "GFX_NOV_improved_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/RFR_INF3.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_infantry_weapons1_medium"
+		name = "GFX_NOV_infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/RFR_INF2.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_infantry_weapons_medium"
+		name = "GFX_NOV_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/RFR_INF1.dds"
 	}
 
@@ -4869,11 +4869,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_Car2.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_armored_car1_medium"
+		name = "GFX_NOV_armored_car1_medium"
 		texturefile = "gfx/interface/technologies/RFR_Car1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_armored_car2_medium"
+		name = "GFX_NOV_armored_car2_medium"
 		texturefile = "gfx/interface/technologies/RFR_Car2.dds"
 	}
 
@@ -4883,7 +4883,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_Mech2.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_mechanised_infantry2_medium"
+		name = "GFX_NOV_mechanised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/RFR_Mech2.dds"
 	}
 	
@@ -4901,11 +4901,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_AT2.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_interwar_antitank_medium"
+		name = "GFX_NOV_interwar_antitank_medium"
 		texturefile = "gfx/interface/technologies/RFR_AT1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_antitank2_medium"
+		name = "GFX_NOV_antitank2_medium"
 		texturefile = "gfx/interface/technologies/RFR_AT2.dds"
 	}
 	SpriteType = {
@@ -4917,11 +4917,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_ART2.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_gw_artillery_medium"
+		name = "GFX_NOV_gw_artillery_medium"
 		texturefile = "gfx/interface/technologies/RFR_ART1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_artillery1_medium"
+		name = "GFX_NOV_artillery1_medium"
 		texturefile = "gfx/interface/technologies/RFR_ART2.dds"
 	}
 	SpriteType = {
@@ -4929,7 +4929,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_AA1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_interwar_antiair_medium"
+		name = "GFX_NOV_interwar_antiair_medium"
 		texturefile = "gfx/interface/technologies/RFR_AA1.dds"
 	}
 	SpriteType = {
@@ -4937,7 +4937,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_AA2.dds"
 	}	
 	SpriteType = {
-		name = "GFX_RAU_antiair2_medium"
+		name = "GFX_NOV_antiair2_medium"
 		texturefile = "gfx/interface/technologies/RFR_AA2.dds"
 	}	
 	
@@ -4949,7 +4949,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_EarlyWarTank.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_gwtank_medium"
+		name = "GFX_NOV_gwtank_medium"
 		texturefile = "gfx/interface/technologies/RFR_EarlyWarTank.dds"
 	}
 
@@ -4960,7 +4960,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_basicLightTank.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_basic_light_tank_medium"
+		name = "GFX_NOV_basic_light_tank_medium"
 		texturefile = "gfx/interface/technologies/RFR_basicLightTank.dds"
 	}
 
@@ -4971,7 +4971,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_improvedLightTank.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_improved_light_tank_medium"
+		name = "GFX_NOV_improved_light_tank_medium"
 		texturefile = "gfx/interface/technologies/RFR_improvedLightTank.dds"
 	}
 
@@ -4982,7 +4982,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_basicMediumTank.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_basic_medium_tank_medium"
+		name = "GFX_NOV_basic_medium_tank_medium"
 		texturefile = "gfx/interface/technologies/RFR_basicMediumTank.dds"
 	}
 
@@ -4993,7 +4993,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_basicHeavyTank.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_basic_heavy_tank_medium"
+		name = "GFX_NOV_basic_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/RFR_basicHeavyTank.dds"
 	}
 	SpriteType = {
@@ -5001,7 +5001,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_improvedHeavyTank.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_improved_heavy_tank_medium"
+		name = "GFX_NOV_improved_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/RFR_improvedHeavyTank.dds"
 	}
 
@@ -5016,11 +5016,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_improvedAmphibTank.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_amphibious_tank_medium"
+		name = "GFX_NOV_amphibious_tank_medium"
 		texturefile = "gfx/interface/technologies/RFR_basicAmphibTank.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_amphibious_tank_2_medium"
+		name = "GFX_NOV_amphibious_tank_2_medium"
 		texturefile = "gfx/interface/technologies/RFR_improvedAmphibTank.dds"
 	}
 
@@ -5044,19 +5044,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_Destroyer1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_advanced_ship_hull_light_medium"
+		name = "GFX_NOV_advanced_ship_hull_light_medium"
 		texturefile = "gfx/interface/technologies/RFR_Destroyer4.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_improved_ship_hull_light_medium"
+		name = "GFX_NOV_improved_ship_hull_light_medium"
 		texturefile = "gfx/interface/technologies/RFR_Destroyer3.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_basic_ship_hull_light_medium"
+		name = "GFX_NOV_basic_ship_hull_light_medium"
 		texturefile = "gfx/interface/technologies/RFR_Destroyer2.dds"
 	}
 	SpriteType = {	
-		name = "GFX_RAU_early_ship_hull_light_medium"
+		name = "GFX_NOV_early_ship_hull_light_medium"
 		texturefile = "gfx/interface/technologies/RFR_Destroyer1.dds"
 	}
 
@@ -5081,19 +5081,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_Cruiser1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_advanced_ship_hull_cruiser_medium"
+		name = "GFX_NOV_advanced_ship_hull_cruiser_medium"
 		texturefile = "gfx/interface/technologies/RFR_Cruiser4.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_improved_ship_hull_cruiser_medium"
+		name = "GFX_NOV_improved_ship_hull_cruiser_medium"
 		texturefile = "gfx/interface/technologies/RFR_Cruiser3.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_basic_ship_hull_cruiser_medium"
+		name = "GFX_NOV_basic_ship_hull_cruiser_medium"
 		texturefile = "gfx/interface/technologies/RFR_Cruiser2.dds"
 	}
 	SpriteType = {	
-		name = "GFX_RAU_early_ship_hull_cruiser_medium"
+		name = "GFX_NOV_early_ship_hull_cruiser_medium"
 		texturefile = "gfx/interface/technologies/RFR_Cruiser1.dds"
 	}
 
@@ -5122,23 +5122,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_Battleship1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_advanced_ship_hull_heavy_medium"
+		name = "GFX_NOV_advanced_ship_hull_heavy_medium"
 		texturefile = "gfx/interface/technologies/RFR_Battleship4.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_ship_hull_super_heavy_medium"
+		name = "GFX_NOV_ship_hull_super_heavy_medium"
 		texturefile = "gfx/interface/technologies/RFR_SuperBattleship1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_improved_ship_hull_heavy_medium"
+		name = "GFX_NOV_improved_ship_hull_heavy_medium"
 		texturefile = "gfx/interface/technologies/RFR_Battleship3.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_basic_ship_hull_heavy_medium"
+		name = "GFX_NOV_basic_ship_hull_heavy_medium"
 		texturefile = "gfx/interface/technologies/RFR_Battleship2.dds"
 	}
 	SpriteType = {	
-		name = "GFX_RAU_early_ship_hull_heavy_medium"
+		name = "GFX_NOV_early_ship_hull_heavy_medium"
 		texturefile = "gfx/interface/technologies/RFR_Battleship1.dds"
 	}
 
@@ -5163,19 +5163,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_Carrier1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_advanced_ship_hull_carrier_medium"
+		name = "GFX_NOV_advanced_ship_hull_carrier_medium"
 		texturefile = "gfx/interface/technologies/RFR_Carrier4.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_improved_ship_hull_carrier_medium"
+		name = "GFX_NOV_improved_ship_hull_carrier_medium"
 		texturefile = "gfx/interface/technologies/RFR_Carrier3.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_basic_ship_hull_carrier_medium"
+		name = "GFX_NOV_basic_ship_hull_carrier_medium"
 		texturefile = "gfx/interface/technologies/RFR_Carrier2.dds"
 	}
 	SpriteType = {	
-		name = "GFX_RAU_early_ship_hull_carrier_medium"
+		name = "GFX_NOV_early_ship_hull_carrier_medium"
 		texturefile = "gfx/interface/technologies/RFR_Carrier1.dds"
 	}
 
@@ -5200,19 +5200,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_Sub1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_advanced_ship_hull_submarine_medium"
+		name = "GFX_NOV_advanced_ship_hull_submarine_medium"
 		texturefile = "gfx/interface/technologies/RFR_Sub4.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_improved_ship_hull_submarine_medium"
+		name = "GFX_NOV_improved_ship_hull_submarine_medium"
 		texturefile = "gfx/interface/technologies/RFR_Sub3.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_basic_ship_hull_submarine_medium"
+		name = "GFX_NOV_basic_ship_hull_submarine_medium"
 		texturefile = "gfx/interface/technologies/RFR_Sub2.dds"
 	}
 	SpriteType = {	
-		name = "GFX_RAU_early_ship_hull_submarine_medium"
+		name = "GFX_NOV_early_ship_hull_submarine_medium"
 		texturefile = "gfx/interface/technologies/RFR_Sub1.dds"
 	}
 
@@ -5229,11 +5229,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RFR_EarlyWarFighter.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_early_bomber_medium"
+		name = "GFX_NOV_early_bomber_medium"
 		texturefile = "gfx/interface/technologies/RFR_EarlyWarBomber.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_early_fighter_medium"
+		name = "GFX_NOV_early_fighter_medium"
 		texturefile = "gfx/interface/technologies/RFR_EarlyWarFighter.dds"
 	}
 
@@ -5501,151 +5501,151 @@ spriteTypes = {
 
 	# TANKS #
 	SpriteType = {
-		name = "GFX_RAU_advanced_light_tank_medium"
-		texturefile = "gfx/interface/technologies/RAU_advancedLightTank.dds"
+		name = "GFX_NOV_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/NOV_advancedLightTank.dds"
 	}
 
 
 
 	SpriteType = {
-		name = "GFX_RAU_improved_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/RAU_improvedMediumTank.dds"
+		name = "GFX_NOV_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/NOV_improvedMediumTank.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_advanced_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/RAU_advancedMediumTank.dds"
+		name = "GFX_NOV_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/NOV_advancedMediumTank.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_main_battle_tank_medium"
-		texturefile = "gfx/interface/technologies/RAU_MainBattleTank.dds"
+		name = "GFX_NOV_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/NOV_MainBattleTank.dds"
 	}
 
 
 
 	SpriteType = {
-		name = "GFX_RAU_advanced_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/RAU_advancedHeavyTank.dds"
+		name = "GFX_NOV_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/NOV_advancedHeavyTank.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_super_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/RAU_superHeavyTank.dds"
+		name = "GFX_NOV_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/NOV_superHeavyTank.dds"
 	}
 
 	# PLANES #
 	SpriteType = {
-		name = "GFX_RAU_tactical_bomber1_medium"
+		name = "GFX_NOV_tactical_bomber1_medium"
 		texturefile = "gfx/interface/technologies/RFR_TAC1.dds"
 	}		
 	SpriteType = {
-		name = "GFX_RAU_tactical_bomber2_medium"
+		name = "GFX_NOV_tactical_bomber2_medium"
 		texturefile = "gfx/interface/technologies/RFR_TAC2.dds"
 	}		
 	SpriteType = {
-		name = "GFX_RAU_tactical_bomber3_medium"
+		name = "GFX_NOV_tactical_bomber3_medium"
 		texturefile = "gfx/interface/technologies/RFR_TAC3.dds"
 	}		
 	
 
 	SpriteType = {
-		name = "GFX_RAU_strategic_bomber1_medium"
+		name = "GFX_NOV_strategic_bomber1_medium"
 		texturefile = "gfx/interface/technologies/RFR_STRAT1.dds"
 	}	
 	SpriteType = {
-		name = "GFX_RAU_strategic_bomber2_medium"
+		name = "GFX_NOV_strategic_bomber2_medium"
 		texturefile = "gfx/interface/technologies/RFR_STRAT2.dds"
 	}		
 	SpriteType = {
-		name = "GFX_RAU_strategic_bomber3_medium"
-		texturefile = "gfx/interface/technologies/RAU_STRAT3.dds"
+		name = "GFX_NOV_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/NOV_STRAT3.dds"
 	}		
 	
 
 	SpriteType = {
-		name = "GFX_RAU_CAS1_medium"
+		name = "GFX_NOV_CAS1_medium"
 		texturefile = "gfx/interface/technologies/RFR_CAS1.dds"
 	}	
 	SpriteType = {
-		name = "GFX_RAU_CAS2_medium"
-		texturefile = "gfx/interface/technologies/RAU_CAS2.dds"
+		name = "GFX_NOV_CAS2_medium"
+		texturefile = "gfx/interface/technologies/NOV_CAS2.dds"
 	}	
 	SpriteType = {
-		name = "GFX_RAU_CAS3_medium"
-		texturefile = "gfx/interface/technologies/RAU_CAS3.dds"
+		name = "GFX_NOV_CAS3_medium"
+		texturefile = "gfx/interface/technologies/NOV_CAS3.dds"
 	}		
 		
 		
 	SpriteType = {
-		name = "GFX_RAU_heavy_fighter1_medium"
+		name = "GFX_NOV_heavy_fighter1_medium"
 		texturefile = "gfx/interface/technologies/RFR_HeavyFighter1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_heavy_fighter2_medium"
+		name = "GFX_NOV_heavy_fighter2_medium"
 		texturefile = "gfx/interface/technologies/RFR_HeavyFighter2.dds"
 	}	
 	SpriteType = {
-		name = "GFX_RAU_heavy_fighter3_medium"
-		texturefile = "gfx/interface/technologies/RAU_HeavyFighter3.dds"
+		name = "GFX_NOV_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/NOV_HeavyFighter3.dds"
 	}
 	
 
 	SpriteType = {
-		name = "GFX_RAU_fighter1_medium"
+		name = "GFX_NOV_fighter1_medium"
 		texturefile = "gfx/interface/technologies/RFR_Fighter1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_fighter2_medium"
+		name = "GFX_NOV_fighter2_medium"
 		texturefile = "gfx/interface/technologies/RFR_Fighter2.dds"
 	}	
 	SpriteType = {
-		name = "GFX_RAU_fighter3_medium"
-		texturefile = "gfx/interface/technologies/RAU_Fighter3.dds"
+		name = "GFX_NOV_fighter3_medium"
+		texturefile = "gfx/interface/technologies/NOV_Fighter3.dds"
 	}
 	
 
 	SpriteType = {
-		name = "GFX_RAU_naval_bomber1_medium"
+		name = "GFX_NOV_naval_bomber1_medium"
 		texturefile = "gfx/interface/technologies/RFR_NAV1.dds"
 	}	
 	SpriteType = {
-		name = "GFX_RAU_naval_bomber2_medium"
-		texturefile = "gfx/interface/technologies/RAU_NAV2.dds"
+		name = "GFX_NOV_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/NOV_NAV2.dds"
 	}	
 	SpriteType = {
-		name = "GFX_RAU_naval_bomber3_medium"
-		texturefile = "gfx/interface/technologies/RAU_NAV3.dds"
+		name = "GFX_NOV_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/NOV_NAV3.dds"
 	}	
 	
 	
 
 	SpriteType = {
-		name = "GFX_RAU_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/RAU_JetFighter2.dds"
+		name = "GFX_NOV_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/NOV_JetFighter2.dds"
 	}	
 	SpriteType = {
-		name = "GFX_RAU_jet_fighter1_medium"
-		texturefile = "gfx/interface/technologies/RAU_JetFighter1.dds"
+		name = "GFX_NOV_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/NOV_JetFighter1.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_jet_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/RAU_JetSTRAT.dds"
+		name = "GFX_NOV_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/NOV_JetSTRAT.dds"
 	}
 	SpriteType = {
-		name = "GFX_RAU_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/RAU_JetTAC2.dds"
+		name = "GFX_NOV_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/NOV_JetTAC2.dds"
 	}	
 	SpriteType = {
-		name = "GFX_RAU_jet_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/RAU_JetTAC1.dds"
+		name = "GFX_NOV_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/NOV_JetTAC1.dds"
 	}
 
 
 	SpriteType = {
-		name = "GFX_RAU_scout_plane1_medium"
+		name = "GFX_NOV_scout_plane1_medium"
 		texturefile = "gfx/interface/technologies/RFR_Scout1.dds"
 	}		
 	SpriteType = {
-		name = "GFX_RAU_scout_plane2_medium"
-		texturefile = "gfx/interface/technologies/RAU_Scout2.dds"
+		name = "GFX_NOV_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/NOV_Scout2.dds"
 	}
 	
 }

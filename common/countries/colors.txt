@@ -711,17 +711,17 @@ SHL = {
 
 # NEW MODDED NATIONS #
 
-PAU = {
+KYI = {
 	color = rgb { 152 82 91 }
 	color_ui = rgb { 152 82 91 }
 }
 
-RAU = {
+NOV = {
 	color = rgb { 140 158 138 }
 	color_ui = rgb { 140 158 138 }
 }
 
-BOC = {
+ZHY = {
 	color = rgb { 235 214 110 }
 	color_ui = rgb { 235 214 110 }
 }
@@ -759,4 +759,9 @@ RCT = {
 KFT = {
 	color = rgb { 204 189 18 }
 	color_ui = rgb { 204 189 18 }
+}
+
+TAT = {
+	color = rgb { 98 153 50 }
+	color_ui = rgb { 98 153 50 }
 }
