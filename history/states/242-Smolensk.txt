@@ -2,30 +2,32 @@
 state={
 	id=242
 	name="STATE_242"
-	manpower = 1300028
-	
-	state_category = large_town
 
 	history={
-		owner = RFR
+		owner = MFC
 		victory_points = {
-			306 15
+			306 15 
 		}
 		victory_points = {
-			11254 7
+			11254 7 
 		}
 		victory_points = {
-			6387 2
+			6387 2 
 		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
 			air_base = 5
+
 		}
-		add_core_of = RFR
+		add_core_of = MFC
+
 	}
 
 	provinces={
-		306 335 3247 3279 3313 3362 6273 6387 9272 9318 9382 9399 11254 11290 11353 11384 
+		287 306 335 3235 3247 3279 3313 3362 6264 6273 6303 6367 6387 6400 9272 9318 9382 9399 11254 11272 11290 11353 11384 
 	}
+	manpower=1300028
+	buildings_max_level_factor=1.000
+	state_category=large_town
 }

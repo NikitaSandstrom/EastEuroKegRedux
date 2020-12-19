@@ -7,13 +7,13 @@ state={
 	}
 
 	history={
-		owner = RFR
+		owner = KFT
 		buildings = {
 			infrastructure = 4
 			air_base = 2
 
 		}
-		add_core_of = RFR
+		add_core_of = KFT
 		victory_points = {
 			11696 5
 		}

@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = RFR
+		owner = RCT
 		victory_points = {
 			9417 15 
 		}
@@ -26,7 +26,7 @@ state={
 				naval_base = 5
 			}
 		}
-		add_core_of = RFR
+		add_core_of = RCT
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2

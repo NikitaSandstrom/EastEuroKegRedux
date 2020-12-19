@@ -2,46 +2,48 @@
 state={
 	id=219
 	name="STATE_219"
-	manpower = 8335992
-	
-	state_category = megalopolis
 	resources={
-		steel=16 # was: 28
+		steel=16.000
 	}
 
 	history={
-		owner = RFR
+		owner = MFC
 		victory_points = {
 			6380 50 
 		}
 		victory_points = {
-			6414 3
+			6414 3 
 		}
 		victory_points = {
-			3290 1
+			3290 1 
 		}
 		victory_points = {
-			9282 1
+			9282 1 
 		}
 		victory_points = {
-			6290 3
+			6290 3 
 		}
 		victory_points = {
-			6348 3
+			6348 3 
 		}
 		victory_points = {
-			3259 1
+			3259 1 
 		}
 		buildings = {
 			infrastructure = 8
 			arms_factory = 7
 			industrial_complex = 3
 			air_base = 10
+
 		}
-		add_core_of = RFR
+		add_core_of = MFC
+
 	}
 
 	provinces={
-		301 350 366 401 3259 3290 3327 3358 3391 6283 6290 6348 6380 6414 9235 9282 9302 9348 9378 9395 11217 11236 11268 11282 11330 
+		301 344 350 366 401 3259 3290 3327 3358 3391 6283 6290 6348 6380 6414 9235 9282 9302 9348 9378 9395 11217 11236 11250 11268 11282 11326 11330 
 	}
+	manpower=8335992
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
 }

@@ -740,3 +740,23 @@ TCA = {
 	color = rgb { 173 102 20 }
 	color_ui = rgb { 173 102 20 }
 }
+
+LSO = {
+	color = rgb { 148 18 35 }
+	color_ui = rgb { 148 18 35 }
+}
+
+MFC = {
+	color = rgb { 14 207 200 }
+	color_ui = rgb { 14 207 200 }
+}
+
+RCT = {
+	color = rgb { 36 171 81 }
+	color_ui = rgb { 36 171 81 }
+}
+
+KFT = {
+	color = rgb { 204 189 18 }
+	color_ui = rgb { 204 189 18 }
+}
