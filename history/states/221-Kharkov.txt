@@ -20,10 +20,11 @@ state={
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 1
+			arms_factory = 5
 			air_base = 5
 		}
 		add_core_of = NOV
+		add_core_of = UKR
 	}
 
 	provinces={
