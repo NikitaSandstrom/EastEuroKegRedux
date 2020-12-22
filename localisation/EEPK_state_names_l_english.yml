@@ -4,8 +4,13 @@
  STATE_202:1 "Kyiv"
  STATE_226:1 "Yekaterinoslav"
  STATE_199:1 "Proskurov"
+ STATE_193:0 "Chernihiv"
 
  ## EAST RUTHENIA STATE RENAMES ##
  STATE_200:1 "Aleksandrovsk"
  STATE_227:1 "Yuzovka"
  STATE_228:1 "Lugansk"
+ 
+ ## Odessan State names ##
+ STATE_766:0 "Bilhorod Dnistrovskyi"
+ 

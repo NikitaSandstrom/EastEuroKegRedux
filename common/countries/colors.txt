@@ -775,3 +775,8 @@ PBP = {
 	color = rgb { 171 73 86 }
 	color_ui = rgb { 171 73 86 }
 }
+
+SLB = {
+	color = rgb { 0  90  185 }
+	color_ui = rgb { 255 173 0 }
+}
