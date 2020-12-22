@@ -765,3 +765,13 @@ TAT = {
 	color = rgb { 98 153 50 }
 	color_ui = rgb { 98 153 50 }
 }
+
+PUP = {
+	color = rgb { 171 73 86 }
+	color_ui = rgb { 171 73 86 }
+}
+
+PBP = {
+	color = rgb { 171 73 86 }
+	color_ui = rgb { 171 73 86 }
+}
