@@ -3,9 +3,6 @@
 #oob = ""
 
 # Starting tech
-set_technology = {
-	infantry_weapons = 1
-}
 
 set_convoys = 5
 
@@ -24,8 +21,8 @@ set_popularities = {
 
 create_country_leader = {
 	
-	name = "Alexander Kolchak"
-	picture = "gfx/leaders/RFR/Portrait_Russia_Alexander_Kolchak.dds"
+	name = "Nikolay Nekrasov"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -35,8 +32,8 @@ create_country_leader = {
 
 create_country_leader = {
 	
-	name = "Alexei Rykov"
-	picture = "gfx/leaders/RFR/Portrait_Russia_Alexei_Rykov.dds"
+	name = "Lev Kamenev"
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -46,8 +43,8 @@ create_country_leader = {
 
 create_country_leader = {
 	
-	name = "Konstantin Rodzaevsky"
-	picture = "gfx/leaders/RFR/Portrait_Russia_Konstantin_Rodzaevsky.dds"
+	name = "Anastasy Vonsiatsky"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -57,14 +54,14 @@ create_country_leader = {
 
 create_country_leader = {
 	
-	name = "Duchess Xenia Alexandrova" #Reminder to change title to Tsarina after taking power
-	picture = "gfx/leaders/RFR/Portrait_Russia_Xenia_Alexandrova.dds"
+	name = "Pavel Milyukov" 
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = moderatism
 	traits = {
 		#
 	}
 }
 
 
-}
+
