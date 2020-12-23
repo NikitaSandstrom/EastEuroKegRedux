@@ -3,9 +3,6 @@
 #oob = ""
 
 # Starting tech
-set_technology = {
-	infantry_weapons = 1
-}
 
 set_convoys = 5
 
@@ -21,16 +18,46 @@ set_popularities = {
 	communism = 1
 	neutrality = 23
 }
-#create_country_leader = {
-#	
-#	name = "Jonas Lote"
-#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-#	expire = "1965.1.1"
-#	ideology = centrism
-#	traits = {
-#		#
-#	}
-#}
+create_country_leader = {
+	
+	name = "Mykola Mikhnovsky"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
 
+create_country_leader = {
+	
+	name = "Leonid Brezhnev"
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
 
+create_country_leader = {
+	
+	name = "Alexander Kutepov"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	
+	name = "Nestor Makhno" 
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = anarchism
+	traits = {
+		#
+	}
 }
