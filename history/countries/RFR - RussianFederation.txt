@@ -10,19 +10,19 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 75
+	democratic = 23
 	fascism = 1
 	communism = 1
-	neutrality = 23
+	neutrality = 75
 }
 
 create_country_leader = {
 	
-	name = "Alexander Kolchak"
-	picture = "gfx/leaders/RFR/Portrait_Russia_Alexander_Kolchak.dds"
+	name = "Georgy Lvov"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -54,8 +54,8 @@ create_country_leader = {
 
 create_country_leader = {
 	
-	name = "Duchess Xenia Alexandrova" #Reminder to change title to Tsarina after taking power
-	picture = "gfx/leaders/RFR/Portrait_Russia_Xenia_Alexandrova.dds"
+	name = "Alexander Kolchak" #Reminder to change title to Tsarina after taking power
+	picture = "gfx/leaders/RFR/Portrait_Russia_Alexander_Kolchak.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
