@@ -12,5 +12,7 @@
  STATE_228:1 "Lugansk"
  
  ## Odessan State names ##
- STATE_766:0 "Bilhorod Dnistrovskyi"
- 
+ STATE_766:0 "Rasseika"
+
+ ##MFC##
+ STATE_400:0 "Vyatka"
