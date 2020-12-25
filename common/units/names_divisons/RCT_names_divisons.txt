@@ -1,0 +1,952 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+RCT_INF_01 = 
+{
+	name = "Rifle Division"
+
+	for_countries = { RCT }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { RCT_INF_01 }
+
+	fallback_name = "%dya Strelkovaya Diviziya"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		5 = { "%dya Strelkovaya Diviziya" }
+		6 = { "%dya Strelkovaya Diviziya" }
+		7 = { "%dya Strelkovaya Diviziya" }
+		8 = { "%dya Strelkovaya Diviziya" }
+		16 = { "%dya Strelkovaya Diviziya" }
+		18 = { "%dya Strelkovaya Diviziya" }
+		21 = { "%dya Strelkovaya Diviziya" }
+		22 = { "%dya Strelkovaya Diviziya" }
+		23 = { "%dya Strelkovaya Diviziya" }
+		24 = { "%dya Strelkovaya Diviziya" }
+		38 = { "%dya Strelkovaya Diviziya" }
+		49 = { "%dya Strelkovaya Diviziya" }
+		51 = { "%dya Strelkovaya Diviziya" }
+		2 = { "%dya Strelkovaya Diviziya" }
+		15 = { "%dya Strelkovaya Diviziya" }
+		31 = { "%dya Strelkovaya Diviziya" }
+		37 = { "%dya Strelkovaya Diviziya" }
+		56 = { "%dya Strelkovaya Diviziya" }
+		57 = { "%dya Strelkovaya Diviziya" }
+		17 = { "%dya Strelkovaya Diviziya" }
+		27 = { "%dya Strelkovaya Diviziya" }
+		29 = { "%dya Strelkovaya Diviziya" }
+		33 = { "%dya Strelkovaya Diviziya" }
+		48 = { "%dya Strelkovaya Diviziya" }
+		3 = { "%dya Strelkovaya Diviziya" }
+		4 = { "%dya Strelkovaya Diviziya" }
+		74 = { "%dya Strelkovaya Diviziya" }
+		10 = { "%dya Strelkovaya Diviziya" }
+		13 = { "%dya Strelkovaya Diviziya" }
+		14 = { "%dya Strelkovaya Diviziya" }
+		19 = { "%dya Strelkovaya Diviziya" }
+		39 = { "%dya Strelkovaya Diviziya" }
+		12 = { "%dya Strelkovaya Diviziya" }
+		46 = { "%dya Strelkovaya Diviziya" }
+		80 = { "%dya Strelkovaya Diviziya" }
+		81 = { "%dya Strelkovaya Diviziya" }
+		84 = { "%dya Strelkovaya Diviziya" }
+		95 = { "%dya Strelkovaya Diviziya" }
+		1 = { "%dya Strelkovaya Diviziya" }
+		43 = { "%dya Strelkovaya Diviziya" }
+		99 = { "%dya Strelkovaya Diviziya" }
+		100 = { "%dya Strelkovaya Diviziya" }
+		25 = { "%dya Strelkovaya Diviziya" }
+		40 = { "%dya Strelkovaya Diviziya" }
+		41 = { "%dya Strelkovaya Diviziya" }
+		55 = { "%dya Strelkovaya Diviziya" }
+		62 = { "%dya Strelkovaya Diviziya" }
+		75 = { "%dya Strelkovaya Diviziya" }
+		53 = { "%dya Strelkovaya Diviziya" }
+		65 = { "%dya Strelkovaya Diviziya" }
+		85 = { "%dya Strelkovaya Diviziya" }
+		59 = { "%dya Strelkovaya Diviziya" }
+		66 = { "%dya Strelkovaya Diviziya" }
+		69 = { "%dya Strelkovaya Diviziya" }
+		78 = { "%dya Strelkovaya Diviziya" }
+		82 = { "%dya Strelkovaya Diviziya" }
+		94 = { "%dya Strelkovaya Diviziya" }
+		61 = { "%dya Strelkovaya Diviziya" }
+		32 = { "%dya Strelkovaya Diviziya" }
+		34 = { "%dya Strelkovaya Diviziya" }
+		35 = { "%dya Strelkovaya Diviziya" }
+		36 = { "%dya Strelkovaya Diviziya" }
+		70 = { "%dya Strelkovaya Diviziya" }
+		71 = { "%dya Strelkovaya Diviziya" }
+		54 = { "%dya Strelkovaya Diviziya" }
+		64 = { "%dya Strelkovaya Diviziya" }
+		73 = { "%dya Strelkovaya Diviziya" }
+		26 = { "%dya Strelkovaya Diviziya" }
+		52 = { "%dya Strelkovaya Diviziya" }
+		87 = { "%dya Strelkovaya Diviziya" }
+		11 = { "%dya Strelkovaya Diviziya" }
+		45 = { "%dya Strelkovaya Diviziya" }
+		97 = { "%dya Strelkovaya Diviziya" }
+		98 = { "%dya Strelkovaya Diviziya" }
+		108 = { "%dya Strelkovaya Diviziya" }
+		116 = { "%dya Strelkovaya Diviziya" }
+		111 = { "%dya Strelkovaya Diviziya" }
+		67 = { "%dya Strelkovaya Diviziya" }
+		93 = { "%dya Strelkovaya Diviziya" }
+		92 = { "%dya Strelkovaya Diviziya" }
+		50 = { "%dya Strelkovaya Diviziya" }
+		105 = { "%dya Strelkovaya Diviziya" }
+		86 = { "%dya Strelkovaya Diviziya" }
+		90 = { "%dya Strelkovaya Diviziya" }
+		104 = { "%dya Strelkovaya Diviziya" }
+		118 = { "%dya Strelkovaya Diviziya" }
+		126 = { "%dya Strelkovaya Diviziya" }
+		127 = { "%dya Strelkovaya Diviziya" }
+		129 = { "%dya Strelkovaya Diviziya" }
+		130 = { "%dya Strelkovaya Diviziya" }
+		132 = { "%dya Strelkovaya Diviziya" }
+		133 = { "%dya Strelkovaya Diviziya" }
+		134 = { "%dya Strelkovaya Diviziya" }
+		135 = { "%dya Strelkovaya Diviziya" }
+		136 = { "%dya Strelkovaya Diviziya" }
+		137 = { "%dya Strelkovaya Diviziya" }
+		139 = { "%dya Strelkovaya Diviziya" }
+		140 = { "%dya Strelkovaya Diviziya" }
+		141 = { "%dya Strelkovaya Diviziya" }
+		142 = { "%dya Strelkovaya Diviziya" }
+		143 = { "%dya Strelkovaya Diviziya" }
+		144 = { "%dya Strelkovaya Diviziya" }
+		145 = { "%dya Strelkovaya Diviziya" }
+		146 = { "%dya Strelkovaya Diviziya" }
+		148 = { "%dya Strelkovaya Diviziya" }
+		149 = { "%dya Strelkovaya Diviziya" }
+		150 = { "%dya Strelkovaya Diviziya" }
+		151 = { "%dya Strelkovaya Diviziya" }
+		152 = { "%dya Strelkovaya Diviziya" }
+		155 = { "%dya Strelkovaya Diviziya" }
+		156 = { "%dya Strelkovaya Diviziya" }
+		157 = { "%dya Strelkovaya Diviziya" }
+		158 = { "%dya Strelkovaya Diviziya" }
+		159 = { "%dya Strelkovaya Diviziya" }
+		160 = { "%dya Strelkovaya Diviziya" }
+		162 = { "%dya Strelkovaya Diviziya" }
+		164 = { "%dya Strelkovaya Diviziya" }
+		166 = { "%dya Strelkovaya Diviziya" }
+		168 = { "%dya Strelkovaya Diviziya" }
+		169 = { "%dya Strelkovaya Diviziya" }
+		170 = { "%dya Strelkovaya Diviziya" }
+		171 = { "%dya Strelkovaya Diviziya" }
+		172 = { "%dya Strelkovaya Diviziya" }
+		173 = { "%dya Strelkovaya Diviziya" }
+		176 = { "%dya Strelkovaya Diviziya" }
+		178 = { "%dya Strelkovaya Diviziya" }
+		180 = { "%dya Strelkovaya Diviziya" }
+		182 = { "%dya Strelkovaya Diviziya" }
+		186 = { "%dya Strelkovaya Diviziya" }
+		187 = { "%dya Strelkovaya Diviziya" }
+		114 = { "%dya Strelkovaya Diviziya" }
+		120 = { "%dya Strelkovaya Diviziya" }
+		91 = { "%dya Strelkovaya Diviziya" }
+		102 = { "%dya Strelkovaya Diviziya" }
+		107 = { "%dya Strelkovaya Diviziya" }
+		115 = { "%dya Strelkovaya Diviziya" }
+		117 = { "%dya Strelkovaya Diviziya" }
+		119 = { "%dya Strelkovaya Diviziya" }
+		121 = { "%dya Strelkovaya Diviziya" }
+		123 = { "%dya Strelkovaya Diviziya" }
+		124 = { "%dya Strelkovaya Diviziya" }
+		125 = { "%dya Strelkovaya Diviziya" }
+		88 = { "%dya Strelkovaya Diviziya" }
+		89 = { "%dya Strelkovaya Diviziya" }
+		110 = { "%dya Strelkovaya Diviziya" }
+		112 = { "%dya Strelkovaya Diviziya" }
+		113 = { "%dya Strelkovaya Diviziya" }
+		122 = { "%dya Strelkovaya Diviziya" }
+		42 = { "%dya Strelkovaya Diviziya" }
+		106 = { "%dya Strelkovaya Diviziya" }
+		128 = { "%dya Strelkovaya Diviziya" }
+		153 = { "%dya Strelkovaya Diviziya" }
+		154 = { "%dya Strelkovaya Diviziya" }
+		161 = { "%dya Strelkovaya Diviziya" }
+		165 = { "%dya Strelkovaya Diviziya" }
+		167 = { "%dya Strelkovaya Diviziya" }
+		174 = { "%dya Strelkovaya Diviziya" }
+		175 = { "%dya Strelkovaya Diviziya" }
+		177 = { "%dya Strelkovaya Diviziya" }
+		179 = { "%dya Strelkovaya Diviziya" }
+		181 = { "%dya Strelkovaya Diviziya" }
+		183 = { "%dya Strelkovaya Diviziya" }
+		184 = { "%dya Strelkovaya Diviziya" }
+		188 = { "%dya Strelkovaya Diviziya" }
+		189 = { "%dya Strelkovaya Diviziya" }
+		190 = { "%dya Strelkovaya Diviziya" }
+		191 = { "%dya Strelkovaya Diviziya" }
+		193 = { "%dya Strelkovaya Diviziya" }
+		195 = { "%dya Strelkovaya Diviziya" }
+		196 = { "%dya Strelkovaya Diviziya" }
+		197 = { "%dya Strelkovaya Diviziya" }
+		199 = { "%dya Strelkovaya Diviziya" }
+		200 = { "%dya Strelkovaya Diviziya" }
+		206 = { "%dya Strelkovaya Diviziya" }
+		214 = { "%dya Strelkovaya Diviziya" }
+		217 = { "%dya Strelkovaya Diviziya" }
+		222 = { "%dya Strelkovaya Diviziya" }
+		227 = { "%dya Strelkovaya Diviziya" }
+		228 = { "%dya Strelkovaya Diviziya" }
+		229 = { "%dya Strelkovaya Diviziya" }
+		232 = { "%dya Strelkovaya Diviziya" }
+		233 = { "%dya Strelkovaya Diviziya" }
+		235 = { "%dya Strelkovaya Diviziya" }
+		237 = { "%dya Strelkovaya Diviziya" }
+		238 = { "%dya Strelkovaya Diviziya" }
+		201 = { "%dya Strelkovaya Diviziya" }
+		203 = { "%dya Strelkovaya Diviziya" }
+		207 = { "%dya Strelkovaya Diviziya" }
+		211 = { "%dya Strelkovaya Diviziya" }
+		223 = { "%dya Strelkovaya Diviziya" }
+		224 = { "%dya Strelkovaya Diviziya" }
+		225 = { "%dya Strelkovaya Diviziya" }
+		226 = { "%dya Strelkovaya Diviziya" }
+		230 = { "%dya Strelkovaya Diviziya" }
+		231 = { "%dya Strelkovaya Diviziya" }
+		234 = { "%dya Strelkovaya Diviziya" }
+		241 = { "%dya Strelkovaya Diviziya" }
+		243 = { "%dya Strelkovaya Diviziya" }
+		244 = { "%dya Strelkovaya Diviziya" }
+		245 = { "%dya Strelkovaya Diviziya" }
+		246 = { "%dya Strelkovaya Diviziya" }
+		247 = { "%dya Strelkovaya Diviziya" }
+		248 = { "%dya Strelkovaya Diviziya" }
+		249 = { "%dya Strelkovaya Diviziya" }
+		250 = { "%dya Strelkovaya Diviziya" }
+		251 = { "%dya Strelkovaya Diviziya" }
+		252 = { "%dya Strelkovaya Diviziya" }
+		253 = { "%dya Strelkovaya Diviziya" }
+		254 = { "%dya Strelkovaya Diviziya" }
+		255 = { "%dya Strelkovaya Diviziya" }
+		256 = { "%dya Strelkovaya Diviziya" }
+		257 = { "%dya Strelkovaya Diviziya" }
+		258 = { "%dya Strelkovaya Diviziya" }
+		259 = { "%dya Strelkovaya Diviziya" }
+		260 = { "%dya Strelkovaya Diviziya" }
+		261 = { "%dya Strelkovaya Diviziya" }
+		262 = { "%dya Strelkovaya Diviziya" }
+		263 = { "%dya Strelkovaya Diviziya" }
+		264 = { "%dya Strelkovaya Diviziya" }
+		265 = { "%dya Strelkovaya Diviziya" }
+		266 = { "%dya Strelkovaya Diviziya" }
+		267 = { "%dya Strelkovaya Diviziya" }
+		268 = { "%dya Strelkovaya Diviziya" }
+		269 = { "%dya Strelkovaya Diviziya" }
+		270 = { "%dya Strelkovaya Diviziya" }
+		271 = { "%dya Strelkovaya Diviziya" }
+		272 = { "%dya Strelkovaya Diviziya" }
+		273 = { "%dya Strelkovaya Diviziya" }
+		274 = { "%dya Strelkovaya Diviziya" }
+		275 = { "%dya Strelkovaya Diviziya" }
+		276 = { "%dya Strelkovaya Diviziya" }
+		277 = { "%dya Strelkovaya Diviziya" }
+		278 = { "%dya Strelkovaya Diviziya" }
+		279 = { "%dya Strelkovaya Diviziya" }
+		280 = { "%dya Strelkovaya Diviziya" }
+		281 = { "%dya Strelkovaya Diviziya" }
+		282 = { "%dya Strelkovaya Diviziya" }
+		283 = { "%dya Strelkovaya Diviziya" }
+		284 = { "%dya Strelkovaya Diviziya" }
+		285 = { "%dya Strelkovaya Diviziya" }
+		286 = { "%dya Strelkovaya Diviziya" }
+		287 = { "%dya Strelkovaya Diviziya" }
+		288 = { "%dya Strelkovaya Diviziya" }
+		289 = { "%dya Strelkovaya Diviziya" }
+		290 = { "%dya Strelkovaya Diviziya" }
+		291 = { "%dya Strelkovaya Diviziya" }
+		292 = { "%dya Strelkovaya Diviziya" }
+		293 = { "%dya Strelkovaya Diviziya" }
+		294 = { "%dya Strelkovaya Diviziya" }
+		295 = { "%dya Strelkovaya Diviziya" }
+		296 = { "%dya Strelkovaya Diviziya" }
+		297 = { "%dya Strelkovaya Diviziya" }
+		298 = { "%dya Strelkovaya Diviziya" }
+		299 = { "%dya Strelkovaya Diviziya" }
+		300 = { "%dya Strelkovaya Diviziya" }
+		301 = { "%dya Strelkovaya Diviziya" }
+		303 = { "%dya Strelkovaya Diviziya" }
+		304 = { "%dya Strelkovaya Diviziya" }
+		305 = { "%dya Strelkovaya Diviziya" }
+		306 = { "%dya Strelkovaya Diviziya" }
+		307 = { "%dya Strelkovaya Diviziya" }
+		308 = { "%dya Strelkovaya Diviziya" }
+		310 = { "%dya Strelkovaya Diviziya" }
+		311 = { "%dya Strelkovaya Diviziya" }
+		312 = { "%dya Strelkovaya Diviziya" }
+		313 = { "%dya Strelkovaya Diviziya" }
+		314 = { "%dya Strelkovaya Diviziya" }
+		315 = { "%dya Strelkovaya Diviziya" }
+		316 = { "%dya Strelkovaya Diviziya" }
+		317 = { "%dya Strelkovaya Diviziya" }
+		318 = { "%dya Strelkovaya Diviziya" }
+		319 = { "%dya Strelkovaya Diviziya" }
+		320 = { "%dya Strelkovaya Diviziya" }
+		321 = { "%dya Strelkovaya Diviziya" }
+		322 = { "%dya Strelkovaya Diviziya" }
+		323 = { "%dya Strelkovaya Diviziya" }
+		324 = { "%dya Strelkovaya Diviziya" }
+		325 = { "%dya Strelkovaya Diviziya" }
+		326 = { "%dya Strelkovaya Diviziya" }
+		327 = { "%dya Strelkovaya Diviziya" }
+		328 = { "%dya Strelkovaya Diviziya" }
+		329 = { "%dya Strelkovaya Diviziya" }
+		330 = { "%dya Strelkovaya Diviziya" }
+		332 = { "%dya Strelkovaya Diviziya" }
+		333 = { "%dya Strelkovaya Diviziya" }
+		334 = { "%dya Strelkovaya Diviziya" }
+		335 = { "%dya Strelkovaya Diviziya" }
+		336 = { "%dya Strelkovaya Diviziya" }
+		337 = { "%dya Strelkovaya Diviziya" }
+		339 = { "%dya Strelkovaya Diviziya" }
+		340 = { "%dya Strelkovaya Diviziya" }
+		341 = { "%dya Strelkovaya Diviziya" }
+		342 = { "%dya Strelkovaya Diviziya" }
+		343 = { "%dya Strelkovaya Diviziya" }
+		344 = { "%dya Strelkovaya Diviziya" }
+		345 = { "%dya Strelkovaya Diviziya" }
+		346 = { "%dya Strelkovaya Diviziya" }
+		348 = { "%dya Strelkovaya Diviziya" }
+		349 = { "%dya Strelkovaya Diviziya" }
+		350 = { "%dya Strelkovaya Diviziya" }
+		351 = { "%dya Strelkovaya Diviziya" }
+		352 = { "%dya Strelkovaya Diviziya" }
+		353 = { "%dya Strelkovaya Diviziya" }
+		354 = { "%dya Strelkovaya Diviziya" }
+		355 = { "%dya Strelkovaya Diviziya" }
+		356 = { "%dya Strelkovaya Diviziya" }
+		357 = { "%dya Strelkovaya Diviziya" }
+		358 = { "%dya Strelkovaya Diviziya" }
+		359 = { "%dya Strelkovaya Diviziya" }
+		360 = { "%dya Strelkovaya Diviziya" }
+		361 = { "%dya Strelkovaya Diviziya" }
+		362 = { "%dya Strelkovaya Diviziya" }
+		364 = { "%dya Strelkovaya Diviziya" }
+		365 = { "%dya Strelkovaya Diviziya" }
+		366 = { "%dya Strelkovaya Diviziya" }
+		367 = { "%dya Strelkovaya Diviziya" }
+		368 = { "%dya Strelkovaya Diviziya" }
+		369 = { "%dya Strelkovaya Diviziya" }
+		370 = { "%dya Strelkovaya Diviziya" }
+		371 = { "%dya Strelkovaya Diviziya" }
+		372 = { "%dya Strelkovaya Diviziya" }
+		373 = { "%dya Strelkovaya Diviziya" }
+		374 = { "%dya Strelkovaya Diviziya" }
+		375 = { "%dya Strelkovaya Diviziya" }
+		376 = { "%dya Strelkovaya Diviziya" }
+		377 = { "%dya Strelkovaya Diviziya" }
+		378 = { "%dya Strelkovaya Diviziya" }
+		379 = { "%dya Strelkovaya Diviziya" }
+		380 = { "%dya Strelkovaya Diviziya" }
+		381 = { "%dya Strelkovaya Diviziya" }
+		382 = { "%dya Strelkovaya Diviziya" }
+		383 = { "%dya Strelkovaya Diviziya" }
+		384 = { "%dya Strelkovaya Diviziya" }
+		386 = { "%dya Strelkovaya Diviziya" }
+		387 = { "%dya Strelkovaya Diviziya" }
+		388 = { "%dya Strelkovaya Diviziya" }
+		389 = { "%dya Strelkovaya Diviziya" }
+		390 = { "%dya Strelkovaya Diviziya" }
+		391 = { "%dya Strelkovaya Diviziya" }
+		393 = { "%dya Strelkovaya Diviziya" }
+		395 = { "%dya Strelkovaya Diviziya" }
+		396 = { "%dya Strelkovaya Diviziya" }
+		397 = { "%dya Strelkovaya Diviziya" }
+		399 = { "%dya Strelkovaya Diviziya" }
+		400 = { "%dya Strelkovaya Diviziya" }
+		402 = { "%dya Strelkovaya Diviziya" }
+		404 = { "%dya Strelkovaya Diviziya" }
+		405 = { "%dya Strelkovaya Diviziya" }
+		406 = { "%dya Strelkovaya Diviziya" }
+		407 = { "%dya Strelkovaya Diviziya" }
+		408 = { "%dya Strelkovaya Diviziya" }
+		409 = { "%dya Strelkovaya Diviziya" }
+		411 = { "%dya Strelkovaya Diviziya" }
+		412 = { "%dya Strelkovaya Diviziya" }
+		413 = { "%dya Strelkovaya Diviziya" }
+		414 = { "%dya Strelkovaya Diviziya" }
+		415 = { "%dya Strelkovaya Diviziya" }
+		416 = { "%dya Strelkovaya Diviziya" }
+		417 = { "%dya Strelkovaya Diviziya" }
+		422 = { "%dya Strelkovaya Diviziya" }
+		445 = { "%dya Strelkovaya Diviziya" }
+		410 = { "%dya Strelkovaya Diviziya" }
+		418 = { "%dya Strelkovaya Diviziya" }
+		419 = { "%dya Strelkovaya Diviziya" }
+		420 = { "%dya Strelkovaya Diviziya" }
+		421 = { "%dya Strelkovaya Diviziya" }
+		423 = { "%dya Strelkovaya Diviziya" }
+		424 = { "%dya Strelkovaya Diviziya" }
+		425 = { "%dya Strelkovaya Diviziya" }
+		426 = { "%dya Strelkovaya Diviziya" }
+		427 = { "%dya Strelkovaya Diviziya" }
+		428 = { "%dya Strelkovaya Diviziya" }
+		429 = { "%dya Strelkovaya Diviziya" }
+		430 = { "%dya Strelkovaya Diviziya" }
+		432 = { "%dya Strelkovaya Diviziya" }
+		433 = { "%dya Strelkovaya Diviziya" }
+		434 = { "%dya Strelkovaya Diviziya" }
+		435 = { "%dya Strelkovaya Diviziya" }
+		436 = { "%dya Strelkovaya Diviziya" }
+		437 = { "%dya Strelkovaya Diviziya" }
+		439 = { "%dya Strelkovaya Diviziya" }
+		440 = { "%dya Strelkovaya Diviziya" }
+		441 = { "%dya Strelkovaya Diviziya" }
+		442 = { "%dya Strelkovaya Diviziya" }
+		443 = { "%dya Strelkovaya Diviziya" }
+		444 = { "%dya Strelkovaya Diviziya" }
+		446 = { "%dya Strelkovaya Diviziya" }
+		448 = { "%dya Strelkovaya Diviziya" }
+		449 = { "%dya Strelkovaya Diviziya" }
+		450 = { "%dya Strelkovaya Diviziya" }
+		451 = { "%dya Strelkovaya Diviziya" }
+		452 = { "%dya Strelkovaya Diviziya" }
+		453 = { "%dya Strelkovaya Diviziya" }
+		454 = { "%dya Strelkovaya Diviziya" }
+		455 = { "%dya Strelkovaya Diviziya" }
+		456 = { "%dya Strelkovaya Diviziya" }
+		457 = { "%dya Strelkovaya Diviziya" }
+		458 = { "%dya Strelkovaya Diviziya" }
+		459 = { "%dya Strelkovaya Diviziya" }
+		460 = { "%dya Strelkovaya Diviziya" }
+		461 = { "%dya Strelkovaya Diviziya" }
+		462 = { "%dya Strelkovaya Diviziya" }
+		464 = { "%dya Strelkovaya Diviziya" }
+		465 = { "%dya Strelkovaya Diviziya" }
+		466 = { "%dya Strelkovaya Diviziya" }
+		467 = { "%dya Strelkovaya Diviziya" }
+		468 = { "%dya Strelkovaya Diviziya" }
+		469 = { "%dya Strelkovaya Diviziya" }
+		470 = { "%dya Strelkovaya Diviziya" }
+		471 = { "%dya Strelkovaya Diviziya" }
+		472 = { "%dya Strelkovaya Diviziya" }
+		473 = { "%dya Strelkovaya Diviziya" }
+		474 = { "%dya Strelkovaya Diviziya" }
+	}
+}
+
+RCT_CAV_01 = 
+{
+	name = "Cavalry Division"
+
+	for_countries = { RCT }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { RCT_INF_01 }
+
+	fallback_name = "%dya Kavaleriyskaya Diviziya"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dya Kavaleriyskaya Diviziya" }
+		3 = { "%dya Kavaleriyskaya Diviziya" }
+		4 = { "%dya Kavaleriyskaya Diviziya" }
+		5 = { "%dya Kavaleriyskaya Diviziya" }
+		6 = { "%dya Kavaleriyskaya Diviziya" }
+		7 = { "%dya Kavaleriyskaya Diviziya" }
+		8 = { "%dya Kavaleriyskaya Diviziya" }
+		9 = { "%dya Kavaleriyskaya Diviziya" }
+		10 = { "%dya Kavaleriyskaya Diviziya" }
+		11 = { "%dya Kavaleriyskaya Diviziya" }
+		12 = { "%dya Kavaleriyskaya Diviziya" }
+		13 = { "%dya Kavaleriyskaya Diviziya" }
+		14 = { "%dya Kavaleriyskaya Diviziya" }
+		15 = { "%dya Kavaleriyskaya Diviziya" }
+		16 = { "%dya Kavaleriyskaya Diviziya" }
+		17 = { "%dya Kavaleriyskaya Diviziya" }
+		18 = { "%dya Kavaleriyskaya Diviziya" }
+		19 = { "%dya Kavaleriyskaya Diviziya" }
+		20 = { "%dya Kavaleriyskaya Diviziya" }
+		21 = { "%dya Kavaleriyskaya Diviziya" }
+		22 = { "%dya Kavaleriyskaya Diviziya" }
+		23 = { "%dya Kavaleriyskaya Diviziya" }
+		24 = { "%dya Kavaleriyskaya Diviziya" }
+		25 = { "%dya Kavaleriyskaya Diviziya" }
+		26 = { "%dya Kavaleriyskaya Diviziya" }
+		29 = { "%dya Kavaleriyskaya Diviziya" }
+		30 = { "%dya Kavaleriyskaya Diviziya" }
+		31 = { "%dya Kavaleriyskaya Diviziya" }
+		32 = { "%dya Kavaleriyskaya Diviziya" }
+		33 = { "%dya Kavaleriyskaya Diviziya" }
+		34 = { "%dya Kavaleriyskaya Diviziya" }
+		36 = { "%dya Kavaleriyskaya Diviziya" }
+		48 = { "%dya Kavaleriyskaya Diviziya" }
+		67 = { "%dya Kavaleriyskaya Diviziya" }
+		301 = { "%dya Kavaleriyskaya Diviziya" }
+		302 = { "%dya Kavaleriyskaya Diviziya" }
+		303 = { "%dya Kavaleriyskaya Diviziya" }
+		304 = { "%dya Kavaleriyskaya Diviziya" }
+		305 = { "%dya Kavaleriyskaya Diviziya" }
+		306 = { "%dya Kavaleriyskaya Diviziya" }
+		27 = { "%dya Kavaleriyskaya Diviziya" }
+		28 = { "%dya Kavaleriyskaya Diviziya" }
+		35 = { "%dya Kavaleriyskaya Diviziya" }
+		38 = { "%dya Kavaleriyskaya Diviziya" }
+		40 = { "%dya Kavaleriyskaya Diviziya" }
+		41 = { "%dya Kavaleriyskaya Diviziya" }
+		43 = { "%dya Kavaleriyskaya Diviziya" }
+		44 = { "%dya Kavaleriyskaya Diviziya" }
+		46 = { "%dya Kavaleriyskaya Diviziya" }
+		47 = { "%dya Kavaleriyskaya Diviziya" }
+		49 = { "%dya Kavaleriyskaya Diviziya" }
+		50 = { "%dya Kavaleriyskaya Diviziya" }
+		51 = { "%dya Kavaleriyskaya Diviziya" }
+		52 = { "%dya Kavaleriyskaya Diviziya" }
+		53 = { "%dya Kavaleriyskaya Diviziya" }
+		54 = { "%dya Kavaleriyskaya Diviziya" }
+		55 = { "%dya Kavaleriyskaya Diviziya" }
+		56 = { "%dya Kavaleriyskaya Diviziya" }
+		57 = { "%dya Legko-Kavaleriyskaya Diviziya" }
+		60 = { "%dya Kavaleriyskaya Diviziya" }
+		61 = { "%dya Kavaleriyskaya Diviziya" }
+		62 = { "%dya Kavaleriyskaya Diviziya" }
+		63 = { "%dya Kavaleriyskaya Diviziya" }
+		64 = { "%dya Kavaleriyskaya Diviziya" }
+		66 = { "%dya Kavaleriyskaya Diviziya" }
+		68 = { "%dya Kavaleriyskaya Diviziya" }
+		70 = { "%dya Kavaleriyskaya Diviziya" }
+		72 = { "%dya Kavaleriyskaya Diviziya" }
+		73 = { "%dya Kavaleriyskaya Diviziya" }
+		74 = { "%dya Kavaleriyskaya Diviziya" }
+		75 = { "%dya Legko-Kavaleriyskaya Diviziya" }
+		76 = { "%dya Kavaleriyskaya Diviziya" }
+		77 = { "%dya Kavaleriyskaya Diviziya" }
+		78 = { "%dya Kavaleriyskaya Diviziya" }
+		79 = { "%dya Kavaleriyskaya Diviziya" }
+		80 = { "%dya Kavaleriyskaya Diviziya" }
+		81 = { "%dya Kavaleriyskaya Diviziya" }
+		82 = { "%dya Kavaleriyskaya Diviziya" }
+		83 = { "%dya Kavaleriyskaya Diviziya" }
+		87 = { "%dya Kavaleriyskaya Diviziya" }
+		91 = { "%dya Kavaleriyskaya Diviziya" }
+		94 = { "%dya Kavaleriyskaya Diviziya" }
+		97 = { "%dya Kavaleriyskaya Diviziya" }
+		98 = { "%dya Kavaleriyskaya Diviziya" }
+		99 = { "%dya Kavaleriyskaya Diviziya" }
+		100 = { "%dya Kavaleriyskaya Diviziya" }
+		101 = { "%dya Kavaleriyskaya Diviziya" }
+		102 = { "%dya Kavaleriyskaya Diviziya" }
+		103 = { "%dya Kavaleriyskaya Diviziya" }
+		104 = { "%dya Kavaleriyskaya Diviziya" }
+		105 = { "%dya Kavaleriyskaya Diviziya" }
+		106 = { "%dya Kavaleriyskaya Diviziya" }
+		107 = { "%dya Kavaleriyskaya Diviziya" }
+		108 = { "%dya Kavaleriyskaya Diviziya" }
+		109 = { "%dya Kavaleriyskaya Diviziya" }
+		110 = { "%dya Kavaleriyskaya Diviziya" }
+		111 = { "%dya Kavaleriyskaya Diviziya" }
+		112 = { "%dya Kavaleriyskaya Diviziya" }
+		113 = { "%dya Kavaleriyskaya Diviziya" }
+		114 = { "%dya Kavaleriyskaya Diviziya" }
+		115 = { "%dya Kavaleriyskaya Diviziya" }
+		116 = { "%dya Kavaleriyskaya Diviziya" }
+	}
+}
+
+RCT_MOT_01 = 
+{
+	name = "Motor Rifle Division"
+
+	for_countries = { RCT }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { RCT_INF_01 }
+
+	fallback_name = "%dya Motostrelkovaya Diviziya"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		69 = { "%dya Motostrelkovaya Diviziya" }
+		103 = { "%dya Motostrelkovaya Diviziya" }
+		109 = { "%dya Motostrelkovaya Diviziya" }
+		131 = { "%dya Motostrelkovaya Diviziya" }
+		163 = { "%dya Motostrelkovaya Diviziya" }
+		185 = { "%dya Motostrelkovaya Diviziya" }
+		198 = { "%dya Motostrelkovaya Diviziya" }
+		202 = { "%dya Motostrelkovaya Diviziya" }
+		204 = { "%dya Motostrelkovaya Diviziya" }
+		205 = { "%dya Motostrelkovaya Diviziya" }
+		208 = { "%dya Motostrelkovaya Diviziya" }
+		209 = { "%dya Motostrelkovaya Diviziya" }
+		210 = { "%dya Motostrelkovaya Diviziya" }
+		212 = { "%dya Motostrelkovaya Diviziya" }
+		213 = { "%dya Motostrelkovaya Diviziya" }
+		215 = { "%dya Motostrelkovaya Diviziya" }
+		216 = { "%dya Motostrelkovaya Diviziya" }
+		218 = { "%dya Motostrelkovaya Diviziya" }
+		219 = { "%dya Motostrelkovaya Diviziya" }
+		220 = { "%dya Motostrelkovaya Diviziya" }
+		221 = { "%dya Motostrelkovaya Diviziya" }
+		236 = { "%dya Motostrelkovaya Diviziya" }
+		239 = { "%dya Motostrelkovaya Diviziya" }
+		801 = { "%OMSDON 'Dzerzhinskiy' Diviziya" }
+		821 = { "21ya Motostrelkovaya Diviziya" }
+		822 = { "22ya Motostrelkovaya Diviziya" }
+		823 = { "23ya Motostrelkovaya Diviziya" }
+		802 = { "2ya Motostrelkovaya Diviziya" }
+		806 = { "6ya Motostrelkovaya Diviziya" }
+		803 = { "3ya Motostrelkovaya Diviziya" }
+		804 = { "4ya Motostrelkovaya Diviziya" }
+		808 = { "8ya Motostrelkovaya Diviziya" }
+		807 = { "7ya Motostrelkovaya Diviziya" }
+		809 = { "9ya Motostrelkovaya Diviziya" }
+	}
+}
+
+RCT_MEC_01 = 
+{
+	name = "Mechanized Division"
+
+	for_countries = { RCT }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { RCT_INF_01 }
+
+	fallback_name = "%dya Mekhanizirovanaya Diviziya"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		69 = { "%dya Mekhanizirovanaya Diviziya" }
+		81 = { "%dya Mekhanizirovanaya Diviziya" }
+		82 = { "%dya Mekhanizirovanaya Diviziya" }
+		84 = { "%dya Mekhanizirovanaya Diviziya" }
+		103 = { "%dya Mekhanizirovanaya Diviziya" }
+		109 = { "%dya Mekhanizirovanaya Diviziya" }
+		131 = { "%dya Mekhanizirovanaya Diviziya" }
+		163 = { "%dya Mekhanizirovanaya Diviziya" }
+		185 = { "%dya Mekhanizirovanaya Diviziya" }
+		198 = { "%dya Mekhanizirovanaya Diviziya" }
+		202 = { "%dya Mekhanizirovanaya Diviziya" }
+		204 = { "%dya Mekhanizirovanaya Diviziya" }
+		205 = { "%dya Mekhanizirovanaya Diviziya" }
+		208 = { "%dya Mekhanizirovanaya Diviziya" }
+		209 = { "%dya Mekhanizirovanaya Diviziya" }
+		210 = { "%dya Mekhanizirovanaya Diviziya" }
+		212 = { "%dya Mekhanizirovanaya Diviziya" }
+		213 = { "%dya Mekhanizirovanaya Diviziya" }
+		215 = { "%dya Mekhanizirovanaya Diviziya" }
+		216 = { "%dya Mekhanizirovanaya Diviziya" }
+		218 = { "%dya Mekhanizirovanaya Diviziya" }
+		219 = { "%dya Mekhanizirovanaya Diviziya" }
+		220 = { "%dya Mekhanizirovanaya Diviziya" }
+		221 = { "%dya Mekhanizirovanaya Diviziya" }
+		236 = { "%dya Mekhanizirovanaya Diviziya" }
+		239 = { "%dya Mekhanizirovanaya Diviziya" }
+		240 = { "%dya Mekhanizirovanaya Diviziya" }
+	}
+}
+
+RCT_ARM_01 = 
+{
+	name = "Tank Division"
+
+	for_countries = { RCT }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { RCT_INF_01 }
+
+	fallback_name = "%dya Tankovaya Diviziya"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dya Tankovaya Diviziya" }
+		2 = { "%dya Tankovaya Diviziya" }
+		3 = { "%dya Tankovaya Diviziya" }
+		4 = { "%dya Tankovaya Diviziya" }
+		5 = { "%dya Tankovaya Diviziya" }
+		6 = { "%dya Tankovaya Diviziya" }
+		7 = { "%dya Tankovaya Diviziya" }
+		8 = { "%dya Tankovaya Diviziya" }
+		9 = { "%dya Tankovaya Diviziya" }
+		10 = { "%dya Tankovaya Diviziya" }
+		11 = { "%dya Tankovaya Diviziya" }
+		12 = { "%dya Tankovaya Diviziya" }
+		13 = { "%dya Tankovaya Diviziya" }
+		14 = { "%dya Tankovaya Diviziya" }
+		15 = { "%dya Tankovaya Diviziya" }
+		16 = { "%dya Tankovaya Diviziya" }
+		17 = { "%dya Tankovaya Diviziya" }
+		18 = { "%dya Tankovaya Diviziya" }
+		19 = { "%dya Tankovaya Diviziya" }
+		20 = { "%dya Tankovaya Diviziya" }
+		21 = { "%dya Tankovaya Diviziya" }
+		22 = { "%dya Tankovaya Diviziya" }
+		23 = { "%dya Tankovaya Diviziya" }
+		24 = { "%dya Tankovaya Diviziya" }
+		25 = { "%dya Tankovaya Diviziya" }
+		26 = { "%dya Tankovaya Diviziya" }
+		27 = { "%dya Tankovaya Diviziya" }
+		28 = { "%dya Tankovaya Diviziya" }
+		29 = { "%dya Tankovaya Diviziya" }
+		30 = { "%dya Tankovaya Diviziya" }
+		31 = { "%dya Tankovaya Diviziya" }
+		32 = { "%dya Tankovaya Diviziya" }
+		33 = { "%dya Tankovaya Diviziya" }
+		34 = { "%dya Tankovaya Diviziya" }
+		35 = { "%dya Tankovaya Diviziya" }
+		36 = { "%dya Tankovaya Diviziya" }
+		37 = { "%dya Tankovaya Diviziya" }
+		38 = { "%dya Tankovaya Diviziya" }
+		39 = { "%dya Tankovaya Diviziya" }
+		40 = { "%dya Tankovaya Diviziya" }
+		41 = { "%dya Tankovaya Diviziya" }
+		42 = { "%dya Tankovaya Diviziya" }
+		43 = { "%dya Tankovaya Diviziya" }
+		44 = { "%dya Tankovaya Diviziya" }
+		45 = { "%dya Tankovaya Diviziya" }
+		46 = { "%dya Tankovaya Diviziya" }
+		47 = { "%dya Tankovaya Diviziya" }
+		48 = { "%dya Tankovaya Diviziya" }
+		49 = { "%dya Tankovaya Diviziya" }
+		50 = { "%dya Tankovaya Diviziya" }
+		51 = { "%dya Tankovaya Diviziya" }
+		52 = { "%dya Tankovaya Diviziya" }
+		53 = { "%dya Tankovaya Diviziya" }
+		54 = { "%dya Tankovaya Diviziya" }
+		55 = { "%dya Tankovaya Diviziya" }
+		56 = { "%dya Tankovaya Diviziya" }
+		57 = { "%dya Tankovaya Diviziya" }
+		58 = { "%dya Tankovaya Diviziya" }
+		59 = { "%dya Tankovaya Diviziya" }
+		60 = { "%dya Tankovaya Diviziya" }
+		61 = { "%dya Tankovaya Diviziya" }
+		101 = { "%dya Tankovaya Diviziya" }
+		102 = { "%dya Tankovaya Diviziya" }
+		104 = { "%dya Tankovaya Diviziya" }
+		105 = { "%dya Tankovaya Diviziya" }
+		107 = { "%dya Tankovaya Diviziya" }
+		108 = { "%dya Tankovaya Diviziya" }
+		109 = { "%dya Tankovaya Diviziya" }
+		110 = { "%dya Tankovaya Diviziya" }
+		111 = { "%dya Tankovaya Diviziya" }
+		112 = { "%dya Tankovaya Diviziya" }
+	}
+}
+
+RCT_PAR_01 = 
+{
+	name = "Paratrooper Division"
+
+	for_countries = { RCT }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { RCT_INF_01 }
+
+	fallback_name = "%dya Vozdushno-Desantnaya Div."
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dya Vozdushno-Desantnaya Div." }
+		2 = { "%dya Vozdushno-Desantnaya Div." }
+		3 = { "%dya Vozdushno-Desantnaya Div." }
+		4 = { "%dya Vozdushno-Desantnaya Div." }
+		5 = { "%dya Vozdushno-Desantnaya Div." }
+		6 = { "%dya Vozdushno-Desantnaya Div." }
+		7 = { "%dya Vozdushno-Desantnaya Div." }
+		8 = { "%dya Vozdushno-Desantnaya Div." }
+		9 = { "%dya Vozdushno-Desantnaya Div." }
+		10 = { "%dya Vozdushno-Desantnaya Div." }
+		11 = { "%dya Vozdushno-Desantnaya Div." }
+		12 = { "%dya Vozdushno-Desantnaya Div." }
+		101 = { "1ya Gvds. Vozdushno-Desantnaya Div." }
+		102 = { "2ya Gvds. Vozdushno-Desantnaya Div." }
+		103 = { "3ya Gvds. Vozdushno-Desantnaya Div." }
+		104 = { "4ya Gvds. Vozdushno-Desantnaya Div." }
+		105 = { "5ya Gvds. Vozdushno-Desantnaya Div." }
+		106 = { "6ya Gvds. Vozdushno-Desantnaya Div." }
+		108 = { "8ya Gvds. Vozdushno-Desantnaya Div." }
+		109 = { "9ya Gvds. Vozdushno-Desantnaya Div." }
+		110 = { "10ya Gvds. Vozdushno-Desantnaya Div." }
+		111 = { "11ya Gvds. Vozdushno-Desantnaya Div." }
+		112 = { "12ya Gvds. Vozdushno-Desantnaya Div." }
+		113 = { "13ya Gvds. Vozdushno-Desantnaya Div." }
+		114 = { "14ya Gvds. Vozdushno-Desantnaya Div." }
+		115 = { "15ya Gvds. Vozdushno-Desantnaya Div." }
+		116 = { "16ya Gvds. Vozdushno-Desantnaya Div." }
+		121 = { "21ya Gvds. Vozdushno-Desantnaya Div." }
+		131 = { "31ya Gvds. Vozdushno-Desantnaya Div." }
+	}
+}
+
+RCT_MAR_01 = 
+{
+	name = "Marine Division"
+
+	for_countries = { RCT }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { RCT_INF_01 }
+
+	fallback_name = "%dya Diviziya Morskoi Pekhoty"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dya Diviziya Morskoi Pekhoty" }
+		2 = { "%dya Diviziya Morskoi Pekhoty" }
+		3 = { "%dya Diviziya Morskoi Pekhoty" }
+		4 = { "%dya Diviziya Morskoi Pekhoty" }
+		5 = { "%dya Diviziya Morskoi Pekhoty" }
+		6 = { "%dya Diviziya Morskoi Pekhoty" }
+		7 = { "%dya Diviziya Morskoi Pekhoty" }
+		8 = { "%dya Diviziya Morskoi Pekhoty" }
+		9 = { "%dya Diviziya Morskoi Pekhoty" }
+		10 = { "%dya Diviziya Morskoi Pekhoty" }
+	}
+}
+
+RCT_MNT_01 = 
+{
+	name = "Mountain Rifle Division"
+
+	for_countries = { RCT }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { RCT_INF_01 }
+
+	fallback_name = "%dya Gornostrelkovaya Diviziya"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		79 = { "%dya Gornostrelkovaya Diviziya" }
+		101 = { "%dya Gornostrelkovaya Diviziya" }
+		138 = { "%dya Gornostrelkovaya Diviziya" }
+		192 = { "%dya Gornostrelkovaya Diviziya" }
+		194 = { "%dya Gornostrelkovaya Diviziya" }
+		232 = { "%dya Gornostrelkovaya Diviziya" }
+		302 = { "%dya Gornostrelkovaya Diviziya" }
+	}
+}
+
+RCT_GAR_01 = 
+{
+	name = "Garrison Division"
+
+	for_countries = { RCT }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { RCT_INF_01 }
+
+	fallback_name = "%dya Polk Tyla"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dya Polk Tyla" }
+		2 = { "%dya Polk Tyla." }
+		3 = { "%dya Polk Tyla" }
+		4 = { "%dya Polk Tyla" }
+		5 = { "%dya Polk Tyla" }
+		6 = { "%dya Polk Tyla" }
+		7 = { "%dya Polk Tyla" }
+		8 = { "%dya Polk Tyla" }
+		9 = { "%dya Polk Tyla" }
+		10 = { "%dya Polk Tyla" }
+		11 = { "%dya Polk Tyla" }
+		12 = { "%dya Polk Tyla" }
+		13 = { "%dya Polk Tyla" }
+		14 = { "%dya Polk Tyla." }
+		15 = { "%dya Polk Tyla" }
+		16 = { "%dya Polk Tyla" }
+		17 = { "%dya Polk Tyla" }
+		18 = { "%dya Polk Tyla." }
+		19 = { "%dya Polk Tyla" }
+		24 = { "%dya Polk Tyla." }
+		25 = { "%dya Polk Tyla." }
+		26 = { "%dya Polk Tyla." }
+		27 = { "%dya Polk Tyla." }
+		28 = { "%dya Polk Tyla." }
+		29 = { "%dya Polk Tyla." }
+		30 = { "%dya Polk Tyla." }
+		31 = { "%dya Polk Tyla." }
+		32 = { "%dya Polk Tyla." }
+		33 = { "%dya Polk Tyla." }
+		34 = { "%dya Polk Tyla." }
+	}
+}
