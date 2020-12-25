@@ -17,4 +17,4 @@ tags={
 	"Map"
 }
 name="East Euro Keg"
-supported_version="1.10.1"
+supported_version="1.10.*"
