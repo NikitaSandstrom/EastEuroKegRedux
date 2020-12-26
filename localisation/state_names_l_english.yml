@@ -758,7 +758,6 @@
  STATE_763:0 "Königsberg"
  STATE_764:0 "West Banat"
  STATE_765:0 "Qatar"
- STATE_766:0 "Cetatea Albă"
  STATE_767:0 "North Darfur"
  STATE_768:0 "Rwanda"
  STATE_769:0 "Burundi"
@@ -811,3 +810,20 @@
  STATE_228:1 "Lugansk"
  STATE_811:0 "Kostroma"
  STATE_812:0 "Chukloma"
+
+ ## WEST RUTHENIA STATE RENAMES ##
+ STATE_202:1 "Kyiv"
+ STATE_226:1 "Yekaterinoslav"
+ STATE_199:1 "Proskurov"
+ STATE_193:0 "Chernihiv"
+
+ ## EAST RUTHENIA STATE RENAMES ##
+ STATE_200:1 "Aleksandrovsk"
+ STATE_227:1 "Yuzovka"
+ STATE_228:1 "Lugansk"
+ 
+ ## Odessan State names ##
+ STATE_766:0 "Rasseika"
+
+ ##MFC##
+ STATE_400:0 "Vyatka"

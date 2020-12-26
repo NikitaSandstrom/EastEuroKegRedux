@@ -712,8 +712,8 @@ SHL = {
 # NEW MODDED NATIONS #
 
 KYI = {
-	color = rgb { 152 82 91 }
-	color_ui = rgb { 152 82 91 }
+	color = rgb { 239 211 50 }
+	color_ui = rgb { 165 144 26 }
 }
 
 NOV = {

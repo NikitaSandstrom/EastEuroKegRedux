@@ -33,7 +33,7 @@
 
 SLB_INF_01 = 
 {
-	name = "Infantry Divisions"
+	name = "Striletska Dyvisia"
 
 	for_countries = { SLB }
 
@@ -81,7 +81,7 @@ SLB_INF_01 =
 
 SLB_CAV_01 = 
 {
-	name = "Cavalry Divisions"
+	name = "Kavaleriyska Dyvisia"
 
 	for_countries = { SLB }
 
