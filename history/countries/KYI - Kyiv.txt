@@ -7,16 +7,16 @@
 set_convoys = 5
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 4
-	fascism = 0
-	communism = 1
-	neutrality = 95
+	democratic = 95
+	fascism = 1
+	communism = 0
+	neutrality = 4
 }
 
 create_country_leader = {
