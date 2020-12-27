@@ -1,0 +1,126 @@
+﻿division_template = {
+	name = "Strylieckaja Dziviziya"	# represents first part of enlarged divisions
+	division_names_group = WRU_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Kavalieryjskaja Dziviziya"
+	division_names_group = WRU_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11370
+		division_template = "Strylieckaja Dziviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9289
+		division_template = "Strylieckaja Dziviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11241 
+		division_template = "Strylieckaja Dziviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 6249 
+		division_template = "Strylieckaja Dziviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 6232 
+		division_template = "Strylieckaja Dziviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9288 
+		division_template = "Kavalieryjskaja Dziviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9247
+		division_template = "Kavalieryjskaja Dziviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 3350 
+		division_template = "Kavalieryjskaja Dziviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "WRU"
+		}
+		requested_factories = 3
+		progress = 0.7
+		efficiency = 100
+	}
+}

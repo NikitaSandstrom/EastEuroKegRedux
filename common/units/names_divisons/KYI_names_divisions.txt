@@ -33,7 +33,7 @@
 
 KYI_INF_01 = 
 {
-	name = "Striletska Dyvisia"
+	name = "Infantry Divisions"
 
 	for_countries = { KYI }
 
@@ -81,7 +81,7 @@ KYI_INF_01 =
 
 KYI_CAV_01 = 
 {
-	name = "Kavaleriyska Dyvisia"
+	name = "Cavalry Divisions"
 
 	for_countries = { KYI }
 
