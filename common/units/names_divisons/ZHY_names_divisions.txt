@@ -75,7 +75,6 @@ ZHY_INF_01 =
 		23 = { "%s Infantri Divizhan" }
 		24 = { "%s Infantri Divizhan" }
 		25 = { "%s Infantri Divizhan" }
-
 	}
 }
 
@@ -108,7 +107,6 @@ ZHY_CAV_01 =
 		8 = { "%s Kavalri Divizhan" }
 		9 = { "%s Kavalri Divizhan" }
 		10 = { "%s Kavalri Divizhan" }
-
 	}
 }
 
@@ -156,7 +154,6 @@ ZHY_MOT_01 =
 		23 = { "%s Motorized Divizhan" }
 		24 = { "%s Motorized Divizhan" }
 		25 = { "%s Motorized Divizhan" }
-
 	}
 }
 
@@ -189,7 +186,6 @@ ZHY_ARM_01 =
 		8 = { "%s Tank Divizhan" }
 		9 = { "%s Tank Divizhan" }
 		10 = { "%s Tank Divizhan" }
-
 	}
 }
 
@@ -237,7 +233,6 @@ ZHY_MEC_01 =
 		23 = { "%s Motorized Divizhan" }
 		24 = { "%s Motorized Divizhan" }
 		25 = { "%s Motorized Divizhan" }
-
 	}
 }
 
@@ -285,7 +280,6 @@ ZHY_GAR_01 =
 		23 = { "%s Vakh Divizhan" }
 		24 = { "%s Vakh Divizhan" }
 		25 = { "%s Vakh Divizhan" }
-
 	}
 }
 
@@ -318,7 +312,6 @@ ZHY_MAR_01 =
 		8 = { "%s Marine Divizhan" }
 		9 = { "%s Marine Divizhan" }
 		10 = { "%s Marine Divizhan" }
-
 	}
 }
 
@@ -351,7 +344,6 @@ ZHY_MTN_01 =
 		8 = { "%s Bargyeger Divizhan" }
 		9 = { "%s Bargyeger Divizhan" }
 		10 = { "%s Bargyeger Divizhan" }
-
 	}
 }
 
@@ -384,6 +376,5 @@ ZHY_PAR_01 =
 		8 = { "%s Erborn Divizhan" }
 		9 = { "%s Erborn Divizhan" }
 		10 = { "%s Erborn Divizhan" }
-
 	}
 }

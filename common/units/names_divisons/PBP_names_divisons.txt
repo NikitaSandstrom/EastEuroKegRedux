@@ -75,7 +75,6 @@ PBP_INF_01 =
 		23 = { "%da Strylieckaja Dziv." }
 		24 = { "%da Strylieckaja Dziv." }
 		25 = { "%da Strylieckaja Dziv." }
-
 	}
 }
 
@@ -108,7 +107,6 @@ PBP_CAV_01 =
 		8 = { "%da Kavalieryjskaja Dziv." }
 		9 = { "%da Kavalieryjskaja Dziv." }
 		10 = { "%da Kavalieryjskaja Dziv." }
-
 	}
 }
 
@@ -156,7 +154,6 @@ PBP_MOT_01 =
 		23 = { "%da Mataryzavana Dziv." }
 		24 = { "%da Mataryzavana Dziv." }
 		25 = { "%da Mataryzavana Dziv." }
-
 	}
 }
 
@@ -189,7 +186,6 @@ PBP_ARM_01 =
 		8 = { "%da Tankavaja Dziv." }
 		9 = { "%da Tankavaja Dziv." }
 		10 = { "%da Tankavaja Dziv." }
-
 	}
 }
 
@@ -237,7 +233,6 @@ PBP_MEC_01 =
 		23 = { "%da Miechanizavanaja Dziv." }
 		24 = { "%da Miechanizavanaja Dziv." }
 		25 = { "%da Miechanizavanaja Dziv." }
-
 	}
 }
 
@@ -285,7 +280,6 @@ PBP_GAR_01 =
 		23 = { "%da Achoŭnaja Dziv." }
 		24 = { "%da Achoŭnaja Dziv." }
 		25 = { "%da Achoŭnaja Dziv." }
-
 	}
 }
 
@@ -318,7 +312,6 @@ PBP_MAR_01 =
 		8 = { "%da Marski Dziv." }
 		9 = { "%da Marski Dziv." }
 		10 = { "%da Marski Dziv." }
-
 	}
 }
 
@@ -351,7 +344,6 @@ PBP_MTN_01 =
 		8 = { "%da Hornaja Dziv." }
 		9 = { "%da Hornaja Dziv." }
 		10 = { "%da Hornaja Dziv." }
-
 	}
 }
 
@@ -384,6 +376,5 @@ PBP_PAR_01 =
 		8 = { "%da Pavietrana-Desantnaja Dziv." }
 		9 = { "%da Pavietrana-Desantnaja Dziv." }
 		10 = { "%da Pavietrana-Desantnaja Dziv." }
-
 	}
 }
