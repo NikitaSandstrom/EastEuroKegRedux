@@ -75,7 +75,6 @@ PUP_INF_01 =
 		23 = { "%da Striletska Div." }
 		24 = { "%da Striletska Div." }
 		25 = { "%da Striletska Div." }
-
 	}
 }
 
@@ -108,7 +107,6 @@ PUP_CAV_01 =
 		8 = { "%da Kavaleriyskaya Div." }
 		9 = { "%da Kavaleriyskaya Div." }
 		10 = { "%da Kavaleriyskaya Div." }
-
 	}
 }
 
@@ -156,7 +154,6 @@ PUP_MOT_01 =
 		23 = { "%da Motoryzovona Div." }
 		24 = { "%da Motoryzovona Div." }
 		25 = { "%da Motoryzovona Div." }
-
 	}
 }
 
@@ -189,7 +186,6 @@ PUP_ARM_01 =
 		8 = { "%da Pancerna Div." }
 		9 = { "%da Pancerna Div." }
 		10 = { "%da Pancerna Div." }
-
 	}
 }
 
@@ -237,7 +233,6 @@ PUP_MEC_01 =
 		23 = { "%da Motostriletska Div." }
 		24 = { "%da Motostriletska Div." }
 		25 = { "%da Motostriletska Div." }
-
 	}
 }
 
@@ -285,7 +280,6 @@ PUP_GAR_01 =
 		23 = { "%da Wachtowa Div." }
 		24 = { "%da Wachtowa Div." }
 		25 = { "%da Wachtowa Div." }
-
 	}
 }
 
@@ -318,7 +312,6 @@ PUP_MAR_01 =
 		8 = { "%da Div. Morskoyi Pikhoty" }
 		9 = { "%da Div. Morskoyi Pikhoty" }
 		10 = { "%da Div. Morskoyi Pikhoty" }
-
 	}
 }
 
@@ -351,7 +344,6 @@ PUP_MTN_01 =
 		8 = { "%da Yegerskaya Div." }
 		9 = { "%da Yegerskaya Div." }
 		10 = { "%da Yegerskaya Div." }
-
 	}
 }
 
@@ -384,6 +376,5 @@ PUP_PAR_01 =
 		8 = { "%da Desantno-Shturmova Div." }
 		9 = { "%da Desantno-Shturmova Div." }
 		10 = { "%da Desantno-Shturmova Div." }
-
 	}
 }
