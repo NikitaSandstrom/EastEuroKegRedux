@@ -75,7 +75,6 @@ TAT_INF_01 =
 		23 = { "%s Pehota Divizayse" }
 		24 = { "%s Pehota Divizayse" }
 		25 = { "%s Pehota Divizayse" }
-
 	}
 }
 
@@ -108,7 +107,6 @@ TAT_CAV_01 =
 		8 = { "%s Kavaleryi Divizayse" }
 		9 = { "%s Kavaleryi Divizayse" }
 		10 = { "%s Kavaleryi Divizayse" }
-
 	}
 }
 
@@ -156,7 +154,6 @@ TAT_MOT_01 =
 		23 = { "%s Motorly Divizayse" }
 		24 = { "%s Motorly Divizayse" }
 		25 = { "%s Motorly Divizayse" }
-
 	}
 }
 
@@ -189,7 +186,6 @@ TAT_ARM_01 =
 		8 = { "%s Tank Divizayse" }
 		9 = { "%s Tank Divizayse" }
 		10 = { "%s Tank Divizayse" }
-
 	}
 }
 
@@ -237,7 +233,6 @@ TAT_MEC_01 =
 		23 = { "%s Mekhanikashtyrlan Divizayse" }
 		24 = { "%s Mekhanikashtyrlan Divizayse" }
 		25 = { "%s Mekhanikashtyrlan Divizayse" }
-
 	}
 }
 
@@ -285,7 +280,6 @@ TAT_GAR_01 =
 		23 = { "%s Skachy Divizayse" }
 		24 = { "%s Skachy Divizayse" }
 		25 = { "%s Skachy Divizayse" }
-
 	}
 }
 
@@ -318,7 +312,6 @@ TAT_MAR_01 =
 		8 = { "%s Dyngez Divizayse" }
 		9 = { "%s Dyngez Divizayse" }
 		10 = { "%s Dyngez Divizayse" }
-
 	}
 }
 
@@ -351,7 +344,6 @@ TAT_MTN_01 =
 		8 = { "%s Tay Divizayse" }
 		9 = { "%s Tay Divizayse" }
 		10 = { "%s Tay Divizayse" }
-
 	}
 }
 
@@ -384,6 +376,5 @@ TAT_PAR_01 =
 		8 = { "%s Desantchy Divizayse" }
 		9 = { "%s Desantchy Divizayse" }
 		10 = { "%s Desantchy Divizayse" }
-
 	}
 }
