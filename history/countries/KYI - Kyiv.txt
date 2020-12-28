@@ -33,7 +33,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Mykola Skrypnyk"
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+	picture = "gfx/leaders/KYI/Portrait_Kyiv_Mykola_Skrypnyk.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -44,7 +44,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Dmytro Dontsov"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/KYI/Portrait_Kyiv_Dmytro_Dontsov.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
