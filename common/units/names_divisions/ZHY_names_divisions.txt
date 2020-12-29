@@ -1,0 +1,380 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+ZHY_INF_01 = 
+{
+	name = "Infantry Divisions"
+
+	for_countries = { ZHY }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ZHY_GAR_01 }
+
+	fallback_name = "%s Infantri Divizhan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%s Infantri Divizhan" }
+		2 = { "%s Infantri Divizhan" }
+		3 = { "%s Infantri Divizhan" }
+		4 = { "%s Infantri Divizhan" }
+		5 = { "%s Infantri Divizhan" }
+		6 = { "%s Infantri Divizhan" }
+		7 = { "%s Infantri Divizhan" }
+		8 = { "%s Infantri Divizhan" }
+		9 = { "%s Infantri Divizhan" }
+		10 = { "%s Infantri Divizhan" }
+		11 = { "%s Infantri Divizhan" }
+		12 = { "%s Infantri Divizhan" }
+		13 = { "%s Infantri Divizhan" }
+		14 = { "%s Infantri Divizhan" }
+		15 = { "%s Infantri Divizhan" }
+		16 = { "%s Infantri Divizhan" }
+		17 = { "%s Infantri Divizhan" }
+		18 = { "%s Infantri Divizhan" }
+		19 = { "%s Infantri Divizhan" }
+		20 = { "%s Infantri Divizhan" }
+		21 = { "%s Infantri Divizhan" }
+		22 = { "%s Infantri Divizhan" }
+		23 = { "%s Infantri Divizhan" }
+		24 = { "%s Infantri Divizhan" }
+		25 = { "%s Infantri Divizhan" }
+	}
+}
+
+ZHY_CAV_01 = 
+{
+	name = "Cavalry Divisions"
+
+	for_countries = { ZHY }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ZHY_INF_01 }
+
+	fallback_name = "%s Kavalri Divizhan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%s Kavalri Divizhan" }
+		2 = { "%s Kavalri Divizhan" }
+		3 = { "%s Kavalri Divizhan" }
+		4 = { "%s Kavalri Divizhan" }
+		5 = { "%s Kavalri Divizhan" }
+		6 = { "%s Kavalri Divizhan" }
+		7 = { "%s Kavalri Divizhan" }
+		8 = { "%s Kavalri Divizhan" }
+		9 = { "%s Kavalri Divizhan" }
+		10 = { "%s Kavalri Divizhan" }
+	}
+}
+
+ZHY_MOT_01 = 
+{
+	name = "Motorised Divisions"
+
+	for_countries = { ZHY }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { ZHY_INF_01 }
+
+	fallback_name = "%s Motorized Divizhan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%s Motorized Divizhan" }
+		2 = { "%s Motorized Divizhan" }
+		3 = { "%s Motorized Divizhan" }
+		4 = { "%s Motorized Divizhan" }
+		5 = { "%s Motorized Divizhan" }
+		6 = { "%s Motorized Divizhan" }
+		7 = { "%s Motorized Divizhan" }
+		8 = { "%s Motorized Divizhan" }
+		9 = { "%s Motorized Divizhan" }
+		10 = { "%s Motorized Divizhan" }
+		11 = { "%s Motorized Divizhan" }
+		12 = { "%s Motorized Divizhan" }
+		13 = { "%s Motorized Divizhan" }
+		14 = { "%s Motorized Divizhan" }
+		15 = { "%s Motorized Divizhan" }
+		16 = { "%s Motorized Divizhan" }
+		17 = { "%s Motorized Divizhan" }
+		18 = { "%s Motorized Divizhan" }
+		19 = { "%s Motorized Divizhan" }
+		20 = { "%s Motorized Divizhan" }
+		21 = { "%s Motorized Divizhan" }
+		22 = { "%s Motorized Divizhan" }
+		23 = { "%s Motorized Divizhan" }
+		24 = { "%s Motorized Divizhan" }
+		25 = { "%s Motorized Divizhan" }
+	}
+}
+
+ZHY_ARM_01 = 
+{
+	name = "Armored Divisions"
+
+	for_countries = { ZHY }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ZHY_INF_01 }
+
+	fallback_name = "%s Tank Divizhan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%s Tank Divizhan" }
+		2 = { "%s Tank Divizhan" }
+		3 = { "%s Tank Divizhan" }
+		4 = { "%s Tank Divizhan" }
+		5 = { "%s Tank Divizhan" }
+		6 = { "%s Tank Divizhan" }
+		7 = { "%s Tank Divizhan" }
+		8 = { "%s Tank Divizhan" }
+		9 = { "%s Tank Divizhan" }
+		10 = { "%s Tank Divizhan" }
+	}
+}
+
+ZHY_MEC_01 = 
+{
+	name = "Mechanized Divisions"
+
+	for_countries = { ZHY }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized"  }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { ZHY_INF_01 }
+
+	fallback_name = "%s Motorized Divizhan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%s Motorized Divizhan" }
+		2 = { "%s Motorized Divizhan" }
+		3 = { "%s Motorized Divizhan" }
+		4 = { "%s Motorized Divizhan" }
+		5 = { "%s Motorized Divizhan" }
+		6 = { "%s Motorized Divizhan" }
+		7 = { "%s Motorized Divizhan" }
+		8 = { "%s Motorized Divizhan" }
+		9 = { "%s Motorized Divizhan" }
+		10 = { "%s Motorized Divizhan" }
+		11 = { "%s Motorized Divizhan" }
+		12 = { "%s Motorized Divizhan" }
+		13 = { "%s Motorized Divizhan" }
+		14 = { "%s Motorized Divizhan" }
+		15 = { "%s Motorized Divizhan" }
+		16 = { "%s Motorized Divizhan" }
+		17 = { "%s Motorized Divizhan" }
+		18 = { "%s Motorized Divizhan" }
+		19 = { "%s Motorized Divizhan" }
+		20 = { "%s Motorized Divizhan" }
+		21 = { "%s Motorized Divizhan" }
+		22 = { "%s Motorized Divizhan" }
+		23 = { "%s Motorized Divizhan" }
+		24 = { "%s Motorized Divizhan" }
+		25 = { "%s Motorized Divizhan" }
+	}
+}
+
+ZHY_GAR_01 = 
+{
+	name = "Garrison Divisions"
+
+	for_countries = { ZHY }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { ZHY_INF_01 }
+
+	fallback_name = "%s Vakh Divizhan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%s Vakh Divizhan" }
+		2 = { "%s Vakh Divizhan" }
+		3 = { "%s Vakh Divizhan" }
+		4 = { "%s Vakh Divizhan" }
+		5 = { "%s Vakh Divizhan" }
+		6 = { "%s Vakh Divizhan" }
+		7 = { "%s Vakh Divizhan" }
+		8 = { "%s Vakh Divizhan" }
+		9 = { "%s Vakh Divizhan" }
+		10 = { "%s Vakh Divizhan" }
+		11 = { "%s Vakh Divizhan" }
+		12 = { "%s Vakh Divizhan" }
+		13 = { "%s Vakh Divizhan" }
+		14 = { "%s Vakh Divizhan" }
+		15 = { "%s Vakh Divizhan" }
+		16 = { "%s Vakh Divizhan" }
+		17 = { "%s Vakh Divizhan" }
+		18 = { "%s Vakh Divizhan" }
+		19 = { "%s Vakh Divizhan" }
+		20 = { "%s Vakh Divizhan" }
+		21 = { "%s Vakh Divizhan" }
+		22 = { "%s Vakh Divizhan" }
+		23 = { "%s Vakh Divizhan" }
+		24 = { "%s Vakh Divizhan" }
+		25 = { "%s Vakh Divizhan" }
+	}
+}
+
+ZHY_MAR_01 = 
+{
+	name = "Marine Divisions"
+
+	for_countries = { ZHY }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ZHY_INF_01 }
+
+	fallback_name = "%s Marine Divizhan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%s Marine Divizhan" }
+		2 = { "%s Marine Divizhan" }
+		3 = { "%s Marine Divizhan" }
+		4 = { "%s Marine Divizhan" }
+		5 = { "%s Marine Divizhan" }
+		6 = { "%s Marine Divizhan" }
+		7 = { "%s Marine Divizhan" }
+		8 = { "%s Marine Divizhan" }
+		9 = { "%s Marine Divizhan" }
+		10 = { "%s Marine Divizhan" }
+	}
+}
+
+ZHY_MTN_01 = 
+{
+	name = "Mountain Divisions"
+
+	for_countries = { ZHY }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ZHY_INF_01 }
+
+	fallback_name = "%s Bargyeger Divizhan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%s Bargyeger Divizhan" }
+		2 = { "%s Bargyeger Divizhan" }
+		3 = { "%s Bargyeger Divizhan" }
+		4 = { "%s Bargyeger Divizhan" }
+		5 = { "%s Bargyeger Divizhan" }
+		6 = { "%s Bargyeger Divizhan" }
+		7 = { "%s Bargyeger Divizhan" }
+		8 = { "%s Bargyeger Divizhan" }
+		9 = { "%s Bargyeger Divizhan" }
+		10 = { "%s Bargyeger Divizhan" }
+	}
+}
+
+ZHY_PAR_01 = 
+{
+	name = "Paratrooper Divisions"
+
+	for_countries = { ZHY }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ZHY_INF_01 }
+
+	fallback_name = "%s Erborn Divizhan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%s Erborn Divizhan" }
+		2 = { "%s Erborn Divizhan" }
+		3 = { "%s Erborn Divizhan" }
+		4 = { "%s Erborn Divizhan" }
+		5 = { "%s Erborn Divizhan" }
+		6 = { "%s Erborn Divizhan" }
+		7 = { "%s Erborn Divizhan" }
+		8 = { "%s Erborn Divizhan" }
+		9 = { "%s Erborn Divizhan" }
+		10 = { "%s Erborn Divizhan" }
+	}
+}
