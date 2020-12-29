@@ -32,7 +32,9 @@
 #                                      the current game version.
 LSO_INF_01 = 
 {
+
 	name = "Rifle Divisions"
+
 
 	for_countries = { LSO }
 
@@ -467,7 +469,9 @@ LSO_INF_01 =
 
 LSO_CAV_01 = 
 {
+
 	name = "Cavalry Divisions"
+
 
 	for_countries = { LSO }
 
@@ -591,7 +595,9 @@ LSO_CAV_01 =
 
 LSO_MOT_01 = 
 {
+
 	name = "Motor Rifle Divisions"
+
 
 	for_countries = { LSO }
 
@@ -696,7 +702,9 @@ LSO_MEC_01 =
 
 LSO_ARM_01 = 
 {
+
 	name = "Tank Divisions"
+
 
 	for_countries = { LSO }
 
@@ -789,7 +797,9 @@ LSO_ARM_01 =
 
 LSO_PAR_01 = 
 {
+
 	name = "Paratrooper Divisions"
+
 
 	for_countries = { LSO }
 
@@ -840,7 +850,9 @@ LSO_PAR_01 =
 
 LSO_MAR_01 = 
 {
+
 	name = "Marine Divisions"
+
 
 	for_countries = { LSO }
 
@@ -872,7 +884,9 @@ LSO_MAR_01 =
 
 LSO_MNT_01 = 
 {
+
 	name = "Mountain Rifle Divisions"
+
 
 	for_countries = { LSO }
 
@@ -901,7 +915,9 @@ LSO_MNT_01 =
 
 LSO_GAR_01 = 
 {
+
 	name = "Garrison Regiments"
+
 
 	for_countries = { LSO }
 
@@ -912,12 +928,15 @@ LSO_GAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { LSO_INF_01 }
 
+
 	fallback_name = "%diy Polk Cheky"
+
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
+
 		1 = { "%diy Polk Cheky" }
 		2 = { "%diy Polk Cheky" }
 		3 = { "%diy Polk Cheky" }
@@ -948,5 +967,6 @@ LSO_GAR_01 =
 		32 = { "%diy Polk Cheky" }
 		33 = { "%diy Polk Cheky" }
 		34 = { "%diy Polk Cheky" }
+
 	}
 }
