@@ -32,7 +32,7 @@
 #                                      the current game version.
 NOV_INF_01 = 
 {
-	name = "Rifle Division"
+	name = "Rifle Divisions"
 
 	for_countries = { NOV }
 
@@ -467,7 +467,7 @@ NOV_INF_01 =
 
 NOV_CAV_01 = 
 {
-	name = "Cavalry Division"
+	name = "Cavalry Divisions"
 
 	for_countries = { NOV }
 
@@ -591,7 +591,7 @@ NOV_CAV_01 =
 
 NOV_MOT_01 = 
 {
-	name = "Motor Rifle Division"
+	name = "Motor Rifle Divisions"
 
 	for_countries = { NOV }
 
@@ -631,7 +631,6 @@ NOV_MOT_01 =
 		221 = { "%dya Motostrelkovaya Diviziya" }
 		236 = { "%dya Motostrelkovaya Diviziya" }
 		239 = { "%dya Motostrelkovaya Diviziya" }
-		801 = { "%OMSDON 'Dzerzhinskiy' Diviziya" }
 		821 = { "21ya Motostrelkovaya Diviziya" }
 		822 = { "22ya Motostrelkovaya Diviziya" }
 		823 = { "23ya Motostrelkovaya Diviziya" }
@@ -696,7 +695,7 @@ NOV_MEC_01 =
 
 NOV_ARM_01 = 
 {
-	name = "Tank Division"
+	name = "Tank Divisions"
 
 	for_countries = { NOV }
 
@@ -789,7 +788,7 @@ NOV_ARM_01 =
 
 NOV_PAR_01 = 
 {
-	name = "Paratrooper Division"
+	name = "Paratrooper Divisions"
 
 	for_countries = { NOV }
 
@@ -840,7 +839,7 @@ NOV_PAR_01 =
 
 NOV_MAR_01 = 
 {
-	name = "Marine Division"
+	name = "Marine Divisions"
 
 	for_countries = { NOV }
 
@@ -872,7 +871,7 @@ NOV_MAR_01 =
 
 NOV_MNT_01 = 
 {
-	name = "Mountain Rifle Division"
+	name = "Mountain Rifle Divisions"
 
 	for_countries = { NOV }
 
@@ -901,7 +900,7 @@ NOV_MNT_01 =
 
 NOV_GAR_01 = 
 {
-	name = "Garrison Division"
+	name = "Garrison Regiments"
 
 	for_countries = { NOV }
 
@@ -912,41 +911,41 @@ NOV_GAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { NOV_INF_01 }
 
-	fallback_name = "%dya Polk Tyla"
+	fallback_name = "%diy Polk Tyla"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dya Polk Tyla" }
-		2 = { "%dya Polk Tyla." }
-		3 = { "%dya Polk Tyla" }
-		4 = { "%dya Polk Tyla" }
-		5 = { "%dya Polk Tyla" }
-		6 = { "%dya Polk Tyla" }
-		7 = { "%dya Polk Tyla" }
-		8 = { "%dya Polk Tyla" }
-		9 = { "%dya Polk Tyla" }
-		10 = { "%dya Polk Tyla" }
-		11 = { "%dya Polk Tyla" }
-		12 = { "%dya Polk Tyla" }
-		13 = { "%dya Polk Tyla" }
-		14 = { "%dya Polk Tyla." }
-		15 = { "%dya Polk Tyla" }
-		16 = { "%dya Polk Tyla" }
-		17 = { "%dya Polk Tyla" }
-		18 = { "%dya Polk Tyla." }
-		19 = { "%dya Polk Tyla" }
-		24 = { "%dya Polk Tyla." }
-		25 = { "%dya Polk Tyla." }
-		26 = { "%dya Polk Tyla." }
-		27 = { "%dya Polk Tyla." }
-		28 = { "%dya Polk Tyla." }
-		29 = { "%dya Polk Tyla." }
-		30 = { "%dya Polk Tyla." }
-		31 = { "%dya Polk Tyla." }
-		32 = { "%dya Polk Tyla." }
-		33 = { "%dya Polk Tyla." }
-		34 = { "%dya Polk Tyla." }
+		1 = { "%diy Polk Tyla" }
+		2 = { "%diy Polk Tyla" }
+		3 = { "%diy Polk Tyla" }
+		4 = { "%diy Polk Tyla" }
+		5 = { "%diy Polk Tyla" }
+		6 = { "%diy Polk Tyla" }
+		7 = { "%diy Polk Tyla" }
+		8 = { "%diy Polk Tyla" }
+		9 = { "%diy Polk Tyla" }
+		10 = { "%diy Polk Tyla" }
+		11 = { "%diy Polk Tyla" }
+		12 = { "%diy Polk Tyla" }
+		13 = { "%diy Polk Tyla" }
+		14 = { "%diy Polk Tyla" }
+		15 = { "%diy Polk Tyla" }
+		16 = { "%diy Polk Tyla" }
+		17 = { "%diy Polk Tyla" }
+		18 = { "%diy Polk Tyla" }
+		19 = { "%diy Polk Tyla" }
+		24 = { "%diy Polk Tyla" }
+		25 = { "%diy Polk Tyla" }
+		26 = { "%diy Polk Tyla" }
+		27 = { "%diy Polk Tyla" }
+		28 = { "%diy Polk Tyla" }
+		29 = { "%diy Polk Tyla" }
+		30 = { "%diy Polk Tyla" }
+		31 = { "%diy Polk Tyla" }
+		32 = { "%diy Polk Tyla" }
+		33 = { "%diy Polk Tyla" }
+		34 = { "%diy Polk Tyla" }
 	}
 }

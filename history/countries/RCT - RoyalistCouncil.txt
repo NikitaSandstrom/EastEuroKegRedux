@@ -1,6 +1,6 @@
 ﻿capital = 217
 
-#oob = ""
+oob = "RCT_1936"
 
 # Starting tech
 
