@@ -1,6 +1,6 @@
 ﻿capital = 219
 
-#oob = ""
+oob = "MFC_1936"
 
 # Starting tech
 set_technology = {
