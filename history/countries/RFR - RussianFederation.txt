@@ -10,7 +10,7 @@ set_technology = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -57,7 +57,7 @@ create_country_leader = {
 
 create_country_leader = {
 	
-	name = "Alexander Kolchak" #Reminder to change title to Tsarina after taking power
+	name = "Alexander Kolchak"
 	picture = "gfx/leaders/RFR/Portrait_Russia_Alexander_Kolchak.dds"
 	expire = "1965.1.1"
 	ideology = despotism
