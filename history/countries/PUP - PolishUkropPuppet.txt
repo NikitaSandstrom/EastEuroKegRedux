@@ -4,7 +4,6 @@
 
 # Starting tech
 set_technology = {
-set_technology = {
 	infantry_weapons = 1
 }
 
