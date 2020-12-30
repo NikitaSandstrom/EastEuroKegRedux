@@ -24,7 +24,7 @@ set_popularities = {
 create_country_leader = {
 	
 	name = "Oleksandr Oles"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	picture = "gfx/leaders/SLB/Portrait_Sloboda_Oleksandr_Oles.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -35,7 +35,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Viktor Aleksandryuk"
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+	picture = "gfx/leaders/SLB/Portrait_Sloboda_Viktor_Aleksandryuk.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -46,7 +46,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Andriy Vovk"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/SLB/Portrait_Sloboda_Andriy_Vovk.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -57,7 +57,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Mykhailo Tereshenko" 
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "gfx/leaders/SLB/Portrait_Sloboda_Mykhailo_Tereshenko.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {

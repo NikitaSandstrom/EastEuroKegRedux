@@ -36,7 +36,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Sergei Kirov"
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+	picture = "gfx/leaders/LSO/Portrait_Leningrad_Sergei_Kirov.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -47,7 +47,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Lev Okhotin"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/LSO/Portrait_Leningrad_Lev_Okhotin.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -58,7 +58,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Grand Duke Michael Alexandrovich" 
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "gfx/leaders/LSO/Portrait_Leningrad_Michael_Alexandrovich.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
