@@ -4617,21 +4617,21 @@ RFR = {
 	surnames = { 
 		Andreyev Ivanov Chuvanskiy Glukhov Dvorkovich Abakumov Antonov Stepanov Chumov Zhydov Zhanov Frolov Kasyanov Nazarov Shertsov Bezborodov Kudrin Suchkov Blokov Katsapov Kudrin Blokhin Konyashev
 	}
-	callsigns = { Burya Sokol Gurman Fitil Forel' Karas' Konsul Kristalik Topol' Zaliv }
+	callsigns = { Burya Sokol Gurman Fitil Forel' Karas' Konsul Kristalik Topol' Zaliv Medved }
 }
 ZHY = {
 	male = {
 		names = { 
-			Rafe Arye Abe Barak Jabin Jomar Joey Tabor Channan Jordi Jedi Etan Yonatan Dovid Javan Yakov Meir Jopi Jared Jud Axel Yizhtak 
+			Rafe Arye Abe Barak Jabin Jomar Joey Tabor Channan Jordi Jedi Etan Yonatan Dovid Javan Yakov Meir Jopi Jared Jud Axel Yizhtak Alexei Oleg Roman Semyom Sergei Yuri Vlad Valery Andriy Danylo Stepan Yosyp Iosif Bogdan Oleksy Zhyopnik
 		}
 	}
 	female = {
-		names = { Galila Golda Liat Aviva Miriam }
+		names = { Galila Golda Liat Aviva Miriam Lara Natalya Natasha }
 	}
 	surnames = { 
-		Steinberg Goldberg Meir Backer Feldshush Sandler Lichtman Spiegel Liss Leowe Persky Katz Pick Okin Grossman Rivkin
+		Steinberg Goldberg Meir Backer Feldshush Sandler Lichtman Spiegel Liss Leowe Persky Katz Pick Okin Grossman Rivkin Andreyev Ivanov Chuvanskiy Glukhov Dvorkovich Abakumov Antonov Stepanov Chumov Zhydov Zhanov Frolov Kasyanov Nazarov Shertsov Bezborodov Kudrin Suchkov Blokov Katsapov Kudrin Blokhin Konyashev Pavlenko Kostenko Stolichny
 	}
-	callsigns = { Zhyd Tsygan Kaufman Barman Inzheneir Alkoholiker }
+	callsigns = { Zhyd Tsygan Kaufman Barman Inzheneir Alkoholiker Stolya Zhyop Samogon Osel }
 }
 SLB = {
 	male = {
@@ -4645,7 +4645,7 @@ SLB = {
 	surnames = { 
 		Panchenko Derevyanenko Ivanenko Kovalenko Bondarenko Tkachuk Tkachenko Zhytov Pavlenko Boyko Shevchuk Kovalchuk Shvets Mazur Klymenko Kostenko Kozak Popov Kulyk Marchuk Yatsenko
 	}
-	callsigns = { Kalyna Homin Popelushka Salo Kaban Poet Rukavychka Yeger Vchytel }
+	callsigns = { Kalyna Homin Popelushka Salo Kaban Poet Rukavychka Yeger Vchytel Samohon Ukrop }
 }
 KYI = {
 	male = {
@@ -4659,7 +4659,7 @@ KYI = {
 	surnames = { 
 		Panchenko Derevyanenko Ivanenko Kovalenko Bondarenko Tkachuk Tkachenko Zhytov Pavlenko Boyko Shevchuk Kovalchuk Shvets Mazur Klymenko Kostenko Kozak Popov Kulyk Marchuk Yatsenko
 	}
-	callsigns = { Kalyna Homin Popelushka Salo Kaban Poet Rukavychka Yeger Vchytel }
+	callsigns = { Kalyna Homin Popelushka Salo Kaban Poet Rukavychka Yeger Vchytel}
 }
 PUP = {
 	male = {
@@ -4702,4 +4702,28 @@ PBP = {
 		Kryčceǔski Hryc Kopysski Zablocki Rahula Navumčyk Žylinski Kupala Platonaǔ Yakovenko Kipel Cierashkovich Yaroš Kraǔčanka Karski Kupava Jermalovič Siarhiejeǔ Taraškievič
 	}
 	callsigns = { Lazavik Dzedka Žycień Zlydzens Zheuzhyk Joŭnik Shatan }
+}
+
+TAT = {
+	male = {
+		names = { 
+			Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
+            Giorgi Grigoriy Igor Ilya Ivan Kirill Konstantin Leonid Lev Maxim 
+            Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei 
+            Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri
+			Abuzar Airat Aizat Akhat Akhmat Almaz Biktimir Cihansha Damir Diyar
+			Fanur Galim Ildus Ilfat Irek Iskhak Khaydar Marsel Mintimer Narat Nigmat
+			Radiy Rif Rishat Sayet Solayman Timer Timerkotlyk Vakhit Zagip Zofar  
+		}
+	}
+	female = {
+		names = {
+			Jelena Ludmila Ella Svetlana Margarita Elena Natalya Lydia Valentina Olga Alexandra Sofia Albina
+			Aizat Alfira Ence Firdausa Flyura Galiya Gulija Ilnara Kailya Lyalya Nurdzhamal Rezeda
+		}
+	}
+	surnames = { 
+		Andreyev Ivanov Chuvanskiy Glukhov Dvorkovich Abakumov Antonov Stepanov Chumov Zhydov Zhanov Frolov Kasyanov Nazarov Shertsov Bezborodov Kudrin Suchkov Blokov Katsapov Kudrin Blokhin Konyashev
+	}
+	callsigns = { Burya Sokol Gurman Fitil Forel' Karas' Konsul Kristalik Topol' Zaliv Kalyna Homin Popelushka Kaban Poet Rukavychka Yeger Vchytel }
 }
