@@ -16,5 +16,8 @@ tags={
 	"Military"
 	"Map"
 }
+
+replace_path = "gfx/loadingscreens"
+
 name="East Euro Keg"
-supported_version="1.10.1"
+supported_version="1.10.*"

@@ -32,7 +32,9 @@
 #                                      the current game version.
 RFR_INF_01 = 
 {
+
 	name = "Rifle Divisions"
+
 
 	for_countries = { RFR }
 
@@ -467,7 +469,9 @@ RFR_INF_01 =
 
 RFR_CAV_01 = 
 {
+
 	name = "Cavalry Divisions"
+
 
 	for_countries = { RFR }
 
@@ -591,7 +595,9 @@ RFR_CAV_01 =
 
 RFR_MOT_01 = 
 {
+
 	name = "Motor Rifle Divisions"
+
 
 	for_countries = { RFR }
 
@@ -695,7 +701,9 @@ RFR_MEC_01 =
 
 RFR_ARM_01 = 
 {
+
 	name = "Tank Divisions"
+
 
 	for_countries = { RFR }
 
@@ -788,7 +796,9 @@ RFR_ARM_01 =
 
 RFR_PAR_01 = 
 {
+
 	name = "Paratrooper Divisions"
+
 
 	for_countries = { RFR }
 
@@ -839,7 +849,9 @@ RFR_PAR_01 =
 
 RFR_MAR_01 = 
 {
+
 	name = "Marine Divisions"
+
 
 	for_countries = { RFR }
 
@@ -871,7 +883,9 @@ RFR_MAR_01 =
 
 RFR_MNT_01 = 
 {
+
 	name = "Mountain Rifle Divisions"
+
 
 	for_countries = { RFR }
 
@@ -900,7 +914,9 @@ RFR_MNT_01 =
 
 RFR_GAR_01 = 
 {
+
 	name = "Garrison Regiments"
+
 
 	for_countries = { RFR }
 
@@ -911,12 +927,15 @@ RFR_GAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { RFR_INF_01 }
 
+
 	fallback_name = "%diy Polk Tyla"
+
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
+
 		1 = { "%diy Polk Tyla" }
 		2 = { "%diy Polk Tyla" }
 		3 = { "%diy Polk Tyla" }
@@ -999,5 +1018,6 @@ RFR_GAR_02 =
 		32 = { "%daya Pogranchinaya Zastava" }
 		33 = { "%daya Pogranchinaya Zastava" }
 		34 = { "%daya Pogranchinaya Zastava" }
+
 	}
 }

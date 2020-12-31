@@ -32,7 +32,9 @@
 #                                      the current game version.
 RCT_INF_01 = 
 {
+
 	name = "Rifle Divisions"
+
 
 	for_countries = { RCT }
 
@@ -43,12 +45,15 @@ RCT_INF_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { RCT_INF_01 }
 
+
 	fallback_name = "%dya Diviziya Infanteriyi"
+
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
+
 		5 = { "%dya Diviziya Infanteriyi" }
 		6 = { "%dya Diviziya Infanteriyi" }
 		7 = { "%dya Diviziya Infanteriyi" }
@@ -462,12 +467,15 @@ RCT_INF_01 =
 		472 = { "%dya Diviziya Infanteriyi" }
 		473 = { "%dya Diviziya Infanteriyi" }
 		474 = { "%dya Diviziya Infanteriyi" }
+
 	}
 }
 
 RCT_CAV_01 = 
 {
+
 	name = "Cavalry Divisions"
+
 
 	for_countries = { RCT }
 
@@ -591,7 +599,9 @@ RCT_CAV_01 =
 
 RCT_MOT_01 = 
 {
+
 	name = "Motor Rifle Divisions"
+
 
 	for_countries = { RCT }
 
@@ -602,12 +612,15 @@ RCT_MOT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { RCT_INF_01 }
 
+
 	fallback_name = "%dya Motopehotnaya Diviziya"
+
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
+
 		69 = { "%dya Motopehotnaya Diviziya" }
 		103 = { "%dya Motopehotnaya Diviziya" }
 		109 = { "%dya Motopehotnaya Diviziya" }
@@ -641,6 +654,7 @@ RCT_MOT_01 =
 		808 = { "8ya Motopehotnaya Diviziya" }
 		807 = { "7ya Motopehotnaya Diviziya" }
 		809 = { "9ya Motopehotnaya Diviziya" }
+
 	}
 }
 
@@ -695,7 +709,9 @@ RCT_MEC_01 =
 
 RCT_ARM_01 = 
 {
+
 	name = "Tank Divisions"
+
 
 	for_countries = { RCT }
 
@@ -788,7 +804,9 @@ RCT_ARM_01 =
 
 RCT_PAR_01 = 
 {
+
 	name = "Paratrooper Divisions"
+
 
 	for_countries = { RCT }
 
@@ -839,7 +857,9 @@ RCT_PAR_01 =
 
 RCT_MAR_01 = 
 {
+
 	name = "Marine Divisions"
+
 
 	for_countries = { RCT }
 
@@ -871,7 +891,9 @@ RCT_MAR_01 =
 
 RCT_MNT_01 = 
 {
+
 	name = "Mountain Rifle Divisions"
+
 
 	for_countries = { RCT }
 
@@ -882,12 +904,15 @@ RCT_MNT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { RCT_INF_01 }
 
+
 	fallback_name = "%dya Gornoya Diviziya"
+
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
+
 		79 = { "%dya Gornoya Diviziya" }
 		101 = { "%dya Gornoya Diviziya" }
 		138 = { "%dya Gornoya Diviziya" }
@@ -895,12 +920,15 @@ RCT_MNT_01 =
 		194 = { "%dya Gornoya Diviziya" }
 		232 = { "%dya Gornoya Diviziya" }
 		302 = { "%dya Gornoya Diviziya" }
+
 	}
 }
 
 RCT_GAR_01 = 
 {
+
 	name = "Garrison Regiments"
+
 
 	for_countries = { RCT }
 
@@ -911,12 +939,15 @@ RCT_GAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { RCT_INF_01 }
 
+
 	fallback_name = "%diy Polk Tyla"
+
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
+
 		1 = { "%diy Polk Tyla" }
 		2 = { "%diy Polk Tyla" }
 		3 = { "%diy Polk Tyla" }
@@ -947,5 +978,6 @@ RCT_GAR_01 =
 		32 = { "%diy Polk Tyla" }
 		33 = { "%diy Polk Tyla" }
 		34 = { "%diy Polk Tyla" }
+
 	}
 }
