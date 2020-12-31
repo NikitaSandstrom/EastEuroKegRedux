@@ -31,8 +31,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 8
-			arms_factory = 7
-			industrial_complex = 9
+			arms_factory = 5
+			industrial_complex = 7
 			air_base = 10
 
 		}
