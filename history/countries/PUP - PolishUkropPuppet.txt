@@ -65,3 +65,69 @@ create_country_leader = {
 		#
 	}
 }
+
+create_field_marshal = {
+	name = "Dmytro Kocheryzhko"
+	picture = "Portrait_PolishUkraine_Dmytro_Kocheryzhko.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Mykyta Osyp"
+	picture = "Portrait_PolishUkraine_Mykyta_Osyp.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Myron Tarnavskiy"
+	picture = "Portrait_PolishUkraine_Myron_Tarnavskiy.dds"
+	traits = { infantry_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Arnold Wolf"
+	picture = "Portrait_PolishUkraine_Arnold_Wolf.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Antin Kravs"
+	picture = "Portrait_PolishUkraine_Antin_Kravs.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Antin Korol"
+	picture = "Portrait_PolishUkraine_Antin_Korol.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}

@@ -4678,30 +4678,30 @@ PUP = {
 WRU = {
 	male = {
 		names = { 
-			Radzislaŭ Mitrafan Frantsishak Hryharey Rahvalod Miron Yuray Stafan Bazyl Paval Chaslaŭ Frantsishak Alizar Branislaǔ Hleb Nykyfor Jakaǔ Uladzislaŭ Alhierd Anton 
+			Radzislau Mitrafan Frantsishak Hryharey Rahvalod Miron Yuray Stafan Bazyl Paval Chaslau Frantsishak Alizar Branislau Hleb Nykyfor Jakau Uladzislau Alhierd Anton 
 		}
 	}
 	female = {
-		names = { Bračyslava Kazimira Paŭlina  }
+		names = { Brachyslava Kazimira Paulina  }
 	}
 	surnames = { 
-		Kryčceǔski Hryc Kopysski Zablocki Rahula Navumčyk Žylinski Kupala Platonaǔ Yakovenko Kipel Cierashkovich Yaroš Kraǔčanka Karski Kupava Jermalovič Siarhiejeǔ Taraškievič
+		Krychceuski Hryc Kopysski Zablocki Rahula Navumchyk Zhylinski Kupala Platonau Yakovenko Kipel Cierashkovich Yaroš Krauchanka Karski Kupava Jermalovich Siarhiejeu Taraškievich
 	}
-	callsigns = { Lazavik Dzedka Žycień Zlydzens Zheuzhyk Joŭnik Shatan }
+	callsigns = { Lazavik Dzedka Zhycien Zlydzens Zheuzhyk Jounik Shatan }
 }
 PBP = {
 	male = {
 		names = { 
-			Radzislaŭ Mitrafan Frantsishak Hryharey Rahvalod Miron Yuray Stafan Bazyl Paval Chaslaŭ Frantsishak Alizar Branislaǔ Hleb Nykyfor Jakaǔ Uladzislaŭ Alhierd Anton 
+			Radzislau Mitrafan Frantsishak Hryharey Rahvalod Miron Yuray Stafan Bazyl Paval Chaslau Frantsishak Alizar Branislau Hleb Nykyfor Jakau Uladzislau Alhierd Anton 
 		}
 	}
 	female = {
-		names = { Bračyslava Kazimira Paŭlina  }
+		names = { Brachyslava Kazimira Paulina  }
 	}
 	surnames = { 
-		Kryčceǔski Hryc Kopysski Zablocki Rahula Navumčyk Žylinski Kupala Platonaǔ Yakovenko Kipel Cierashkovich Yaroš Kraǔčanka Karski Kupava Jermalovič Siarhiejeǔ Taraškievič
+		Krychceuski Hryc Kopysski Zablocki Rahula Navumchyk Zhylinski Kupala Platonau Yakovenko Kipel Cierashkovich Yaroš Krauchanka Karski Kupava Jermalovich Siarhiejeu Taraškievich
 	}
-	callsigns = { Lazavik Dzedka Žycień Zlydzens Zheuzhyk Joŭnik Shatan }
+	callsigns = { Lazavik Dzedka Zhycien Zlydzens Zheuzhyk Jounik Shatan }
 }
 
 TAT = {

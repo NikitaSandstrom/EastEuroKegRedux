@@ -64,3 +64,80 @@ create_country_leader = {
 		#
 	}
 }
+
+create_field_marshal = {
+	name = "Rodion Malinovsky"
+	picture = "Portrait_Odessa_Rodion_Malinovsky.dds"
+	traits = { trait_cautious }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Ivan Boldin"
+	picture = "Portrait_Odessa_Ivan_Boldin.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Natan Strayevsky"
+	picture = "Portrait_Odessa_Natan_Stratyevsky.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Rostislav Kushlyanskiy"
+	picture = "Portrait_Odessa_Rostislav_Kushlyanskiy.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Vladimir Govorov"
+	picture = "Portrait_Odessa_Vladimir_Govorov.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Petr de Verayon"
+	picture = "Portrait_Odessa_Petr_de_Verayon.dds"
+	traits = { old_guard_navy }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Nikolai Lunin"
+	picture = "Portrait_Odessa_Nikolai_Lunin.dds"
+	traits = { bold }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
