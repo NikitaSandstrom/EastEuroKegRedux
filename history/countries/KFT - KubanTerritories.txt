@@ -65,3 +65,70 @@ create_country_leader = {
 		#
 	}
 }
+
+create_field_marshal = {
+	name = "Aleksey Kaledin"
+	picture = "Portrait_Kuban_Aleksy_Kaledin_General.dds"
+	traits = { politically_connected }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Afrikan Bogayevsky"
+	picture = "Portrait_Kuban_Afrikan_Bogayevsky.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Abram Dragomirov"
+	picture = "Portrait_Kuban_Abram_Dragomirov"
+	traits = { old_guard }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Konstantin Mamotov"
+	picture = "Portrait_Kuban_Konstantin_Mamotov.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Vyacheslav Naumenko"
+	picture = "Portrait_Kuban_Vyacheslav_Naumenko.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Mikhail Berns"
+	picture = "Portrait_Kuban_Mikhail_Berns.dds"
+	traits = { bold }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 1
+}
+

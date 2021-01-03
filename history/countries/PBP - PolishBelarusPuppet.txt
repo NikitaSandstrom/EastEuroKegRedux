@@ -64,3 +64,69 @@ create_country_leader = {
 		#
 	}
 }
+
+create_field_marshal = {
+	name = "Stanislaw Bulak-Balachowicz"
+	picture = "Portrait_PolishBelarus_Stanislaw_Bulak-Balachowicz.dds"
+	traits = { war_hero trait_reckless }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Wiktor Thommee"
+	picture = "Portrait_PolishBelarus_Wiktor_Thommee.dds"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Alies Harun"
+	picture = "Portrait_PolishBelarus_Alies_Harun.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Paval Zhauryd"
+	picture = "Portrait_PolishBelarus_Paval_Zhauryd.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Vasul Ananych"
+	picture = "Portrait_PolishBelarus_Vasyl_Ananych.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Hrihory Holostyakov"
+	picture = "Portrait_PolishBelarus_Hrihory_Holostyakov.dds"
+	traits = { bold }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
