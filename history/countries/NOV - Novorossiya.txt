@@ -24,7 +24,7 @@ set_popularities = {
 create_country_leader = {
 	
 	name = "Mykola Mikhnovsky"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	picture = "gfx/leaders/NOV/Portrait_Novorossiya_Mykola_Mikhnovsky.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -35,7 +35,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Leonid Brezhnev"
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+	picture = "gfx/leaders/NOV/Portrait_Novorossiya_Leonid_Brezhnev.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -46,7 +46,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Alexander Kutepov"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/NOV/Portrait_Novorossiya_Alexander_Kutepov.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -57,7 +57,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Nestor Makhno" 
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "gfx/leaders/NOV/Portrait_Novorossiya_Nestor_Makhno.dds"
 	expire = "1965.1.1"
 	ideology = anarchism
 	traits = {

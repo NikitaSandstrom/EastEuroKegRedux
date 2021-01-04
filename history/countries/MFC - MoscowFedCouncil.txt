@@ -25,7 +25,7 @@ set_popularities = {
 create_country_leader = {
 	
 	name = "Nikolay Nekrasov"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	picture = "gfx/leaders/MFC/Portrait_Moscow_Nikolay_Nekrasov.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -36,7 +36,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Lev Kamenev"
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+	picture = "gfx/leaders/MFC/Portrait_Moscow_Lev_Kamenev.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -47,7 +47,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Anastasy Vonsiatsky"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/MFC/Portrait_Moscow_Anastasy_Vonsyatsky.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -58,7 +58,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Pavel Milyukov" 
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "gfx/leaders/MFC/Portrait_Moscow_Pavel_Milyukov.dds"
 	expire = "1965.1.1"
 	ideology = moderatism
 	traits = {
