@@ -66,3 +66,101 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Vasiliy Chapayev"
+	picture = "Portrait_Leningrad_Vasiliy_Chapayev.dds"
+	traits = { war_hero }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_field_marshal = {
+	name = "Vladimir Antonov-Ovseyenko"
+	picture = "Portrait_Leningrad_Vladimir_Antonov-Ovseyenko.dds"
+	traits = { politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Iona Yakir"
+	picture = "Portrait_Leningrad_Iona_Yakir.dds"
+	traits = { brilliant_strategist }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Jukums Vacietis"
+	picture = "Portrait_Leningrad_Jukums_Vacietis.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Pavel Lebedyev"
+	picture = "Portrait_Leningrad_Pavel_Lebedyev.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nikolai Podvoisky"
+	picture = "Portrait_Leningrad_Nikolai_Podvoisky.dds"
+	traits = { politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nikolai Krylenko"
+	picture = "Portrait_Leningrad_Nikolai_Kyrylenko.dds"
+	traits = { politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Aleksandr Razvozov"
+	picture = "Portrait_Leningrad_Aleksandr_Razvozov.dds"
+	traits = { old_guard_navy }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Pyotr Kitkin"
+	picture = "Portrait_Leningrad_Pyotr_Kitkin.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 4
+}

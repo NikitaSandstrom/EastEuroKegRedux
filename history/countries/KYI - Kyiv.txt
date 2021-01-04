@@ -65,3 +65,124 @@ create_country_leader = {
 		#
 	}
 }
+
+create_field_marshal = {
+	name = "Serhiy Delvish"
+	picture = "Portrait_Kyiv_Serhiy_Delvih.dds"
+	traits = { career_officer old_guard }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Symon Petliura"
+	picture = "Portrait_Kyiv_Symon_Petliura_FieldMarshal.dds"
+	traits = { politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Oleksandr Hrekiv"
+	picture = "Portrait_Kyiv_Oleksandr_Hrekiv.dds"
+	traits = { brilliant_strategist war_hero infantry_leader }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Ivan Omelyanovych-Pavlenko"
+	picture = "Portrait_Kyiv_Ivan_Omelyanovych-Pavlenko.dds"
+	traits = { commando reckless }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Borys Maherovsky"
+	picture = "Portrait_Kyiv_Borys_Maherovsky.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Havrylo Bazylskiy"
+	picture = "Portrait_Kyiv_Havrylo_Bazylskiy.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mykhailo Omelyanovych-Pavlenko"
+	picture = "Portrait_Kyiv_Myhailo_Omelyanovych-Pavlenko.dds"
+	traits = { trait_cautious }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Serhiy Chorny'"
+	picture = "Portrait_Kyiv_Serhiy_Chornyy.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Yuriy Svirsky"
+	picture = "Portrait_Kyiv_Yuriy_Svirskiy.dds"
+	traits = { old_guard_navy }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Volodymyr Savchenko-Bilskiy"
+	picture = "Portrait_Kyiv_Volodymyr_Savchenko-Bilskiy.dds"
+	traits = { gentlemanly }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Svyatoslav Shmarchenko"
+	picture = "Portrait_Kyiv_Svyatoslav_Shramchenko.dds"
+	traits = { bold }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}

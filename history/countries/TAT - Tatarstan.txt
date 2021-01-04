@@ -24,7 +24,7 @@ set_popularities = {
 create_country_leader = {
 	
 	name = "Bekir Çoban-zade"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	picture = "gfx/leaders/TAT/Portrait_Tatarstan_Bekir_Coban-zade.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -35,7 +35,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Vlas Chubar"
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+	picture = "gfx/leaders/TAT/Portrait_Tatarstan_Vlas_Chubar.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -46,7 +46,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Ahatanhel Krymsky"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/TAT/Portrait_Tatarstan_Ahatanhel_Krymsky.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -57,7 +57,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Veli Ibraimov" 
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "gfx/leaders/TAT/Portrait_Tatarstan_Veli_Ibraimov.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
