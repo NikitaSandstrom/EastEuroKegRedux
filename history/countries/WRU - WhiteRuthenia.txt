@@ -23,8 +23,8 @@ set_popularities = {
 }
 create_country_leader = {
 	
-	name = "Vasil Zacharka"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	name = "Anton Nekanda-Trepka"
+	picture = "gfx/leaders/WRU/Portrait_Belarus_Anton_Nekanda-Trepka.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -34,8 +34,8 @@ create_country_leader = {
 
 create_country_leader = {
 	
-	name = "Nikolai Gikalo"
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+	name = "Yakov Agranov"
+	picture = "gfx/leaders/WRU/Portrait_Belarus_Yakov_Agranov.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -45,8 +45,8 @@ create_country_leader = {
 
 create_country_leader = {
 	
-	name = "Michał Vituška"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	name = "Bronislav Kaminskiy"
+	picture = "gfx/leaders/WRU/Portrait_Belarus_Bronislav_Kaminskiy.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -56,8 +56,8 @@ create_country_leader = {
 
 create_country_leader = {
 	
-	name = "Vincent Hadleŭski" 
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	name = "Anton Lutskevich" 
+	picture = "gfx/leaders/WRU/Portrait_Belarus_Anton_Lutskevich.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
