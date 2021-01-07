@@ -4794,6 +4794,92 @@ spriteTypes = {
 	### EEPK TECH ICONS ###
 	#######################
 
+	## UNIVERSAL EQUIPMENT ##
+	SpriteType = {
+		name = "GFX_LSO_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MFC_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KFT_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_NOV_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RFR_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SLB_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KYI_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ZHY_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAT_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TCA_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_WRU_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EST_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_LAT_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_LIT_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAZ_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KYR_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAJ_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMS_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_UZB_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
+	}
+
 	## SHARED RUSSIAN WEAPONS ##
 
 	# INFANTRY #
@@ -5451,6 +5537,44 @@ spriteTypes = {
 
 	# INFANTRY #
 	SpriteType = {
+		name = "GFX_RCT_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_NOV_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_NOV_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/NOV_INF3.dds"
+	}
+	SpriteType = {
+		name = "GFX_NOV_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KFT_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/KFT_INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KFT_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KFT_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+	}
+	
+
+	SpriteType = {
 		name = "GFX_RCT_armored_car1_medium"
 		texturefile = "gfx/interface/technologies/ROY_Car1.dds"
 	}
@@ -5460,7 +5584,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_RCT_armored_car3_medium"
-		texturefile = "gfx/interface/technologies/ROY_Car2.dds"
+		texturefile = "gfx/interface/technologies/ROY_Car3.dds"
 	}
 	SpriteType = {
 		name = "GFX_NOV_armored_car1_medium"
@@ -5472,7 +5596,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_NOV_armored_car3_medium"
-		texturefile = "gfx/interface/technologies/ROY_Car2.dds"
+		texturefile = "gfx/interface/technologies/ROY_Car3.dds"
 	}
 	SpriteType = {
 		name = "GFX_KFT_armored_car1_medium"
@@ -5484,7 +5608,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_KFT_armored_car3_medium"
-		texturefile = "gfx/interface/technologies/ROY_Car2.dds"
+		texturefile = "gfx/interface/technologies/ROY_Car3.dds"
 	}
 
 
@@ -6211,5 +6335,144 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_KFT_scout_plane2_medium"
 		texturefile = "gfx/interface/technologies/ROY_Scout2.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	####################
+	## COMMUNIST BLOC ##
+	####################
+
+	# INFANTRY #
+	SpriteType = {
+		name = "GFX_LSO_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_LSO_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/LSO_INF3.dds"
+	}
+	SpriteType = {
+		name = "GFX_LSO_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	##################
+	## LIBERAL BLOC ##
+	##################
+	SpriteType = {
+		name = "GFX_MFC_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MFC_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/MFC_INF3.dds"
+	}
+	SpriteType = {
+		name = "GFX_MFC_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_WRU_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_WRU_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_WRU_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	################
+	## SIBIR BLOC ##
+	################
+	SpriteType = {
+		name = "GFX_RFR_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RFR_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/RFR_INF3.dds"
+	}
+	SpriteType = {
+		name = "GFX_RFR_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
 	}
 }
