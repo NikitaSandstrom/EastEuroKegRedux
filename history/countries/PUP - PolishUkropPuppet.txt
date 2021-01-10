@@ -35,8 +35,8 @@ create_country_leader = {
 
 create_country_leader = {
 	
-	name = "Volodymyr Zatonsky"
-	picture = "gfx/leaders/PUP/Portrait_PolishUkraine_Volodymyr_Zatonsky.dds"
+	name = "Yuri Velykanovych"
+	picture = "gfx/leaders/PUP/Portrait_PolishUkraine_Yuri_Velykanovych.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
