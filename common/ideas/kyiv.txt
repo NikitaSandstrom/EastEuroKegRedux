@@ -1,0 +1,1035 @@
+ideas = {
+    country = {
+
+    }
+
+    political_advisor = {
+
+    }
+
+    army_chief = {
+
+    }
+
+    navy_chief = {
+
+    }
+
+    air_chief = {
+
+    }
+
+    high_command = {
+
+    }
+
+    tank_manufacturer = {
+		
+		designer = yes
+		
+		yaschuk_tank_bureau = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 220
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 220
+                }
+            }
+			
+			research_bonus = {
+				armor = 0.12
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+        morozov_kmdb = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 221
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 221
+                }
+            }
+			
+			research_bonus = {
+				armor = 0.2
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+        shkuro_tractor_plant = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 228
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 228
+                }
+            }
+			
+			research_bonus = {
+				armor = 0.1
+                armored_car_equipment = 0.1
+			}
+			
+			traits = {tractor_plant}
+		}
+
+        ispug_united_bureau = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 192
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 192
+                }
+            }
+			
+			research_bonus = {
+				armor = 0.10
+                armored_car_equipment = 0.1
+			}
+			
+			traits = {odessan_tank_refurbisher}
+		}
+
+        kryvorizki_avtomobili = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 226
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 226
+                }
+            }
+			
+			research_bonus = {
+				armor = 0.05
+                armored_car_equipment = 0.15
+                motorized_equipment = 0.1
+			}
+			
+			traits = { automobile_converter }
+		}
+	}
+
+    aircraft_manufacturer = {
+        designer = yes
+
+        poltava_air_bureau = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 259
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 259
+                }
+            }
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer_2 }
+			
+			modifier = {
+			}
+		}
+
+        zhytomyr_air_bureau = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 201
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 201
+                }
+            }
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+        yuzovka_air_bureau = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 227
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 227
+                }
+            }
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { fuel_efficient_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+        national_air_university = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 221
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 221
+                }
+            }
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.25
+			}
+			
+			traits = { aeronautical_university }
+			
+			modifier = {
+			}
+		}
+
+        bilhorod_air_plant = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 240
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 240
+                }
+            }
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+        sikorsky_air = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 202
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 202
+                }
+            }
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+    }
+
+    naval_manufacturer = {
+	
+		designer = yes
+		
+		odessa_shipyard = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 192
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 192
+                }
+            }
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { black_sea_shipyard }
+			
+			modifier = {
+			}
+		}
+
+        crimean_military_concern = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 137
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 137
+                }
+            }
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { black_sea_fleet_designer }
+			
+			modifier = {
+			}
+		}
+
+        mykolaiv_port_authority = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 197
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 197
+                }
+            }
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.05
+			}
+			
+			traits = { black_sea_repairyard }
+			
+			modifier = {
+                repair_speed_factor = 0.25
+			}
+		}
+
+        dnipro_river_design = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 226
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 226
+                }
+            }
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+			
+			modifier = {
+                
+			}
+		}
+
+        melitopol_shipyard = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 200
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 200
+                }
+            }
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { black_sea_shipyard }
+			
+			modifier = {
+                
+			}
+		}
+
+        chernihiv_river_design = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 193
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 193
+                }
+            }
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { black_sea_submarine_designer }
+			
+			modifier = {
+                
+			}
+		}
+	}
+
+    materiel_manufacturer = {
+        designer = yes
+
+        sumy_rifle_plant = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 225
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 225
+                }
+            }
+
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { eepk_rifle_manufacturer }
+			
+			modifier = {
+			}
+		}	
+
+        kharkov_military_complex = {
+			
+            cost = 300
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 221
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 221
+                }
+            }
+
+			research_bonus = {
+				infantry_weapons = 0.1
+                artillery = 0.07
+                motorized_equipment = 0.05
+			}
+			
+			traits = { eepk_total_military_complext }
+			
+			modifier = {
+			}
+		}
+
+        vinnytsia_artillery_bureau = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 198
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 198
+                }
+            }
+
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { eepk_artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+        kuzmenko_industries = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 78
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 78
+                }
+            }
+
+			research_bonus = {
+				infantry_weapons = 0.2
+			}
+			
+			traits = { eepk_mass_rifle_supplier }
+			
+			modifier = {
+			}
+		}
+
+        pavlograd_arms_plant = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 807
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 807
+                }
+            }
+
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { eepk_rifle_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+        cherkasy_artillery_bureau = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 203
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 203
+                }
+            }
+
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { eepk_artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+        united_front = {
+			cost = 10
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				AND = {
+                    has_war_support > 0.5
+                    has_war = yes
+                }
+			}
+
+            cancel = {
+                NOT = {
+                    has_war = yes
+                }
+            }
+
+			research_bonus = {
+				infantry_weapons = 0.05
+                artillery = 0.05
+                motorized_equipment = 0.05
+			}
+			
+			traits = { eepk_conscripted_weapons_manufacturing }
+			
+			modifier = {
+			}
+		}
+    }
+
+    industrial_concern = {
+				
+		kharkov_industrial_concern = {
+		
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 221
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 221
+                }
+            }
+
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { eepk_industrial_powerhouse }
+			
+			modifier = {
+			}
+		}
+		
+		dnipro_electric_concern = {
+			
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 226
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 226
+                }
+            }
+
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { eepk_advanced_electronics_dam }
+			
+			modifier = {
+			}
+		}
+
+        donets_civil_plant = {
+		
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 228
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 228
+                }
+            }
+
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { eepk_construction_firm }
+			
+			modifier = {
+			}
+		}
+
+        kursk_civil_concern = {
+		
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 220
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 220
+                }
+            }
+
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { eepk_construction_firm }
+			
+			modifier = {
+			}
+		}
+
+        uman_regional_bank = {
+		
+			
+			allowed = {
+                OR = {
+                    original_tag = KYI
+                    original_tag = NOV
+                    original_tag = SLB
+                    original_tag = ZHY
+                    original_tag = TAT
+                }
+			}
+
+			available = {
+				controls_state = 203
+			}
+
+            cancel = {
+                NOT = {
+                    controls_state = 203
+                }
+            }
+
+			research_bonus = {
+				industry = 0.07
+                electronics = 0.07
+			}
+			
+			traits = { eepk_banking }
+			
+			modifier = {
+			}
+		}
+	}
+}
