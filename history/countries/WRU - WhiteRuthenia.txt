@@ -23,8 +23,8 @@ set_popularities = {
 }
 create_country_leader = {
 	
-	name = "Vasil Zacharka"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	name = "Anton Nekanda-Trepka"
+	picture = "gfx/leaders/WRU/Portrait_Belarus_Anton_Nekanda-Trepka.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -34,8 +34,8 @@ create_country_leader = {
 
 create_country_leader = {
 	
-	name = "Nikolai Gikalo"
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+	name = "Yakov Agranov"
+	picture = "gfx/leaders/WRU/Portrait_Belarus_Yakov_Agranov.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -45,8 +45,8 @@ create_country_leader = {
 
 create_country_leader = {
 	
-	name = "Michał Vituška"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	name = "Bronislav Kaminskiy"
+	picture = "gfx/leaders/WRU/Portrait_Belarus_Bronislav_Kaminskiy.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -56,11 +56,78 @@ create_country_leader = {
 
 create_country_leader = {
 	
-	name = "Vincent Hadleŭski" 
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	name = "Anton Lutskevich" 
+	picture = "gfx/leaders/WRU/Portrait_Belarus_Anton_Lutskevich.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
 		#
 	}
 }
+
+create_field_marshal = {
+	name = "Kipiran Kondratov"
+	picture = "Portrait_Belarus_Kipiran_Kondratovych.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Michal Vitushka"
+	picture = "Portrait_Belarus_Michal_Vitushka.dds"
+	traits = { commando }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Yakov Smushkevich"
+	picture = "Portrait_Belarus_Yakov_Smushkevich.dds"
+	traits = { war_hero }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Konstantin Yezovitov"
+	picture = "Portrait_Belarus_Konstantin_Yezovitov.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Janka Sereda"
+	picture = "Portrait_Belarus_Janka_Sereda.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Michal Ryhorovych"
+	picture = "Portrait_Belarus_Michal_Ryhorovich.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+

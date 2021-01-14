@@ -1,0 +1,158 @@
+spriteTypes = {	
+
+    #UKRAINIAN BUREAUS#
+    spriteType = {
+		name = "GFX_idea_air_PAB" 
+		texturefile = "gfx/interface/ideas/iconPAB.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_air_ZhAB" 
+		texturefile = "gfx/interface/ideas/iconZhAB.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_air_UAB" 
+		texturefile = "gfx/interface/ideas/iconUAB.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_air_NAU" 
+		texturefile = "gfx/interface/ideas/iconNAU.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_air_BAZ" 
+		texturefile = "gfx/interface/ideas/iconBAZ.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_air_sikorsky"
+		texturefile = "gfx/interface/ideas/iconSikorsky.dds"
+	}	
+
+
+
+    spriteType = { 
+		name = "GFX_idea_ground_yaschuk"
+		texturefile = "gfx/interface/ideas/iconYaschuk.dds"
+	}
+ 
+    spriteType = {
+		name = "GFX_idea_ground_morozov"
+		texturefile = "gfx/interface/ideas/iconMorozov.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_ground_shkuro"
+		texturefile = "gfx/interface/ideas/iconShkuro.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_ground_ispug"
+		texturefile = "gfx/interface/ideas/iconIspug.dds"
+	}
+ 
+    spriteType = {
+		name = "GFX_idea_ground_rih"
+		texturefile = "gfx/interface/ideas/iconRih.dds"
+	}
+
+
+
+    spriteType = {
+		name = "GFX_idea_naval_Odesa" 
+		texturefile = "gfx/interface/ideas/iconOdesa.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_naval_Sevastopol"
+		texturefile = "gfx/interface/ideas/iconSevastopol.dds"
+	}
+
+    spriteType = { 
+		name = "GFX_idea_naval_Mykolaiv"
+		texturefile = "gfx/interface/ideas/iconMykolaiv.dds"
+	}
+
+    spriteType = { 
+		name = "GFX_idea_naval_Dnipro"
+		texturefile = "gfx/interface/ideas/iconDnipro.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_naval_Melitopol"
+		texturefile = "gfx/interface/ideas/iconMelitopol.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_naval_Mariupol"
+		texturefile = "gfx/interface/ideas/iconMariupol.dds"
+	}
+
+
+
+    spriteType = {
+		name = "GFX_idea_material_SSZ"
+		texturefile = "gfx/interface/ideas/iconSSZ.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_material_KMC"
+		texturefile = "gfx/interface/ideas/iconKMC.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_material_VAB"
+		texturefile = "gfx/interface/ideas/iconVAB.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_material_Kuzmenko"
+		texturefile = "gfx/interface/ideas/iconKuzmenko.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_material_Pavlograd"
+		texturefile = "gfx/interface/ideas/iconPavlograd.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_material_ChZ"
+		texturefile = "gfx/interface/ideas/iconChZ.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_material_UnitedFront"
+		texturefile = "gfx/interface/ideas/iconUnitedFront.dds"
+	}
+
+
+
+    spriteType = {
+		name = "GFX_idea_industry_KharkovIndustry"
+		texturefile = "gfx/interface/ideas/iconKharkovIndustry.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_industry_DniproElectric"
+		texturefile = "gfx/interface/ideas/iconDniproElectric.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_industry_DonetsCivil"
+		texturefile = "gfx/interface/ideas/iconDonetsCivil.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_industry_KurskCivil"
+		texturefile = "gfx/interface/ideas/iconKurskCivil.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_industry_UmanBanking"
+		texturefile = "gfx/interface/ideas/iconUmanBanking.dds"
+	}
+
+    
+}

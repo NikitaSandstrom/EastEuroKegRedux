@@ -1,0 +1,265 @@
+leader_traits = {
+
+
+    ## DESIGNER TRAITS ##
+    odessan_tank_refurbisher = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				build_cost_ic = -0.05
+			    reliability = 0.15
+                maximum_speed = -0.05
+                armor_value = -0.05
+		    }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tractor_plant = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				reliability = 0.1
+                maximum_speed = 0.1
+                build_cost_ic = 0.05
+		    }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	automobile_converter = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.15
+				reliability = 0.1
+				soft_attack = 0.05
+				armor_value = -0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	aeronautical_university = {
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				reliability = 0.1
+			}
+			scout_plane_equipment = {
+				reliability = 0.2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	black_sea_shipyard = {
+		random = no
+		equipment_bonus = {
+			screen_ship = {
+				naval_range = 0.3
+				sub_detection = 0.1
+				naval_speed = 0.1
+				build_cost_ic = 0.1
+			}
+			convoy = {
+				naval_speed = 0.1
+				build_cost_ic = -0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	black_sea_fleet_designer = {
+		random = no
+		equipment_bonus = {
+			capital_ship = {
+				naval_range = -0.15
+				naval_speed = 0.2
+				build_cost_ic = -0.15
+			}
+			screen_ship = {
+				naval_range = -0.1
+				sub_detection = 0.1
+				build_cost_ic = -0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	black_sea_repairyard = {
+		random = no
+		equipment_bonus = {
+			capital_ship = {
+				surface_visibility = -0.15
+				sub_visibility = -0.05
+			}
+			screen_ship = {
+				surface_visibility = -0.15
+				sub_visibility = -0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	black_sea_submarine_designer = {
+		random = no
+		equipment_bonus = {
+			submarine = {
+				build_cost_ic = -0.15
+				torpedo_attack = 0.1
+				naval_range = -0.25
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	eepk_rifle_manufacturer = {
+		random = no
+		equipment_bonus = {
+			infantry = {
+				build_cost_ic = -0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	eepk_total_military_complext = {
+		random = no
+		equipment_bonus = {
+			infantry = {
+				build_cost_ic = -0.05
+				reliability = 0.05
+			}
+			artillery = {
+				build_cost_ic = -0.05
+				reliability = 0.05
+			}
+			motorized = {
+				build_cost_ic = -0.05
+				reliability = -0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	eepk_artillery_manufacturer = {
+		random = no
+		equipment_bonus = {
+			artillery = {
+				build_cost_ic = -0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	eepk_mass_rifle_supplier = {
+		random = no
+		equipment_bonus = {
+			infantry = {
+				build_cost_ic = -0.15
+				reliability = -0.05
+				maximum_speed = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	eepk_conscripted_weapons_manufacturing = {
+		random = no
+		equipment_bonus = {
+			infantry = {
+				build_cost_ic = -0.35
+				reliability = -0.4
+			}
+			artillery = {
+				build_cost_ic = -0.25
+				reliability = -0.3
+			}
+			motorized = {
+				build_cost_ic = -0.2
+				reliability = -0.25
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	eepk_industrial_powerhouse = {
+		random = no
+
+		industrial_capacity_factory = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	eepk_advanced_electronics_dam = {
+		random = no
+
+		research_speed_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	eepk_construction_firm = {
+		random = no
+
+		production_speed_buildings_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	eepk_banking = {
+		random = no
+
+		consumer_goods_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

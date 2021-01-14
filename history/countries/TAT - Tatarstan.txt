@@ -64,3 +64,91 @@ create_country_leader = {
 		#
 	}
 }
+
+create_field_marshal = {
+	name = "Vasily Gordov"
+	picture = "Portrait_Tatarstan_Vasily_Gordov.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Dmitry Karbyshev"
+	picture = "Portrait_Tatarstan_Dmitry_Karbyshev.dds"
+	traits = { bearer_of_artillery trait_engineer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Fedor Abaramov"
+	picture = "Portrait_Tatarstan_Fedor_Abramov.dds"
+	traits = { old_guard }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Minhali Shaymuratov"
+	picture = "Portrait_Tatarstan_Minhali_Shaymuratov.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Makhmyt Garyeev"
+	picture = "Portrait_Tatarstan_Makhmyt_Garyeev.dds"
+	traits = { brilliant_strategist war_hero }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Petr Gavrilov"
+	picture = "Portrait_Tatarstan_Petr_Gavrilov.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Vladimir Stashevsky"
+	picture = "Portrait_Tatarstan_Vladimir_Stashevsky.dds"
+	traits = { bold }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Valdimir Vorontsov"
+	picture = "Portrait_Tatarstan_Vladimir_Vorontsov.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
