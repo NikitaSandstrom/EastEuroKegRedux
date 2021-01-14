@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  SEPARATION_LINE:0 "--------------\n"
  MENU_MESSAGES_DISABLE_ALL:0 "Disable all"
  FILTER:0 "Filter"
@@ -44,7 +44,7 @@ l_english:
  NOT_READY_TO_PLAY_MP:0 "$PLAYER|H$ is not ready"
  READY_TO_PLAY_MP:0 "$PLAYER|H$ is ready"
  LOADING_GUI:0 "Writing a Letter to the Sultan"
- LOADING_HISTORY:0 "Changing History Books"
+ LOADING_HISTORY:0 "Rewriting History Books"
  NOT_SELECT:0 "No country selected"
  April:0 "April"
  August:0 "August"
@@ -387,7 +387,7 @@ l_english:
  FREQUENCY_YEAR:0 "year"
  FREQUENCY_YEARLY:0 "yearly"
  INIT_MAP_LOGIC:0 "Baking bread"
- INIT_GAMESTATE:0 "Mobilizing Kurin's"
+ INIT_GAMESTATE:0 "Mobilizing Kurins"
  SUPPLY_CONTROL_EDGE:0 "§YControl of incoming edge provinces§!: $EDGE|0%$"
  SUPPLY_SUPPORTED_BASE:0 "Local supply base: $VAL|+=$"
  SUPPLY_SUPPORTED_BONUS_INPUT:0 "Neighbor spillover ($SPILL|Y%0$): $VAL|+=$"
