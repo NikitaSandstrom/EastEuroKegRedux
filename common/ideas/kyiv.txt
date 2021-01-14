@@ -29,6 +29,7 @@ ideas = {
 		
 		yaschuk_tank_bureau = {
 			
+            picture = ground_yaschuk
 			
 			allowed = {
                 OR = {
@@ -62,7 +63,8 @@ ideas = {
 
         morozov_kmdb = {
 			
-			
+			picture = ground_morozov
+
 			allowed = {
                 OR = {
                     original_tag = KYI
@@ -95,6 +97,7 @@ ideas = {
 
         shkuro_tractor_plant = {
 			
+            picture = ground_shkuro
 			
 			allowed = {
                 OR = {
@@ -103,7 +106,7 @@ ideas = {
                     original_tag = SLB
                     original_tag = ZHY
                     original_tag = TAT
-                }
+                } 
 			}
 
 			available = {
@@ -126,6 +129,7 @@ ideas = {
 
         ispug_united_bureau = {
 			
+            picture = ground_ispug
 			
 			allowed = {
                 OR = {
@@ -157,6 +161,7 @@ ideas = {
 
         kryvorizki_avtomobili = {
 			
+            picture = ground_rih
 			
 			allowed = {
                 OR = {
@@ -193,6 +198,7 @@ ideas = {
 
         poltava_air_bureau = {
 			
+            picture = air_PAB
 			
 			allowed = {
                 OR = {
@@ -228,6 +234,7 @@ ideas = {
 
         zhytomyr_air_bureau = {
 			
+            picture = air_ZhAB
 			
 			allowed = {
                 OR = {
@@ -263,6 +270,7 @@ ideas = {
 
         yuzovka_air_bureau = {
 			
+            picture = air_UAB
 			
 			allowed = {
                 OR = {
@@ -298,6 +306,7 @@ ideas = {
 
         national_air_university = {
 			
+            picture = air_NAU
 			
 			allowed = {
                 OR = {
@@ -333,6 +342,7 @@ ideas = {
 
         bilhorod_air_plant = {
 			
+            picture = air_BAZ
 			
 			allowed = {
                 OR = {
@@ -367,6 +377,8 @@ ideas = {
 		}
 
         sikorsky_air = {
+
+            picture = air_sikorsky
 			
 			
 			allowed = {
@@ -408,7 +420,8 @@ ideas = {
 		
 		odessa_shipyard = {
 			
-			
+			picture = naval_Odesa
+
 			allowed = {
                 OR = {
                     original_tag = KYI
@@ -443,6 +456,7 @@ ideas = {
 
         crimean_military_concern = {
 			
+            picture = naval_Sevastopol
 			
 			allowed = {
                 OR = {
@@ -467,17 +481,19 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = 0.05
 			}
 			
-			traits = { black_sea_fleet_designer }
+			traits = { black_sea_repairyard }
 			
 			modifier = {
+                repair_speed_factor = 0.25
 			}
 		}
 
         mykolaiv_port_authority = {
 			
+            picture = naval_Mykolaiv
 			
 			allowed = {
                 OR = {
@@ -502,17 +518,19 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.05
+				naval_equipment = 0.15
 			}
 			
-			traits = { black_sea_repairyard }
+			traits = { black_sea_fleet_designer }
 			
 			modifier = {
-                repair_speed_factor = 0.25
+                
 			}
 		}
 
         dnipro_river_design = {
+
+            picture = naval_Dnipro
 			
 			
 			allowed = {
@@ -550,6 +568,7 @@ ideas = {
 
         melitopol_shipyard = {
 			
+            picture = naval_Melitopol
 			
 			allowed = {
                 OR = {
@@ -584,8 +603,9 @@ ideas = {
 			}
 		}
 
-        chernihiv_river_design = {
+        mariuopol_light_dockyard = {
 			
+            picture = naval_Mariupol 
 			
 			allowed = {
                 OR = {
@@ -598,12 +618,12 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 193
+				controls_state = 227
 			}
 
             cancel = {
                 NOT = {
-                    controls_state = 193
+                    controls_state = 227
                 }
             }
 			
@@ -626,6 +646,7 @@ ideas = {
 
         sumy_rifle_plant = {
 			
+            picture = material_SSZ
 			
 			allowed = {
                 OR = {
@@ -658,6 +679,8 @@ ideas = {
 		}	
 
         kharkov_military_complex = {
+
+            picture = material_KMC
 			
             cost = 300
 			
@@ -695,6 +718,7 @@ ideas = {
 
         vinnytsia_artillery_bureau = {
 			
+            picture = material_VAB
 			
 			allowed = {
                 OR = {
@@ -728,6 +752,7 @@ ideas = {
 
         kuzmenko_industries = {
 			
+            picture = material_Kuzmenko
 			
 			allowed = {
                 OR = {
@@ -761,6 +786,7 @@ ideas = {
 
         pavlograd_arms_plant = {
 			
+            picture = material_Pavlograd
 			
 			allowed = {
                 OR = {
@@ -794,6 +820,7 @@ ideas = {
 
         cherkasy_artillery_bureau = {
 			
+            picture = material_ChZ
 			
 			allowed = {
                 OR = {
@@ -826,6 +853,9 @@ ideas = {
 		}
 
         united_front = {
+
+            picture = material_UnitedFront
+
 			cost = 10
 			
 			allowed = {
@@ -868,6 +898,7 @@ ideas = {
 				
 		kharkov_industrial_concern = {
 		
+            picture = industry_KharkovIndustry
 			
 			allowed = {
                 OR = {
@@ -901,6 +932,7 @@ ideas = {
 		
 		dnipro_electric_concern = {
 			
+            picture = industry_DniproElectric
 			
 			allowed = {
                 OR = {
@@ -934,6 +966,7 @@ ideas = {
 
         donets_civil_plant = {
 		
+            picture = industry_DonetsCivil
 			
 			allowed = {
                 OR = {
@@ -967,6 +1000,7 @@ ideas = {
 
         kursk_civil_concern = {
 		
+            picture = industry_KurskCivil
 			
 			allowed = {
                 OR = {
@@ -1000,6 +1034,7 @@ ideas = {
 
         uman_regional_bank = {
 		
+            picture = industry_UmanBanking
 			
 			allowed = {
                 OR = {
