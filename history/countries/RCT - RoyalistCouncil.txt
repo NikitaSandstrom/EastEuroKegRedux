@@ -88,7 +88,7 @@ create_field_marshal = {
 }
 
 create_corps_commander = {
-	name = "Portrait_Tsaritsyn_Mikhail_Drozdovsky"
+	name = "Mikhail Drozdovsky"
 	picture = "Portrait_Tsaritsyn_Mikhail_Drozdovsky.dds"
 	traits = { infantry_officer war_hero }
 	skill = 3
@@ -99,7 +99,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = Mikhail Alekseyev"
+	name = "Mikhail Alekseyev"
 	picture = "Portrait_Tsaritsyn_Mikhail_Alekseyev.dds"
 	traits = { old_guard }
 	skill = 2

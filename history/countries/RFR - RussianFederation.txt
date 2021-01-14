@@ -123,7 +123,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Roman von Ungern-Sternberg"
-	picture = "Portrait_Kuban_Vyacheslav_Naumenko.dds"
+	picture = "Portrait_Russia_Roman_von_Ungern-Sternberg.dds"
 	traits = { substance_abuser substance_addict }
 	skill = 1
 	attack_skill = 1
