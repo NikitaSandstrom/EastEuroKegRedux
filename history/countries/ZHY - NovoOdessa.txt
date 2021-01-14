@@ -121,9 +121,9 @@ create_corps_commander = {
 }
 
 create_navy_leader = {
-	name = "Petr de Verayon"
+	name = "Petr Fanton-Patton de Verayon"
 	picture = "Portrait_Odessa_Petr_de_Verayon.dds"
-	traits = { old_guard_navy }
+	traits = { old_guard_navy naval_lineage }
 	skill = 2
 	attack_skill = 3
 	defense_skill = 2

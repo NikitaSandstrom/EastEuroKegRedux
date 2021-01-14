@@ -64,3 +64,102 @@ create_country_leader = {
 		#
 	}
 }
+
+create_field_marshal = {
+	name = "Pyotr Krasnov"
+	picture = "Portrait_Tsaritsyn_Pyotr_Krasnov.dds"
+	traits = { brilliant_strategist }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Evgeniy Miller"
+	picture = "Portrait_Tsaritsyn_Evgeniy_Miller.dds"
+	traits = { politically_connected }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Mikhail Drozdovsky"
+	picture = "Portrait_Tsaritsyn_Mikhail_Drozdovsky.dds"
+	traits = { infantry_officer war_hero }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mikhail Alekseyev"
+	picture = "Portrait_Tsaritsyn_Mikhail_Alekseyev.dds"
+	traits = { old_guard }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Konstantin Radyanovsky"
+	picture = "Portrait_Tsaritsyn_Konstantin_Rydanovskiy.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Sergey Belyaev"
+	picture = "Portrait_Tsaritsyn_Sergey_Belayev.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Pyotr Baluyev"
+	picture = "Portrait_Tsaritsyn_Pyotr_Baluyev.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Hans William von Fressen"
+	picture = "Portrait_Tsaritsyn_Hans_William_von_Fressen.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Nikolai Kolomitsev"
+	picture = "Portrait_Tsaritsyn_Nikolai_Kolomoitsev.dds"
+	traits = { old_guard_navy }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}

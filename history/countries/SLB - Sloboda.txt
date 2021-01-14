@@ -64,3 +64,91 @@ create_country_leader = {
 		#
 	}
 }
+
+create_field_marshal = {
+	name = "Viktor Kysch"
+	picture = "Portrait_Sloboda_Viktor_Kysch.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Volodymyr Sinlker"
+	picture = "Portrait_Sloboda_Volodymyr_Sinkler.dds"
+	traits = { trait_cautious }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mykola Krasovsky"
+	picture = "Portrait_Sloboda_Mykola_Krasovsky.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mykola Dundukiv"
+	picture = "Portrait_Sloboda_Mykola_Dundukiv.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mykola Vilchek"
+	picture = "Portrait_Sloboda_Mykola_Vilchek.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nikifor Avramenko"
+	picture = "Portrait_Sloboda_Nikifor_Avramenko.dds"
+	traits = { war_hero }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Oleksa Simyantsiv"
+	picture = "Portrait_Sloboda_Oleksa_Simyantsiv.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Vadym Bohomolets"
+	picture = "Portrait_Sloboda_Vadym_Bohomolets.dds"
+	traits = { bold }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 1
+}

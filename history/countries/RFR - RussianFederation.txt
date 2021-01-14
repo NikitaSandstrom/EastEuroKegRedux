@@ -66,5 +66,90 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Grigory Semyonov"
+	picture = "Portrait_Russia_Grigoriy_Semyonov.dds"
+	traits = { cavalry_officer war_hero }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
 
+create_field_marshal = {
+	name = "Ivan Kalymkov"
+	picture = "Portrait_Russia_Ivan_Kalmykov.dds"
+	traits = { politically_connected }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Konstantin Nechayev"
+	picture = "Portrait_Russia_Konstantin_Nechayev.dds"
+	traits = { infantry_officer career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Andrey Bakich"
+	picture = "Portrait_Russia_Andrey_Bakich.dds"
+	traits = { old_guard }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Anton Pepelayev"
+	picture = "Portrait_Russia_Anton_Pepelayev.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Roman von Ungern-Sternberg"
+	picture = "Portrait_Russia_Roman_von_Ungern-Sternberg.dds"
+	traits = { substance_abuser substance_addict }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Gennadiy Kazankov"
+	picture = "Portrait_Russia_Genadiy_Kaznakov.dds"
+	traits = { old_guard_navy }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Oskar Stark"
+	picture = "Portrait_Russia_Oskar_Stark.dds"
+	traits = { old_guard_navy }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
 }

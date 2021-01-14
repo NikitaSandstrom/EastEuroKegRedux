@@ -90,7 +90,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Abram Dragomirov"
-	picture = "Portrait_Kuban_Abram_Dragomirov"
+	picture = "Portrait_Kuban_Abram_Dragomirov.dds"
 	traits = { old_guard }
 	skill = 2
 	attack_skill = 2

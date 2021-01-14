@@ -66,5 +66,68 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Vladimir Vitkovsky"
+	picture = "Portrait_Moscow_Vladimir_Vitkovsky.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
 
+create_corps_commander = {
+	name = "Nikolai Anisimov"
+	picture = "Portrait_Moscow_Nikolai_Anisimov.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
 
+create_corps_commander = {
+	name = "Dmitry Scherbachev"
+	picture = "Portrait_Moscow_Dmitriy_Scherbachev.dds"
+	traits = { old_guard }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nikolai Lochvitskiy"
+	picture = "Portrait_Moscow_Nikolai_Lochvitskiy.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Aleksandr Krymov"
+	picture = "Portrait_Moscow_Aleksandr_Krymov.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Aleskei Briliev"
+	picture = "Portrait_Moscow_Aleskei_Biriliev.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+}

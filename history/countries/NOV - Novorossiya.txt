@@ -64,3 +64,58 @@ create_country_leader = {
 		#
 	}
 }
+
+create_field_marshal = {
+	name = "Vladimir Kappel"
+	picture = "Portrait_Novorossiya_Vladimir_Kappel.dds"
+	traits = { trait_reckless }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Andriy Shkuro"
+	picture = "Portrait_Novorossiya_Andriy_Shkuro.dds"
+	traits = { cavalry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Yakov Slaschov"
+	picture = "Portrait_Novorossiya_Yakov_Slashchov.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ivan Romanovsky"
+	picture = "Portrait_Novorossiya_Ivan_Romanovsky.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Dmitriy Verderevsky"
+	picture = "Portrait_Novorossiya_Dmitry_Verderevsky.dds"
+	traits = { old_guard_navy }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
