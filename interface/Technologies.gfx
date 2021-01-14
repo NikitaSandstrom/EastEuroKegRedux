@@ -6577,20 +6577,20 @@ spriteTypes = {
 	}	
 	SpriteType = {
 		name = "GFX_MFC_fighter2_medium"
-		texturefile = "gfx/interface/technologies/ROY_Fighter2.dds"
+		texturefile = "gfx/interface/technologies/LSB_Fighter2.dds"
 	}	
 	SpriteType = {
 		name = "GFX_MFC_fighter1_medium"
-		texturefile = "gfx/interface/technologies/ROY_Fighter1.dds"
+		texturefile = "gfx/interface/technologies/LSB_Fighter1.dds"
 	}
 	SpriteType = {
 		name = "GFX_MFC_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/ROY_EarlyWarFighter.dds"
+		texturefile = "gfx/interface/technologies/LSB_GWFighter.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_MFC_CAS1_medium"
-		texturefile = "gfx/interface/technologies/ROY_CAS1.dds"
+		texturefile = "gfx/interface/technologies/LSB_CAS1.dds"
 	}	
 	SpriteType = {
 		name = "GFX_MFC_CAS2_medium"
@@ -6603,7 +6603,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_MFC_naval_bomber1_medium"
-		texturefile = "gfx/interface/technologies/ROY_NAV1.dds"
+		texturefile = "gfx/interface/technologies/LSB_NAV1.dds"
 	}	
 	SpriteType = {
 		name = "GFX_MFC_naval_bomber2_medium"
@@ -6616,19 +6616,19 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_MFC_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/ROY_EarlyWarBomber.dds"
+		texturefile = "gfx/interface/technologies/LSB_GWBomber.dds"
 	}	
 	SpriteType = {
 		name = "GFX_MFC_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/ROY_TAC1.dds"
+		texturefile = "gfx/interface/technologies/LSB_TAC1.dds"
 	}		
 	SpriteType = {
 		name = "GFX_MFC_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/ROY_TAC2.dds"
+		texturefile = "gfx/interface/technologies/LSB_TAC2.dds"
 	}		
 	SpriteType = {
 		name = "GFX_MFC_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/ROY_TAC3.dds"
+		texturefile = "gfx/interface/technologies/LSB_TAC3.dds"
 	}
 
 	SpriteType = {
@@ -6637,20 +6637,20 @@ spriteTypes = {
 	}	
 	SpriteType = {
 		name = "GFX_MFC_heavy_fighter2_medium"
-		texturefile = "gfx/interface/technologies/ROY_HeavyFighter2.dds"
+		texturefile = "gfx/interface/technologies/LSB_HeavyFighter2.dds"
 	}	
 	SpriteType = {
 		name = "GFX_MFC_heavy_fighter1_medium"
-		texturefile = "gfx/interface/technologies/ROY_HeavyFighter1.dds"
+		texturefile = "gfx/interface/technologies/LSB_HeavyFighter1.dds"
 	}	
 
 	SpriteType = {
 		name = "GFX_MFC_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/ROY_STRAT1.dds"
+		texturefile = "gfx/interface/technologies/LSB_STRAT1.dds"
 	}	
 	SpriteType = {
 		name = "GFX_MFC_strategic_bomber2_medium"
-		texturefile = "gfx/interface/technologies/ROY_STRAT2.dds"
+		texturefile = "gfx/interface/technologies/LSB_STRAT2.dds"
 	}		
 	SpriteType = {
 		name = "GFX_MFC_strategic_bomber3_medium"
@@ -6680,7 +6680,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_MFC_scout_plane1_medium"
-		texturefile = "gfx/interface/technologies/ROY_Scout1.dds"
+		texturefile = "gfx/interface/technologies/LSB_Scout1.dds"
 	}		
 	SpriteType = {
 		name = "GFX_MFC_scout_plane2_medium"
@@ -6695,20 +6695,20 @@ spriteTypes = {
 	}	
 	SpriteType = {
 		name = "GFX_WRU_fighter2_medium"
-		texturefile = "gfx/interface/technologies/ROY_Fighter2.dds"
+		texturefile = "gfx/interface/technologies/LSB_Fighter2.dds"
 	}	
 	SpriteType = {
 		name = "GFX_WRU_fighter1_medium"
-		texturefile = "gfx/interface/technologies/ROY_Fighter1.dds"
+		texturefile = "gfx/interface/technologies/LSB_Fighter1.dds"
 	}
 	SpriteType = {
 		name = "GFX_WRU_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/ROY_EarlyWarFighter.dds"
+		texturefile = "gfx/interface/technologies/LSB_GWFighter.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_WRU_CAS1_medium"
-		texturefile = "gfx/interface/technologies/ROY_CAS1.dds"
+		texturefile = "gfx/interface/technologies/LSB_CAS1.dds"
 	}	
 	SpriteType = {
 		name = "GFX_WRU_CAS2_medium"
@@ -6721,7 +6721,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_WRU_naval_bomber1_medium"
-		texturefile = "gfx/interface/technologies/ROY_NAV1.dds"
+		texturefile = "gfx/interface/technologies/LSB_NAV1.dds"
 	}	
 	SpriteType = {
 		name = "GFX_WRU_naval_bomber2_medium"
@@ -6734,19 +6734,19 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_WRU_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/ROY_EarlyWarBomber.dds"
+		texturefile = "gfx/interface/technologies/LSB_GWBomber.dds"
 	}	
 	SpriteType = {
 		name = "GFX_WRU_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/ROY_TAC1.dds"
+		texturefile = "gfx/interface/technologies/LSB_TAC1.dds"
 	}		
 	SpriteType = {
 		name = "GFX_WRU_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/ROY_TAC2.dds"
+		texturefile = "gfx/interface/technologies/LSB_TAC2.dds"
 	}		
 	SpriteType = {
 		name = "GFX_WRU_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/ROY_TAC3.dds"
+		texturefile = "gfx/interface/technologies/LSB_TAC3.dds"
 	}
 
 	SpriteType = {
@@ -6755,20 +6755,20 @@ spriteTypes = {
 	}	
 	SpriteType = {
 		name = "GFX_WRU_heavy_fighter2_medium"
-		texturefile = "gfx/interface/technologies/ROY_HeavyFighter2.dds"
+		texturefile = "gfx/interface/technologies/LSB_HeavyFighter2.dds"
 	}	
 	SpriteType = {
 		name = "GFX_WRU_heavy_fighter1_medium"
-		texturefile = "gfx/interface/technologies/ROY_HeavyFighter1.dds"
+		texturefile = "gfx/interface/technologies/LSB_HeavyFighter1.dds"
 	}	
 
 	SpriteType = {
 		name = "GFX_WRU_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/ROY_STRAT1.dds"
+		texturefile = "gfx/interface/technologies/LSB_STRAT1.dds"
 	}	
 	SpriteType = {
 		name = "GFX_WRU_strategic_bomber2_medium"
-		texturefile = "gfx/interface/technologies/ROY_STRAT2.dds"
+		texturefile = "gfx/interface/technologies/LSB_STRAT2.dds"
 	}		
 	SpriteType = {
 		name = "GFX_WRU_strategic_bomber3_medium"
@@ -6798,7 +6798,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_WRU_scout_plane1_medium"
-		texturefile = "gfx/interface/technologies/ROY_Scout1.dds"
+		texturefile = "gfx/interface/technologies/LSB_Scout1.dds"
 	}		
 	SpriteType = {
 		name = "GFX_WRU_scout_plane2_medium"
