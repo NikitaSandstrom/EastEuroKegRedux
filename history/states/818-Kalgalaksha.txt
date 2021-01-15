@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = FIN
+		owner = RFI
 
 		#victory_points = {
 		#	6021 3
@@ -22,7 +22,7 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = FIN
+		add_core_of = RFI
 	}
 
 	provinces={
