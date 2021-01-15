@@ -1,0 +1,31 @@
+state={
+	id=817
+	name="STATE_817"
+	resources={
+		oil=2
+		tungsten=4
+	}
+
+	history={
+		victory_points = {
+			3122 3 
+		}
+		owner = FIN
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			3122 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = FIN
+
+	}
+
+	provinces={
+		63 3122 6013 6138 9038 11065 11126 
+	}
+	manpower=64000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

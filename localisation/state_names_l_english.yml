@@ -827,3 +827,13 @@
 
  ##MFC##
  STATE_400:0 "Vyatka"
+
+ ## FINLAND ##
+ STATE_813:0 "Kymenlaakso"
+ STATE_814:0 "Paijanne Tavasti"
+ STATE_815:0 "Kanta-Hame"
+ STATE_816:0 "Turku"
+ STATE_817:0 "Rauma"
+ STATE_818:0 "Kalgalaksha"
+ STATE_819:0 "Kern"
+ STATE_820:0 "Kostomuksha"
