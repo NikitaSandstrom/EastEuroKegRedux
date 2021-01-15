@@ -780,3 +780,8 @@ SLB = {
 	color = rgb { 0  90  185 }
 	color_ui = rgb { 255 173 0 }
 }
+
+RFI = {
+	color = rgb { 222 158 149 }
+	color_ui = rgb { 222 158 149 }
+}

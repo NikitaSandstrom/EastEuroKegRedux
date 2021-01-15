@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = FIN
+		owner = RFI
 
 		victory_points = {
 			9183 3
@@ -19,7 +19,7 @@ state={
 			infrastructure = 3
 			arms_factory = 1
 		}
-		add_core_of = FIN
+		add_core_of = RFI
 	}
 	provinces={
 		165 3061 6082 6186 9183 11056 13105 
