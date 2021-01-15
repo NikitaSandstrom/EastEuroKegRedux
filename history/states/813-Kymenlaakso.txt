@@ -1,0 +1,30 @@
+state={
+	id=813
+	name="STATE_813"
+	resources={
+		steel=1
+	}
+
+	history={
+		owner = FIN
+
+		victory_points = {
+			9183 3
+		}
+		#victory_points = {
+		#	3013 1
+		#}
+
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+		add_core_of = FIN
+	}
+	provinces={
+		165 3061 6082 6186 9183 11056 13105 
+	}
+	manpower=160000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

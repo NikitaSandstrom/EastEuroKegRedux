@@ -1,0 +1,34 @@
+state={
+	id=819
+	name="STATE_819"
+	resources={
+		steel=15
+		oil=4
+	}
+
+	history={
+		owner = FIN
+
+		#victory_points = {
+		#	94 1
+		#}
+
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			industrial_complex = 1
+			dockyard = 2
+
+			94 = {
+				naval_base = 2
+			}
+		}
+		#add_core_of = FIN
+	}
+	provinces={
+		94 134 155 170 3071 6021 6096 11175 
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=town
+}
