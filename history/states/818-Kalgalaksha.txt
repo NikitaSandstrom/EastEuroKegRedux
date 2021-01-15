@@ -1,0 +1,34 @@
+state={
+	id=818
+	name="STATE_818"
+	resources={
+		steel=10
+	}
+
+	history={
+		owner = FIN
+
+		#victory_points = {
+		#	6021 3
+		#}
+
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			industrial_complex = 1
+
+			6029 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+		}
+		add_core_of = FIN
+	}
+
+	provinces={
+		36 86 176 3008 3067 3189 6029 9195 9198 11045 11181 
+	}
+	manpower=72000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

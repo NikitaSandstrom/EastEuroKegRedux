@@ -1,0 +1,37 @@
+state={
+	id=816
+	name="STATE_816"
+	resources={
+		steel=3
+		oil=1
+	}
+
+	history={
+		owner = FIN
+		victory_points = {
+			3083 1 
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			3083 = {
+				naval_base = 3
+				coastal_bunker = 1
+
+			}
+
+		}
+		add_core_of = FIN
+
+	}
+
+	provinces={
+		32 169 3009 3083 3117 6066 9094 9194 11066 11172 13101 13102 
+	}
+	manpower=274521
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

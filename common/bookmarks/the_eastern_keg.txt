@@ -1,0 +1,147 @@
+bookmarks = {
+	bookmark = {
+		name = "EASTERN_KEG_NAME"
+		desc = "EASTERN_KEG_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "LSO"
+		default = yes
+		
+		"RFR"={
+			history = "RFR_EASTERN_KEG_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"KYI"={
+			history = "KYI_EASTERN_KEG_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"LSO"={
+			history = "LSO_EASTERN_KEG_DESC"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"MFC"={
+			history = "MFC_EASTERN_KEG_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"FIN"={
+			history = "FIN_EASTERN_KEG_DESC"
+			ideology = democratic
+			ideas = {
+				sisu
+			}
+			focuses = {
+			}
+		}
+		"WRU"={
+			history = "WRU_EASTERN_KEG_DESC"
+			ideology = democratic
+			ideas = {
+			}	
+			focuses = {
+			}		
+		}
+		"RCT"={
+			history = "RCT_EASTERN_KEG_DESC"
+			ideology = neutrality
+			ideas = {
+			}	
+			focuses = {
+			}			
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors ####
+		"SLB"={
+			minor = yes
+			history = "SLB_EASTERN_KEG_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+		"PBP"={
+			minor = yes
+			history = "PBP_EASTERN_KEG_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"PUP"={
+			minor = yes
+			history = "PUP_EASTERN_KEG_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+		"ZHY"={
+			minor = yes
+			history = "ZHY_EASTERN_KEG_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"KFT"={
+			minor = yes
+			history = "KFT_EASTERN_KEG_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+		"TAT"={
+			minor = yes
+			history = "TAT_EASTERN_KEG_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"TCA"={
+			minor = yes
+			history = "TCA_EASTERN_KEG_DESC"
+			ideology = fascism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

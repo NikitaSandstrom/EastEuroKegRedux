@@ -14,7 +14,7 @@
   sikorsky_air:0 "Sikorsky"
 
   odessa_shipyard:0 "Odesa Shipping"
-  crimean_military_concern:0 "Krym' Drydock"
+  crimean_military_concern:0 "Krym' Repairyard"
   mykolaiv_port_authority:0 "Okean Shipyard"
   dnipro_river_design:0 "Dnipro River Design"
   melitopol_shipyard:0 "Azov Shipping"
@@ -25,12 +25,12 @@
   vinnytsia_artillery_bureau:0 "VAB"
   kuzmenko_industries:0 "Kuzmenko Industries"
   pavlograd_arms_plant:0 "Pavlograd Arms Plant"
-  cherkasy_artillery_bureau:0 "Cherkasy Arsenal Factory"
+  cherkasy_artillery_bureau:0 "Kyiv Arsenal Plant"
   united_front:0 "The People's Front"
 
   kharkov_industrial_concern:0 "Kharkov Industrial Concern"
   dnipro_electric_concern:0 "Dniproenergo"
-  donets_civil_plant:0 "Donets Civil Plant"
+  donets_civil_plant:0 "Donets Steelworks"
   kursk_civil_concern:0 "Kursk Civil Concern"
   uman_regional_bank:0 "Uman Regional Banking"
 

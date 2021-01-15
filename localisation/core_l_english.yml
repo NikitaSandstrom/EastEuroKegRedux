@@ -372,7 +372,7 @@
  SHORTCUT:0 "Shortcut: $KEY$"
  ADD_NEW_AIRWING:1 "Add new Air Wing"
  ADD_NEW_AIRWING_VOLUNTEER_BASE:0 "§RCannot create airwing in the volunteer airbase§!"
- CREATING_PROVINCE:0 "Creating Province #"
+ CREATING_PROVINCE:0 "Executing the Intellectuals"
  EXECUTE_HISTORY:0 "Printing Propaganda"
  CREATING_CHKSUM:0 "Scrapping the Fleet"
  GENERATING_GRADIENT_BORDERS:0 "Booting Undesirables"

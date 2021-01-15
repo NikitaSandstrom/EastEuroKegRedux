@@ -833,12 +833,12 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 203
+				controls_state = 202
 			}
 
             cancel = {
                 NOT = {
-                    controls_state = 203
+                    controls_state = 202
                 }
             }
 
