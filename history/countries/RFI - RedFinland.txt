@@ -31,9 +31,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
+
 	name = "Otto Wille Kuusinen"
 	desc = "POLITICS_AIMO_AALTONEN_DESC"
 	picture = "Portrait_Finland_Otto_Wille_Kuusinen.dds"
+
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
