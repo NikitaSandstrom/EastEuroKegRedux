@@ -79,10 +79,10 @@
 
  RFR_fascism:0 "Russian Empire"
  RFR_fascism_DEF:0 "the Empire of Russia"
- RFR_democratic:0 "Russian State"
- RFR_democratic_DEF:0 "the Russian State"
- RFR_neutrality:1 "Russia"
- RFR_neutrality_DEF:1 "Russia"
+ RFR_democratic:0 "Russian Republican State"
+ RFR_democratic_DEF:0 "the Russian Republican State"
+ RFR_neutrality:1 "Russian State"
+ RFR_neutrality_DEF:1 "Russian State"
  RFR_communism:0 "Russian Soviet Socialist Republic"
  RFR_communism_DEF:0 "the Russian Soviet Socialist Republic"
  RFR_fascism_ADJ:0 "Russian"
@@ -90,7 +90,7 @@
  RFR_neutrality_ADJ:0 "Russian"
  RFR_communism_ADJ:0 "Bolshevik"
 
- TCA_fascism:0 "God's Transcaucasia"
+ TCA_fascism:0 "Lord's Transcaucasia"
  TCA_fascism_DEF:0 "the Lord's Transcaucasia"
  TCA_democratic:0 "Transcaucasian Republic"
  TCA_democratic_DEF:0 "the Republic of Transcaucasia"

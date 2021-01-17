@@ -2,6 +2,9 @@
 state={
 	id=228
 	name="STATE_228" # Voroshilovgrad
+	resources={
+		steel=12.000
+	}
 	manpower = 2167411
 	
 	state_category = town

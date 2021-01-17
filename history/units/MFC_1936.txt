@@ -187,6 +187,83 @@ units = {
 	division= {	
 		division_name = {
 				is_name_ordered = yes
+				name_order = 15
+		}
+		location = 12125   
+		division_template = "Strelkovoya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 16
+		}
+		location = 4354   
+		division_template = "Strelkovoya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 17
+		}
+		location = 1278   
+		division_template = "Strelkovoya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 18
+		}
+		location = 7375   
+		division_template = "Strelkovoya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 19
+		}
+		location = 12530   
+		division_template = "Strelkovoya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 20
+		}
+		location = 7712   
+		division_template = "Strelkovoya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 21
+		}
+		location = 6192   
+		division_template = "Strelkovoya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 251  

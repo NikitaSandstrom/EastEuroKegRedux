@@ -2,6 +2,9 @@
 state={
 	id=194
 	name="STATE_194" # Mozyr
+	resources={
+		oil=2.000
+	}
 	manpower = 934632
 	
 	state_category = rural
