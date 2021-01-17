@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = FIN
+		owner = RFI
 
 		#victory_points = {
 		#	94 1
@@ -23,7 +23,7 @@ state={
 				naval_base = 2
 			}
 		}
-		#add_core_of = FIN
+		#add_core_of = RFI
 	}
 	provinces={
 		94 134 155 170 3071 6021 6096 11175 
