@@ -1,12 +1,12 @@
 
 state={
-	id=241
-	name="STATE_241"
+	id=822
+	name="STATE_822"
 
 	history={
 		owner = WRU
 		victory_points = {
-			9247 3 
+			9288 10 
 		}
 		buildings = {
 			infrastructure = 5
@@ -18,9 +18,10 @@ state={
 	}
 
 	provinces={
-		289 6233 6344 6354 9247 9371 9396 11230 11271 11355 11383 
+		9288 9342 
 	}
-	manpower=377369
+	manpower=566053
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=city
 }
+ 

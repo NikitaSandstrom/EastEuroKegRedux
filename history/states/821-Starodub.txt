@@ -1,12 +1,12 @@
 
 state={
-	id=224
-	name="STATE_224"
+	id=821
+	name="STATE_821"
 
 	history={
 		owner = MFC
 		victory_points = {
-			3335 10 
+			11325 3 
 		}
 		buildings = {
 			infrastructure = 5
@@ -18,9 +18,10 @@ state={
 	}
 
 	provinces={
-		288 352 3226 3306 3335 6252 6305 6330 6386 6411 9301 
+		315 343 371 398 3364 3390 11229 11298 11325 
 	}
-	manpower=973743
+	manpower=733824
 	buildings_max_level_factor=1.000
 	state_category=town
 }
+ 

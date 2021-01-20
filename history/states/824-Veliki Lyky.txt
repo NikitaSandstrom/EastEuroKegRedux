@@ -1,7 +1,7 @@
 
 state={
-	id=210
-	name="STATE_210"
+	id=824
+	name="STATE_824"
 
 	history={
 		owner = LSO
@@ -17,9 +17,10 @@ state={
 	}
 
 	provinces={
-		207 248 320 3344 9242 9254 9319 9331 11304 
+		354 387 6293 9353 9386 11234 11259 
 	}
-	manpower=734238
+	manpower=532465
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 }
+ 
