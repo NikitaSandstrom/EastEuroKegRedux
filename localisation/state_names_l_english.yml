@@ -192,7 +192,6 @@
  STATE_191:0 "Tartu"
  STATE_192:0 "Odessa"
  STATE_193:0 "Chernigov"
- STATE_194:0 "Mozyr"
  STATE_195:0 "Petrograd"
  STATE_196:0 "Kherson"
  STATE_197:0 "Mykolaiv"
@@ -205,7 +204,6 @@
  STATE_207:0 "Vitebsk"
  STATE_208:0 "Luga"
  STATE_209:0 "Pskov"
- STATE_210:0 "Nevel"
  STATE_211:0 "Burgas"
  STATE_212:0 "Plovdiv"
  STATE_213:0 "Murmansk"
@@ -233,7 +231,6 @@
  STATE_238:0 "Salsk"
  STATE_239:0 "Saratov"
  STATE_240:0 "Bilhorod"
- STATE_241:0 "Gomel"
  STATE_242:0 "Smolensk"
  STATE_243:0 "Roslavl"
  STATE_244:0 "Volkhov"
@@ -827,6 +824,17 @@
 
  ##MFC##
  STATE_400:0 "Vyatka"
+ STATE_821:0 "Klintsy"
+
+ ## LSO ##
+ STATE_210:0 "Toropets" #Nevel
+ STATE_824:0 "Velikiye Luki"
+
+ ## WRU ##
+ STATE_241:0 "Lobhovichi" #Gomel
+ STATE_194:0 "Salihorsk" #Mozyr
+ STATE_822:0 "Gomel Metro Area"
+ STATE_823:0 "Mazyr"
 
  ## FINLAND ##
  STATE_813:0 "Kymenlaakso"
@@ -837,3 +845,6 @@
  STATE_818:0 "Kalgalaksha"
  STATE_819:0 "Kern"
  STATE_820:0 "Kostomuksha"
+
+ ## KFT ##
+ STATE_825:0 "Taganrog"

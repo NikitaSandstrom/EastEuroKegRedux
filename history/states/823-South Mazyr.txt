@@ -1,10 +1,7 @@
 
 state={
-	id=194
-	name="STATE_194"
-	resources={
-		oil=2.000
-	}
+	id=823
+	name="STATE_823"
 
 	history={
 		owner = WRU
@@ -13,14 +10,18 @@ state={
 			air_base = 3
 
 		}
+		victory_points = {
+			6232 1 
+		}
 		add_core_of = WRU
 
 	}
 
 	provinces={
-		215 304 3293 6319 11313 
+		3203 3507 6232 6556 9249 9554 11453 
 	}
-	manpower=233658
+	manpower=700974
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 }
+ 
