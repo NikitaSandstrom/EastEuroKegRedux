@@ -5550,7 +5550,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_RCT_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/RCT_INF4.dds"
 	}
 	SpriteType = {
 		name = "GFX_NOV_infantry_weapons1_medium"
@@ -6444,7 +6444,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_WRU_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/WRU_INF4.dds"
 	}
 
 
@@ -6858,7 +6858,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_RFR_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/RFR_INF4.dds"
 	}
 	SpriteType = {
 		name = "GFX_MON_infantry_weapons1_medium"
@@ -6915,7 +6915,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_SLB_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/SLB_INF4.dds"
 	}
 	SpriteType = {
 		name = "GFX_ZHY_infantry_weapons1_medium"
@@ -6927,7 +6927,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_ZHY_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/ZHY_INF4.dds"
 	}
 	SpriteType = {
 		name = "GFX_TAT_infantry_weapons1_medium"
@@ -6982,6 +6982,6 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_TCA_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/TCA_INF4.dds"
 	}
 }
