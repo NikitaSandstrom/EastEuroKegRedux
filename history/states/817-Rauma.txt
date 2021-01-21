@@ -10,7 +10,7 @@ state={
 		victory_points = {
 			3122 3 
 		}
-		owner = RFI
+		owner = FIN
 		buildings = {
 			infrastructure = 2
 			dockyard = 1
@@ -18,7 +18,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = RFI
+		add_core_of = FIN
 
 	}
 

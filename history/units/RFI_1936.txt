@@ -1,0 +1,203 @@
+﻿division_template = {
+	name = "Red Guard"	# represents first part of enlarged divisions
+	division_names_group = FIN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Premium Infantry"
+	division_names_group = FIN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Finnish Cav"
+	division_names_group = FIN_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+
+	## CRAPPY INFANTRY DIVISIONS ##
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9206
+		division_template = "Red Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.85
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9206
+		division_template = "Red Guard"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9183
+		division_template = "Red Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.35
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 30
+		division_template = "Red Guard"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 11164
+		division_template = "Red Guard"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 9078
+		division_template = "Red Guard"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 6070
+		division_template = "Red Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 40
+		division_template = "Red Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 6096
+		division_template = "Red Guard"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+
+	## GOOD INFANTRY DIVISIONS ##
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11159
+		division_template = "Premium Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9231
+		division_template = "Premium Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9039
+		division_template = "Premium Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+
+
+
+	## CAV DIVISIONS ##
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6087
+		division_template = "Finnish Cav"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "FIN"
+		}
+		requested_factories = 3
+		progress = 0.85
+		efficiency = 100
+	}
+}

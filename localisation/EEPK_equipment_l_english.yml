@@ -17,9 +17,83 @@
  RCT_EQUIPMENT_VERSION_16:0 "DM"
 
 
- ########################
- ### RUSSIAN REPUBLIC ###
- ########################
+
+
+
+
+
+
+
+ ###############
+ ## UNIVERSAL ##
+ ###############
+ FIN_infantry_equipment_0:0 "M-N M1891/30"
+ FIN_infantry_equipment_0_short:0 "M-N 1891/30"
+ RFI_infantry_equipment_0:0 "M-N M1891/30"
+ RFI_infantry_equipment_0_short:0 "M-N 1891/30"
+ LSO_infantry_equipment_0:0 "M-N M1891/30"
+ LSO_infantry_equipment_0_short:0 "M-N 1891/30"
+ MFC_infantry_equipment_0:0 "M-N M1891/30"
+ MFC_infantry_equipment_0_short:0 "M-N 1891/30"
+ RFR_infantry_equipment_0:0 "M-N M1891/30"
+ RFR_infantry_equipment_0_short:0 "M-N 1891/30"
+ RCT_infantry_equipment_0:0 "M-N M1891/30"
+ RCT_infantry_equipment_0_short:0 "M-N 1891/30"
+ KFT_infantry_equipment_0:0 "M-N M1891/30"
+ KFT_infantry_equipment_0_short:0 "M-N 1891/30"
+ TCA_infantry_equipment_0:0 "M-N M1891/30"
+ TCA_infantry_equipment_0_short:0 "M-N 1891/30"
+ NOV_infantry_equipment_0:0 "M-N M1891/30"
+ NOV_infantry_equipment_0_short:0 "M-N 1891/30"
+ SLB_infantry_equipment_0:0 "M-N M1891/30"
+ SLB_infantry_equipment_0_short:0 "M-N 1891/30"
+ KYI_infantry_equipment_0:0 "M-N M1891/30"
+ KYI_infantry_equipment_0_short:0 "M-N 1891/30"
+ ZHY_infantry_equipment_0:0 "M-N M1891/30"
+ ZHY_infantry_equipment_0_short:0 "M-N 1891/30"
+ WRU_infantry_equipment_0:0 "M-N M1891/30"
+ WRU_infantry_equipment_0_short:0 "M-N 1891/30"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #####################
+ ### ROYALIST BLOC ###
+ #####################
 
  ## INFANTRY ##
  RCT_motorized_equipment_1:0 "NNAZ-AAA"
@@ -41,8 +115,6 @@
  RCT_armored_car_at_equipment:0 "Bronirovaniy Avtomobil 11/37"
  RCT_armored_car_at_equipment_short:0 "BA-11/37"
 
- RCT_infantry_equipment_0:0 "M-N M1891/30"
- RCT_infantry_equipment_0_short:0 "M-N 1891/30"
  RCT_infantry_equipment_1:0 "SVT-38/40 & RGD-33"
  RCT_infantry_equipment_1_short:0 "SVT-38/40 & RGD-33"
  RCT_infantry_equipment_2:0 "PPD-34/38 & TM-38"

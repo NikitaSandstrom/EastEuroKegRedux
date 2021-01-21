@@ -1,0 +1,294 @@
+﻿division_template = {
+	name = "Suojeluskunta"	# represents first part of enlarged divisions
+	division_names_group = FIN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Premium Infantry"
+	division_names_group = FIN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Finnish Cav"
+	division_names_group = FIN_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Finnish Tanks"
+	division_names_group = FIN_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+
+	## CRAPPY INFANTRY DIVISIONS ##
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11138
+		division_template = "Suojeluskunta"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 3013
+		division_template = "Suojeluskunta"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 158
+		division_template = "Suojeluskunta"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 9119
+		division_template = "Suojeluskunta"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 3187
+		division_template = "Suojeluskunta"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 9100
+		division_template = "Suojeluskunta"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 6033
+		division_template = "Suojeluskunta"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.35
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 9233
+		division_template = "Suojeluskunta"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 11146
+		division_template = "Suojeluskunta"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 157
+		division_template = "Suojeluskunta"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 9140
+		division_template = "Suojeluskunta"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 6012
+		division_template = "Suojeluskunta"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+
+	## GOOD INFANTRY DIVISIONS ##
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9100
+		division_template = "Premium Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11105
+		division_template = "Premium Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9119
+		division_template = "Premium Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 11156
+		division_template = "Premium Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9176
+		division_template = "Premium Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 3115
+		division_template = "Premium Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+
+
+	## ARMOR DIVISIONS ##
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11105
+		division_template = "Finnish Tanks"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+
+
+	## CAV DIVISIONS ##
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 165
+		division_template = "Finnish Cav"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+
+
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "FIN"
+		}
+		requested_factories = 3
+		progress = 0.85
+		efficiency = 100
+	}
+}

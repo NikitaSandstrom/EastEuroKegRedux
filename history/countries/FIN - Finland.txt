@@ -1,6 +1,6 @@
 ﻿capital = 111
 
-#OOB = "FIN_1936"
+OOB = "EEPK_FIN_1936"
 
 set_research_slots = 2
 
@@ -65,6 +65,20 @@ if = {
 		basic_cruiser_armor_scheme = 1
 	}
 	set_naval_oob = "FIN_1936_naval_mtg"
+}
+
+
+
+# DIPLOMACY / WAR 36
+if = {
+	limit = {
+		has_start_date < 1936.01.02
+	}
+
+	declare_war_on = {
+		target = RFI
+		type = annex_everything
+	}
 }
 
 set_convoys = 30
