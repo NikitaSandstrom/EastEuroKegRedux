@@ -6984,4 +6984,153 @@ spriteTypes = {
 		name = "GFX_TCA_advanced_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/TCA_INF4.dds"
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	###################
+	## WHITE FINLAND ##
+	###################
+
+	# INFANTRY #
+
+
+	# ARTILLERY #
+
+
+	# TANKS #
+
+
+	# PLANES #
+	SpriteType = {
+		name = "GFX_FIN_fighter3_medium"
+		texturefile = "gfx/interface/technologies/FIN_Fighter3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_FIN_fighter2_medium"
+		texturefile = "gfx/interface/technologies/FIN_Fighter2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_FIN_fighter1_medium"
+		texturefile = "gfx/interface/technologies/FIN_Fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/FIN_GWFighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FIN_CAS1_medium"
+		texturefile = "gfx/interface/technologies/FIN_CAS1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_FIN_CAS2_medium"
+		texturefile = "gfx/interface/technologies/FIN_CAS2.dds"
+	}	
+	#SpriteType = {
+	#	name = "GFX_FIN_CAS3_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_CAS3.dds"
+	#}
+
+	#SpriteType = {
+	#	name = "GFX_FIN_naval_bomber1_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_NAV1.dds"
+	#}	
+	#SpriteType = {
+	#	name = "GFX_FIN_naval_bomber2_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_NAV2.dds"
+	#}	
+	#SpriteType = {
+	#	name = "GFX_FIN_naval_bomber3_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_NAV3.dds"
+	#}	
+
+	#SpriteType = {
+	#	name = "GFX_FIN_early_bomber_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_GWBomber.dds"
+	#}	
+	SpriteType = {
+		name = "GFX_FIN_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/FIN_TAC1.dds"
+	}		
+	#SpriteType = {
+	#	name = "GFX_FIN_tactical_bomber2_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_TAC2.dds"
+	#}		
+	#SpriteType = {
+	#	name = "GFX_FIN_tactical_bomber3_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_TAC3.dds"
+	#}
+
+	#SpriteType = {
+	#	name = "GFX_FIN_heavy_fighter3_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_HeavyFighter3.dds"
+	#}	
+	#SpriteType = {
+	#	name = "GFX_FIN_heavy_fighter2_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_HeavyFighter2.dds"
+	#}	
+	#SpriteType = {
+	#	name = "GFX_FIN_heavy_fighter1_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_HeavyFighter1.dds"
+	#}	
+
+	#SpriteType = {
+	#	name = "GFX_FIN_strategic_bomber1_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_STRAT1.dds"
+	#}	
+	#SpriteType = {
+	#	name = "GFX_FIN_strategic_bomber2_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_STRAT2.dds"
+	#}		
+	#SpriteType = {
+	#	name = "GFX_FIN_strategic_bomber3_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_STRAT3.dds"
+	#}	
+
+	#SpriteType = {
+	#	name = "GFX_FIN_jet_fighter2_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_JetFighter2.dds"
+	#}	
+	#SpriteType = {
+	#	name = "GFX_FIN_jet_fighter1_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_JetFighter1.dds"
+	#}
+	#SpriteType = {
+	#	name = "GFX_FIN_jet_strategic_bomber1_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_JetSTRAT.dds"
+	#}
+	#SpriteType = {
+	#	name = "GFX_FIN_jet_tactical_bomber2_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_JetTAC2.dds"
+	#}	
+	#SpriteType = {
+	#	name = "GFX_FIN_jet_tactical_bomber1_medium"
+	#	texturefile = "gfx/interface/technologies/FIN_JetTAC1.dds"
+	#}
+
+	SpriteType = {
+		name = "GFX_FIN_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/FIN_Scout1.dds"
+	}		
+	SpriteType = {
+		name = "GFX_FIN_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/FIN_Scout2.dds"
+	}
+
 }
