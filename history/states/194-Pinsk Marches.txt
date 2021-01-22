@@ -1,27 +1,26 @@
 
 state={
 	id=194
-	name="STATE_194" # Mozyr
+	name="STATE_194"
 	resources={
 		oil=2.000
 	}
-	manpower = 934632
-	
-	state_category = rural
 
 	history={
 		owner = WRU
 		buildings = {
 			infrastructure = 3
 			air_base = 3
-		}
-		victory_points = {
-			6232 1
+
 		}
 		add_core_of = WRU
+
 	}
 
 	provinces={
-		215 3203 3293 3507 6232 6319 6556 9249 9554 11453 
+		215 304 3293 6319 11313 
 	}
+	manpower=233658
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

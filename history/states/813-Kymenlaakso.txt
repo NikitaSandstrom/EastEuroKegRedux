@@ -20,6 +20,7 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = RFI
+		add_core_of = FIN
 	}
 	provinces={
 		165 3061 6082 6186 9183 11056 13105 

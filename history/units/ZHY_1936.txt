@@ -90,6 +90,13 @@ units = {
 		start_equipment_factor = 0.9
 	}
 }
+192 = { 	
+		fighter_equipment_0 =  {
+			owner = "ZHY" 
+			amount = 50
+		}
+		name = "I. Jagdfligl"
+	}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

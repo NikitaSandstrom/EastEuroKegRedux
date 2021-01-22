@@ -5,27 +5,29 @@ state={
 	resources={
 		aluminium=16.000
 	}
-	manpower = 896311
-	
-	state_category = rural
 
 	history={
 		victory_points = {
-			11683 3
+			11683 3 
 		}
 		victory_points = {
-			6597 1
+			6597 1 
 		}
 		owner = ZHY
 		buildings = {
 			infrastructure = 5
 			dockyard = 1
+
 		}
 		add_core_of = ZHY
 		add_core_of = UKR
+
 	}
 
 	provinces={
-		409 574 3403 3755 6597 9573 11546 11683 
+		409 574 3403 3755 6597 9573 11546 11683 11715 
 	}
+	manpower=896311
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

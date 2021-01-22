@@ -183,6 +183,22 @@ units = {
 		start_equipment_factor = 0.85
 	}
 }
+
+217 = { 	
+		fighter_equipment_0 =  {
+			owner = "RCT" 
+			amount = 50
+		}
+		name = "1. Letnaya Eskadriya"
+	}
+217 = { 	
+		fighter_equipment_0 =  {
+			owner = "RCT" 
+			amount = 50
+		}
+		name = "2. Letnaya Eskadriya"
+	}
+
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

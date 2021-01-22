@@ -113,6 +113,20 @@ units = {
 		start_equipment_factor = 0.7
 	}
 }
+206 = { 	
+		fighter_equipment_0 =  {
+			owner = "WRU" 
+			amount = 50
+		}
+		name = "1. Liotnaja Eskadryllia"
+	}
+206 = { 	
+		fighter_equipment_0 =  {
+			owner = "WRU" 
+			amount = 50
+		}
+		name = "2. Liotnaja Eskadryllia"
+	}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
