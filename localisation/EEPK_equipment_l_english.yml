@@ -325,20 +325,20 @@
 
  RCT_infantry_equipment_1:0 "SVT-38/40 & RGD-33"
  RCT_infantry_equipment_1_short:0 "SVT-38/40 & RGD-33"
- RCT_infantry_equipment_2:0 "PPD-34/38 & TM-38"
- RCT_infantry_equipment_2_short:0 "PPD-34/38 & TM-38"
+ RCT_infantry_equipment_2:0 "PPSh-40 & TM-38"
+ RCT_infantry_equipment_2_short:0 "PPSh-40 & TM-38"
  RCT_infantry_equipment_3:0 "Avtomat Shpagin & PG-82"
  RCT_infantry_equipment_3_short:0 "ASh-44 & PG-82"
  NOV_infantry_equipment_1:0 "SVT-38/40 & RGD-33"
  NOV_infantry_equipment_1_short:0 "SVT-38/40 & RGD-33"
- NOV_infantry_equipment_2:0 "PPD-34/38 & TM-38"
- NOV_infantry_equipment_2_short:0 "PPD-34/38 & TM-38"
+ NOV_infantry_equipment_2:0 "PPBV-42 & TM-38"
+ NOV_infantry_equipment_2_short:0 "PPBV-42 & TM-38"
  NOV_infantry_equipment_3:0 "Avtomat Alexandrovich i Ivanov & PG-82"
  NOV_infantry_equipment_3_short:0 "AAI-45 & PG-82"
  KFT_infantry_equipment_1:0 "SVT-38/40 & RGD-33"
  KFT_infantry_equipment_1_short:0 "SVT-38/40 & RGD-33"
- KFT_infantry_equipment_2:0 "PPD-34/38 & TM-38"
- KFT_infantry_equipment_2_short:0 "PPD-34/38 & TM-38"
+ KFT_infantry_equipment_2:0 "PPT-27 & TM-38"
+ KFT_infantry_equipment_2_short:0 "PPT-27 & TM-38"
  KFT_infantry_equipment_3:0 "Avtomat Bulkin & PG-82"
  KFT_infantry_equipment_3_short:0 "AB-44 & PG-82"
 
@@ -941,8 +941,8 @@
  ##################
  MFC_infantry_equipment_1:0 "Muscovite Guns I"
  MFC_infantry_equipment_1_short:0 "Muscovite Guns I"
- MFC_infantry_equipment_2:0 "Muscovite Guns II"
- MFC_infantry_equipment_2_short:0 "Muscovite Guns II"
+ MFC_infantry_equipment_2:0 "PPK-41 & TM-38"
+ MFC_infantry_equipment_2_short:0 "PPK-41 & TM-38"
  MFC_infantry_equipment_3:0 "Avtomat Tokarev & PG-82"
  MFC_infantry_equipment_3_short:0 "AT-44 & PG-82"
  WRU_infantry_equipment_1:0 "Belarussian Guns I"
@@ -951,3 +951,180 @@
  WRU_infantry_equipment_2_short:0 "Belarussian Guns II"
  WRU_infantry_equipment_3:0 "Kuzmishchev Avtomat & PG-82"
  WRU_infantry_equipment_3_short:0 "KA-44 & PG-82"
+
+
+
+
+
+
+ ####################
+ ## COMMUNIST BLOC ##
+ ####################
+ LSO_infantry_equipment_1:0 "Leningrad Guns I"
+ LSO_infantry_equipment_1_short:0 "Leningrad Guns I"
+ LSO_infantry_equipment_2:0 "Leningrad Guns II"
+ LSO_infantry_equipment_2_short:0 "Leningrad Guns II"
+ LSO_infantry_equipment_3:0 "Avtomat Sudaev & PG-82"
+ LSO_infantry_equipment_3_short:0 "AS-44 & PG-82"
+ 
+
+
+
+
+
+
+
+
+ ################
+ ## SIBIR BLOC ##
+ ################
+ RFR_infantry_equipment_1:0 "Russian Guns I"
+ RFR_infantry_equipment_1_short:0 "Russian Guns I"
+ RFR_infantry_equipment_2:0 "PPK-42 & TM-38"
+ RFR_infantry_equipment_2_short:0 "PPK-42 & TM-38"
+ RFR_infantry_equipment_3:0 "Avtomat Kabankov & PG-82"
+ RFR_infantry_equipment_3_short:0 "AK-44 & PG-82"
+
+
+
+
+
+ ####################
+ ## UKRAINIAN BLOC ##
+ ####################
+ KYI_infantry_equipment_1:0 "Kyivan Guns I"
+ KYI_infantry_equipment_1_short:0 "Kyivan Guns I"
+ KYI_infantry_equipment_2:0 "VMP m1930 & TM-38"
+ KYI_infantry_equipment_2_short:0 "VMP-30 & TM-38"
+ KYI_infantry_equipment_3:0 "Avtomat Kalashnyk & PG-82"
+ KYI_infantry_equipment_3_short:0 "AK-54 & PG-82"
+ SLB_infantry_equipment_1:0 "Slobodan Guns I"
+ SLB_infantry_equipment_1_short:0 "Slobodan Guns I"
+ SLB_infantry_equipment_2:0 "Slobodan Guns II"
+ SLB_infantry_equipment_2_short:0 "Slobodan Guns II"
+ SLB_infantry_equipment_3:0 "Avtomat Katyuk & PG-82"
+ SLB_infantry_equipment_3_short:0 "AK-53 & PG-82"
+ ZHY_infantry_equipment_1:0 "Odessan Guns I"
+ ZHY_infantry_equipment_1_short:0 "Odessan Guns I"
+ ZHY_infantry_equipment_2:0 "Odessan Guns II"
+ ZHY_infantry_equipment_2_short:0 "Odessan Guns II"
+ ZHY_infantry_equipment_3:0 "Avtomat Korovin & PG-82"
+ ZHY_infantry_equipment_3_short:0 "AK-45 & PG-82"
+ TAT_infantry_equipment_1:0 "Tatar Guns I"
+ TAT_infantry_equipment_1_short:0 "Tatar Guns I" 
+ TAT_infantry_equipment_2:0 "PPT-27 & TM-38"
+ TAT_infantry_equipment_2_short:0 "PPT-27 & TM-38"
+ TAT_infantry_equipment_3:0 "Avtomat Bulkin & PG-82"
+ TAT_infantry_equipment_3_short:0 "AB-44 & PG-82"
+
+
+
+
+ ####################
+ ## CAUCASIAN BLOC ##
+ ####################
+ TCA_infantry_equipment_1:0 "Caucasian Guns I"
+ TCA_infantry_equipment_1_short:0 "Caucasian Guns I" 
+ TCA_infantry_equipment_2:0 "Pistolet Pulemyot Madsen m1945 & TM-38"
+ TCA_infantry_equipment_2_short:0 "PPM-45 & TM-38"
+ TCA_infantry_equipment_3:0 "Avtomat Alexandrovich i Kashtanov & PG-82"
+ TCA_infantry_equipment_3_short:0 "AAK-45 & PG-82"
+
+
+
+
+
+
+
+
+
+
+
+
+ ###################
+ ## WHITE FINLAND ##
+ ###################
+
+ ## INFANTRY ##
+
+
+ ## ARTILLERY ##
+
+
+ ## TANKS ##
+
+ ## AIRCRAFT ##
+ FIN_scout_plane_equipment_1:1 "Valtion Lentokonetehdas E.30 Kotka II"
+ FIN_scout_plane_equipment_1_short:1 "E.30 Kotka"
+ FIN_scout_plane_equipment_2:1 "Fokker-VL C.X"
+ FIN_scout_plane_equipment_2_short:1 "VL C.X"
+ FIN_fighter_equipment_0:1 "Valtion Lentokonetehdas Kukko"
+ FIN_fighter_equipment_0_short:1 "VL Kukko"
+ FIN_fighter_equipment_1:1 "Valtion Lentokonetehdas Myrsky"
+ FIN_fighter_equipment_1_short:1 "VL Myrsky"
+ FIN_fighter_equipment_2:1 "Valtion Lentokonetehdas Humu"
+ FIN_fighter_equipment_2_short:1 "VL Humu"
+ FIN_fighter_equipment_3:1 "Valtion Lentokonetehdas Pyorremyrsky"
+ FIN_fighter_equipment_3_short:1 "VL Pyorremyrsky"
+ #FIN_heavy_fighter_equipment_1:1 "Pronin Pr-1"
+ #FIN_heavy_fighter_equipment_1_short:1 "Pr-1"
+ #FIN_heavy_fighter_equipment_2:1 "Pronin Pr-4"
+ #FIN_heavy_fighter_equipment_2_short:1 "Pr-4"
+ #FIN_heavy_fighter_equipment_3:1 "Pronin Pr-6"
+ #FIN_heavy_fighter_equipment_3_short:1 "Pr-6"
+ #FIN_strat_bomber_equipment_1:1 "Shkuratov Shk-5"
+ #FIN_strat_bomber_equipment_1_short:1 "Shk-5"
+ #FIN_strat_bomber_equipment_2:1 "Shkuratov Shk-6"
+ #FIN_strat_bomber_equipment_2_short:1 "Shk-6"
+ #FIN_strat_bomber_equipment_3:1 "Shkuratov Shk-8"
+ #FIN_strat_bomber_equipment_3_short:1 "Shk-8"
+ #FIN_jet_fighter_equipment_1:1 "Khanipov Kh-11T"
+ #FIN_jet_fighter_equipment_1_short:1 "Kh-11T"
+ #FIN_jet_fighter_equipment_2:1 "Khanipov Kh-13M"
+ #FIN_jet_fighter_equipment_2_short:1 "Kh-13M"
+ #FIN_jet_strat_bomber_equipment_1:1 "Shkuratov Shk-10"
+ #FIN_jet_strat_bomber_equipment_1_short:1 "Shk-10"
+ #FIN_tac_bomber_equipment_0:1 "Dyogtin DY-1"
+ #FIN_tac_bomber_equipment_0_short:1 "DY-1"
+ FIN_tac_bomber_equipment_1:1 "Valtion Lentokonetehdas Blenheim"
+ FIN_tac_bomber_equipment_1_short:1 "VL Blenheim"
+ #FIN_tac_bomber_equipment_2:1 "Myshelov MY-4U"
+ #FIN_tac_bomber_equipment_2_short:1 "MY-4U"
+ #FIN_tac_bomber_equipment_3:1 "Myshelov MY-5"
+ #FIN_tac_bomber_equipment_3_short:1 "MY-5"
+ #FIN_jet_tac_bomber_equipment_1:1 "Myshelov MY-7M"
+ #FIN_jet_tac_bomber_equipment_1_short:1 "MY-7M"
+ #FIN_jet_tac_bomber_equipment_2:1 "Myshelov MY-9"
+ #FIN_jet_tac_bomber_equipment_2_short:1 "MY-9"
+ #FIN_nav_bomber_equipment_1:1 "Flyorov MS-2"
+ #FIN_nav_bomber_equipment_1_short:1 "MS-2"
+ #FIN_nav_bomber_equipment_2:1 "Flyorov MS-3T"
+ #FIN_nav_bomber_equipment_2_short:1 "MS-3T"
+ #FIN_nav_bomber_equipment_3:1 "Flyorov MS-5T"
+ #FIN_nav_bomber_equipment_3_short:1 "MS-5T"
+ FIN_CAS_equipment_1:1 "Ilmailuvoimien Lentokonetehdas D.27 Haukka II"
+ FIN_CAS_equipment_1_short:1 "IVL Haukka II"
+ FIN_CAS_equipment_2:1 "Valtion Lentokonetehdas Pyry II"
+ FIN_CAS_equipment_2_short:1 "VL Pyry II"
+ #FIN_CAS_equipment_3:1 "Flyorov Fl-5"
+ #FIN_CAS_equipment_3_short:1 "Fl-5"
+ #FIN_cv_nav_bomber_equipment_1:1 "Flyorov MS-2K"
+ #FIN_cv_nav_bomber_equipment_1_short:1 "MS-2K"
+ #FIN_cv_nav_bomber_equipment_2:1 "Flyorov MS-3TK"
+ #FIN_cv_nav_bomber_equipment_2_short:1 "MS-3TK"
+ #FIN_cv_nav_bomber_equipment_3:1 "Flyorov MS-5TK"
+ #FIN_cv_nav_bomber_equipment_3_short:1 "MS-5TK"
+ FIN_cv_CAS_equipment_1:1 "Valtion Merenkulkutehdas D.29 Haukka III"
+ FIN_cv_CAS_equipment_1_short:1 "VM Haukka III"
+ FIN_cv_CAS_equipment_2:1 "Valtion Merenkulkutehdas Tulva I"
+ FIN_cv_CAS_equipment_2_short:1 "VM Tulva I"
+ #FIN_cv_CAS_equipment_3:1 "Flyorov Fl-5K"
+ #FIN_cv_CAS_equipment_3_short:1 "Fl-5K"
+ FIN_cv_fighter_equipment_0:1 "Valtion Merenkulkutehdas Lokki"
+ FIN_cv_fighter_equipment_0_short:1 "VM Lokki"
+ FIN_cv_fighter_equipment_1:1 "Valtion Merenkulkutehdas Lumimyrsky"
+ FIN_cv_fighter_equipment_1_short:1 "VM Lumimyrsky"
+ FIN_cv_fighter_equipment_2:1 "Valtion Merenkulkutehdas Vilske"
+ FIN_cv_fighter_equipment_2_short:1 "VM Vilske"
+ FIN_cv_fighter_equipment_3:1 "Valtion Merenkulkutehdas Sykloni"
+ FIN_cv_fighter_equipment_3_short:1 "VM Sykloni"
