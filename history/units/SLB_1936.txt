@@ -77,13 +77,15 @@ units = {
 		start_equipment_factor = 0.5
 	}
 }
-225 = { 	
+air_wings = {
+	225 = { 	
 		fighter_equipment_0 =  {
 			owner = "SLB" 
 			amount = 15
 		}
 		name = "1. Litny Polk"
 	}
+}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

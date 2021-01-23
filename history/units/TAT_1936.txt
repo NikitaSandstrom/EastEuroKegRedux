@@ -47,13 +47,15 @@ units = {
 
 	}
 }
-137 = { 	
+air_wings = {
+	137 = { 	
 		fighter_equipment_0 =  {
 			owner = "TAT" 
 			amount = 15
 		}
 		name = "I. Hava Kante"
 	}
+}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

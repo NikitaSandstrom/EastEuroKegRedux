@@ -344,20 +344,22 @@ units = {
 
 	}
 }
-408 = { 	
+air_wings = {
+	408 = { 	
 		fighter_equipment_0 =  {
 			owner = "RFR" 
 			amount = 50
 		}
 		name = "1. Letnaya Eskadriya"
 	}
-408 = { 	
+	408 = { 	
 		fighter_equipment_0 =  {
 			owner = "RFR" 
 			amount = 50
 		}
 		name = "2. Letnaya Eskadriya"
 	}
+}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

@@ -90,13 +90,15 @@ units = {
 		start_equipment_factor = 0.6
 	}
 }
-196 = { 	
+air_wings = {
+	196 = { 	
 		fighter_equipment_0 =  {
 			owner = "NOV" 
 			amount = 25
 		}
 		name = "1. Letnaya Eskadriya"
 	}
+}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

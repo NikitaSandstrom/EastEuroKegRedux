@@ -304,34 +304,37 @@ units = {
 		start_equipment_factor = 0.85
 	}
 }
-219 = { 	
+
+air_wings = {
+	219 = { 	
 		fighter_equipment_0 =  {
 			owner = "MFC" 
 			amount = 50
 		}
 		name = "1. Letny' Polk"
 	}
-223 = { 	
+	223 = { 	
 		fighter_equipment_0 =  {
 			owner = "MFC" 
 			amount = 50
 		}
 		name = "2. Letny' Polk"
 	}
-248 = { 	
+	248 = { 	
 		fighter_equipment_0 =  {
 			owner = "MFC" 
 			amount = 50
 		}
 		name = "3. Letny' Polk"
 	}
-219 = { 	
+	219 = { 	
 		fighter_equipment_0 =  {
 			owner = "MFC" 
 			amount = 50
 		}
 		name = "4. Letny' Polk"
 	}
+}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
