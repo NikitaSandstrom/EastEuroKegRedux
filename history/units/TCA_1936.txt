@@ -77,6 +77,15 @@ units = {
 		start_equipment_factor = 0.6
 	}
 }
+air_wings = {
+	231 = { 	
+		fighter_equipment_0 =  {
+			owner = "TCA" 
+			amount = 50
+		}
+		name = "I. Mebdrzoli Prta"
+	}
+}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
