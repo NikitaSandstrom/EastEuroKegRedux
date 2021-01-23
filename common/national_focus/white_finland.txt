@@ -1,0 +1,3951 @@
+﻿focus_tree = {
+	id = white_finland_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FIN
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1600 }
+
+#	focus = {
+#		id = FIN_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id =
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+
+
+
+
+
+
+	#######################
+	## CIVIL WAR FOCUSES ##
+	#######################
+
+	# Fighting the Reds #
+	focus = {
+		id = FIN_fightingTheReds
+		icon = GFX_goal_generic_construction
+		#prerequisite = { 
+		#	focus = 
+		#}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		#relative_position_id =
+		x = 5
+		y = 0
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# Reorganise the Military #
+	focus = {
+		id = FIN_reorganiseTheMilitary
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_fightingTheReds
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_fightingTheReds
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# The Northern Campaign #
+	focus = {
+		id = FIN_theNorthernCampaign
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_reorganiseTheMilitary
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_reorganiseTheMilitary
+		x = -1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# The Southern Campaign #
+	focus = {
+		id = FIN_theSouthernCampaign
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_theNorthernCampaign
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_theNorthernCampaign
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# Defense of the Kannas #
+	focus = {
+		id = FIN_defenseOfTheKannas
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_reorganiseTheMilitary
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_reorganiseTheMilitary
+		x = 1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# Purchase Foreign Equipment #
+	focus = {
+		id = FIN_purchaseForeignEquipment
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_defenseOfTheKannas
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_defenseOfTheKannas
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	#####################
+	## AFTER CIVIL WAR ##
+	#####################
+	
+	# Defeat of the Reds #
+	focus = {
+		id = FIN_defeatOfTheReds
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_theSouthernCampaign
+		}
+		prerequisite = { 
+			focus = FIN_purchaseForeignEquipment
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_theSouthernCampaign
+		x = 1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# The Aftermath #
+	focus = {
+		id = FIN_theAftermath
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_defeatOfTheReds
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_defeatOfTheReds
+		x = -1
+		y = 2
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# Handling the Prisoners #
+	focus = {
+		id = FIN_handlingThePrisoners
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_defeatOfTheReds
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_defeatOfTheReds
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# Securing Karelia #
+	focus = {
+		id = FIN_securingKarelia
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_defeatOfTheReds
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_defeatOfTheReds
+		x = 1
+		y = 2
+		
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# Political Future #
+	focus = {
+		id = FIN_politicalFuture
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_theAftermath
+		}
+		prerequisite = { 
+			focus = FIN_securingKarelia
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_theAftermath
+		x = 1
+		y = 1
+		
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	#########################
+	## DEMOCRACY MINI-PATH ##
+	#########################
+
+	# A Democratic Future #
+	focus = {
+		id = FIN_democraticFuture
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_politicalFuture
+		}
+		mutually_exclusive = { 
+			focus =  FIN_riseOfFascism
+		}
+		
+		relative_position_id = FIN_politicalFuture
+		x = -4
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# Stabilise The Political Atmosphere #
+	focus = {
+		id = FIN_stabiliseThePoliticalAtmosphere
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_democraticFuture
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_democraticFuture
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# Deal with the Extremists #
+	focus = {
+		id = FIN_dealWithTheExtremists
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_stabiliseThePoliticalAtmosphere
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_stabiliseThePoliticalAtmosphere
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# Hold the Elections #
+	focus = {
+		id = FIN_holdTheElections
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_dealWithTheExtremists
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_dealWithTheExtremists
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	##################
+	## FASCISM PATH ##
+	##################
+
+	# Rise of Fascism #
+	focus = {
+		id = FIN_riseOfFascism
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_politicalFuture
+		}
+		mutually_exclusive = { 
+			focus =  FIN_democraticFuture
+		}
+		
+		relative_position_id = FIN_politicalFuture
+		x = 4
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# Prominence of IKL #
+	focus = {
+		id = FIN_prominenceOfIKL
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_riseOfFascism
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_riseOfFascism
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# IKL's Coup #
+	focus = {
+		id = FIN_IKLsCoup
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_prominenceOfIKL
+		}
+		mutually_exclusive = { 
+			focus =  FIN_mannerheimsIntervention
+		}
+		
+		relative_position_id = FIN_prominenceOfIKL
+		x = 0
+		y = 2
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Securing the Support of the Army #
+	focus = {
+		id = FIN_secureSupportOfTheArmy
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_IKLsCoup
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_IKLsCoup
+		x = -1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+	
+	# Counter Mannerheim's Influence #
+	focus = {
+		id = FIN_counterMannerheimsInfluence
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_secureSupportOfTheArmy
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_secureSupportOfTheArmy
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Securing the People's Support #
+	focus = {
+		id = FIN_securingThePeoplesSupport
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_IKLsCoup
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_IKLsCoup
+		x = 1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Counter Communist Influence #
+	focus = {
+		id = FIN_counterCommunistInfluencce
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_securingThePeoplesSupport
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_securingThePeoplesSupport
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# The Nation is Secure #
+	focus = {
+		id = FIN_theNationIsSecure
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_counterMannerheimsInfluence
+		}
+		prerequisite = {
+			focus = FIN_counterCommunistInfluencce
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_counterMannerheimsInfluence
+		x = 1
+		y = 2
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Execute the Communist Leaders #
+	focus = {
+		id = FIN_executeTheCommunistLeaders
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_counterCommunistInfluencce
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_counterCommunistInfluencce
+		x = 1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	#######################
+	## FASCIST SUB-PATHS ##
+	#######################
+
+
+	# Foreign Policy #
+	focus = {
+		id = FIN_foreignPolicy
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_theNationIsSecure
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_theNationIsSecure
+		x = -3
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Ties with European Fascists #
+	focus = {
+		id = FIN_tiesWithEuropeanFascists
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_foreignPolicy
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_foreignPolicy
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Military Ties to Germany #
+	focus = {
+		id = FIN_militaryTiesToGermany
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_tiesWithEuropeanFascists
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_tiesWithEuropeanFascists
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Alliance with Germany #
+	focus = {
+		id = FIN_allianceWithGermany
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_militaryTiesToGermany
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_militaryTiesToGermany
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Expand Military Co-Operation #
+	focus = {
+		id = FIN_expandMilitaryCoOperation
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_allianceWithGermany
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_allianceWithGermany
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Finland's Ambitions #
+	focus = {
+		id = FIN_finlandsAmbitions
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_expandMilitaryCoOperation
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_expandMilitaryCoOperation
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Economic Policy #
+	focus = {
+		id = FIN_economicPolicy
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_theNationIsSecure
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_theNationIsSecure
+		x = -1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Economic Self-Reliance #
+	focus = {
+		id = FIN_economicSelfReliance
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_economicPolicy
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_economicPolicy
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Promote Corporatism #
+	focus = {
+		id = FIN_promoteCorporatism
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_economicSelfReliance
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_economicSelfReliance
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Internal Policy #
+	focus = {
+		id = FIN_internalPolicy
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_theNationIsSecure
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_theNationIsSecure
+		x = 1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+	
+	# Create a Secret Police #
+	focus = {
+		id = FIN_createASecretPolice
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_internalPolicy
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_internalPolicy
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Work with German Companies #
+	focus = {
+		id = FIN_workWithGermanCompanies
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_createASecretPolice
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_createASecretPolice
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+	# Resettle Russian Lands #
+	focus = {
+		id = FIN_resettleRussianLands
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_workWithGermanCompanies
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_workWithGermanCompanies
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# The Military #
+	focus = {
+		id = FIN_theMilitary
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_theNationIsSecure
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_theNationIsSecure
+		x = 3
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Infantry is our Backbone #
+	focus = {
+		id = FIN_infantryIsOurBackbone
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_theMilitary
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_theMilitary
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Finnish SS Divisions #
+	focus = {
+		id = FIN_finnishSSDivisions
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_infantryIsOurBackbone
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_infantryIsOurBackbone
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+	###########################
+	## MANNERHEIM'S SUB-PATH ##
+	###########################
+
+	# Mannerheim's Intervention #
+	focus = {
+		id = FIN_mannerheimsIntervention
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_prominenceOfIKL
+		}
+		mutually_exclusive = { 
+			focus =  FIN_IKLsCoup
+		}
+		
+		relative_position_id = FIN_prominenceOfIKL
+		x = 5
+		y = 2
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Organise the Civil Guard #
+	focus = {
+		id = FIN_organiseTheCivilGuard
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_mannerheimsIntervention
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_mannerheimsIntervention
+		x = -2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Anti-Fascist Action #
+	focus = {
+		id = FIN_antiFascistAction
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_mannerheimsIntervention
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_mannerheimsIntervention
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Anti-Communist Action #
+	focus = {
+		id = FIN_antiCommunistAction 
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_mannerheimsIntervention
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_mannerheimsIntervention
+		x = 2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Towards Democracy #
+	focus = {
+		id = FIN_towardsDemocracy
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_organiseTheCivilGuard
+		}
+		prerequisite = {
+			focus = FIN_antiFascistAction
+		}
+		prerequisite = {
+			focus = FIN_antiCommunistAction
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_antiFascistAction
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Lay the Groundwork #
+	focus = {
+		id = FIN_layTheGroundwork
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_towardsDemocracy
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_towardsDemocracy
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Set a Date for the Elections #
+	focus = {
+		id = FIN_setTheElectionDate
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_layTheGroundwork
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_layTheGroundwork
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# The Election #
+	focus = {
+		id = FIN_theElection
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_setTheElectionDate
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_setTheElectionDate
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+
+
+
+	############################
+	## FOREIGN RELATIONS TREE ##
+	############################
+
+	# Foreign Ambitions #
+	focus = {
+		id = FIN_foreignAmbitions
+		icon = GFX_goal_generic_construction
+		#prerequisite = { 
+		#	focus = 
+		#}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		#relative_position_id = 
+		x = 15
+		y = 0
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+	
+	##################
+	## OFFENSE TREE ##
+	##################
+
+	# Aggressive Expansion #
+	focus = {
+		id = FIN_aggressiveExpansion
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_foreignAmbitions
+		}
+		mutually_exclusive = { 
+			focus = FIN_armedNeutrality 
+		}
+		
+		relative_position_id = FIN_foreignAmbitions
+		x = -3
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Prepare the People #
+	focus = {
+		id = FIN_prepareThePeople
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_aggressiveExpansion
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_aggressiveExpansion
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Increase Army Funds #
+	focus = {
+		id = FIN_increaseArmyFunds
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_prepareThePeople
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_prepareThePeople
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Towards an Empire #
+	focus = {
+		id = FIN_towardsAnEmpire
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_increaseArmyFunds
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_increaseArmyFunds
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Norwegian Claims #
+	focus = {
+		id = FIN_norwegianClaims
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_towardsAnEmpire
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_towardsAnEmpire
+		x = -2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Intergrating Finnmark #
+	focus = {
+		id = FIN_integratingFinnmark
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_norwegianClaims
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_norwegianClaims
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Russian Claims #
+	focus = {
+		id = FIN_russianClaims
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_towardsAnEmpire
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_towardsAnEmpire
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Integrating Ingria and Murmansk #
+	focus = {
+		id = FIN_ingrianIntegrating
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_russianClaims
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_russianClaims
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Swedish Claims #
+	focus = {
+		id = FIN_swedishClaims
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_towardsAnEmpire
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_towardsAnEmpire
+		x = 2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Integrating Lappland #
+	focus = {
+		id = FIN_integratingLappland
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_swedishClaims
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_swedishClaims
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Proclaim Greater Finland #
+	focus = {
+		id = FIN_proclaimGreaterFinland
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_integratingFinnmark
+			focus = FIN_ingrianIntegrating
+			focus = FIN_integratingLappland
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_ingrianIntegrating
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Finnish Domination #
+	focus = {
+		id = FIN_finnishDomination
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_proclaimGreaterFinland
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_proclaimGreaterFinland
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	##################
+	## DEFENSE PATH ##
+	##################
+
+	# Armed Neutrality #
+	focus = {
+		id = FIN_armedNeutrality
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_foreignAmbitions
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_foreignAmbitions
+		x = 3
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Invite Foreign Investors #
+	focus = {
+		id = FIN_inviteForeignInvestors
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_armedNeutrality
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_armedNeutrality
+		x = -1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Expand Border Forts #
+	focus = {
+		id = FIN_expandBorderForts
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_inviteForeignInvestors
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_inviteForeignInvestors
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Purchase Foreign Weaponry #
+	focus = {
+		id = FIN_purchaseForeignWeaponry
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_armedNeutrality
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_armedNeutrality
+		x = 1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Study Foreign Designs #
+	focus = {
+		id = FIN_studyForeignDesigns
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_purchaseForeignWeaponry
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_purchaseForeignWeaponry
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Prepare for War #
+	focus = {
+		id = FIN_prepareForWar
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_expandBorderForts
+		}
+		prerequisite = {
+			focus = FIN_studyForeignDesigns
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_expandBorderForts
+		x = 1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Strike Down the Bear #
+	focus = {
+		id = FIN_strikeDownTheBear
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_prepareForWar
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_prepareForWar
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Finish off our Enemy #
+	focus = {
+		id = FIN_finishOffOurEnemy
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_strikeDownTheBear
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_strikeDownTheBear
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+
+
+	#############################
+	## DEMOCRACY VARIOUS PATHS ##
+	#############################
+
+	#####################
+	## KALLIO SUB-PATH ##
+	#####################
+
+	# Kallio's Presidency #
+	focus = {
+		id = FIN_kalliosPresidency
+		icon = GFX_goal_generic_construction
+		#prerequisite = { 
+		#	focus = 
+		#}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		#relative_position_id = 
+		x = 18
+		y = 14
+		
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Kallio's Policies #
+	focus = {
+		id = FIN_kalliosPolicies
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_kalliosPresidency
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_kalliosPresidency
+		x = -1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Neutral Foreign Policy #
+	focus = {
+		id = FIN_neutralForeignPolicy
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_kalliosPolicies
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_kalliosPolicies
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Include SDP in Government #
+	focus = {
+		id = FIN_includeSDP
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_neutralForeignPolicy
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_neutralForeignPolicy
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Agricultural Reforms #
+	focus = {
+		id = FIN_agriculturalReforms
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_includeSDP
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_includeSDP
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Anti-Monarchist Policies #
+	focus = {
+		id = FIN_antiMonarchistPolicies
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_agriculturalReforms
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_agriculturalReforms
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+	
+	# The Economy #
+	focus = {
+		id = FIN_theEconomy
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_kalliosPresidency
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_kalliosPresidency
+		x = 1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Build up the Finnish Economy #
+	focus = {
+		id = FIN_buildUpFinnishEconomy
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_theEconomy
+			focus = FIN_protectingFinnishIndependence
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_theEconomy
+		x = 1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Industrialise Karelia #
+	focus = {
+		id = FIN_industrialiseKarelia
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_buildUpFinnishEconomy
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_buildUpFinnishEconomy
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Build up War Industry #
+	focus = {
+		id = FIN_buildUpWarIndustry
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_industrialiseKarelia
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_industrialiseKarelia
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Expand VL #
+	focus = {
+		id = FIN_expandVL
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_buildUpWarIndustry
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_buildUpWarIndustry
+		x = -1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Expand VKT #
+	focus = {
+		id = FIN_expandVKT
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_buildUpWarIndustry
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_buildUpWarIndustry
+		x = 1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Fund Tikkakosi #
+	focus = {
+		id = FIN_fundTikkakosi
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_expandVKT
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_expandVKT
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	#########################
+	## MANNERHEIM SUB-PATH ##
+	######################### 
+
+	# Mannerheim's Presidency #
+	focus = {
+		id = FIN_mannerheimsPresidency
+		icon = GFX_goal_generic_construction
+		#prerequisite = { 
+		#	focus =
+		#}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		#relative_position_id =
+		x = 23
+		y = 14
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Protecting Finnish Independence #
+	focus = {
+		id = FIN_protectingFinnishIndependence
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_mannerheimsPresidency
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_mannerheimsPresidency
+		x = -2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Increase Army Funding #
+	focus = {
+		id = FIN_increaseArmyFunding
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_protectingFinnishIndependence
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_protectingFinnishIndependence
+		x = 2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Expand Border Fortifications #
+	focus = {
+		id = FIN_expandBorderFortifications
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_increaseArmyFunding
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_increaseArmyFunding
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Expand Karelia's Air Defense #
+	focus = {
+		id = FIN_expandKarelianAirDefense
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_expandBorderFortifications
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_expandBorderFortifications
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Increase Conscription #
+	focus = {
+		id = FIN_increaseConscription
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_expandKarelianAirDefense
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_expandKarelianAirDefense
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Mending the Divide #
+	focus = {
+		id = FIN_mendingTheDivide
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_mannerheimsPresidency
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_mannerheimsPresidency
+		x = 2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Pardon Former Reds #
+	focus = {
+		id = FIN_pardonFormerReds
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_mendingTheDivide
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_mendingTheDivide
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Improve Working Conditions #
+	focus = {
+		id = FIN_improveWorkingConditions
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_pardonFormerReds
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_pardonFormerReds
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+	
+	# Discourage Revolutionary Activity #
+	focus = {
+		id = FIN_discourageRevolutionaryActivity
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_improveWorkingConditions
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_improveWorkingConditions
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+	
+	# Anti-Revolutionary Task Force #
+	focus = {
+		id = FIN_antiRevolutionaryTaskForce
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_discourageRevolutionaryActivity
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_discourageRevolutionaryActivity
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Allow Former Red Guards to Serve #
+	focus = {
+		id = FIN_allowFormerRedGuards
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_increaseConscription
+		}
+		prerequisite = {
+			focus = FIN_antiRevolutionaryTaskForce
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_increaseConscription
+		x = 1
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Mannerheim's Foreign Policy #
+	focus = {
+		id = FIN_mannerheimsForeignPolicy
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_mannerheimsPresidency
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_mannerheimsPresidency
+		x = 4
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Friendly Ties with Scandinavia #
+	focus = {
+		id = FIN_tiesWithScandinavia
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_mannerheimsForeignPolicy
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_mannerheimsForeignPolicy
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Expand Swedish Economic Ties #
+	focus = {
+		id = FIN_expandSwedishEconomicTies
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_tiesWithScandinavia
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_tiesWithScandinavia
+		x = 0
+		y = 2
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+	
+	# Expand Swedish Military Ties #
+	focus = {
+		id = FIN_expandSwedishMilitaryTies
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_expandSwedishEconomicTies
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_expandSwedishEconomicTies
+		x = 0
+		y = 2
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Our Ambitions #
+	focus = {
+		id = FIN_ourAmbitions
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_allowFormerRedGuards
+		}
+		prerequisite = {
+			focus = FIN_expandSwedishMilitaryTies
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_allowFormerRedGuards
+		x = 2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Rekindle Ties with Britain #
+	focus = {
+		id = FIN_rekindleBritishTies
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_mannerheimsForeignPolicy
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_mannerheimsForeignPolicy
+		x = 2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Invite British Companies #
+	focus = {
+		id = FIN_inviteBritishCompanies
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_rekindleBritishTies
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_rekindleBritishTies
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Renew the 1919 Agreement #
+	focus = {
+		id = FIN_renewTheAgreement
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_inviteBritishCompanies
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_inviteBritishCompanies
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Ties with France #
+	focus = {
+		id = FIN_tiesWithFrance
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_renewTheAgreement
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_renewTheAgreement
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Invite French Companies #
+	focus = {
+		id = FIN_inviteFrenchCompanies
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_tiesWithFrance
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_tiesWithFrance
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	#####################
+	## SVIN'S SUB-PATH ##
+	#####################
+
+	# Svinhufvud's Presidency #
+	focus = {
+		id = FIN_svinhufvudsPresidency
+		icon = GFX_goal_generic_construction
+		#prerequisite = { 
+		#	focus = 
+		#}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		#relative_position_id = 
+		x = 22
+		y = 7
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Svin's Economic Policies #
+	focus = {
+		id = FIN_svinEconomicPolicy
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_svinhufvudsPresidency
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_svinhufvudsPresidency
+		x = -2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Free Market Capitalism #
+	focus = {
+		id = FIN_freeMarketCapitalism
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_svinEconomicPolicy
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_svinEconomicPolicy
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Negotiate with Business Owners #
+	focus = {
+		id = FIN_negotiateWithBusinesses
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_freeMarketCapitalism
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_freeMarketCapitalism
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Invest in Military Production #
+	focus = {
+		id = FIN_investIntoMilitary
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_negotiateWithBusinesses
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_negotiateWithBusinesses
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Invest in Domestic Military Producers #
+	focus = {
+		id = FIN_investDomesticMilitary
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_investIntoMilitary
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_investIntoMilitary
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Svin's Interal Policy #
+	focus = {
+		id = FIN_svinInternalPolicy
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_svinhufvudsPresidency
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_svinhufvudsPresidency
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Denounce the IKL #
+	focus = {
+		id = FIN_denounceIKL
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_svinInternalPolicy
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_svinInternalPolicy
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Stabilise the Country #
+	focus = {
+		id = FIN_stabiliseTheNation
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_denounceIKL
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_denounceIKL
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Svin's Foreign Policy #
+	focus = {
+		id = FIN_svinForeignPolicy
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_svinhufvudsPresidency
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_svinhufvudsPresidency
+		x = 2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Improve Relations with Majors #
+	focus = {
+		id = FIN_improveRelationsMajors
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_svinForeignPolicy
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_svinForeignPolicy
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Improve Ties with the Nords #
+	focus = {
+		id = FIN_improveRelationsNords
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_improveRelationsMajors
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_improveRelationsMajors
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Anti-Communist Attitude #
+	focus = {
+		id = FIN_antiCommunistAttitude
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_improveRelationsNords
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_improveRelationsNords
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Introduce a Foreign Volunteer Corps #
+	focus = {
+		id = FIN_foreignVolunteers
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_svinForeignPolicy
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_svinForeignPolicy
+		x = 2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	# Invite Foreign Advisors #
+	focus = {
+		id = FIN_inviteForeignAdvisors
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_foreignVolunteers
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_foreignVolunteers
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+}		
