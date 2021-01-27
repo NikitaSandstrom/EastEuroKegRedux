@@ -6,6 +6,7 @@ set_research_slots = 2
 
 add_ideas = {
 	limited_conscription
+	FIN_disorganized_army
 }
 
 set_technology = {

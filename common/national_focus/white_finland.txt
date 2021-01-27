@@ -86,7 +86,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_political_power = 50
+			add_stability = -0.1
+			add_war_support = 0.05
 		}
 	}
 
@@ -118,7 +120,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			remove_ideas = FIN_disorganized_army
 		}
 	}
 
@@ -150,7 +152,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_war_support = 0.05
+			#Add Decisions for Northern Assaults#
 		}
 	}
 
@@ -165,6 +168,16 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+
+		available = {
+			AND = {
+				controls_state = 148
+				controls_state = 147
+				controls_state = 722
+				controls_state = 808
+			}
+		}
 		
 		relative_position_id = FIN_theNorthernCampaign
 		x = 0
@@ -182,7 +195,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_war_support = 0.05
 		}
 	}
 
@@ -214,7 +227,23 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			146 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 9100
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 9105
+				}
+				add_dynamic_modifier = {
+					modifier = FIN_defending_the_Kannas
+				}
+			}
 		}
 	}
 
@@ -246,7 +275,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			#Add Decisions to get more equipment
 		}
 	}
 
@@ -265,6 +294,18 @@
 		prerequisite = { 
 			focus = FIN_purchaseForeignEquipment
 		}
+
+		available = {
+			AND = {
+				NOT = {
+					has_war_with = RFI
+				}
+				NOT = {
+					country_exists = RFI
+				}
+			}
+		}
+
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
@@ -285,7 +326,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_stability = 0.01
+			add_ideas = {
+				FIN_red_prisoners_of_war
+			}
 		}
 	}
 
@@ -306,7 +350,7 @@
 		y = 2
 		
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -317,7 +361,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = FIN_economic_revival
+				days = 50
+			}
 		}
 	}
 
@@ -332,6 +379,15 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		available = {
+			AND = {
+				date > 1939.01.01
+				NOT = {
+					has_government = fascism
+				}
+			}
+		}
 		
 		relative_position_id = FIN_defeatOfTheReds
 		x = 0
@@ -349,7 +405,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			# Events for releasing Prisoners #
 		}
 	}
 
@@ -381,7 +437,19 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.05
 
+
+			# Make Custom Localisation #
+			add_state_core = 148
+			add_state_core = 147
+			add_state_core = 808
+			add_state_core = 818
+			add_state_core = 819
+			add_state_core = 215
+			add_state_core = 216
 		}
 	}
 
@@ -416,7 +484,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_political_power = 50
 		}
 	}
 
@@ -441,7 +509,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -452,7 +520,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_stability = 0.05
+			add_war_support = -0.03
 		}
 	}
 
@@ -473,7 +542,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -484,7 +553,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_stability = 0.03
+			add_war_support = -0.03
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
 		}
 	}
 
@@ -505,7 +579,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 1
@@ -516,7 +590,15 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_stability = 0.02
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
 		}
 	}
 
@@ -548,7 +630,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			# Events for the election #
 		}
 	}
 
@@ -584,7 +666,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_stability = -0.03
+			add_war_support = 0.05
+			add_timed_idea = {
+				idea = FIN_rise_of_fascism
+				days = 105
+			}
 		}
 	}
 
@@ -599,13 +686,17 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		available = {
+			fascism > 0.25
+		}
 		
 		relative_position_id = FIN_riseOfFascism
 		x = 0
-		y = 1
+		y = 2
 		
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -616,7 +707,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_stability = -0.05
 		}
 	}
 
@@ -648,7 +739,34 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_stability = -0.03
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			if = {
+				limit = {
+					fascism < 0.5
+				}
+				start_civil_war = {
+					ideology = neutrality
+					size = 0.4
+					#only_own_territory = yes
+
+					capital = 818
+
+					states = { 818 808 148 215 216 149 150 816 }
+
+					#keep_unit_leaders = {  }
+
+					#keep_political_leader = yes
+				}
+
+
+				else = {
+					# Add timed decision for Civil War #
+				}
+			}
 		}
 	}
 
@@ -680,7 +798,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_stability = 0.01
+			army_experience = 10
+			add_ideas = FIN_fascist_influence_army
 		}
 	}
 
@@ -712,7 +832,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			# Remove Mannerheim
+			add_ideas = FIN_antiFascists_removed
 		}
 	}
 
@@ -744,7 +865,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_stability = 0.01
+			add_ideas = FIN_fascist_indoctrination
 		}
 	}
 
@@ -776,7 +898,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			#Remove any Democratic/Socialist aligned Advisors
+			add_ideas = FIN_communists_under_check
 		}
 	}
 
@@ -811,7 +934,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			#Stop the Anti-Fascist Event
+			add_stability = 0.05
 		}
 	}
 
@@ -826,6 +950,10 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		available = {
+			date > 1938.01.01
+		}
 		
 		relative_position_id = FIN_counterCommunistInfluencce
 		x = 1
@@ -843,7 +971,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_ideas = FIN_communists_executed
+			remove_ideas = FIN_red_prisoners_of_war
 		}
 	}
 
@@ -869,7 +998,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -880,7 +1009,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = 50
 		}
 	}
 
@@ -912,7 +1041,24 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			every_country = {
+				limit = {
+					AND = {
+						capital_scope = {
+							is_on_continent = europe
+						}
+						has_government = fascism
+					}
+				}
+				reverse_add_opinion_modifier = {
+					target = FIN
+					modifier = FIN_fascist_ties
+				}
+				add_opinion_modifier = {
+					target = FIN
+					modifier = FIN_fascist_ties
+				}
+			}
 		}
 	}
 
@@ -944,7 +1090,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			army_experience = 10
+			add_ideas = FIN_german_military_aid
 		}
 	}
 
@@ -976,7 +1123,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = 25
+			#Event to Join the Axis
 		}
 	}
 
@@ -991,6 +1139,20 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		available = { 
+			OR = {
+				is_in_faction_with = GER
+				is_guaranteed_by = GER
+			}
+		}
+
+		bypass = { # CHANGE TO HAS_FLAG IN EVENTS #
+			has_relation_modifier = {
+				target = GER
+				modifier = FIN_kicked_from_german_embassy
+			}
+		}
 		
 		relative_position_id = FIN_allianceWithGermany
 		x = 0
@@ -1008,7 +1170,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			army_experience = 10
+			swap_ideas = {
+				remove_idea = FIN_german_military_aid
+				add_idea = FIN_expanded_military_aid
+			}
 		}
 	}
 
@@ -1029,7 +1195,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1040,7 +1206,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = 50
 		}
 	}
 
@@ -1061,7 +1227,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1072,7 +1238,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = 25
 		}
 	}
 
@@ -1104,7 +1270,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			#Add Decisions to Improve Resources and Industry
+			add_ideas = FIN_autarky
 		}
 	}
 
@@ -1136,7 +1303,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			#Add Decisions to deal with Corporatism
+			add_ideas = FIN_corporatism
 		}
 	}
 
@@ -1157,7 +1325,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1168,7 +1336,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = 50
 		}
 	}
 
@@ -1200,7 +1368,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_ideas = FIN_salainen_poliisi
 		}
 	}
 
@@ -1232,7 +1400,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			#Add German Industrial Companies to Finland
 		}
 	}
 
@@ -1263,7 +1431,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			#decisions to resettle Murmansk, and Ingrian territory
 		}
 	}
 
@@ -1284,7 +1452,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 1
@@ -1295,7 +1463,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			army_experience = 15
 		}
 	}
 
@@ -1327,7 +1495,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_ideas = FIN_infantry_focus
 		}
 	}
 
@@ -1342,6 +1510,10 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		available = {
+			is_in_faction_with = GER
+		}
 		
 		relative_position_id = FIN_infantryIsOurBackbone
 		x = 0
@@ -1359,7 +1531,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			army_experience = 10
+			# Add Decisions for Finnish SS Divisions
 		}
 	}
 
@@ -1394,7 +1567,34 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			create_country_leader = {
+				name = "Baron Carl GE Mannerheim"
+				desc = BARON_CGE_MANNERHEIM_DESC
+				picture = "Portrait_Finland_CGE_Mannerheim.dds"
+				expire = "1951.01.27"
+				ideology = moderatism 
+				traits = {
+				
+				}
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = FIN_mannerheim_coup_long
+				name = FIN_mannerheim_coup
+			}
+
+			add_stability = 0.1
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+
+			add_ideas = FIN_suspended_democracy
+
 		}
 	}
 
@@ -1426,7 +1626,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			army_experience = 10
+			add_war_support = 0.01
+			add_ideas = FIN_suojeluskunta
 		}
 	}
 
@@ -1447,7 +1649,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -1458,7 +1660,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_stability = -0.03
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
 		}
 	}
 
@@ -1479,7 +1685,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -1490,7 +1696,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_stability = -0.03
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
 		}
 	}
 
@@ -1517,7 +1727,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -1528,7 +1738,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_ideas = FIN_towards_democracy
 		}
 	}
 
@@ -1549,7 +1759,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 1
@@ -1560,7 +1770,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_timed_idea = {
+				idea = FIN_lay_groundwork
+				days = 140
+			}
 		}
 	}
 
@@ -1592,7 +1805,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = 150
 		}
 	}
 
@@ -1624,7 +1837,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			#Add Event for Elections
+			remove_ideas = FIN_suspended_democracy
 		}
 	}
 
@@ -1648,13 +1862,23 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		available = {
+			OR = {
+				has_completed_focus = FIN_finlandsAmbitions
+				has_completed_focus = FIN_neutralForeignPolicy
+				has_completed_focus = FIN_ourAmbitions
+				has_completed_focus = FIN_antiCommunistAttitude
+				date > 1938.01.01
+			}
+		}
 		
 		#relative_position_id = 
-		x = 15
+		x = 17
 		y = 0
 		
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -1665,7 +1889,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			#Perkele#
 		}
 	}
 
@@ -1684,6 +1908,9 @@
 		mutually_exclusive = { 
 			focus = FIN_armedNeutrality 
 		}
+		available = {
+			has_government = fascism
+		}
 		
 		relative_position_id = FIN_foreignAmbitions
 		x = -3
@@ -1701,7 +1928,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = 25
+			add_war_support = 0.05
 		}
 	}
 
@@ -1733,7 +1961,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_stability = -0.01
+			add_political_power = 25
+			add_war_support = 0.05
 		}
 	}
 
@@ -1765,7 +1995,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_war_support = 0.01
+			add_ideas = FIN_well_funded_army
 		}
 	}
 
@@ -1797,7 +2028,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_stability = 0.01
+			add_war_support = 0.03
+			add_political_power = 25
 		}
 	}
 
@@ -1829,7 +2062,17 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			reverse_add_opinion_modifier = {
+				target = NOR
+				modifier = FIN_claims_on_territories
+			}
+			add_opinion_modifier = {
+				target = NOR
+				modifier = FIN_claims_on_territories
+			}
+			add_war_support = 0.01
+			add_political_power = 25
+			add_state_claim = 144
 		}
 	}
 
@@ -1844,6 +2087,10 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		available = {
+			controls_state = 144
+		}
 		
 		relative_position_id = FIN_norwegianClaims
 		x = 0
@@ -1861,7 +2108,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = -50
+			add_stability = -0.02
+			add_state_core = 144
 		}
 	}
 
@@ -1893,7 +2142,20 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			reverse_add_opinion_modifier = {
+				target = LSO
+				modifier = FIN_claims_on_territories
+			}
+			add_opinion_modifier = {
+				target = LSO
+				modifier = FIN_claims_on_territories
+			}
+			add_war_support = 0.01
+			add_political_power = 25
+			add_state_claim = 213
+			add_state_claim = 195
+			add_state_claim = 208
+			add_state_claim = 244
 		}
 	}
 
@@ -1908,13 +2170,21 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+		available = {
+			AND = {
+				controls_state = 195
+				controls_state = 213
+				controls_state = 208
+				controls_state = 244
+			}
+		}
 		
 		relative_position_id = FIN_russianClaims
 		x = 0
 		y = 1
 		
 
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 1
@@ -1925,7 +2195,36 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = -75
+			add_stability = -0.05
+
+			add_state_core = 208
+			add_state_core = 213
+			add_state_core = 195
+			add_state_core = 244
+
+			208 = { #Luga
+				set_state_name = "Laukaa"
+			}
+			213 = { #Murmansk
+				set_state_name = "Ita-Kola"
+			}
+			195 = { #Petrograd
+				set_state_name = "Inkeri"
+			}
+
+			set_province_name = {
+				id = 3151
+				name = "Pietari"
+			}
+			set_province_name = {
+				id = 3134
+				name = "Ita-Kola"
+			}
+			set_province_name = {
+				id = 9098
+				name = "Laukaa"
+			}
 		}
 	}
 
@@ -1957,7 +2256,17 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			reverse_add_opinion_modifier = {
+				target = SWE
+				modifier = FIN_claims_on_territories
+			}
+			add_opinion_modifier = {
+				target = SWE
+				modifier = FIN_claims_on_territories
+			}
+			add_war_support = 0.01
+			add_political_power = 25
+			add_state_claim = 666
 		}
 	}
 
@@ -1972,6 +2281,9 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+		available = {
+			controls_state = 666
+		}
 		
 		relative_position_id = FIN_swedishClaims
 		x = 0
@@ -1989,7 +2301,13 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = -50
+			add_stability = -0.02
+
+			add_state_core = 666
+			666 = { # Swedish Lappland
+				set_state_name = "Lansi-Lappi"
+			}
 		}
 	}
 
@@ -2023,14 +2341,60 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = -100
+			set_cosmetic_flag = FIN_greater_finland
+			add_ideas = FIN_suur-suomi
 		}
 	}
 
 
-	# Finnish Domination #
+	# Claim Estonia #
 	focus = {
-		id = FIN_finnishDomination
+		id = FIN_claimEstonia
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_proclaimGreaterFinland
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		
+		relative_position_id = FIN_proclaimGreaterFinland
+		x = -2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = EST
+				modifier = FIN_claims_on_territories
+			}
+			add_opinion_modifier = {
+				target = EST
+				modifier = FIN_claims_on_territories
+			}
+			add_political_power = 25
+			add_war_support = 0.01
+			add_state_claim = 13
+			add_state_claim = 191
+		
+		}
+	}
+
+	
+	# Liberate the Livonians #
+	focus = {
+		id = FIN_liberateLivonia
 		icon = GFX_goal_generic_construction
 		prerequisite = { 
 			focus = FIN_proclaimGreaterFinland
@@ -2055,7 +2419,188 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = LAT
+				modifier = FIN_claims_on_territories
+			}
+			add_opinion_modifier = {
+				target = LAT
+				modifier = FIN_claims_on_territories
+			}
+			add_political_power = 25
+			add_war_support = 0.01
+			add_state_claim = 12
+			add_state_claim = 190
+		}
+	}
+
+	# Subjugate Our Enemies #
+	focus = {
+		id = FIN_subjugateOurEnemies
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_proclaimGreaterFinland
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
 		
+		relative_position_id = FIN_proclaimGreaterFinland
+		x = 2
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 25
+			add_war_support = 0.01
+			
+			if = {
+				limit = {
+					country_exists = LSO
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = LSO
+				}
+			}
+			if = {
+				limit = {
+					country_exists = SWE
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = SWE
+				}
+			}
+			if = {
+				limit = {
+					country_exists = NOR
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = NOR
+				}
+			}
+			if = {
+				limit = {
+					country_exists = DEN
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = DEN
+				}
+			}
+
+			## Add Decisions to create Puppets of conquered Lands ##
+		}
+	}
+
+
+	# Finnish Domination #
+	focus = {
+		id = FIN_finnishDomination
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = FIN_claimEstonia
+			focus = FIN_liberateLivonia
+			focus = FIN_subjugateOurEnemies
+		}
+		#mutually_exclusive = { 
+		#	focus =  
+		#}
+		available = {
+			AND = {
+				AND = {
+					owns_state = 12
+					owns_state = 13
+					owns_state = 190
+					owns_state = 191
+				}
+				OR = {
+					AND = {
+						LSO = {
+							is_puppet_of = FIN
+						}
+						SWE = {
+							is_puppet_of = FIN
+						}
+					}
+					AND = {
+						LSO = {
+							is_puppet_of = FIN
+						}
+						NOR = {
+							is_puppet_of = FIN
+						}
+					}
+					AND = {
+						LSO = {
+							is_puppet_of = FIN
+						}
+						DEN = {
+							is_puppet_of = FIN
+						}
+					}
+					AND = {
+						SWE = {
+							is_puppet_of = FIN
+						}
+						NOR = {
+							is_puppet_of = FIN
+						}
+					}
+					AND = {
+						SWE = {
+							is_puppet_of = FIN
+						}
+						DEN = {
+							is_puppet_of = FIN
+						}
+					}
+					AND = {
+						NOR = {
+							is_puppet_of = FIN
+						}
+						DEN = {
+							is_puppet_of = FIN
+						}
+					}
+				}
+			}
+		}
+		
+		relative_position_id = FIN_liberateLivonia
+		x = 0
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = FIN_finnish_empire
+				remove_idea = FIN_suur-suomi
+			}
+			add_war_support = 0.05
+			add_stability = 0.05
 		}
 	}
 
@@ -2071,9 +2616,15 @@
 		prerequisite = { 
 			focus = FIN_foreignAmbitions
 		}
-		#mutually_exclusive = { 
-		#	focus =  
-		#}
+		mutually_exclusive = { 
+			focus =  FIN_aggressiveExpansion
+		}
+
+		available = {
+			NOT = {
+				has_government = fascism
+			}
+		}
 		
 		relative_position_id = FIN_foreignAmbitions
 		x = 3
@@ -2091,7 +2642,17 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_stability = 0.02
+			add_war_support = 0.02
+
+			if = {
+				limit = {
+					has_idea = FIN_kallio_neutrality
+				}
+				remove_ideas = FIN_kallio_neutrality
+			}
+
+			add_ideas = FIN_armed_neutrality
 		}
 	}
 
@@ -2123,7 +2684,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			# Decisions for foreign investors #
 		}
 	}
 
@@ -2155,7 +2716,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_timed_idea = {
+				idea = FIN_expanding_forts
+				days = 180
+			}
 		}
 	}
 
@@ -2187,7 +2751,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			# Decsisions to buy foreign weapons #
 		}
 	}
 
@@ -2219,7 +2783,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			# Decisions to research weapons #
 		}
 	}
 
@@ -2237,6 +2801,18 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		available = {
+			OR = {
+				threat > 0.60
+				any_country = {
+					AND = {
+						is_major = yes
+						has_war = yes
+					}
+				}
+			}
+		}
 		
 		relative_position_id = FIN_expandBorderForts
 		x = 1
@@ -2254,7 +2830,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_war_support = 0.05
+			add_ideas = FIN_preparing_for_war
 		}
 	}
 
@@ -2269,6 +2846,14 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+		available = {
+			OR = {
+				threat > 0.90
+				LSO = {
+					has_war = yes
+				}
+			}
+		}
 		
 		relative_position_id = FIN_prepareForWar
 		x = 0
@@ -2286,7 +2871,15 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_war_support = 0.05
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = LSO
+			}
+			add_state_core = 213
+			add_state_core = 195
+			add_state_core = 208
+			add_state_core = 244
 		}
 	}
 
@@ -2301,6 +2894,19 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+		available = {
+			OR = {
+				AND = {
+					controls_state = 213
+					controls_state = 195
+					controls_state = 208
+					controls_state = 244
+				}
+				LSO = {
+					is_puppet_of = LSO
+				}
+			}
+		}
 		
 		relative_position_id = FIN_strikeDownTheBear
 		x = 0
@@ -2318,7 +2924,44 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			if = {
+				limit = {
+					country_exists = MFC
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = MFC
+				}
+			}
+			if = {
+				limit = {
+					country_exists = RCT
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = RCT
+				}
+			}
+			if = {
+				limit = {
+					country_exists = KFT
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = KFT
+				}
+			}
+			if = {
+				limit = {
+					country_exists = RFR
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = RFR
+				}
+			}
+
+			# Add Decision to unify European Russian Puppets into one giant puppet
 		}
 	}
 
@@ -2345,6 +2988,10 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		#available = {
+		#	in events, create flag has_kallio_as_leader
+		#}
 		
 		#relative_position_id = 
 		x = 18
@@ -2362,7 +3009,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = 50
 		}
 	}
 
@@ -2394,7 +3041,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = 25
 		}
 	}
 
@@ -2426,7 +3073,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = 25
+			add_ideas = FIN_kallio_neutrality
 		}
 	}
 
@@ -2458,7 +3106,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			add_stability = 0.02
+			add_ideas = FIN_punamultahallitus
 		}
 	}
 
@@ -2490,7 +3143,23 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_ideas = FIN_agricultural_reform
+			149 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			814 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2522,7 +3191,44 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_ideas = FIN_anti_monarchism
+			add_stability = 0.02
+			
+			every_country = {
+				limit = {
+					AND = {
+						has_government = neutrality
+						neutrality > 0.5
+					}
+				}
+				reverse_add_opinion_modifier = {
+					target = FIN
+					modifier = FIN_against_the_monarchies_bad
+				}
+				add_opinion_modifier = {
+					target = FIN
+					modifier = FIN_against_the_monarchies_bad
+				}
+			}
+
+			every_country = {
+				limit = {
+					AND = {
+						NOT = {
+							has_government = neutrality
+						}
+						neutrality < 0.4
+					}
+				}
+				reverse_add_opinion_modifier = {
+					target = FIN
+					modifier = FIN_against_the_monarchies_good
+				}
+				add_opinion_modifier = {
+					target = FIN
+					modifier = FIN_against_the_monarchies_good
+				}
+			}
 		}
 	}
 
@@ -2554,7 +3260,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = 25
 		}
 	}
 
@@ -2587,7 +3293,26 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			149 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			111 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = {
+				idea = FIN_building_the_economy
+				days = 180
+			}
 		}
 	}
 
@@ -2619,7 +3344,22 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			146 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			216 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2651,7 +3391,14 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			111 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2683,7 +3430,16 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			# VL Will become Designer if one isn't already selected #
+			air_experience = 10
+			815 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2715,7 +3471,15 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			# VKT Becomes Materials Designer if one isn't already selected #
+			814 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2747,7 +3511,19 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			815 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2772,7 +3548,7 @@
 		y = 14
 		
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2783,7 +3559,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			# Ticking Decision towards Civil War #
+			add_political_power = 50
 		}
 	}
 
@@ -2815,7 +3592,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_war_support = 0.05
+			add_stability = 0.02
 		}
 	}
 
@@ -2847,7 +3625,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			army_experience = 10
+			add_offsite_building = { type = arms_factory level = 1 }
 		}
 	}
 
@@ -2879,7 +3658,50 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			146 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			216 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			215 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			808 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -2911,7 +3733,48 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			808 = {
+				add_building_construction = {
+					type = anti_air_building 
+					level = 1
+					instant_build = yes
+				}
+			}
+			818 = {
+				add_building_construction = {
+					type = anti_air_building 
+					level = 1
+					instant_build = yes
+				}
+			}
+			819 = {
+				add_building_construction = {
+					type = anti_air_building 
+					level = 1
+					instant_build = yes
+				}
+			}
+			215 = {
+				add_building_construction = {
+					type = anti_air_building 
+					level = 1
+					instant_build = yes
+				}
+			}
+			820 = {
+				add_building_construction = {
+					type = anti_air_building 
+					level = 1
+					instant_build = yes
+				}
+			}
+			216 = {
+				add_building_construction = {
+					type = anti_air_building 
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2943,7 +3806,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_ideas = FIN_increased_conscription_law
+			add_stability = -0.03
+			add_war_support = 0.02
 		}
 	}
 
@@ -2964,7 +3829,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2975,7 +3840,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_political_power = 50
+			add_stability = -0.01
 		}
 	}
 
@@ -2996,7 +3862,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -3007,7 +3873,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			add_stability = -0.01
 		}
 	}
 
@@ -3039,7 +3909,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			add_stability = -0.03
 		}
 	}
 
@@ -3060,7 +3934,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 1
@@ -3071,7 +3945,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			add_popularity = {
+				ideology = communism
+				popularity = -0.03
+			}
+			add_stability = 0.01
 		}
 	}
 
@@ -3103,8 +3981,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		
-		}
+			add_ideas = FIN_anti_revolutionary_task_force
+
+			#Remove Mannerheim instable decision
+		}	
 	}
 
 

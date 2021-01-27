@@ -1,0 +1,22 @@
+opinion_modifiers = {
+	
+	FIN_fascist_ties = {
+		value = 50
+	}
+
+	FIN_kicked_from_german_embassy = {
+		value = -100
+	}
+
+	FIN_claims_on_territories = {
+		value = -50
+	}
+
+	FIN_against_the_monarchies_bad = {
+		value = -25
+	}
+
+	FIN_against_the_monarchies_good = {
+		value = 25
+	}
+}
