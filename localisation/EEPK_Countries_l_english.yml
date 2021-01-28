@@ -206,3 +206,13 @@
  SLB_democratic_ADJ:0 "Slobodan"
  SLB_neutrality_ADJ:0 "Slobodan"
  SLB_communism_ADJ:0 "Communard"
+
+
+
+
+
+
+ ## COSMETIC TAGS ##
+ FIN_greater_finland:0 "Greater Finland"
+ FIN_greater_finland_DEF:0 "Greater Finland"
+ FIN_greater_finland_ADJ:0 "Suomi"

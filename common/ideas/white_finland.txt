@@ -1,0 +1,409 @@
+ideas = {
+
+	country = {
+		FIN_disorganized_army = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_attack_factor = -0.3
+				army_org_factor = -0.1
+			}
+		}
+
+		FIN_red_prisoners_of_war = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				communism_drift = -0.03
+			}
+		}
+
+		FIN_economic_revival = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industry_repair_factor = 1
+				production_speed_buildings_factor = 0.5
+			}
+		}
+
+		FIN_rise_of_fascism = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				fascism_drift = 0.08
+				stability_weekly = -0.01
+			}
+		}
+
+		FIN_fascist_influence_army = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				fascism_drift = 0.03
+				experience_gain_army = 0.01
+			}
+		}
+
+		FIN_antiFascists_removed = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				fascism_drift = 0.03
+				stability_factor = 0.03
+			}
+		}
+
+		FIN_fascist_indoctrination = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		FIN_communists_under_check = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		FIN_communists_executed = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		FIN_german_military_aid = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				experience_gain_army_factor = 0.25
+			}
+		}
+
+		FIN_expanded_military_aid = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				experience_gain_army_factor = 0.5
+			}
+		}
+
+		FIN_autarky = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		FIN_corporatism = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		FIN_salainen_poliisi = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				compliance_growth_on_our_occupied_states = 0.5
+			}
+		}
+
+		FIN_infantry_focus = {
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = 0.1
+				}
+
+				infantry = {
+					build_cost_ic = -0.25
+				}
+			}
+		}
+
+		FIN_suspended_democracy = {
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_weekly = -0.01
+				democratic_drift = -0.03
+			}
+		}
+
+		FIN_suojeluskunta = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				experience_gain_army = 0.03
+				army_infantry_defence_factor = 0.05
+			}
+		}
+
+		FIN_towards_democracy = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				democratic_drift = 0.03
+			}
+		}
+
+		FIN_lay_groundwork = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				democratic_drift = 0.05
+				stability_weekly = 0.05
+			}
+		}
+
+		FIN_well_funded_army = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		FIN_suur-suomi = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.3
+				stability_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+
+		FIN_finnish_empire = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.5
+				stability_factor = 0.15
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+			}
+		}
+
+		FIN_armed_neutrality = {
+			allowed = {
+				always = no
+				NOT = {
+					has_war = yes
+				}
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.20
+				production_speed_arms_factory_factor = 0.25 
+
+				join_faction_tension = 1.00
+				generate_wargoal_tension = 1.00
+
+				ai_join_ally_desire_factor = -10.00
+				ai_get_ally_desire_factor = -10.00
+			}
+		}
+
+		FIN_expanding_forts = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_bunker_factor = 1.00
+			}
+		}
+
+		FIN_preparing_for_war = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.25 
+			}
+		}
+
+		FIN_kallio_neutrality = {
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				join_faction_tension = 1.00
+				ai_join_ally_desire_factor = -10.00
+				ai_get_ally_desire_factor = -10.00
+			}
+		}
+
+		FIN_punamultahallitus = {
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_weekly = 0.001
+			}
+		}
+
+		FIN_agricultural_reform = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		FIN_anti_monarchism = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				neutrality_drift = -0.03
+			}
+		}
+
+		FIN_building_the_economy = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 1.00
+			}
+		}
+
+		FIN_increased_conscription_law = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				conscription = 0.03
+			}
+		}
+
+		FIN_anti_revolutionary_task_force = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.10
+				communism_drift = -0.03
+			}
+		}
+
+		FIN_red_guards_in_army = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_defence_factor = 0.05
+			}
+		}
+
+		FIN_finno_swedish_ties = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		FIN_free_market_capitalism = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_speed_industrial_complex_factor = 0.40
+			}
+		}
+
+		FIN_foreign_volunteer_corps = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				send_volunteers_tension = -0.25
+				send_volunteer_factor = 0.35
+				send_volunteer_divisions_required = -0.5
+				experience_gain_army_factor = 0.15
+			}
+		}
+		
+	}
+}

@@ -38,8 +38,8 @@ create_country_leader = {
 
 create_country_leader = {
 	
-	name = "Viktor Aleksandryuk"
-	picture = "gfx/leaders/SLB/Portrait_Sloboda_Viktor_Aleksandryuk.dds"
+	name = "Nikita Khruschev"
+	picture = "gfx/leaders/SLB/Portrait_Sloboda_Nikita_Khruschev.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
