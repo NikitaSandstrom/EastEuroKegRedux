@@ -85,24 +85,24 @@ if = {
 set_convoys = 30
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1933.7.1"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 set_popularities = {
-		democratic = 10
+		democratic = 79
 		fascism = 10
 		communism = 1
-		neutrality = 79
+		neutrality = 10
 }
 
 
 create_country_leader = {
-	name = "Rysto Ryti"
-	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
-	picture = "Portrait_Finland_Risto_Heikki_Ryti.dds"
+	name = "Pehr Evind Svinhufvud"
+	desc = ""
+	picture = "Portrait_Finland_Pehr_Evind_Svinhufvud.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
@@ -177,9 +177,9 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Ruben Lagus"
-	picture = "Portrait_Finland_Ruben_Lagus.dds"
-	traits = { winter_specialist armor_officer }
+	name = "Erikki Raapanna"
+	picture = "Portrait_Finland_Erik_Raapana.dds"
+	traits = { winter_specialist }
 	skill = 2
     attack_skill = 2
     defense_skill = 2
@@ -188,12 +188,23 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Vilho Petter Nenonen"
-	picture = "Portrait_Finland_Vilho_Nenonen.dds"
+	name = "Hugo Osterman"
+	picture = "Portrait_Finland_Hugo_Osterman.dds"
 	traits = { winter_specialist commando }
 	skill = 3
     attack_skill = 3
     defense_skill = 1
     planning_skill = 4
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Sven Bjorkman"
+	picture = "Portrait_Finland_Sven_Bjorkman.dds"
+	traits = { armor_officer }
+	skill = 2
+    attack_skill = 3
+    defense_skill = 1
+    planning_skill = 2
     logistics_skill = 2
 }
