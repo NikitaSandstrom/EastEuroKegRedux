@@ -1,0 +1,22 @@
+on_actions = {	
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						ROOT = { tag = FIN }
+						ROOT = { tag = RFI }
+					}
+				}
+				146 = {
+					remove_dynamic_modifier = {
+						modifier = FIN_defending_the_Kannas
+					}
+				}
+			}
+
+		}
+	}
+
+}

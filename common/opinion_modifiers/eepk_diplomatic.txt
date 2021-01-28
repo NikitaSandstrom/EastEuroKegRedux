@@ -1,0 +1,50 @@
+opinion_modifiers = {
+	
+	FIN_fascist_ties = {
+		value = 50
+	}
+
+	FIN_kicked_from_german_embassy = {
+		value = -100
+	}
+
+	FIN_claims_on_territories = {
+		value = -50
+	}
+
+	FIN_against_the_monarchies_bad = {
+		value = -25
+	}
+
+	FIN_against_the_monarchies_good = {
+		value = 25
+	}
+
+	FIN_ties_with_scandinavia = {
+		value = 25
+	}
+
+	FIN_ties_with_anglo = {
+		value = 25
+	}
+
+	FIN_british_industrial_assistance = {
+		value = 25
+	}
+
+	FIN_ties_with_france = {
+		value = 25
+	}
+
+	FIN_french_industrial_assistance = {
+		value = 25
+	}
+
+	FIN_anti_communist_attitude_bad = {
+		value = -100
+	}
+
+	FIN_anti_communist_attitude_good = {
+		value = 25
+	}
+}
