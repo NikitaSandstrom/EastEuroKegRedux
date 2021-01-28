@@ -170,6 +170,29 @@ units = {
 
 	}
 }
+air_wings = {
+	195 = { 	
+		fighter_equipment_0 =  {
+			owner = "LSO" 
+			amount = 50
+		}
+		name = "1. Letny' Polk"
+	}
+	208 = { 	
+		fighter_equipment_0 =  {
+			owner = "LSO" 
+			amount = 50
+		}
+		name = "2. Letny' Polk"
+	}
+	247 = { 	
+		fighter_equipment_0 =  {
+			owner = "LSO" 
+			amount = 50
+		}
+		name = "3. Letny' Polk"
+	}
+}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
