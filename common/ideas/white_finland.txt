@@ -360,6 +360,50 @@ ideas = {
 				communism_drift = -0.03
 			}
 		}
+
+		FIN_red_guards_in_army = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_defence_factor = 0.05
+			}
+		}
+
+		FIN_finno_swedish_ties = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		FIN_free_market_capitalism = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_speed_industrial_complex_factor = 0.40
+			}
+		}
+
+		FIN_foreign_volunteer_corps = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				send_volunteers_tension = -0.25
+				send_volunteer_factor = 0.35
+				send_volunteer_divisions_required = -0.5
+				experience_gain_army_factor = 0.15
+			}
+		}
 		
 	}
 }
