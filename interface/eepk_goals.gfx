@@ -1,0 +1,18 @@
+spriteTypes = {
+    
+    #### FINNISH ICONS ####
+    SpriteType = {
+	name = "GFX_goal_FIN_baltic_claims"
+	texturefile = "gfx/interface/goals/focus_FIN_baltic_claims.dds"			
+	}
+
+    SpriteType = {
+	name = "GFX_goal_FIN_colonial_holdings"
+	texturefile = "gfx/interface/goals/focus_FIN_colonial_holdings.dds"	
+	}	
+
+    SpriteType = {
+	name = "GFX_goal_FIN_swedish_claims"
+	texturefile = "gfx/interface/goals/focus_FIN_swedish_claims.dds"	
+	}
+}

@@ -115,7 +115,7 @@ units = {
 air_wings = {
 	218 = { 	
 		fighter_equipment_0 =  {
-			owner = "KCT" 
+			owner = "KFT" 
 			amount = 25
 		}
 		name = "1. Letnaya Eskadriya"

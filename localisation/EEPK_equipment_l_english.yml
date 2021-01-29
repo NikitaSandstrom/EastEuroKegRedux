@@ -1046,7 +1046,14 @@
  ###################
 
  ## INFANTRY ##
-
+ FIN_infantry_equipment_0:0 "M27 Pystykorva"
+ FIN_infantry_equipment_0_short:0 "M27 Pystykorva"
+ FIN_infantry_equipment_1:0 "M39 Ukko-Pekka
+ FIN_infantry_equipment_1_short:0 "M39 Ukko-Pekka"
+ FIN_infantry_equipment_2:0 "Suomi KP/31"
+ FIN_infantry_equipment_2_short:0 "Suomi KP/31"
+ FIN_infantry_equipment_3:0 "KP/44"
+ FIN_infantry_equipment_3_short:0 "KP/44"
 
  ## ARTILLERY ##
 
@@ -1128,12 +1135,3 @@
  FIN_cv_fighter_equipment_2_short:1 "VM Vilske"
  FIN_cv_fighter_equipment_3:1 "Valtion Merenkulkutehdas Sykloni"
  FIN_cv_fighter_equipment_3_short:1 "VM Sykloni"
-
- FIN_infantry_equipment_0:0 "M27 Pystykorva"
- FIN_infantry_equipment_0_short:0 "M27 Pystykorva"
- FIN_infantry_equipment_1:0 "M39 Ukko-Pekka
- FIN_infantry_equipment_1_short:0 "M39 Ukko-Pekka"
- FIN_infantry_equipment_2:0 "Suomi kp/31"
- FIN_infantry_equipment_2_short:0 "Suomi kp/31"
- FIN_infantry_equipment_3:0 "kp/44"
- FIN_infantry_equipment_3_short:0 "kp/44"

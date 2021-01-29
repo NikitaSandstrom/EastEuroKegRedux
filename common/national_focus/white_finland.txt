@@ -2234,7 +2234,7 @@
 	# Swedish Claims #
 	focus = {
 		id = FIN_swedishClaims
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FIN_swedish_claims
 		prerequisite = { 
 			focus = FIN_towardsAnEmpire
 		}
@@ -2353,7 +2353,7 @@
 	# Claim Estonia #
 	focus = {
 		id = FIN_claimEstonia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FIN_baltic_claims
 		prerequisite = { 
 			focus = FIN_proclaimGreaterFinland
 		}
@@ -2397,7 +2397,7 @@
 	# Liberate the Livonians #
 	focus = {
 		id = FIN_liberateLivonia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FIN_baltic_claims
 		prerequisite = { 
 			focus = FIN_proclaimGreaterFinland
 		}
@@ -2439,7 +2439,7 @@
 	# Subjugate Our Enemies #
 	focus = {
 		id = FIN_subjugateOurEnemies
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FIN_colonial_holdings
 		prerequisite = { 
 			focus = FIN_proclaimGreaterFinland
 		}
