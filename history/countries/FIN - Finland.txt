@@ -7,6 +7,7 @@ set_research_slots = 2
 add_ideas = {
 	limited_conscription
 	FIN_disorganized_army
+	sisu
 }
 
 set_technology = {
@@ -85,17 +86,17 @@ if = {
 set_convoys = 30
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1933.7.1"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-		democratic = 79
+		democratic = 10
 		fascism = 10
 		communism = 1
-		neutrality = 10
+		neutrality = 79
 }
 
 
@@ -143,11 +144,6 @@ create_country_leader = {
 	}
 }
 
-
-
-add_ideas = {
-	sisu
-}
 
 ###########################
 ## ADMIRALS AND GENERALS ##

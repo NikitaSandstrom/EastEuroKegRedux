@@ -2,6 +2,9 @@ ideas = {
 
 	country = {
 		FIN_disorganized_army = {
+
+			picture = FIN_disorganised_military
+
 			allowed = {
 				always = no
 			}
@@ -35,6 +38,9 @@ ideas = {
 		}
 
 		FIN_rise_of_fascism = {
+
+			picture = FIN_IKL_fascism
+
 			allowed = {
 				always = no
 			}
@@ -178,6 +184,9 @@ ideas = {
 		}
 
 		FIN_suojeluskunta = {
+
+			picture = FIN_suojeluskunnat
+
 			allowed = {
 				always = no
 			}
@@ -367,6 +376,7 @@ ideas = {
 			}
 
 			modifier = {
+				conscription = 0.02
 				army_defence_factor = 0.05
 			}
 		}

@@ -15,4 +15,39 @@ spriteTypes = {
 	name = "GFX_goal_FIN_swedish_claims"
 	texturefile = "gfx/interface/goals/focus_FIN_swedish_claims.dds"	
 	}
+
+	SpriteType = {
+	name = "GFX_goal_FIN_SDP"
+	texturefile = "gfx/interface/goals/focus_FIN_SDP.dds"	
+	}
+
+	SpriteType = {
+	name = "GFX_goal_FIN_VL"
+	texturefile = "gfx/interface/goals/focus_FIN_VL.dds"	
+	}
+
+	SpriteType = {
+	name = "GFX_goal_FIN_conscription"
+	texturefile = "gfx/interface/goals/focus_FIN_conscription.dds"	
+	}
+
+	SpriteType = {
+	name = "GFX_goal_FIN_elections"
+	texturefile = "gfx/interface/goals/focus_FIN_elections.dds"	
+	}
+
+	SpriteType = {
+	name = "GFX_goal_FIN_IKL"
+	texturefile = "gfx/interface/goals/focus_FIN_IKL.dds"	
+	}
+
+	SpriteType = {
+	name = "GFX_goal_FIN_Maalaisliitto"
+	texturefile = "gfx/interface/goals/focus_FIN_Maalaisliitto.dds"	
+	}
+
+	SpriteType = {
+	name = "GFX_goal_FIN_agrarianism"
+	texturefile = "gfx/interface/goals/focus_FIN_Agrarianism.dds"	
+	}
 }

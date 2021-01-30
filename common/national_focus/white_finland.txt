@@ -606,7 +606,7 @@
 	# Hold the Elections #
 	focus = {
 		id = FIN_holdTheElections
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_FIN_elections
 		prerequisite = { 
 			focus = FIN_dealWithTheExtremists
 		}
@@ -679,7 +679,7 @@
 	# Prominence of IKL #
 	focus = {
 		id = FIN_prominenceOfIKL
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FIN_IKL
 		prerequisite = { 
 			focus = FIN_riseOfFascism
 		}
@@ -1604,7 +1604,7 @@
 	# Organise the Civil Guard #
 	focus = {
 		id = FIN_organiseTheCivilGuard
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_goal_FIN_conscription
 		prerequisite = { 
 			focus = FIN_mannerheimsIntervention
 		}
@@ -1815,7 +1815,7 @@
 	# The Election #
 	focus = {
 		id = FIN_theElection
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_FIN_elections
 		prerequisite = { 
 			focus = FIN_setTheElectionDate
 		}
@@ -1828,7 +1828,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -3019,7 +3019,7 @@
 	# Kallio's Policies #
 	focus = {
 		id = FIN_kalliosPolicies
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_FIN_Maalaisliitto
 		prerequisite = { 
 			focus = FIN_kalliosPresidency
 		}
@@ -3084,7 +3084,7 @@
 	# Include SDP in Government #
 	focus = {
 		id = FIN_includeSDP
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_goal_FIN_SDP
 		prerequisite = { 
 			focus = FIN_neutralForeignPolicy
 		}
@@ -3121,7 +3121,7 @@
 	# Agricultural Reforms #
 	focus = {
 		id = FIN_agriculturalReforms
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_FIN_agrarianism
 		prerequisite = { 
 			focus = FIN_includeSDP
 		}
@@ -3408,7 +3408,7 @@
 	# Expand VL #
 	focus = {
 		id = FIN_expandVL
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FIN_VL
 		prerequisite = { 
 			focus = FIN_buildUpWarIndustry
 		}
@@ -3786,7 +3786,7 @@
 	# Increase Conscription #
 	focus = {
 		id = FIN_increaseConscription
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_goal_FIN_conscription
 		prerequisite = { 
 			focus = FIN_expandKarelianAirDefense
 		}
@@ -3811,7 +3811,7 @@
 
 		completion_reward = {
 			add_ideas = FIN_increased_conscription_law
-			add_stability = -0.03
+			add_stability = -0.05
 			add_war_support = 0.02
 		}
 	}
@@ -4576,7 +4576,7 @@
 
 		completion_reward = {
 			add_political_power = 25
-			# Add Decisions to boost businesses +52 984 980 06869
+			# Add Decisions to boost businesses
 		}
 	}
 
@@ -4647,6 +4647,7 @@
 
 		completion_reward = {
 			# Decisions to invest in research and development of arms #
+			# Add Idea to make Designers cheaper in PP
 		}
 	}
 
