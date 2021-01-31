@@ -16,6 +16,9 @@ ideas = {
 		}
 
 		FIN_red_prisoners_of_war = {
+
+			picture = ast_classify_aliens
+
 			allowed = {
 				always = no
 			}
@@ -27,6 +30,9 @@ ideas = {
 		}
 
 		FIN_economic_revival = {
+
+			picture = generic_exploit_mines
+
 			allowed = {
 				always = no
 			}
@@ -52,6 +58,9 @@ ideas = {
 		}
 
 		FIN_fascist_influence_army = {
+
+			picture = generic_army_war_college
+
 			allowed = {
 				always = no
 			}
@@ -63,6 +72,9 @@ ideas = {
 		}
 
 		FIN_antiFascists_removed = {
+
+			picture = anti_soviet_pact
+
 			allowed = {
 				always = no
 			}
@@ -74,6 +86,9 @@ ideas = {
 		}
 
 		FIN_fascist_indoctrination = {
+
+			picture = generic_reserve_divisions
+
 			allowed = {
 				always = no
 			}
@@ -85,6 +100,9 @@ ideas = {
 		}
 
 		FIN_communists_under_check = {
+
+			picture = generic_oppression
+
 			allowed = {
 				always = no
 			}
@@ -95,6 +113,9 @@ ideas = {
 		}
 
 		FIN_communists_executed = {
+
+			picture = officers_purged
+
 			allowed = {
 				always = no
 			}
@@ -106,6 +127,9 @@ ideas = {
 		}
 
 		FIN_german_military_aid = {
+
+			picture = german_advisors
+
 			allowed = {
 				always = no
 			}
@@ -116,6 +140,9 @@ ideas = {
 		}
 
 		FIN_expanded_military_aid = {
+
+			picture = german_advisors
+
 			allowed = {
 				always = no
 			}
@@ -126,6 +153,9 @@ ideas = {
 		}
 
 		FIN_autarky = {
+
+			picture = generic_local_self_management
+
 			allowed = {
 				always = no
 			}
@@ -136,6 +166,9 @@ ideas = {
 		}
 
 		FIN_corporatism = {
+
+			picture = generic_foreign_capital
+
 			allowed = {
 				always = no
 			}
@@ -146,6 +179,9 @@ ideas = {
 		}
 
 		FIN_salainen_poliisi = {
+
+			picture = idea_generic_morale_bonus
+
 			allowed = {
 				always = no
 			}
@@ -157,6 +193,9 @@ ideas = {
 		}
 
 		FIN_infantry_focus = {
+
+			picture = generic_reserve_divisions
+
 			allowed = {
 				always = no
 			}
@@ -173,6 +212,9 @@ ideas = {
 		}
 
 		FIN_suspended_democracy = {
+
+			picture = hol_aloof_neutrality
+
 			allowed = {
 				always = no
 			}
@@ -198,6 +240,9 @@ ideas = {
 		}
 
 		FIN_towards_democracy = {
+
+			picture = generic_democratic_drift_bonus
+
 			allowed = {
 				always = no
 			}
@@ -208,6 +253,9 @@ ideas = {
 		}
 
 		FIN_lay_groundwork = {
+
+			picture = received_attache
+
 			allowed = {
 				always = no
 			}
@@ -219,6 +267,9 @@ ideas = {
 		}
 
 		FIN_well_funded_army = {
+
+			picture = generic_manpower_bonus
+
 			allowed = {
 				always = no
 			}
@@ -231,6 +282,9 @@ ideas = {
 		}
 
 		FIN_suur-suomi = {
+
+			picture = generic_intel_bonus
+
 			allowed = {
 				always = no
 			}
@@ -244,6 +298,9 @@ ideas = {
 		}
 
 		FIN_finnish_empire = {
+
+			picture = generic_victors_of_ww1
+
 			allowed = {
 				always = no
 			}
@@ -257,6 +314,9 @@ ideas = {
 		}
 
 		FIN_armed_neutrality = {
+
+			picture = generic_neutrality_drift_bonus
+
 			allowed = {
 				always = no
 				NOT = {
@@ -278,6 +338,9 @@ ideas = {
 		}
 
 		FIN_expanding_forts = {
+
+			picture = generic_wall_line 
+
 			allowed = {
 				always = no
 			}
@@ -288,6 +351,9 @@ ideas = {
 		}
 
 		FIN_preparing_for_war = {
+
+			picture = generic_war_preparation
+
 			allowed = {
 				always = no
 			}
@@ -298,6 +364,9 @@ ideas = {
 		}
 
 		FIN_kallio_neutrality = {
+
+			picture = neutrality_idea
+
 			allowed = {
 				always = no
 			}
@@ -310,6 +379,9 @@ ideas = {
 		}
 
 		FIN_punamultahallitus = {
+
+			picture = hol_the_foundations_of_defense
+
 			allowed = {
 				always = no
 			}
@@ -320,6 +392,9 @@ ideas = {
 		}
 
 		FIN_agricultural_reform = {
+
+			picture = generic_agrarian_reform
+
 			allowed = {
 				always = no
 			}
@@ -330,6 +405,9 @@ ideas = {
 		}
 
 		FIN_anti_monarchism = {
+
+			picture = ROM_king_carol_ii_handled
+
 			allowed = {
 				always = no
 			}
@@ -340,6 +418,9 @@ ideas = {
 		}
 
 		FIN_building_the_economy = {
+
+			picture = generic_economic_increase
+
 			allowed = {
 				always = no
 			}
@@ -350,6 +431,9 @@ ideas = {
 		}
 
 		FIN_increased_conscription_law = {
+
+			picture = SPA_la_division_azul
+
 			allowed = {
 				always = no
 			}
@@ -360,6 +444,9 @@ ideas = {
 		}
 
 		FIN_anti_revolutionary_task_force = {
+
+			picture = SPR_crush_the_revolution
+
 			allowed = {
 				always = no
 			}
@@ -371,6 +458,9 @@ ideas = {
 		}
 
 		FIN_red_guards_in_army = {
+
+			picture = smersh
+
 			allowed = {
 				always = no
 			}
@@ -382,6 +472,9 @@ ideas = {
 		}
 
 		FIN_finno_swedish_ties = {
+
+			picture = generic_flexible_foreign_policy2
+
 			allowed = {
 				always = no
 			}
@@ -392,6 +485,9 @@ ideas = {
 		}
 
 		FIN_free_market_capitalism = {
+
+			picture = generic_foreign_capital
+
 			allowed = {
 				always = no
 			}
@@ -403,6 +499,9 @@ ideas = {
 		}
 
 		FIN_foreign_volunteer_corps = {
+
+			picture = generic_reserve_divisions
+
 			allowed = {
 				always = no
 			}
@@ -412,6 +511,25 @@ ideas = {
 				send_volunteer_factor = 0.35
 				send_volunteer_divisions_required = -0.5
 				experience_gain_army_factor = 0.15
+			}
+		}
+
+
+
+
+
+
+
+
+		FIN_red_leaders_pardoned = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.05
+				communism_drift = 0.01
+				experience_gain_army = 0.03
 			}
 		}
 		

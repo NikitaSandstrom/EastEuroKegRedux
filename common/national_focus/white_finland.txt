@@ -405,8 +405,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			# Events for releasing Prisoners #
-		}
+			country_event = {
+				id = finland.1
+			}
+		}	
 	}
 
 
@@ -630,7 +632,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			# Events for the election #
+			country_event = {
+				id = finland.2
+			}
 		}
 	}
 
@@ -2991,9 +2995,9 @@
 		#	focus =  
 		#}
 
-		#available = {
-		#	in events, create flag has_kallio_as_leader
-		#}
+		available = {
+			has_country_flag = kallio_chosen
+		}
 		
 		#relative_position_id = 
 		x = 18
@@ -4461,7 +4465,9 @@
 		#	focus =  
 		#}
 
-		## ADD FLAG FOR has_SvinPresident for available ##
+		available = {
+			has_country_flag = svin_chosen
+		}
 		
 		#relative_position_id = 
 		x = 22

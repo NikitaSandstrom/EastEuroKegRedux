@@ -1,0 +1,109 @@
+﻿###########################
+# Finland Events
+###########################
+
+add_namespace = finland
+
+# Handling the Prisoners #
+country_event = {
+	id = finland.1
+	title = finland.1.t
+	desc = finland.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Release the Soldiers, Execute Leaders
+		name = finland.1.a
+		ai_chance = { factor = 50 }
+		FIN = {
+			remove_ideas = FIN_red_prisoners_of_war
+		}
+	}
+	option = { # Release them all
+		name = finland.1.b
+		ai_chance = { factor = 50 }
+		FIN = {
+			remove_ideas = FIN_red_prisoners_of_war
+			set_country_flag = released_red_officers
+			add_ideas = FIN_red_leaders_pardoned
+		}
+	}
+}
+
+
+# Elections (Without Mannerheim) #
+country_event = {
+	id = finland.2
+	title = finland.2.t
+	desc = finland.2.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Kallio
+		name = finland.2.a
+		ai_chance = { factor = 50 }
+		FIN = {
+			hidden_effect = {
+				create_country_leader = {
+					name = "Pehr Evind Svinhufvud"
+					desc = "POLITICS_PEHR_SVINHUFVUD_DESC"
+					picture = "Portrait_Finland_Pehr_Evind_Svinhufvud.dds"
+					expire = "1965.1.1"
+					ideology = centrism
+					traits = {}
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = FIN_democratic_party_long
+					name = FIN_democratic_party
+				}
+			}
+
+			set_country_flag = kallio_chosen
+			set_politics = {
+				ruling_party = democratic
+			}
+			create_country_leader = {
+				name = "Kyösti Kallio"
+				desc = "POLITICS_KYÖSTI_KALLIO_DESC"
+				picture = "Portrait_Finland_Kyosti_Kallio.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {}
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = FIN_neutrality_party_long
+				name = FIN_neutrality_party
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	option = { # Svinhufvud
+		name = finland.2.b
+		ai_chance = { factor = 50 }
+		FIN = {
+			set_country_flag = svin_chosen
+			set_politics = {
+				ruling_party = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+		}
+	}
+}
