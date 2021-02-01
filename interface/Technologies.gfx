@@ -4848,18 +4848,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/FIN_INF0.dds"
 	}
 	SpriteType = {
-		name = "GFX_FIN_infantry_weapons1_medium"
-		texturefile = "gfx/interface/technologies/FIN_INF1.dds"
-	}
-	SpriteType = {
-		name = "GFX_FIN_improved_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/FIN_INF2.dds"
-	}
-	SpriteType = {
-		name = "GFX_FIN_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/FIN_INF2.dds"
-	}
-	SpriteType = {
 		name = "GFX_RFI_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/ALL_INF1.dds"
 	}
@@ -7020,7 +7008,18 @@ spriteTypes = {
 	###################
 
 	# INFANTRY #
-
+	SpriteType = {
+		name = "GFX_FIN_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/FIN_INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FIN_INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FIN_INF3.dds"
+	}
 
 	# ARTILLERY #
 
