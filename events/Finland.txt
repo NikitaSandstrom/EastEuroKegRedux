@@ -107,3 +107,58 @@ country_event = {
 		}
 	}
 }
+
+
+# Joining The Axis #
+country_event = {
+	id = finland.3
+	title = finland.3.t
+	desc = finland.3.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Join Axis
+		name = finland.3.a
+		ai_chance = { factor = 33 }
+		FIN = {
+			country_event = {
+				id = finland.4
+			}
+		}
+	}
+	option = { # Guarantee
+		name = finland.3.b
+		ai_chance = { factor = 33 }
+		FIN = {
+			remove_ideas = FIN_red_prisoners_of_war
+			set_country_flag = released_red_officers
+			add_ideas = FIN_red_leaders_pardoned
+		}
+	}
+	option = { # Ignore
+		name = finland.3.b
+		ai_chance = { factor = 33 }
+		FIN = {
+			remove_ideas = FIN_red_prisoners_of_war
+			set_country_flag = released_red_officers
+			add_ideas = FIN_red_leaders_pardoned
+		}
+	}
+}
+
+
+# In the Axis #
+country_event = {
+	id = finland.4
+	title = finland.4.t
+	desc = finland.4.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = finland.4.a
+		ai_chance = { factor = 100 }
+	}
+}
