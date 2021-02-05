@@ -1128,7 +1128,11 @@
 
 		completion_reward = {
 			add_political_power = 25
-			#Event to Join the Axis
+			GER = {
+				country_event = {
+					id = finland.3
+				}
+			}
 		}
 	}
 
@@ -1151,11 +1155,8 @@
 			}
 		}
 
-		bypass = { # CHANGE TO HAS_FLAG IN EVENTS #
-			has_relation_modifier = {
-				target = GER
-				modifier = FIN_kicked_from_german_embassy
-			}
+		bypass = {
+			has_country_flag = FIN_germans_refused_request
 		}
 		
 		relative_position_id = FIN_allianceWithGermany
@@ -1843,7 +1844,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			#Add Event for Elections
+			country_event = {
+				id = finland.7
+			}
 			remove_ideas = FIN_suspended_democracy
 		}
 	}
@@ -3549,7 +3552,9 @@
 		#	focus =  
 		#}
 
-		## Has Flag has_MannerheimPresident ##
+		available = {
+			has_country_flag = mannerheim_chosen
+		}
 		
 		#relative_position_id =
 		x = 23
@@ -4196,7 +4201,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			# Add Event for expanding Ties with Sweden #
+			SWE = {
+				country_event = {
+					id = finland.8
+				}
+			}
 		}
 	}
 
@@ -4358,7 +4367,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			# Add Event for the 1919 Agreement #
+			ENG = {
+				country_event = {
+					id = finland.11
+				}
+			}
 		}
 	}
 
