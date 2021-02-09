@@ -168,7 +168,7 @@ country_event = {
 		}
 	}
 	option = { # Ignore
-		name = finland.3.b
+		name = finland.3.c
 		ai_chance = { factor = 33 }
 		FIN = {
 			country_event = {
@@ -555,7 +555,7 @@ country_event = {
 }
 
 
-# In the Axis #
+# In the Allies #
 country_event = {
 	id = finland.12
 	title = finland.12.t
