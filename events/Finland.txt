@@ -53,7 +53,7 @@ country_event = {
 	id = finland.2
 	title = finland.2.t
 	desc = finland.2.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
 	
@@ -145,7 +145,7 @@ country_event = {
 	id = finland.3
 	title = finland.3.t
 	desc = finland.3.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
 	
@@ -184,7 +184,7 @@ country_event = {
 	id = finland.4
 	title = finland.4.t
 	desc = finland.4.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
 	
@@ -203,7 +203,7 @@ country_event = {
 	id = finland.5
 	title = finland.5.t
 	desc = finland.5.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
 	
@@ -222,7 +222,7 @@ country_event = {
 	id = finland.6
 	title = finland.6.t
 	desc = finland.6.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
 	
@@ -260,7 +260,7 @@ country_event = {
 	id = finland.7
 	title = finland.7.t
 	desc = finland.7.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
 	
@@ -402,7 +402,7 @@ country_event = {
 	id = finland.8
 	title = finland.8.t
 	desc = finland.8.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
 	
@@ -439,7 +439,7 @@ country_event = {
 	id = finland.9
 	title = finland.9.t
 	desc = finland.9.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
 	
@@ -459,7 +459,7 @@ country_event = {
 	id = finland.10
 	title = finland.10.t
 	desc = finland.10.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
 	
@@ -501,7 +501,7 @@ country_event = {
 	id = finland.11
 	title = finland.11.t
 	desc = finland.11.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
 	
@@ -560,7 +560,7 @@ country_event = {
 	id = finland.12
 	title = finland.12.t
 	desc = finland.12.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
 	
@@ -582,7 +582,7 @@ country_event = {
 	id = finland.13
 	title = finland.13.t
 	desc = finland.13.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
 	
@@ -604,7 +604,7 @@ country_event = {
 	id = finland.14
 	title = finland.14.t
 	desc = finland.14.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
 	
