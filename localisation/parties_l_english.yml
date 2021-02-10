@@ -183,6 +183,8 @@
  FIN_fascism_party_long:0 "Isänmaallinen Kansanliike"
  FIN_communism_party:0 "SKP"
  FIN_communism_party_long:0 "Suomen Kommunistinen Puolue"
+ FIN_mannerheim_election:0 "MH"
+ FIN_mannerheim_election_long:0 "Mannerheimin Hallitus"
  DEN_democratic_party:0 "Socialdemokratiet"
  DEN_democratic_party_long:0 "Socialdemokratiet"
  DEN_fascism_party:0 "DNSAP"

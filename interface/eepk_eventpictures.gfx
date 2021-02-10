@@ -1,0 +1,10 @@
+spriteTypes = {	
+
+    # FINNISH EVENTS #
+	spriteType = {
+		name = "GFX_report_event_finland_red_soldiers"
+		texturefile = "gfx/event_pictures/report_event_finland_red_soldier.dds"
+	}
+
+    
+}

@@ -9,7 +9,7 @@ country_event = {
 	id = finland.1
 	title = finland.1.t
 	desc = finland.1.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_finland_red_soldiers
 	
 	is_triggered_only = yes
 	
@@ -358,7 +358,7 @@ country_event = {
 				desc = BARON_CGE_MANNERHEIM_DESC
 				picture = "Portrait_Finland_CGE_Mannerheim.dds"
 				expire = "1951.01.27"
-				ideology = moderatism 
+				ideology = liberalism 
 				traits = {
 					great_war_hero
 					nationalist_symbol 

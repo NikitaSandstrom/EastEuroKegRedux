@@ -1,0 +1,20 @@
+FIN_civil_war_campaigns = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_theNorthernCampaign
+    }
+}
+
+FIN_civil_war_equipment_purchases = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_purchaseForeignEquipment
+    }
+}
+
