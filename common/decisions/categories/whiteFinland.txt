@@ -18,3 +18,105 @@ FIN_civil_war_equipment_purchases = {
     }
 }
 
+FIN_fascism_IKLs_coup = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_IKLsCoup
+    }
+}
+
+FIN_fascism_economic_reliance = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_economicSelfReliance
+    }
+}
+
+FIN_fascism_russian_resettlement = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_resettleRussianLands
+    }
+}
+
+FIN_fascism_SS_recruitment = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_finnishSSDivisions
+    }
+}
+
+FIN_aggressive_subjugation = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_subjugateOurEnemies
+    }
+}
+
+FIN_defensive_foreign_outlook = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        OR = {
+            has_completed_focus = FIN_inviteForeignInvestors
+            has_completed_focus = FIN_purchaseForeignWeaponry
+        }
+    }
+}
+
+FIN_mannerheims_presidency_category = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_mannerheimsPresidency
+    }
+}
+
+FIN_mannerheim_resettle_russian_lands = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_ourAmbitions
+    }
+}
+
+FIN_svin_business_negotiation = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_negotiateWithBusinesses
+    }
+}
+
+FIN_svin_foreign_diplomacy = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_svinForeignPolicy
+    }
+}

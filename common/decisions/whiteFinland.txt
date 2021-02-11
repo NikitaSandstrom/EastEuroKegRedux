@@ -1,0 +1,64 @@
+FIN_civil_war_campaigns = {
+    ## Decisions ##
+    # Prepare for Offensive
+    # Probing Attacks | Recruitment Drive
+    # Mission to capture certain VPs to gain big bonuses
+}
+
+FIN_civil_war_equipment_purchases = {
+    ## Decisions ## 
+    # Purchase Rifles from Britain              # Each Provide Opinion Modifier
+    # Purchase Vehicles from French             # As well, you get Consumer Factor for 50-100 days
+    # Purchase Arty from Germany                # Gain a temporary Debuff for retooling and retraining with the new weapons (14 days)
+    # Support Equipment from Sweden             # Purchasing takes time as well (7 days)
+}
+
+FIN_fascism_IKLs_coup = {
+    ## Missions ##
+    # Mannerheim begins injecting neutrality back to nation
+    # If Fascism reaches below 40%, CW kicks off (65/35 split favoring Mannerheim)
+    # Every 2 weeks Fascism decreases by certain percentage
+    # Decisions as well to keep Fascism up to avoid catastrophe
+    # This Category doesn't pop up if you went through one CW already
+    # Reminder to put on Capitulation if Fascists lose to switch path to Mannerheim's Coup
+}
+
+FIN_fascism_economic_reliance = {
+    ## Decisions ##
+    # Conscripting Populace to build up Factories and find new mining zones
+        # Good Buffs, but lose manpower in certain states, as well as stability in certain areas
+    # Get some decisions to improve urbanization level, as well as Infrastructure
+    # Increase PP Gain, with slight increase in Consumer Goods
+        # Sell Goods to Germany for Equipment and Research bonuses
+        # Decrease WS for Decreased Consumer Goods and Increased Stability
+    # Build Bunkers along Russian Border
+}
+
+FIN_fascism_russian_resettlement = {
+    ## Decisions ##
+    # Remove Pop in certain states (moved to LSO States) and gain Higher Stability
+        # Soviets may get event to start a border clash in certain states to take them back, or to use subversion to increase communism
+    # Renaming of certain cities and states
+    #
+}
+
+FIN_fascism_SS_recruitment = {
+    ## Decisions ##
+    # Recruit SS Infantry Divisions
+        # Increased Consumer Good Cost for a fair amount of time
+    # Recruit SS Mechanized Divisions
+        # High CG cost, and removes Mil and Civ Factories for a year to Germany
+    # German Training, increases Training Speed and decreases max Training
+}
+
+FIN_aggressive_subjugation = {
+    ## Decisions ##
+    # Puppet Sweden 
+    # Puppet Norway         # Each get their land back (w/o Finnish Cores)
+    # Puppet Denmark
+    # Puppet LSO
+}
+
+FIN_defensive_foreign_outlook = {
+    ## Decisions ##
+}
