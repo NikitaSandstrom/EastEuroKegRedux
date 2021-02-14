@@ -3,6 +3,69 @@ FIN_civil_war_campaigns = {
     # Prepare for Offensive
     # Probing Attacks | Recruitment Drive
     # Mission to capture certain VPs to gain big bonuses
+    FIN_prepare_northern_offensive = {
+
+        cost = 30
+
+        available = {
+            has_completed_focus = FIN_theNorthernCampaign
+        }
+
+        complete_effect = {
+            add_war_support = 0.03
+            army_experience = 15
+        }
+
+        remove_effect = {
+            set_country_flag = northernOffensivePrepared
+        }
+
+        days_remove = 14
+        fire_only_once = yes
+    }
+
+    FIN_northern_probing_attack = {
+        cost = 30
+
+        available = {
+            has_country_flag = northernOffensivePrepared
+        }
+
+        visible = {
+            has_country_flag = northernOffensivePrepared
+        }
+
+        complete_effect = {
+            808 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_north
+                    scope = FIN
+                    days = 30
+                }
+            }
+            147 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_north
+                    scope = FIN
+                    days = 30
+                }
+            }
+            148 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_north
+                    scope = FIN
+                    days = 30
+                }
+            }
+            722 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_north
+                    scope = FIN
+                    days = 30
+                }
+            }
+        }
+    }
 }
 
 FIN_civil_war_equipment_purchases = {
