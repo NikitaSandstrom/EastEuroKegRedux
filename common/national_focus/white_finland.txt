@@ -69,6 +69,12 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
 		
 		#relative_position_id =
 		x = 5
@@ -103,6 +109,12 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
 		
 		relative_position_id = FIN_fightingTheReds
 		x = 0
@@ -135,6 +147,12 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
 		
 		relative_position_id = FIN_reorganiseTheMilitary
 		x = -1
@@ -168,6 +186,12 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
 
 
 		available = {
@@ -207,6 +231,13 @@
 		prerequisite = { 
 			focus = FIN_reorganiseTheMilitary
 		}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
+
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
@@ -256,6 +287,13 @@
 		prerequisite = { 
 			focus = FIN_defenseOfTheKannas
 		}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
+		
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
@@ -297,13 +335,8 @@
 		}
 
 		available = {
-			AND = {
-				NOT = {
-					has_war_with = RFI
-				}
-				NOT = {
-					country_exists = RFI
-				}
+			NOT = {
+				country_exists = RFI
 			}
 		}
 

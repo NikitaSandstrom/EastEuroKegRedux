@@ -609,7 +609,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = finland.5.a
+		name = finland.14.a
 		ai_chance = { factor = 100 }
 		FIN = {
 			add_opinion_modifier = {
@@ -617,5 +617,46 @@ country_event = {
 				modifier = FIN_declined_alliance
 			}
 		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+# Finland Fails Northern Assault #
+news_event = {
+	id = finland.15
+	title = finland.15.t
+	desc = finland.15.d
+	picture = GFX_report_event_finnish_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = finland.15.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+
+# Finland Succeeds in Northern Assault #
+news_event = {
+	id = finland.16
+	title = finland.16.t
+	desc = finland.16.d
+	picture = GFX_report_event_finnish_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = finland.16.a
+		ai_chance = { factor = 100 }
 	}
 }
