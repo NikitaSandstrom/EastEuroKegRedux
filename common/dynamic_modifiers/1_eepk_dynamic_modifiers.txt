@@ -43,3 +43,13 @@ FIN_attack_north = {
 	army_attack_factor = 0.10
 	breakthrough_factor = 0.20
 }
+
+FIN_attack_south = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_fortify_the_borders
+	
+		
+	army_attack_factor = 0.10
+	breakthrough_factor = 0.20
+}

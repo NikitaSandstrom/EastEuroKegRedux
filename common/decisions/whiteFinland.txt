@@ -113,29 +113,169 @@ FIN_civil_war_campaigns = {
         selectable_mission = no
         days_mission_timeout = 100
         timeout_effect = {
-           add_stability = -0.10
-           add_war_support = -0.10
-           add_manpower = -1000
+            add_stability = -0.10
+            add_war_support = -0.10
+            add_manpower = -1000
 
-           add_timed_idea = {
-               idea = FIN_failed_northern_assault
-               days = 100
-           }
+            add_timed_idea = {
+                idea = FIN_failed_northern_assault
+                days = 100
+            }
 
-           news_event = {
-               id = finland.15
-           }
+            news_event = {
+                id = finland.15
+            }
 
         }
         complete_effect = {
-           add_stability = 0.15
-           add_war_support = 0.15
-           add_manpower = 2500
+            add_stability = 0.15
+            add_war_support = 0.15
+            add_manpower = 2500
 
-           add_timed_idea = {
-               idea = FIN_won_northern_assault
-               days = 100
-           }
+            add_timed_idea = {
+                idea = FIN_won_northern_assault
+                days = 100
+            }
+
+            news_event = {
+                id = finland.16
+            }
+        }
+    }
+
+
+
+    FIN_prepare_southern_offensive = {
+
+        cost = 30
+
+        available = {
+            has_completed_focus = FIN_theSouthernCampaign
+        }
+
+        visible = {
+            has_completed_focus = FIN_theSouthernCampaign
+        }
+
+        complete_effect = {
+            add_war_support = 0.03
+            army_experience = 15
+        }
+
+        remove_effect = {
+            set_country_flag = southernOffensivePrepared
+        }
+
+        days_remove = 14
+        fire_only_once = yes
+    }
+
+    FIN_southern_probing_attack = {
+        cost = 30
+
+        available = {
+            has_country_flag = southernOffensivePrepared
+        }
+
+        visible = {
+            has_country_flag = southernOffensivePrepared
+        }
+
+        complete_effect = {
+            813 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_south
+                    scope = FIN
+                    days = 30
+                }
+            }
+            146 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_south
+                    scope = FIN
+                    days = 30
+                }
+            }
+            216 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_south
+                    scope = FIN
+                    days = 30
+                }
+            }
+        }
+
+        fire_only_once = yes
+    }
+
+    FIN_state_recruitment_drive_south = {
+        cost = 100
+
+        available = {
+            has_country_flag = southernOffensivePrepared
+            OR = {
+                controls_state = 813
+                controls_state = 146
+                controls_state = 216
+            }
+        }
+
+        visible = {
+            has_country_flag = southernOffensivePrepared
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_southern_recruitment_drive
+                days = 30
+            }
+        }
+
+        fire_only_once = yes
+    }
+
+    FIN_capture_southern_strat_points = {
+        allowed = { tag = FIN }                 
+        available = {
+            AND = {
+                controls_state = 813
+                controls_state = 146
+                controls_state = 216
+            }
+        }
+        activation = {
+            has_country_flag = southernOffensivePrepared
+        }
+        is_good = yes
+        selectable_mission = no
+        days_mission_timeout = 100
+        timeout_effect = {
+            add_stability = -0.10
+            add_war_support = -0.10
+            add_manpower = -1000
+
+            add_timed_idea = {
+                idea = FIN_failed_southern_assault
+                days = 100
+            }
+
+            news_event = {
+                id = finland.17
+            }
+        }
+        complete_effect = {
+            add_stability = 0.15
+            add_war_support = 0.15
+            add_manpower = 2500
+
+            add_timed_idea = {
+                idea = FIN_won_southern_assault
+                days = 100
+            }
+
+            news_event = {
+                id = finland.18
+            }
         }
     }
 }
@@ -146,6 +286,25 @@ FIN_civil_war_equipment_purchases = {
     # Purchase Vehicles from French             # As well, you get Consumer Factor for 50-100 days
     # Purchase Arty from Germany                # Gain a temporary Debuff for retooling and retraining with the new weapons (14 days)
     # Support Equipment from Sweden             # Purchasing takes time as well (7 days)
+
+    FIN_purchase_british_rifles = {
+
+        cost = 30
+
+        #available = {}
+
+        complete_effect = {
+            add_war_support = 0.03
+            army_experience = 15
+        }
+
+        remove_effect = {
+            set_country_flag = northernOffensivePrepared
+        }
+
+        days_remove = 7
+        #fire_only_once = yes
+    }
 }
 
 FIN_fascism_IKLs_coup = {

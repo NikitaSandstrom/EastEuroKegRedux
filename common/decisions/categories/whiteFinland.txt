@@ -4,7 +4,10 @@ FIN_civil_war_campaigns = {
     }
 
     available = {
-        has_completed_focus = FIN_theNorthernCampaign
+        AND = {
+            has_completed_focus = FIN_theNorthernCampaign
+            has_war_with = RFI
+        }
     }
 }
 
@@ -14,7 +17,10 @@ FIN_civil_war_equipment_purchases = {
     }
 
     available = {
-        has_completed_focus = FIN_purchaseForeignEquipment
+        AND = {
+            has_completed_focus = FIN_purchaseForeignEquipment
+            has_war_with = RFI
+        }
     }
 }
 

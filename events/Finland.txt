@@ -660,3 +660,35 @@ news_event = {
 		ai_chance = { factor = 100 }
 	}
 }
+
+
+# Finland Fails Southern Assault #
+news_event = {
+	id = finland.17
+	title = finland.17.t
+	desc = finland.17.d
+	picture = GFX_report_event_finnish_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = finland.17.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+
+# Finland Succeeds in Southern Assault #
+news_event = {
+	id = finland.18
+	title = finland.18.t
+	desc = finland.18.d
+	picture = GFX_report_event_finnish_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = finland.18.a
+		ai_chance = { factor = 100 }
+	}
+}
