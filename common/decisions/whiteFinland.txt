@@ -291,18 +291,152 @@ FIN_civil_war_equipment_purchases = {
 
         cost = 30
 
-        #available = {}
+        available = {
+            num_of_available_civilian_factories > 2
+        }
 
         complete_effect = {
-            add_war_support = 0.03
-            army_experience = 15
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_consumer_goods
+                days = 50
+            }
         }
 
         remove_effect = {
-            set_country_flag = northernOffensivePrepared
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 3000
+                producer = ENG
+            }
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_weapons_inf
+                days = 14
+            }
         }
 
         days_remove = 7
+        days_re_enable = 110
+        #fire_only_once = yes
+    }
+
+    FIN_purchase_french_vehicles = {
+
+        cost = 30
+
+        available = {
+            num_of_available_civilian_factories > 2
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_consumer_goods
+                days = 100
+            }
+        }
+
+        remove_effect = {
+            add_equipment_to_stockpile = {
+                type = motorized_equipment_1
+                amount = 300
+                producer = FRA
+            }
+            add_equipment_to_stockpile = {
+                type = gw_tank_equipment
+                amount = 100
+                producer = FRA
+            }
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_weapons_armor
+                days = 21
+            }
+        }
+
+        days_remove = 7
+        days_re_enable = 110
+        #fire_only_once = yes
+    }
+
+    FIN_purchase_german_weapons = {
+
+        cost = 30
+
+        available = {
+            num_of_available_civilian_factories > 2
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_consumer_goods
+                days = 75
+            }
+        }
+
+        remove_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 2000
+                producer = GER
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 200
+                producer = GER
+            }
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_weapons_inf
+                days = 14
+            }
+        }
+
+        days_remove = 7
+        days_re_enable = 110
+        #fire_only_once = yes
+    }
+
+    FIN_purchase_swedish_weapons = {
+
+        cost = 75
+
+        available = {
+            num_of_available_civilian_factories > 2
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_consumer_goods
+                days = 50
+            }
+        }
+
+        remove_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = SWE
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 100
+                producer = SWE
+            }
+            add_equipment_to_stockpile = {
+                type = motorized_equipment_1
+                amount = 200
+                producer = SWE
+            }
+            add_equipment_to_stockpile = {
+                type = support_equipment_1
+                amount = 500
+                producer = SWE
+            }
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_weapons_inf
+                days = 21
+            }
+        }
+
+        days_remove = 7
+        days_re_enable = 60
         #fire_only_once = yes
     }
 }
