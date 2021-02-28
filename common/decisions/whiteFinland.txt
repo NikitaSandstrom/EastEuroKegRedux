@@ -449,6 +449,99 @@ FIN_fascism_IKLs_coup = {
     # Decisions as well to keep Fascism up to avoid catastrophe
     # This Category doesn't pop up if you went through one CW already
     # Reminder to put on Capitulation if Fascists lose to switch path to Mannerheim's Coup
+
+    FIN_IKL_mannerheims_counter_coup = {
+        allowed = { tag = FIN }                 
+        available = {
+            has_completed_focus = FIN_theNationIsSecure
+            NOT = {
+                has_country_flag = FIN_fas_civil_war_occurred
+            }
+        }
+        activation = {
+            has_completed_focus = FIN_IKLsCoup
+        }
+        is_good = no
+        selectable_mission = no
+        days_mission_timeout = 14
+        timeout_effect = {
+            if = {
+                limit = {
+                    fascism > 0.4
+                }
+                add_stability = -0.01
+                add_war_support = -0.01
+                add_popularity = {
+                    ideology = fascism
+                    popularity = -0.02
+                }
+                add_popularity = {
+                    ideology = neutrality
+                    popularity = 0.05
+                }
+            }
+            if = {
+                limit = {
+                    fascism < 0.41
+                }
+                create_country_leader = {
+                    name = "Baron Carl GE Mannerheim"
+                    desc = BARON_CGE_MANNERHEIM_DESC
+                    picture = "Portrait_Finland_CGE_Mannerheim.dds"
+                    expire = "1951.01.27"
+                    ideology = moderatism 
+                    traits = {
+                        great_war_hero
+                        nationalist_symbol 
+                        stout_defender
+                    }
+                }
+                set_party_name = {
+                    ideology = neutrality
+                    long_name = FIN_mannerheim_coup_long
+                    name = FIN_mannerheim_coup
+                }
+                start_civil_war = {
+                    ideology = neutrality
+                    size = 0.65
+                    capital = 216
+                    states = { 
+                        146 150 820 819 215 216 818 808 147 822 148
+                    }
+                }
+                set_country_flag = FIN_fas_civil_war_occurred
+            }
+        }
+        complete_effect = {
+        }
+    }
+
+
+
+    FIN_IKL_drive_up_propaganda = {
+        cost = 100
+
+        #available = {
+        #}
+
+        remove_effect = {
+            add_manpower = 1000
+        }
+
+        complete_effect = {
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.15
+            }
+            add_stability = -0.05
+            add_war_support = 0.05
+            add_manpower = -1000
+        }
+
+        days_remove = 7
+        days_re_enable = 23
+        #fire_only_once = yes
+    }
 }
 
 FIN_fascism_economic_reliance = {
@@ -460,6 +553,451 @@ FIN_fascism_economic_reliance = {
         # Sell Goods to Germany for Equipment and Research bonuses
         # Decrease WS for Decreased Consumer Goods and Increased Stability
     # Build Bunkers along Russian Border
+
+
+    # Mining Zones
+    FIN_fascism_northern_tungsten = {
+        cost = 50
+
+        icon = tungsten
+		
+		highlight_state_targets = {
+			state = 148
+		}
+
+        available = {
+            has_manpower > 2500
+        }
+
+        remove_effect = {
+            add_manpower = 2500
+            add_resource = {
+                type = tungsten
+                amount = 25
+                state = 148
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -2500
+        }
+
+        days_remove = 30
+        fire_only_once = yes
+    }
+
+    FIN_fascism_northern_steel = {
+        cost = 50
+
+        icon = steel
+		
+		highlight_state_targets = {
+			state = 808
+		}
+
+        available = {
+            has_manpower > 2500
+        }
+
+        remove_effect = {
+            add_manpower = 2500
+            add_resource = {
+                type = steel
+                amount = 15
+                state = 808
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -2500
+        }
+
+        days_remove = 30
+        fire_only_once = yes
+    }
+
+    FIN_fascism_midland_steel = {
+        cost = 50
+
+        icon = steel
+		
+		highlight_state_targets = {
+			state = 819
+		}
+
+        available = {
+            has_manpower > 2500
+        }
+
+        remove_effect = {
+            add_manpower = 2500
+            add_resource = {
+                type = steel
+                amount = 20
+                state = 819
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -2500
+        }
+
+        days_remove = 40
+        fire_only_once = yes
+    }
+
+    FIN_fascism_center_steel = {
+        cost = 50
+
+        icon = steel
+		
+		highlight_state_targets = {
+			state = 815
+		}
+
+        available = {
+            has_manpower > 2500
+        }
+
+        remove_effect = {
+            add_manpower = 2500
+            add_resource = {
+                type = steel
+                amount = 25
+                state = 815
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -2500
+        }
+
+        days_remove = 50
+        fire_only_once = yes
+    }
+
+    FIN_fascism_coastal_oil = {
+        cost = 50
+
+        icon = oil
+		
+		highlight_state_targets = {
+			state = 817
+		}
+
+        available = {
+            has_manpower > 2500
+        }
+
+        remove_effect = {
+            add_manpower = 2500
+            add_resource = {
+                type = oil
+                amount = 20
+                state = 817
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -2500
+        }
+
+        days_remove = 40
+        fire_only_once = yes
+    }
+
+
+    # Infrastructure and Ports
+    FIN_fascism_infrastructure_upgrades = {
+        cost = 100
+		
+		icon = generic_construction
+
+		highlight_state_targets = {
+			state = 149
+            state = 148
+            state = 808
+            state = 818
+            state = 817 #Ports
+            state = 816
+            state = 722
+		}
+
+        available = {
+            has_manpower > 5000
+        }
+
+        remove_effect = {
+            add_manpower = 5000
+            set_country_flag = FIN_has_upgraded_infrastructure
+            149 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            148 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            808 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            818 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            817 = {
+                add_building_construction = {
+                    type = naval_base 
+                    level = 2
+                    instant_build = yes
+                    province = 3122
+                }
+            }
+            816 = {
+                add_building_construction = {
+                    type = naval_base 
+                    level = 2
+                    instant_build = yes
+                    province = 3083
+                }
+            }
+            722 = {
+                add_building_construction = {
+                    type = naval_base 
+                    level = 2
+                    instant_build = yes
+                    province = 9140
+                }
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -5000
+        }
+
+        days_remove = 120
+        fire_only_once = yes
+    }
+
+
+
+
+
+
+
+
+    #Increase Urbanization Zones#
+    FIN_fascism_urbanize_nation = {
+        cost = 75
+
+		highlight_state_targets = {
+			state = 813
+            state = 814
+            state = 817
+            state = 808
+		}
+
+        available = {
+            AND = {
+                has_country_flag = FIN_has_upgraded_infrastructure
+                has_completed_focus = FIN_promoteCorporatism
+            }
+        }
+
+        remove_effect = {
+            add_stability = -0.15
+            813 = {
+                set_state_category = large_town
+            }
+            814 = {
+                set_state_category = town
+            }
+            817 = {
+                set_state_category = rural
+            }
+            808 = {
+                set_state_category = large_town
+            }
+        }
+
+        complete_effect = {
+            add_manpower = 10000
+        }
+
+        days_remove = 100
+        fire_only_once = yes
+    }
+
+
+    # Build Up Factories
+    FIN_fascism_militarization = {
+        cost = 100
+
+		highlight_state_targets = {
+			state = 215
+            state = 820
+            state = 817
+		}
+
+        available = {
+            has_manpower > 5000
+            AND = {
+                has_country_flag = FIN_has_upgraded_infrastructure
+                has_completed_focus = FIN_promoteCorporatism
+            }
+        }
+
+        remove_effect = {
+            add_stability = -0.05
+            add_war_support = 0.1
+            add_manpower = 5000
+            813 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            814 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            817 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -5000
+        }
+
+        days_remove = 90
+        fire_only_once = yes
+    }
+
+    FIN_fascism_civilian_production = {
+        cost = 60
+
+		highlight_state_targets = {
+			state = 149
+            state = 150
+		}
+
+        available = {
+            has_manpower > 5000
+            AND = {
+                has_country_flag = FIN_has_upgraded_infrastructure
+                has_completed_focus = FIN_promoteCorporatism
+            }
+        }
+
+        remove_effect = {
+            add_stability = 0.1
+            add_war_support = -0.05
+            add_manpower = 5000
+            149 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            150 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -5000
+        }
+
+        days_remove = 75
+        fire_only_once = yes
+    }
+
+    FIN_fascism_naval_pride = {
+        cost = 80
+
+		highlight_state_targets = {
+			state = 818
+            state = 816
+            state = 808
+		}
+
+        available = {
+            has_manpower > 5000
+            AND = {
+                has_country_flag = FIN_has_upgraded_infrastructure
+                has_completed_focus = FIN_promoteCorporatism
+            }
+        }
+
+        remove_effect = {
+            add_stability = 0.1
+            add_war_support = -0.05
+            add_manpower = 5000
+            818 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = naval_base 
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            816 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = naval_base 
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            808 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = naval_base 
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -5000
+        }
+
+        days_remove = 75
+        fire_only_once = yes
+    }
 }
 
 FIN_fascism_russian_resettlement = {

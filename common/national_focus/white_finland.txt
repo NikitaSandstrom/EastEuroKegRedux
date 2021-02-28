@@ -786,6 +786,23 @@
 				limit = {
 					fascism < 0.5
 				}
+				create_country_leader = {
+                    name = "Baron Carl GE Mannerheim"
+                    desc = BARON_CGE_MANNERHEIM_DESC
+                    picture = "Portrait_Finland_CGE_Mannerheim.dds"
+                    expire = "1951.01.27"
+                    ideology = moderatism 
+                    traits = {
+                        great_war_hero
+                        nationalist_symbol 
+                        stout_defender
+                    }
+                }
+                set_party_name = {
+                    ideology = neutrality
+                    long_name = FIN_mannerheim_coup_long
+                    name = FIN_mannerheim_coup
+                }
 				start_civil_war = {
 					ideology = neutrality
 					size = 0.4
@@ -799,6 +816,7 @@
 
 					#keep_political_leader = yes
 				}
+				set_country_flag = FIN_fas_civil_war_occurred
 
 
 				else = {
@@ -815,6 +833,11 @@
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { 
 			focus = FIN_IKLsCoup
+		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
 		}
 		#mutually_exclusive = { 
 		#	focus =  
@@ -850,6 +873,11 @@
 		prerequisite = { 
 			focus = FIN_secureSupportOfTheArmy
 		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
+		}
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
@@ -883,6 +911,11 @@
 		prerequisite = { 
 			focus = FIN_IKLsCoup
 		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
+		}
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
@@ -915,6 +948,11 @@
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { 
 			focus = FIN_securingThePeoplesSupport
+		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
 		}
 		#mutually_exclusive = { 
 		#	focus =  
@@ -951,6 +989,11 @@
 		}
 		prerequisite = {
 			focus = FIN_counterCommunistInfluencce
+		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
 		}
 		#mutually_exclusive = { 
 		#	focus =  
@@ -1588,6 +1631,9 @@
 		}
 		mutually_exclusive = { 
 			focus =  FIN_IKLsCoup
+		}
+		bypass = {
+			has_country_flag = FIN_mannerheim_wins_civil_war
 		}
 		
 		relative_position_id = FIN_prominenceOfIKL
