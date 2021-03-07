@@ -1,0 +1,133 @@
+FIN_civil_war_campaigns = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        AND = {
+            has_completed_focus = FIN_theNorthernCampaign
+            has_war_with = RFI
+        }
+    }
+}
+
+FIN_civil_war_equipment_purchases = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        AND = {
+            has_completed_focus = FIN_purchaseForeignEquipment
+            has_war_with = RFI
+        }
+    }
+}
+
+FIN_fascism_IKLs_coup = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        AND = {
+            has_completed_focus = FIN_IKLsCoup
+            NOT = {
+                has_completed_focus = FIN_theNationIsSecure
+            }
+            NOT = {
+                has_country_flag = FIN_mannerheim_wins_civil_war
+            }
+        }
+    }
+
+}
+
+FIN_fascism_economic_reliance = {
+    icon = generic_prospect_for_resources
+
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        OR = {
+            has_completed_focus = FIN_economicSelfReliance
+            has_completed_focus = FIN_negotiateWithBusinesses
+        }
+        
+    }
+}
+
+FIN_fascism_russian_resettlement = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_resettleRussianLands
+    }
+}
+
+FIN_fascism_SS_recruitment = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_finnishSSDivisions
+    }
+}
+
+FIN_aggressive_subjugation = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_subjugateOurEnemies
+    }
+}
+
+FIN_defensive_foreign_outlook = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        OR = {
+            has_completed_focus = FIN_inviteForeignInvestors
+            has_completed_focus = FIN_purchaseForeignWeaponry
+        }
+    }
+}
+
+FIN_mannerheims_presidency_category = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_mannerheimsPresidency
+    }
+}
+
+FIN_mannerheim_resettle_russian_lands = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_ourAmbitions
+    }
+}
+
+FIN_svin_foreign_diplomacy = {
+    allowed = {
+        original_tag = FIN
+    }
+
+    available = {
+        has_completed_focus = FIN_svinForeignPolicy
+    }
+}

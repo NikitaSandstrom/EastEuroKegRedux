@@ -19,4 +19,25 @@ on_actions = {
 		}
 	}
 
+
+	#ROOT is winner #FROM gets annexed - This will also fire on_annex
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = FIN
+					}
+					ROOT = {
+						original_tag = FIN
+						has_government = neutrality
+					}
+				}
+				ROOT = {
+					set_country_flag = FIN_mannerheim_wins_civil_war
+				}
+			}
+		}
+	}
+
 }

@@ -1,6 +1,9 @@
 ﻿l_english:
  # White Finland Dynamics #
  FIN_defending_the_Kannas:0 "Defending the Kannas"
+ FIN_attack_north:0 "The Northern Assault"
+ FIN_attack_south:0 "The Southern Assault"
+ FIN_state_core_defense:0 "Withdraw to Defensive Lines"
  # White Finland Ideas #
  FIN_disorganized_army:0 "Disorganized Army"
  FIN_red_prisoners_of_war:0 "Bolshevik Prisoners of War"
@@ -38,3 +41,16 @@
  FIN_finno_swedish_ties:0 "Finno-Swedish Ties"
  FIN_free_market_capitalism:0 "Free Market Capitalism"
  FIN_foreign_volunteer_corps:0 "Foreign Volunteer Corps"
+ FIN_red_leaders_pardoned:0 "Red Leaders Pardoned"
+ FIN_northern_recruitment_drive:0 "Northern Finnish Recruitment Drive"
+ FIN_failed_northern_assault:0 "Failed Northern Assault"
+ FIN_won_northern_assault:0 "Won the Northern Push"
+ FIN_southern_recruitment_drive:0 "Southern Finnish Recruitment Drive"
+ FIN_failed_southern_assault:0 "Failed Southern Assault"
+ FIN_won_southern_assault:0 "Victory in the South"
+ FIN_civil_war_equipment_purchase_consumer_goods:0 "Equipment Purchases"
+ FIN_civil_war_equipment_purchase_weapons_inf:0 "Equipment Training"
+ FIN_civil_war_equipment_purchase_weapons_armor:0 "Armor Retraining"
+ FIN_SS_recruit_infantry:0 "Payment for Training - Small"
+ FIN_SS_recruit_armor:0 "Payment for Training - Large"
+ FIN_SS_german_training:0 "SS Officer Training"

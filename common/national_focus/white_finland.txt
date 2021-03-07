@@ -69,6 +69,12 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
 		
 		#relative_position_id =
 		x = 5
@@ -103,6 +109,12 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
 		
 		relative_position_id = FIN_fightingTheReds
 		x = 0
@@ -135,6 +147,12 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
 		
 		relative_position_id = FIN_reorganiseTheMilitary
 		x = -1
@@ -168,6 +186,12 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
 
 
 		available = {
@@ -207,6 +231,13 @@
 		prerequisite = { 
 			focus = FIN_reorganiseTheMilitary
 		}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
+
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
@@ -242,6 +273,7 @@
 				}
 				add_dynamic_modifier = {
 					modifier = FIN_defending_the_Kannas
+					scope = FIN
 				}
 			}
 		}
@@ -255,6 +287,13 @@
 		prerequisite = { 
 			focus = FIN_defenseOfTheKannas
 		}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
+		
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
@@ -296,13 +335,8 @@
 		}
 
 		available = {
-			AND = {
-				NOT = {
-					has_war_with = RFI
-				}
-				NOT = {
-					country_exists = RFI
-				}
+			NOT = {
+				country_exists = RFI
 			}
 		}
 
@@ -752,6 +786,23 @@
 				limit = {
 					fascism < 0.5
 				}
+				create_country_leader = {
+                    name = "Baron Carl GE Mannerheim"
+                    desc = BARON_CGE_MANNERHEIM_DESC
+                    picture = "Portrait_Finland_CGE_Mannerheim.dds"
+                    expire = "1951.01.27"
+                    ideology = moderatism 
+                    traits = {
+                        great_war_hero
+                        nationalist_symbol 
+                        stout_defender
+                    }
+                }
+                set_party_name = {
+                    ideology = neutrality
+                    long_name = FIN_mannerheim_coup_long
+                    name = FIN_mannerheim_coup
+                }
 				start_civil_war = {
 					ideology = neutrality
 					size = 0.4
@@ -765,6 +816,7 @@
 
 					#keep_political_leader = yes
 				}
+				set_country_flag = FIN_fas_civil_war_occurred
 
 
 				else = {
@@ -781,6 +833,11 @@
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { 
 			focus = FIN_IKLsCoup
+		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
 		}
 		#mutually_exclusive = { 
 		#	focus =  
@@ -816,6 +873,11 @@
 		prerequisite = { 
 			focus = FIN_secureSupportOfTheArmy
 		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
+		}
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
@@ -849,6 +911,11 @@
 		prerequisite = { 
 			focus = FIN_IKLsCoup
 		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
+		}
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
@@ -881,6 +948,11 @@
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { 
 			focus = FIN_securingThePeoplesSupport
+		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
 		}
 		#mutually_exclusive = { 
 		#	focus =  
@@ -917,6 +989,11 @@
 		}
 		prerequisite = {
 			focus = FIN_counterCommunistInfluencce
+		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
 		}
 		#mutually_exclusive = { 
 		#	focus =  
@@ -1128,7 +1205,11 @@
 
 		completion_reward = {
 			add_political_power = 25
-			#Event to Join the Axis
+			GER = {
+				country_event = {
+					id = finland.3
+				}
+			}
 		}
 	}
 
@@ -1151,11 +1232,8 @@
 			}
 		}
 
-		bypass = { # CHANGE TO HAS_FLAG IN EVENTS #
-			has_relation_modifier = {
-				target = GER
-				modifier = FIN_kicked_from_german_embassy
-			}
+		bypass = {
+			has_country_flag = FIN_germans_refused_request
 		}
 		
 		relative_position_id = FIN_allianceWithGermany
@@ -1554,6 +1632,9 @@
 		mutually_exclusive = { 
 			focus =  FIN_IKLsCoup
 		}
+		bypass = {
+			has_country_flag = FIN_mannerheim_wins_civil_war
+		}
 		
 		relative_position_id = FIN_prominenceOfIKL
 		x = 5
@@ -1843,7 +1924,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			#Add Event for Elections
+			country_event = {
+				id = finland.7
+			}
 			remove_ideas = FIN_suspended_democracy
 		}
 	}
@@ -3549,7 +3632,9 @@
 		#	focus =  
 		#}
 
-		## Has Flag has_MannerheimPresident ##
+		available = {
+			has_country_flag = mannerheim_chosen
+		}
 		
 		#relative_position_id =
 		x = 23
@@ -4196,7 +4281,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			# Add Event for expanding Ties with Sweden #
+			SWE = {
+				country_event = {
+					id = finland.8
+				}
+			}
 		}
 	}
 
@@ -4358,7 +4447,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			# Add Event for the 1919 Agreement #
+			ENG = {
+				country_event = {
+					id = finland.11
+				}
+			}
 		}
 	}
 

@@ -1,0 +1,20 @@
+spriteTypes = {	
+
+    # FINNISH EVENTS #
+	spriteType = {
+		name = "GFX_report_event_finland_red_soldiers"
+		texturefile = "gfx/event_pictures/report_event_finland_red_soldier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_finland_assault_fail"
+		texturefile = "gfx/event_pictures/news_event_finnish_fail_assault.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_finland_assault_win"
+		texturefile = "gfx/event_pictures/news_event_finnish_win_assault.dds"
+	}
+
+    
+}

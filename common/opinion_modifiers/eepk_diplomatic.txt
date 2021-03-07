@@ -47,4 +47,22 @@ opinion_modifiers = {
 	FIN_anti_communist_attitude_good = {
 		value = 25
 	}
+
+
+
+	FIN_swedes_declined = {
+		value = -35
+	}
+
+	FIN_joined_allies = {
+		value = 25
+	}
+
+	FIN_allied_guarantee = {
+		value = 15
+	}
+
+	FIN_declined_alliance = {
+		value = -50
+	}
 }
