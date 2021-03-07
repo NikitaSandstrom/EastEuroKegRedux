@@ -1185,17 +1185,11 @@ FIN_fascism_SS_recruitment = {
             }
             111 = {
                 create_unit = {
-                    division = "name = \"SS Division Suolla\"
-                    division_template = \"SS Vapaaehtoiset Jalkaväki\"
-                    start_experience_factor = 0.5
-                    start_equipment_factor = 1.0"
+                    division = "name = \"SS Vapaaehtoiset Jalkaväki\" division_template = \"SS Vapaaehtoiset Jalkaväki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
                     owner = FIN
                 }
                 create_unit = {
-                    division = "name = \"SS Division Muumi\"
-                    division_template = \"SS Vapaaehtoiset Jalkaväki\"
-                    start_experience_factor = 0.5
-                    start_equipment_factor = 1.0"
+                    division = "name = \"SS Vapaaehtoiset Jalkaväki\" division_template = \"SS Vapaaehtoiset Jalkaväki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
                     owner = FIN
                 }
             }
@@ -1237,10 +1231,7 @@ FIN_fascism_SS_recruitment = {
             }
             111 = {
                 create_unit = {
-                    division = "name = \"SS Division Panssari\"
-                    division_template = \"SS Vapaaehtoiset Panssari\"
-                    start_experience_factor = 0.5
-                    start_equipment_factor = 1.0"
+                    division = "name = \"SS Vapaaehtoiset Panssari\" division_template = \"SS Vapaaehtoiset Panssari\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
                     owner = FIN
                 }
             }
