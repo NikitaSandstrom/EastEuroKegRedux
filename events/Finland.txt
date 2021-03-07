@@ -635,7 +635,7 @@ news_event = {
 	id = finland.15
 	title = finland.15.t
 	desc = finland.15.d
-	picture = GFX_report_event_finnish_letter
+	picture = GFX_news_event_finland_assault_fail
 
 	is_triggered_only = yes
 
@@ -651,7 +651,7 @@ news_event = {
 	id = finland.16
 	title = finland.16.t
 	desc = finland.16.d
-	picture = GFX_report_event_finnish_letter
+	picture = GFX_news_event_finland_assault_win
 
 	is_triggered_only = yes
 
@@ -667,7 +667,7 @@ news_event = {
 	id = finland.17
 	title = finland.17.t
 	desc = finland.17.d
-	picture = GFX_report_event_finnish_letter
+	picture = GFX_news_event_finland_assault_fail
 
 	is_triggered_only = yes
 
@@ -683,7 +683,7 @@ news_event = {
 	id = finland.18
 	title = finland.18.t
 	desc = finland.18.d
-	picture = GFX_report_event_finnish_letter
+	picture = GFX_news_event_finland_assault_win
 
 	is_triggered_only = yes
 

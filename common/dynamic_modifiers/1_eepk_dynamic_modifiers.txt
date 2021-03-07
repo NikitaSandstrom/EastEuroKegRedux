@@ -37,7 +37,7 @@ FIN_defending_the_Kannas = {
 FIN_attack_north = {
 	enable = { always = yes }
 
-	icon = GFX_idea_generic_fortify_the_borders
+	icon = GFX_idea_generic_intel_bonus
 	
 		
 	army_attack_factor = 0.10
@@ -47,9 +47,18 @@ FIN_attack_north = {
 FIN_attack_south = {
 	enable = { always = yes }
 
-	icon = GFX_idea_generic_fortify_the_borders
+	icon = GFX_idea_generic_intel_bonus
 	
 		
 	army_attack_factor = 0.10
 	breakthrough_factor = 0.20
+}
+
+FIN_state_core_defense = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_fortify_the_borders
+	
+		
+	army_core_defence_factor = 0.25
 }

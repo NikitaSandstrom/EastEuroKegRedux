@@ -51,7 +51,11 @@ FIN_fascism_economic_reliance = {
     }
 
     available = {
-        has_completed_focus = FIN_economicSelfReliance
+        OR = {
+            has_completed_focus = FIN_economicSelfReliance
+            has_completed_focus = FIN_negotiateWithBusinesses
+        }
+        
     }
 }
 
@@ -115,16 +119,6 @@ FIN_mannerheim_resettle_russian_lands = {
 
     available = {
         has_completed_focus = FIN_ourAmbitions
-    }
-}
-
-FIN_svin_business_negotiation = {
-    allowed = {
-        original_tag = FIN
-    }
-
-    available = {
-        has_completed_focus = FIN_negotiateWithBusinesses
     }
 }
 

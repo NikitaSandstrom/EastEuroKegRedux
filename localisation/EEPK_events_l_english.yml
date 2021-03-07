@@ -53,6 +53,19 @@
  finland.14.t:0 "England Denies Agreement"
  finland.14.d:0 "England has refused to further the 1919 agreement, calling us 'a lost cause' in the face of larger powers around us."
  finland.14.a:0 "Perkele!"
+ finland.15.t:0 "Army Fails to reach Murmansk"
+ finland.15.d:0 "After preparations to dissolve the Northern Front, Finnish reports detail the loss of many troops and the inability to push back the Reds to the Murmansk line. People grow discontented from this, and question the viability of our troops."
+ finland.15.a:0 "Hold Fast"
+ finland.16.t:0 "Success in Murmansk"
+ finland.16.d:0 "The Finnish forces have succeeded in penetrating the Socialist Defenses, flying the flag over Zapolyarny. With the North secured, the army looks South and prepares to push the Reds out once and for all."
+ finland.16.a:0 "A Great Day!"
+ finland.17.t:0 "Petrozavodsk Remains with Reds"
+ finland.17.d:0 "The Finnish Army has suffered a terrible defeat to the Karelians, failing to reach their capital and surrounding regions. The failure to capture the region signifies that this war won't be done as soon as one was hoping for..."
+ finland.17.a:0 "Pull Back and Regroup"
+ finland.18.t:0 "Southern Karelia in our Hands"
+ finland.18.d:0 "A great success has been pulled off by the Finnish Army, managing to capture the Karelian Capital of Petrozavodsk and the surrounding region. The chain of command in the region for the Reds has begun to crumble apart, and it is only a matter of time before they will all surrender."
+ finland.18.a:0 "A Great Day!"
+
   ###################
   ## FINNISH FLAGS ##
   ###################
@@ -61,3 +74,10 @@
  svin_chosen:0 "Svinhufvud Elected"
  FIN_germans_refused_request:0 "Germans Refused Allianceship"
  mannerheim_chosen:0 "Mannerheim Elected"
+ northernOffensivePrepared:0 "Northern Offensive Prepared"
+ southernOffensivePrepared:0 "Southern Offensive Prepared"
+ FIN_fas_civil_war_occurred:0 "No Civil War has Occurred"
+ FIN_has_upgraded_infrastructure:0 "Improved Infrastructure"
+ FIN_removed_from_zapolyarny:0 "Peasants Removed from Zapolyarny"
+ FIN_removed_from_olonets:0 "Workers Removed from Olonets"
+ FIN_removed_from_onega:0 "Peasants Removed from Onega"

@@ -995,7 +995,7 @@ FIN_fascism_economic_reliance = {
             add_manpower = -5000
         }
 
-        days_remove = 75
+        days_remove = 100
         fire_only_once = yes
     }
 }
@@ -1005,7 +1005,151 @@ FIN_fascism_russian_resettlement = {
     # Remove Pop in certain states (moved to LSO States) and gain Higher Stability
         # Soviets may get event to start a border clash in certain states to take them back, or to use subversion to increase communism
     # Renaming of certain cities and states
-    #
+    # Population Increases in certain states
+
+    FIN_resettle_zapolyarny = {
+        cost = 100
+
+		highlight_state_targets = {
+            state = 808
+		}
+
+        available = {
+            213 = {
+                is_owned_by = LSO
+            }
+        }
+
+        remove_effect = {
+            set_country_flag = FIN_removed_from_zapolyarny
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.05
+            }
+            add_stability = -0.03
+            808 = {
+                add_manpower = -10000
+                add_dynamic_modifier = {
+                    modifier = FIN_state_core_defense
+                    scope = FIN
+                }
+            }
+            213 = {
+                add_manpower = 9000
+            }
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    FIN_resettle_olonets = {
+        cost = 100
+
+		highlight_state_targets = {
+            state = 216
+		}
+
+        available = {
+            264 = {
+                is_owned_by = LSO
+            }
+        }
+
+        remove_effect = {
+            set_country_flag = FIN_removed_from_olonets
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.05
+            }
+            add_stability = -0.03
+            216 = {
+                add_manpower = -30000
+                add_dynamic_modifier = {
+                    modifier = FIN_state_core_defense
+                    scope = FIN
+                }
+            }
+            264 = {
+                add_manpower = 26000
+            }
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    FIN_resettle_onega = {
+        cost = 100
+
+		highlight_state_targets = {
+            state = 215
+		}
+
+        available = {
+            214 = {
+                is_owned_by = LSO
+            }
+        }
+
+        remove_effect = {
+            set_country_flag = FIN_removed_from_onega
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.05
+            }
+            add_stability = -0.03
+            215 = {
+                add_manpower = -30000
+                add_dynamic_modifier = {
+                    modifier = FIN_state_core_defense
+                    scope = FIN
+                }
+            }
+            214 = {
+                add_manpower = 25000
+            }
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    FIN_rename_kolan_states = {
+        cost = 20
+
+        available = {
+            214 = {
+                is_owned_by = LSO
+            }
+        }
+
+        remove_effect = {
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.15
+            }
+            #Change City and State Names here#
+        }
+
+        complete_effect = {
+            add_stability = 0.15
+            add_war_support = 0.10
+        }
+
+        days_remove = 14
+        fire_only_once = yes
+    }
+
 }
 
 FIN_fascism_SS_recruitment = {
@@ -1015,6 +1159,123 @@ FIN_fascism_SS_recruitment = {
     # Recruit SS Mechanized Divisions
         # High CG cost, and removes Mil and Civ Factories for a year to Germany
     # German Training, increases Training Speed and decreases max Training
+
+    FIN_recruit_ss_infantry = {
+        cost = 20
+
+        available = {
+            has_manpower > 10000
+        }
+
+        remove_effect = {
+            division_template = {
+                name = "SS Vapaaehtoiset Jalkaväki"
+                is_locked = yes
+                division_names_group = FIN_INF_01
+                priority = 2
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                }
+                support = { 
+                } 
+            }
+            111 = {
+                create_unit = {
+                    division = "name = \"SS Division Suolla\"
+                    division_template = \"SS Vapaaehtoiset Jalkaväki\"
+                    start_experience_factor = 0.5
+                    start_equipment_factor = 1.0"
+                    owner = FIN
+                }
+                create_unit = {
+                    division = "name = \"SS Division Muumi\"
+                    division_template = \"SS Vapaaehtoiset Jalkaväki\"
+                    start_experience_factor = 0.5
+                    start_equipment_factor = 1.0"
+                    owner = FIN
+                }
+            }
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_SS_recruit_infantry
+                days = 180
+            }
+        }
+
+        days_remove = 180
+        fire_only_once = yes
+    }
+
+    FIN_recruit_ss_armor = {
+        cost = 20
+
+        available = {
+            has_manpower > 3500
+        }
+
+        remove_effect = {
+            division_template = {
+                name = "SS Vapaaehtoiset Panssari"
+                is_locked = yes
+                division_names_group = FIN_ARM_01
+                priority = 2
+                regiments = {
+                    light_armor = { x = 0 y = 0 }
+                    light_armor = { x = 0 y = 1 }
+                    light_armor = { x = 0 y = 2 }
+                    cavalry = { x = 1 y = 0 }
+                    cavalry = { x = 1 y = 1 }
+                }
+                support = { 
+                } 
+            }
+            111 = {
+                create_unit = {
+                    division = "name = \"SS Division Panssari\"
+                    division_template = \"SS Vapaaehtoiset Panssari\"
+                    start_experience_factor = 0.5
+                    start_equipment_factor = 1.0"
+                    owner = FIN
+                }
+            }
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_SS_recruit_armor
+                days = 120
+            }
+        }
+
+        days_remove = 120
+        fire_only_once = yes
+    }
+
+    FIN_recruit_ss_german_training_programs = {
+        cost = 20
+
+        available = {
+        }
+
+        remove_effect = {
+            add_ideas = {
+                FIN_SS_german_training
+            }
+        }
+
+        complete_effect = {
+            army_experience = 20
+        }
+
+        days_remove = 100
+        fire_only_once = yes
+    }
 }
 
 FIN_aggressive_subjugation = {
@@ -1023,6 +1284,253 @@ FIN_aggressive_subjugation = {
     # Puppet Norway         # Each get their land back (w/o Finnish Cores)
     # Puppet Denmark
     # Puppet LSO
+
+    FIN_puppeting_puppet_sweden = {
+        cost = 20
+
+        available = {
+            SWE = {
+                exists = no
+            }
+            FIN = {
+                owns_state = 141
+            }
+        }
+
+        remove_effect = {
+            SWE = {
+                transfer_state = 141
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 38
+                        }
+                    }
+                    transfer_state = 38
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 140
+                        }
+                    }
+                    transfer_state = 140
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 139
+                        }
+                    }
+                    transfer_state = 139
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 124
+                        }
+                    }
+                    transfer_state = 124 
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 138
+                        }
+                    }
+                    transfer_state = 138
+                }
+            }
+            puppet = SWE
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 100
+        fire_only_once = yes
+    }
+
+    FIN_puppeting_puppet_norway = {
+        cost = 20
+
+        available = {
+            NOR = {
+                exists = no
+            }
+            FIN = {
+                owns_state = 110
+            }
+        }
+
+        remove_effect = {
+            NOR = {
+                transfer_state = 110
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 143
+                        }
+                    }
+                    transfer_state = 143
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 142
+                        }
+                    }
+                    transfer_state = 142
+                }
+            }
+            puppet = NOR
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 75
+        fire_only_once = yes
+    }
+
+    FIN_puppeting_puppet_denmark = {
+        cost = 20
+
+        available = {
+            DEN = {
+                exists = no
+            }
+            FIN = {
+                owns_state = 37
+            }
+        }
+
+        remove_effect = {
+            DEN = {
+                transfer_state = 37
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 99
+                        }
+                    }
+                    transfer_state = 99
+                }
+            }
+            puppet = DEN
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 50
+        fire_only_once = yes
+    }
+
+    FIN_puppeting_puppet_leningrad = {
+        cost = 20
+
+        available = {
+            LSO = {
+                exists = no
+            }
+            FIN = {
+                owns_state = 195
+            }
+        }
+
+        remove_effect = {
+            LSO = {
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 209
+                        }
+                    }
+                    transfer_state = 209
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 210
+                        }
+                    }
+                    transfer_state = 210
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 824
+                        }
+                    }
+                    transfer_state = 824
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 263
+                        }
+                    }
+                    transfer_state = 263
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 264
+                        }
+                    }
+                    transfer_state = 264
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 246
+                        }
+                    }
+                    transfer_state = 246
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 247
+                        }
+                    }
+                    transfer_state = 247
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 811
+                        }
+                    }
+                    transfer_state = 811
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 351
+                        }
+                    }
+                    transfer_state = 351
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 214
+                        }
+                    }
+                    transfer_state = 214
+                }
+            }
+            puppet = LSO
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 50
+        fire_only_once = yes
+    }
 }
 
 FIN_defensive_foreign_outlook = {
