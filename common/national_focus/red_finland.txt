@@ -1,0 +1,551 @@
+﻿focus_tree = {
+	id = red_finland_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = RFI
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 800 }
+
+#	focus = {
+#		id = RFI_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id =
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+
+	#////////////\\\\\\\\\\\\#
+	### CIVIL WAR  FOCUSES ###
+	##########################
+
+	
+	# Fighting the War #
+	focus = {
+		id = RFI_fighting_the_war
+		icon = GFX_goal_generic_war_with_comintern
+		#prerequisite = { focus = }
+		
+		x = 3
+		y = 0
+		#relative_position_id = 
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+
+		}
+	}
+
+	# Reorganise our military #
+	focus = {
+		id = RFI_reorganise_our_military
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_fighting_the_war
+		}
+		
+		x = -2
+		y = 1
+		relative_position_id = RFI_fighting_the_war
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Prepare Against White Offensives #
+	focus = {
+		id = RFI_prepare_against_white_offensives
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_reorganise_our_military
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_reorganise_our_military
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Co-ordinate With Our Allies #
+	focus = {
+		id = RFI_coordinate_with_allies
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_prepare_against_white_offensives
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_prepare_against_white_offensives
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Emergency Conscription #
+	focus = {
+		id = RFI_emergency_conscription
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_fighting_the_war
+		}
+		
+		x = 2
+		y = 1
+		relative_position_id = RFI_fighting_the_war
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Raise Militas #
+	focus = {
+		id = RFI_raise_militas
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_emergency_conscription
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_emergency_conscription
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Force People Into Factories #
+	focus = {
+		id = RFI_force_into_factories
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_raise_militas
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_raise_militas
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Victory at a Great Cost #
+	focus = {
+		id = RFI_victory_great_cost
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_coordinate_with_allies
+		}
+
+		prerequisite = {
+			focus = RFI_force_into_factories
+		}
+		
+		x = 2
+		y = 1
+		relative_position_id = RFI_coordinate_with_allies
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+
+
+
+	#//////////////\\\\\\\\\\\\\\#
+	### POST-CIVIL WAR FOCUSES ###
+	##############################
+
+
+	# Rebuilding the Country #
+	focus = {
+		id = RFI_rebuilding_country
+		icon = GFX_goal_generic_war_with_comintern
+		#prerequisite = {
+		#	focus = RFI_victory_great_cost
+		#}
+		
+		x = 8
+		y = 1
+		#relative_position_id = RFI_victory_great_cost
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Industrialise Karelia #
+	focus = {
+		id = RFI_industrialise_karelia
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_rebuilding_country
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_rebuilding_country
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Form Militas for Policing #
+	focus = {
+		id = RFI_form_milita_police
+		icon = GFX_goal_generic_war_with_comintern
+		#prerequisite = {
+		#	focus = RFI_raise_militas
+		#}
+		
+		x = 10
+		y = 1
+		#relative_position_id = RFI_raise_militas
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Establish Regional Defense Councils #
+	focus = {
+		id = RFI_regional_defense_councils
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_form_milita_police
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_form_milita_police
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Repeal Wartime Laws #
+	focus = {
+		id = RFI_repeal_wartime_laws
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_industrialise_karelia
+		}
+
+		prerequisite = {
+			focus = RFI_regional_defense_councils
+		}
+		
+		x = -3
+		y = 1
+		relative_position_id = RFI_regional_defense_councils
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Rebuilding Finland #
+	focus = {
+		id = RFI_rebuilding_finland
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_industrialise_karelia
+		}
+
+		prerequisite = {
+			focus = RFI_regional_defense_councils
+		}
+		
+		x = 1
+		y = 2
+		relative_position_id = RFI_industrialise_karelia
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Crack Down on Counter-revolutionaries #
+	focus = {
+		id = RFI_crack_down_counter_revolutionary
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_rebuilding_finland
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_rebuilding_finland
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Integrating Finalnd into Socialist Republic #
+	focus = {
+		id = RFI_integrate_finland
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_crack_down_counter_revolutionary
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_crack_down_counter_revolutionary
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Integrating Finalnd into Socialist Republic #
+	focus = {
+		id = RFI_request_murmansk
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_integrate_finland
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = RFI_integrate_finland
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+	# Proclaim Finno-Karelian SR #
+	focus = {
+		id = RFI_proclaim_finno_karelia_sr
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_integrate_finland
+		}
+		
+		x = 0
+		y = 2
+		relative_position_id = RFI_integrate_finland
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_reward = {
+			
+		}
+	}
+
+
+
+
+
+
+
+	
+}		
