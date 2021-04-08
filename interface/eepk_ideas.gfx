@@ -1,0 +1,19 @@
+spriteTypes = {	
+
+	## FINNISH IDEAS ##
+
+	spriteType = {
+		name = "GFX_idea_FIN_disorganised_military"
+		texturefile = "gfx/interface/ideas/FIN_disorganised_military.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_FIN_suojeluskunnat"
+		texturefile = "gfx/interface/ideas/FIN_Suojeluskunnat.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_FIN_IKL_fascism"
+		texturefile = "gfx/interface/ideas/FIN_IKL_fascism.dds"
+	}	
+}

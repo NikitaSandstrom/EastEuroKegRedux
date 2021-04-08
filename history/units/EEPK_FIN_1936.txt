@@ -11,7 +11,7 @@
 }
 
 division_template = {
-	name = "Premium Infantry"
+	name = "Jääkäridivisioona"
 	division_names_group = FIN_INF_01
 
 	regiments = {
@@ -26,7 +26,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Finnish Cav"
+	name = "Ratsuväkiprikaati"
 	division_names_group = FIN_CAV_01
 
 	regiments = {
@@ -39,7 +39,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Finnish Tanks"
+	name = "Panssaridivisioona"
 	division_names_group = FIN_ARM_01
 
 	regiments = {
@@ -192,7 +192,7 @@ units = {
 				name_order = 1
 		}
 		location = 9100
-		division_template = "Premium Infantry"
+		division_template = "Jääkäridivisioona"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
@@ -203,7 +203,7 @@ units = {
 				name_order = 2
 		}
 		location = 11105
-		division_template = "Premium Infantry"
+		division_template = "Jääkäridivisioona"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
@@ -214,7 +214,7 @@ units = {
 				name_order = 3
 		}
 		location = 9119
-		division_template = "Premium Infantry"
+		division_template = "Jääkäridivisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
 	}
@@ -225,7 +225,7 @@ units = {
 				name_order = 4
 		}
 		location = 11156
-		division_template = "Premium Infantry"
+		division_template = "Jääkäridivisioona"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
@@ -236,7 +236,7 @@ units = {
 				name_order = 5
 		}
 		location = 9176
-		division_template = "Premium Infantry"
+		division_template = "Jääkäridivisioona"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
@@ -247,7 +247,7 @@ units = {
 				name_order = 6
 		}
 		location = 3115
-		division_template = "Premium Infantry"
+		division_template = "Jääkäridivisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -260,7 +260,7 @@ units = {
 				name_order = 1
 		}
 		location = 11105
-		division_template = "Finnish Tanks"
+		division_template = "Panssaridivisioona"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -273,7 +273,7 @@ units = {
 				name_order = 1
 		}
 		location = 165
-		division_template = "Finnish Cav"
+		division_template = "Ratsuväkiprikaati"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6
 	}

@@ -1,0 +1,694 @@
+﻿###########################
+# Finland Events
+###########################
+
+add_namespace = finland
+
+# Handling the Prisoners #
+country_event = {
+	id = finland.1
+	title = finland.1.t
+	desc = finland.1.d
+	picture = GFX_report_event_finland_red_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { # Release the Soldiers, Execute Leaders
+		name = finland.1.a
+		ai_chance = { factor = 50 }
+		FIN = {
+			remove_ideas = FIN_red_prisoners_of_war
+		}
+	}
+	option = { # Release them all
+		name = finland.1.b
+		ai_chance = { factor = 50 }
+		FIN = {
+			remove_ideas = FIN_red_prisoners_of_war
+			set_country_flag = released_red_officers
+			add_ideas = FIN_red_leaders_pardoned
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Elections (Without Mannerheim) #
+country_event = {
+	id = finland.2
+	title = finland.2.t
+	desc = finland.2.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Kallio
+		name = finland.2.a
+		ai_chance = { factor = 50 }
+		FIN = {
+			hidden_effect = {
+				create_country_leader = {
+					name = "Pehr Evind Svinhufvud"
+					desc = "POLITICS_PEHR_SVINHUFVUD_DESC"
+					picture = "Portrait_Finland_Pehr_Evind_Svinhufvud.dds"
+					expire = "1965.1.1"
+					ideology = centrism
+					traits = {}
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = FIN_democratic_party_long
+					name = FIN_democratic_party
+				}
+			}
+
+			set_country_flag = kallio_chosen
+			set_politics = {
+				ruling_party = democratic
+			}
+			create_country_leader = {
+				name = "Kyösti Kallio"
+				desc = "POLITICS_KYÖSTI_KALLIO_DESC"
+				picture = "Portrait_Finland_Kyosti_Kallio.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {}
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = FIN_neutrality_party_long
+				name = FIN_neutrality_party
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	option = { # Svinhufvud
+		name = finland.2.b
+		ai_chance = { factor = 50 }
+		FIN = {
+			set_country_flag = svin_chosen
+			set_politics = {
+				ruling_party = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Joining The Axis #
+country_event = {
+	id = finland.3
+	title = finland.3.t
+	desc = finland.3.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = { # Join Axis
+		name = finland.3.a
+		ai_chance = { factor = 33 }
+		FIN = {
+			country_event = {
+				id = finland.4
+			}
+		}
+	}
+	option = { # Guarantee
+		name = finland.3.b
+		ai_chance = { factor = 33 }
+		FIN = {
+			country_event = {
+				id = finland.5
+			}
+		}
+	}
+	option = { # Ignore
+		name = finland.3.c
+		ai_chance = { factor = 33 }
+		FIN = {
+			country_event = {
+				id = finland.6
+			}
+		}
+	}
+}
+
+
+# In the Axis #
+country_event = {
+	id = finland.4
+	title = finland.4.t
+	desc = finland.4.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = finland.4.a
+		ai_chance = { factor = 100 }
+		GER = {
+			add_to_faction = FIN
+		}
+	}
+}
+
+
+# Gets Guarantee #
+country_event = {
+	id = finland.5
+	title = finland.5.t
+	desc = finland.5.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = finland.5.a
+		ai_chance = { factor = 100 }
+		GER = {
+			give_guarantee = FIN
+		}
+	}
+}
+
+
+# Gets Nothing #
+country_event = {
+	id = finland.6
+	title = finland.6.t
+	desc = finland.6.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = finland.6.a
+		ai_chance = { factor = 100 }
+		FIN = {
+			set_country_flag = FIN_germans_refused_request
+			add_opinion_modifier = {
+				target = GER
+				modifier = FIN_kicked_from_german_embassy
+			}
+			reverse_add_opinion_modifier = {
+				target = GER
+				modifier = FIN_kicked_from_german_embassy
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Elections (With Mannerheim) #
+country_event = {
+	id = finland.7
+	title = finland.7.t
+	desc = finland.7.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Kallio
+		name = finland.7.a
+		ai_chance = { factor = 50 }
+		FIN = {
+			hidden_effect = {
+				create_country_leader = {
+					name = "Pehr Evind Svinhufvud"
+					desc = "POLITICS_PEHR_SVINHUFVUD_DESC"
+					picture = "Portrait_Finland_Pehr_Evind_Svinhufvud.dds"
+					expire = "1965.1.1"
+					ideology = centrism
+					traits = {}
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = FIN_democratic_party_long
+					name = FIN_democratic_party
+				}
+			}
+
+			set_country_flag = kallio_chosen
+			set_politics = {
+				ruling_party = democratic
+			}
+			create_country_leader = {
+				name = "Kyösti Kallio"
+				desc = "POLITICS_KYÖSTI_KALLIO_DESC"
+				picture = "Portrait_Finland_Kyosti_Kallio.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {}
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = FIN_neutrality_party_long
+				name = FIN_neutrality_party
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	option = { # Svinhufvud
+		name = finland.7.b
+		ai_chance = { factor = 50 }
+		FIN = {
+			set_country_flag = svin_chosen
+			set_politics = {
+				ruling_party = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+		}
+	}
+	option = { # Mannerheim
+		name = finland.7.c
+		ai_chance = { factor = 50 }
+		FIN = {
+			hidden_effect = {
+				create_country_leader = {
+					name = "Pehr Evind Svinhufvud"
+					desc = "POLITICS_PEHR_SVINHUFVUD_DESC"
+					picture = "Portrait_Finland_Pehr_Evind_Svinhufvud.dds"
+					expire = "1965.1.1"
+					ideology = centrism
+					traits = {}
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = FIN_democratic_party_long
+					name = FIN_democratic_party
+				}
+			}
+
+			set_country_flag = mannerheim_chosen
+			set_politics = {
+				ruling_party = democratic
+			}
+			create_country_leader = {
+				name = "Baron Carl GE Mannerheim"
+				desc = BARON_CGE_MANNERHEIM_DESC
+				picture = "Portrait_Finland_CGE_Mannerheim.dds"
+				expire = "1951.01.27"
+				ideology = liberalism 
+				traits = {
+					great_war_hero
+					nationalist_symbol 
+					stout_defender
+				}
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = FIN_mannerheim_election_long
+				name = FIN_mannerheim_election
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Swedish-Finnish Ties #
+country_event = {
+	id = finland.8
+	title = finland.8.t
+	desc = finland.8.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = finland.8.a
+		ai_chance = { factor = 50 }
+		SWE = {
+			army_experience = 5
+			give_guarantee = FIN
+		}
+		FIN = {
+			country_event = {
+				id = finland.9
+			}
+		}
+	}
+	option = { # No
+		name = finland.8.b
+		ai_chance = { factor = 50 }
+		SWE = {
+			remove_ideas = FIN_finno_swedish_ties
+		}
+		FIN = {
+			country_event = {
+				id = finland.10
+			}
+		}
+	}
+}
+
+
+# Guarantee Given #
+country_event = {
+	id = finland.9
+	title = finland.9.t
+	desc = finland.9.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = finland.9.a
+		ai_chance = { factor = 100 }
+		FIN = {
+			army_experience = 5
+			give_guarantee = SWE
+		}
+	}
+}
+
+
+# Ignored #
+country_event = {
+	id = finland.10
+	title = finland.10.t
+	desc = finland.10.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = finland.10.a
+		ai_chance = { factor = 100 }
+		FIN = {
+			add_opinion_modifier = {
+				target = SWE
+				modifier = FIN_swedes_declined
+			}
+			reverse_add_opinion_modifier = {
+				target = SWE
+				modifier = FIN_swedes_declined
+			}
+			remove_ideas = FIN_finno_swedish_ties
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Joining The Allies #
+country_event = {
+	id = finland.11
+	title = finland.11.t
+	desc = finland.11.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = { # Join Allies
+		name = finland.11.a
+		ai_chance = { factor = 33 }
+		ENG = {
+			add_to_faction = FIN
+			add_opinion_modifier = {
+				target = FIN
+				modifier = FIN_joined_allies
+			}
+		}
+		FIN = {
+			country_event = {
+				id = finland.12
+			}
+		}
+	}
+	option = { # Guarantee
+		name = finland.11.b
+		ai_chance = { factor = 33 }
+		ENG = {
+			give_guarantee = FIN
+			add_opinion_modifier = {
+				target = ENG
+				modifier = FIN_allied_guarantee
+			}
+		}
+		FIN = {
+			country_event = {
+				id = finland.13
+			}
+		}
+	}
+	option = { # Ignore
+		name = finland.11.b
+		ai_chance = { factor = 33 }
+		ENG = {
+			add_opinion_modifier = {
+				target = FIN
+				modifier = FIN_declined_alliance
+			}
+		}
+		FIN = {
+			country_event = {
+				id = finland.14
+			}
+		}
+	}
+}
+
+
+# In the Allies #
+country_event = {
+	id = finland.12
+	title = finland.12.t
+	desc = finland.12.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = finland.12.a
+		ai_chance = { factor = 100 }
+		FIN = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = FIN_joined_allies
+			}
+		}
+	}
+}
+
+
+# Gets Guarantee #
+country_event = {
+	id = finland.13
+	title = finland.13.t
+	desc = finland.13.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = finland.13.a
+		ai_chance = { factor = 100 }
+		FIN = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = FIN_allied_guarantee
+			}
+		}
+	}
+}
+
+
+# Gets Nothing #
+country_event = {
+	id = finland.14
+	title = finland.14.t
+	desc = finland.14.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = finland.14.a
+		ai_chance = { factor = 100 }
+		FIN = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = FIN_declined_alliance
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+# Finland Fails Northern Assault #
+news_event = {
+	id = finland.15
+	title = finland.15.t
+	desc = finland.15.d
+	picture = GFX_news_event_finland_assault_fail
+
+	is_triggered_only = yes
+
+	option = {
+		name = finland.15.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+
+# Finland Succeeds in Northern Assault #
+news_event = {
+	id = finland.16
+	title = finland.16.t
+	desc = finland.16.d
+	picture = GFX_news_event_finland_assault_win
+
+	is_triggered_only = yes
+
+	option = {
+		name = finland.16.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+
+# Finland Fails Southern Assault #
+news_event = {
+	id = finland.17
+	title = finland.17.t
+	desc = finland.17.d
+	picture = GFX_news_event_finland_assault_fail
+
+	is_triggered_only = yes
+
+	option = {
+		name = finland.17.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+
+# Finland Succeeds in Southern Assault #
+news_event = {
+	id = finland.18
+	title = finland.18.t
+	desc = finland.18.d
+	picture = GFX_news_event_finland_assault_win
+
+	is_triggered_only = yes
+
+	option = {
+		name = finland.18.a
+		ai_chance = { factor = 100 }
+	}
+}

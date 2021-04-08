@@ -1,0 +1,1529 @@
+FIN_civil_war_campaigns = {
+    ## Decisions ##
+    # Prepare for Offensive
+    # Probing Attacks | Recruitment Drive
+    # Mission to capture certain VPs to gain big bonuses
+    FIN_prepare_northern_offensive = {
+
+        cost = 30
+
+        available = {
+            has_completed_focus = FIN_theNorthernCampaign
+        }
+
+        complete_effect = {
+            add_war_support = 0.03
+            army_experience = 15
+        }
+
+        remove_effect = {
+            set_country_flag = northernOffensivePrepared
+        }
+
+        days_remove = 14
+        fire_only_once = yes
+    }
+
+    FIN_northern_probing_attack = {
+        cost = 30
+
+        available = {
+            has_country_flag = northernOffensivePrepared
+        }
+
+        visible = {
+            has_country_flag = northernOffensivePrepared
+        }
+
+        complete_effect = {
+            808 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_north
+                    scope = FIN
+                    days = 30
+                }
+            }
+            147 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_north
+                    scope = FIN
+                    days = 30
+                }
+            }
+            148 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_north
+                    scope = FIN
+                    days = 30
+                }
+            }
+            722 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_north
+                    scope = FIN
+                    days = 30
+                }
+            }
+        }
+
+        fire_only_once = yes
+    }
+
+    FIN_state_recruitment_drive_north = {
+        cost = 100
+
+        available = {
+            has_country_flag = northernOffensivePrepared
+            OR = {
+                controls_state = 808
+                controls_state = 147
+                controls_state = 148
+                controls_state = 722
+            }
+        }
+
+        visible = {
+            has_country_flag = northernOffensivePrepared
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_northern_recruitment_drive
+                days = 30
+            }
+        }
+
+        fire_only_once = yes
+    }
+
+    FIN_capture_northern_strat_points = {
+        allowed = { tag = FIN }                 
+        available = {
+            AND = {
+                controls_state = 808
+                controls_state = 147
+                controls_state = 148
+                controls_state = 722
+            }
+        }
+        activation = {
+            has_country_flag = northernOffensivePrepared
+        }
+        is_good = yes
+        selectable_mission = no
+        days_mission_timeout = 100
+        timeout_effect = {
+            add_stability = -0.10
+            add_war_support = -0.10
+            add_manpower = -1000
+
+            add_timed_idea = {
+                idea = FIN_failed_northern_assault
+                days = 100
+            }
+
+            news_event = {
+                id = finland.15
+            }
+
+        }
+        complete_effect = {
+            add_stability = 0.15
+            add_war_support = 0.15
+            add_manpower = 2500
+
+            add_timed_idea = {
+                idea = FIN_won_northern_assault
+                days = 100
+            }
+
+            news_event = {
+                id = finland.16
+            }
+        }
+    }
+
+
+
+    FIN_prepare_southern_offensive = {
+
+        cost = 30
+
+        available = {
+            has_completed_focus = FIN_theSouthernCampaign
+        }
+
+        visible = {
+            has_completed_focus = FIN_theSouthernCampaign
+        }
+
+        complete_effect = {
+            add_war_support = 0.03
+            army_experience = 15
+        }
+
+        remove_effect = {
+            set_country_flag = southernOffensivePrepared
+        }
+
+        days_remove = 14
+        fire_only_once = yes
+    }
+
+    FIN_southern_probing_attack = {
+        cost = 30
+
+        available = {
+            has_country_flag = southernOffensivePrepared
+        }
+
+        visible = {
+            has_country_flag = southernOffensivePrepared
+        }
+
+        complete_effect = {
+            813 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_south
+                    scope = FIN
+                    days = 30
+                }
+            }
+            146 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_south
+                    scope = FIN
+                    days = 30
+                }
+            }
+            216 = {
+                add_dynamic_modifier = {
+                    modifier = FIN_attack_south
+                    scope = FIN
+                    days = 30
+                }
+            }
+        }
+
+        fire_only_once = yes
+    }
+
+    FIN_state_recruitment_drive_south = {
+        cost = 100
+
+        available = {
+            has_country_flag = southernOffensivePrepared
+            OR = {
+                controls_state = 813
+                controls_state = 146
+                controls_state = 216
+            }
+        }
+
+        visible = {
+            has_country_flag = southernOffensivePrepared
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_southern_recruitment_drive
+                days = 30
+            }
+        }
+
+        fire_only_once = yes
+    }
+
+    FIN_capture_southern_strat_points = {
+        allowed = { tag = FIN }                 
+        available = {
+            AND = {
+                controls_state = 813
+                controls_state = 146
+                controls_state = 216
+            }
+        }
+        activation = {
+            has_country_flag = southernOffensivePrepared
+        }
+        is_good = yes
+        selectable_mission = no
+        days_mission_timeout = 100
+        timeout_effect = {
+            add_stability = -0.10
+            add_war_support = -0.10
+            add_manpower = -1000
+
+            add_timed_idea = {
+                idea = FIN_failed_southern_assault
+                days = 100
+            }
+
+            news_event = {
+                id = finland.17
+            }
+        }
+        complete_effect = {
+            add_stability = 0.15
+            add_war_support = 0.15
+            add_manpower = 2500
+
+            add_timed_idea = {
+                idea = FIN_won_southern_assault
+                days = 100
+            }
+
+            news_event = {
+                id = finland.18
+            }
+        }
+    }
+}
+
+FIN_civil_war_equipment_purchases = {
+    ## Decisions ## 
+    # Purchase Rifles from Britain              # Each Provide Opinion Modifier
+    # Purchase Vehicles from French             # As well, you get Consumer Factor for 50-100 days
+    # Purchase Arty from Germany                # Gain a temporary Debuff for retooling and retraining with the new weapons (14 days)
+    # Support Equipment from Sweden             # Purchasing takes time as well (7 days)
+
+    FIN_purchase_british_rifles = {
+
+        cost = 30
+
+        available = {
+            num_of_available_civilian_factories > 2
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_consumer_goods
+                days = 50
+            }
+        }
+
+        remove_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 3000
+                producer = ENG
+            }
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_weapons_inf
+                days = 14
+            }
+        }
+
+        days_remove = 7
+        days_re_enable = 110
+        #fire_only_once = yes
+    }
+
+    FIN_purchase_french_vehicles = {
+
+        cost = 30
+
+        available = {
+            num_of_available_civilian_factories > 2
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_consumer_goods
+                days = 100
+            }
+        }
+
+        remove_effect = {
+            add_equipment_to_stockpile = {
+                type = motorized_equipment_1
+                amount = 300
+                producer = FRA
+            }
+            add_equipment_to_stockpile = {
+                type = gw_tank_equipment
+                amount = 100
+                producer = FRA
+            }
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_weapons_armor
+                days = 21
+            }
+        }
+
+        days_remove = 7
+        days_re_enable = 110
+        #fire_only_once = yes
+    }
+
+    FIN_purchase_german_weapons = {
+
+        cost = 30
+
+        available = {
+            num_of_available_civilian_factories > 2
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_consumer_goods
+                days = 75
+            }
+        }
+
+        remove_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 2000
+                producer = GER
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 200
+                producer = GER
+            }
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_weapons_inf
+                days = 14
+            }
+        }
+
+        days_remove = 7
+        days_re_enable = 110
+        #fire_only_once = yes
+    }
+
+    FIN_purchase_swedish_weapons = {
+
+        cost = 75
+
+        available = {
+            num_of_available_civilian_factories > 2
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_consumer_goods
+                days = 50
+            }
+        }
+
+        remove_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = SWE
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 100
+                producer = SWE
+            }
+            add_equipment_to_stockpile = {
+                type = motorized_equipment_1
+                amount = 200
+                producer = SWE
+            }
+            add_equipment_to_stockpile = {
+                type = support_equipment_1
+                amount = 500
+                producer = SWE
+            }
+            add_timed_idea = {
+                idea = FIN_civil_war_equipment_purchase_weapons_inf
+                days = 21
+            }
+        }
+
+        days_remove = 7
+        days_re_enable = 60
+        #fire_only_once = yes
+    }
+}
+
+FIN_fascism_IKLs_coup = {
+    ## Missions ##
+    # Mannerheim begins injecting neutrality back to nation
+    # If Fascism reaches below 40%, CW kicks off (65/35 split favoring Mannerheim)
+    # Every 2 weeks Fascism decreases by certain percentage
+    # Decisions as well to keep Fascism up to avoid catastrophe
+    # This Category doesn't pop up if you went through one CW already
+    # Reminder to put on Capitulation if Fascists lose to switch path to Mannerheim's Coup
+
+    FIN_IKL_mannerheims_counter_coup = {
+        allowed = { tag = FIN }                 
+        available = {
+            has_completed_focus = FIN_theNationIsSecure
+            NOT = {
+                has_country_flag = FIN_fas_civil_war_occurred
+            }
+        }
+        activation = {
+            has_completed_focus = FIN_IKLsCoup
+        }
+        is_good = no
+        selectable_mission = no
+        days_mission_timeout = 14
+        timeout_effect = {
+            if = {
+                limit = {
+                    fascism > 0.4
+                }
+                add_stability = -0.01
+                add_war_support = -0.01
+                add_popularity = {
+                    ideology = fascism
+                    popularity = -0.02
+                }
+                add_popularity = {
+                    ideology = neutrality
+                    popularity = 0.05
+                }
+            }
+            if = {
+                limit = {
+                    fascism < 0.41
+                }
+                create_country_leader = {
+                    name = "Baron Carl GE Mannerheim"
+                    desc = BARON_CGE_MANNERHEIM_DESC
+                    picture = "Portrait_Finland_CGE_Mannerheim.dds"
+                    expire = "1951.01.27"
+                    ideology = moderatism 
+                    traits = {
+                        great_war_hero
+                        nationalist_symbol 
+                        stout_defender
+                    }
+                }
+                set_party_name = {
+                    ideology = neutrality
+                    long_name = FIN_mannerheim_coup_long
+                    name = FIN_mannerheim_coup
+                }
+                start_civil_war = {
+                    ideology = neutrality
+                    size = 0.65
+                    capital = 216
+                    states = { 
+                        146 150 820 819 215 216 818 808 147 822 148
+                    }
+                }
+                set_country_flag = FIN_fas_civil_war_occurred
+            }
+        }
+        complete_effect = {
+        }
+    }
+
+
+
+    FIN_IKL_drive_up_propaganda = {
+        cost = 100
+
+        #available = {
+        #}
+
+        remove_effect = {
+            add_manpower = 1000
+        }
+
+        complete_effect = {
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.15
+            }
+            add_stability = -0.05
+            add_war_support = 0.05
+            add_manpower = -1000
+        }
+
+        days_remove = 7
+        days_re_enable = 23
+        #fire_only_once = yes
+    }
+}
+
+FIN_fascism_economic_reliance = {
+    ## Decisions ##
+    # Conscripting Populace to build up Factories and find new mining zones
+        # Good Buffs, but lose manpower in certain states, as well as stability in certain areas
+    # Get some decisions to improve urbanization level, as well as Infrastructure
+    # Increase PP Gain, with slight increase in Consumer Goods
+        # Sell Goods to Germany for Equipment and Research bonuses
+        # Decrease WS for Decreased Consumer Goods and Increased Stability
+    # Build Bunkers along Russian Border
+
+
+    # Mining Zones
+    FIN_fascism_northern_tungsten = {
+        cost = 50
+
+        icon = tungsten
+		
+		highlight_state_targets = {
+			state = 148
+		}
+
+        available = {
+            has_manpower > 2500
+        }
+
+        remove_effect = {
+            add_manpower = 2500
+            add_resource = {
+                type = tungsten
+                amount = 25
+                state = 148
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -2500
+        }
+
+        days_remove = 30
+        fire_only_once = yes
+    }
+
+    FIN_fascism_northern_steel = {
+        cost = 50
+
+        icon = steel
+		
+		highlight_state_targets = {
+			state = 808
+		}
+
+        available = {
+            has_manpower > 2500
+        }
+
+        remove_effect = {
+            add_manpower = 2500
+            add_resource = {
+                type = steel
+                amount = 15
+                state = 808
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -2500
+        }
+
+        days_remove = 30
+        fire_only_once = yes
+    }
+
+    FIN_fascism_midland_steel = {
+        cost = 50
+
+        icon = steel
+		
+		highlight_state_targets = {
+			state = 819
+		}
+
+        available = {
+            has_manpower > 2500
+        }
+
+        remove_effect = {
+            add_manpower = 2500
+            add_resource = {
+                type = steel
+                amount = 20
+                state = 819
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -2500
+        }
+
+        days_remove = 40
+        fire_only_once = yes
+    }
+
+    FIN_fascism_center_steel = {
+        cost = 50
+
+        icon = steel
+		
+		highlight_state_targets = {
+			state = 815
+		}
+
+        available = {
+            has_manpower > 2500
+        }
+
+        remove_effect = {
+            add_manpower = 2500
+            add_resource = {
+                type = steel
+                amount = 25
+                state = 815
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -2500
+        }
+
+        days_remove = 50
+        fire_only_once = yes
+    }
+
+    FIN_fascism_coastal_oil = {
+        cost = 50
+
+        icon = oil
+		
+		highlight_state_targets = {
+			state = 817
+		}
+
+        available = {
+            has_manpower > 2500
+        }
+
+        remove_effect = {
+            add_manpower = 2500
+            add_resource = {
+                type = oil
+                amount = 20
+                state = 817
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -2500
+        }
+
+        days_remove = 40
+        fire_only_once = yes
+    }
+
+
+    # Infrastructure and Ports
+    FIN_fascism_infrastructure_upgrades = {
+        cost = 100
+		
+		icon = generic_construction
+
+		highlight_state_targets = {
+			state = 149
+            state = 148
+            state = 808
+            state = 818
+            state = 817 #Ports
+            state = 816
+            state = 722
+		}
+
+        available = {
+            has_manpower > 5000
+        }
+
+        remove_effect = {
+            add_manpower = 5000
+            set_country_flag = FIN_has_upgraded_infrastructure
+            149 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            148 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            808 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            818 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            817 = {
+                add_building_construction = {
+                    type = naval_base 
+                    level = 2
+                    instant_build = yes
+                    province = 3122
+                }
+            }
+            816 = {
+                add_building_construction = {
+                    type = naval_base 
+                    level = 2
+                    instant_build = yes
+                    province = 3083
+                }
+            }
+            722 = {
+                add_building_construction = {
+                    type = naval_base 
+                    level = 2
+                    instant_build = yes
+                    province = 9140
+                }
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -5000
+        }
+
+        days_remove = 120
+        fire_only_once = yes
+    }
+
+
+
+
+
+
+
+
+    #Increase Urbanization Zones#
+    FIN_fascism_urbanize_nation = {
+        cost = 75
+
+		highlight_state_targets = {
+			state = 813
+            state = 814
+            state = 817
+            state = 808
+		}
+
+        available = {
+            AND = {
+                has_country_flag = FIN_has_upgraded_infrastructure
+                has_completed_focus = FIN_promoteCorporatism
+            }
+        }
+
+        remove_effect = {
+            add_stability = -0.15
+            813 = {
+                set_state_category = large_town
+            }
+            814 = {
+                set_state_category = town
+            }
+            817 = {
+                set_state_category = rural
+            }
+            808 = {
+                set_state_category = large_town
+            }
+        }
+
+        complete_effect = {
+            add_manpower = 10000
+        }
+
+        days_remove = 100
+        fire_only_once = yes
+    }
+
+
+    # Build Up Factories
+    FIN_fascism_militarization = {
+        cost = 100
+
+		highlight_state_targets = {
+			state = 215
+            state = 820
+            state = 817
+		}
+
+        available = {
+            has_manpower > 5000
+            AND = {
+                has_country_flag = FIN_has_upgraded_infrastructure
+                has_completed_focus = FIN_promoteCorporatism
+            }
+        }
+
+        remove_effect = {
+            add_stability = -0.05
+            add_war_support = 0.1
+            add_manpower = 5000
+            813 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            814 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            817 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -5000
+        }
+
+        days_remove = 90
+        fire_only_once = yes
+    }
+
+    FIN_fascism_civilian_production = {
+        cost = 60
+
+		highlight_state_targets = {
+			state = 149
+            state = 150
+		}
+
+        available = {
+            has_manpower > 5000
+            AND = {
+                has_country_flag = FIN_has_upgraded_infrastructure
+                has_completed_focus = FIN_promoteCorporatism
+            }
+        }
+
+        remove_effect = {
+            add_stability = 0.1
+            add_war_support = -0.05
+            add_manpower = 5000
+            149 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            150 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -5000
+        }
+
+        days_remove = 75
+        fire_only_once = yes
+    }
+
+    FIN_fascism_naval_pride = {
+        cost = 80
+
+		highlight_state_targets = {
+			state = 818
+            state = 816
+            state = 808
+		}
+
+        available = {
+            has_manpower > 5000
+            AND = {
+                has_country_flag = FIN_has_upgraded_infrastructure
+                has_completed_focus = FIN_promoteCorporatism
+            }
+        }
+
+        remove_effect = {
+            add_stability = 0.1
+            add_war_support = -0.05
+            add_manpower = 5000
+            818 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = naval_base 
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            816 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = naval_base 
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            808 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = naval_base 
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+
+        complete_effect = {
+            add_manpower = -5000
+        }
+
+        days_remove = 100
+        fire_only_once = yes
+    }
+}
+
+FIN_fascism_russian_resettlement = {
+    ## Decisions ##
+    # Remove Pop in certain states (moved to LSO States) and gain Higher Stability
+        # Soviets may get event to start a border clash in certain states to take them back, or to use subversion to increase communism
+    # Renaming of certain cities and states
+    # Population Increases in certain states
+
+    FIN_resettle_zapolyarny = {
+        cost = 100
+
+		highlight_state_targets = {
+            state = 808
+		}
+
+        available = {
+            213 = {
+                is_owned_by = LSO
+            }
+        }
+
+        remove_effect = {
+            set_country_flag = FIN_removed_from_zapolyarny
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.05
+            }
+            add_stability = -0.03
+            808 = {
+                add_manpower = -10000
+                add_dynamic_modifier = {
+                    modifier = FIN_state_core_defense
+                    scope = FIN
+                }
+            }
+            213 = {
+                add_manpower = 9000
+            }
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    FIN_resettle_olonets = {
+        cost = 100
+
+		highlight_state_targets = {
+            state = 216
+		}
+
+        available = {
+            264 = {
+                is_owned_by = LSO
+            }
+        }
+
+        remove_effect = {
+            set_country_flag = FIN_removed_from_olonets
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.05
+            }
+            add_stability = -0.03
+            216 = {
+                add_manpower = -30000
+                add_dynamic_modifier = {
+                    modifier = FIN_state_core_defense
+                    scope = FIN
+                }
+            }
+            264 = {
+                add_manpower = 26000
+            }
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    FIN_resettle_onega = {
+        cost = 100
+
+		highlight_state_targets = {
+            state = 215
+		}
+
+        available = {
+            214 = {
+                is_owned_by = LSO
+            }
+        }
+
+        remove_effect = {
+            set_country_flag = FIN_removed_from_onega
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.05
+            }
+            add_stability = -0.03
+            215 = {
+                add_manpower = -30000
+                add_dynamic_modifier = {
+                    modifier = FIN_state_core_defense
+                    scope = FIN
+                }
+            }
+            214 = {
+                add_manpower = 25000
+            }
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    FIN_rename_kolan_states = {
+        cost = 20
+
+        available = {
+            214 = {
+                is_owned_by = LSO
+            }
+        }
+
+        remove_effect = {
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.15
+            }
+            #Change City and State Names here#
+        }
+
+        complete_effect = {
+            add_stability = 0.15
+            add_war_support = 0.10
+        }
+
+        days_remove = 14
+        fire_only_once = yes
+    }
+
+}
+
+FIN_fascism_SS_recruitment = {
+    ## Decisions ##
+    # Recruit SS Infantry Divisions
+        # Increased Consumer Good Cost for a fair amount of time
+    # Recruit SS Mechanized Divisions
+        # High CG cost, and removes Mil and Civ Factories for a year to Germany
+    # German Training, increases Training Speed and decreases max Training
+
+    FIN_recruit_ss_infantry = {
+        cost = 20
+
+        available = {
+            has_manpower > 10000
+        }
+
+        remove_effect = {
+            division_template = {
+                name = "SS Vapaaehtoiset Jalkaväki"
+                is_locked = yes
+                division_names_group = FIN_INF_01
+                priority = 2
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                }
+                support = { 
+                } 
+            }
+            111 = {
+                create_unit = {
+                    division = "name = \"SS Vapaaehtoiset Jalkaväki\" division_template = \"SS Vapaaehtoiset Jalkaväki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+                    owner = FIN
+                }
+                create_unit = {
+                    division = "name = \"SS Vapaaehtoiset Jalkaväki\" division_template = \"SS Vapaaehtoiset Jalkaväki\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+                    owner = FIN
+                }
+            }
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_SS_recruit_infantry
+                days = 180
+            }
+        }
+
+        days_remove = 180
+        fire_only_once = yes
+    }
+
+    FIN_recruit_ss_armor = {
+        cost = 20
+
+        available = {
+            has_manpower > 3500
+        }
+
+        remove_effect = {
+            division_template = {
+                name = "SS Vapaaehtoiset Panssari"
+                is_locked = yes
+                division_names_group = FIN_ARM_01
+                priority = 2
+                regiments = {
+                    light_armor = { x = 0 y = 0 }
+                    light_armor = { x = 0 y = 1 }
+                    light_armor = { x = 0 y = 2 }
+                    cavalry = { x = 1 y = 0 }
+                    cavalry = { x = 1 y = 1 }
+                }
+                support = { 
+                } 
+            }
+            111 = {
+                create_unit = {
+                    division = "name = \"SS Vapaaehtoiset Panssari\" division_template = \"SS Vapaaehtoiset Panssari\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+                    owner = FIN
+                }
+            }
+        }
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = FIN_SS_recruit_armor
+                days = 120
+            }
+        }
+
+        days_remove = 120
+        fire_only_once = yes
+    }
+
+    FIN_recruit_ss_german_training_programs = {
+        cost = 20
+
+        available = {
+        }
+
+        remove_effect = {
+            add_ideas = {
+                FIN_SS_german_training
+            }
+        }
+
+        complete_effect = {
+            army_experience = 20
+        }
+
+        days_remove = 100
+        fire_only_once = yes
+    }
+}
+
+FIN_aggressive_subjugation = {
+    ## Decisions ##
+    # Puppet Sweden 
+    # Puppet Norway         # Each get their land back (w/o Finnish Cores)
+    # Puppet Denmark
+    # Puppet LSO
+
+    FIN_puppeting_puppet_sweden = {
+        cost = 20
+
+        available = {
+            SWE = {
+                exists = no
+            }
+            FIN = {
+                owns_state = 141
+            }
+        }
+
+        remove_effect = {
+            SWE = {
+                transfer_state = 141
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 38
+                        }
+                    }
+                    transfer_state = 38
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 140
+                        }
+                    }
+                    transfer_state = 140
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 139
+                        }
+                    }
+                    transfer_state = 139
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 124
+                        }
+                    }
+                    transfer_state = 124 
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 138
+                        }
+                    }
+                    transfer_state = 138
+                }
+            }
+            puppet = SWE
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 100
+        fire_only_once = yes
+    }
+
+    FIN_puppeting_puppet_norway = {
+        cost = 20
+
+        available = {
+            NOR = {
+                exists = no
+            }
+            FIN = {
+                owns_state = 110
+            }
+        }
+
+        remove_effect = {
+            NOR = {
+                transfer_state = 110
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 143
+                        }
+                    }
+                    transfer_state = 143
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 142
+                        }
+                    }
+                    transfer_state = 142
+                }
+            }
+            puppet = NOR
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 75
+        fire_only_once = yes
+    }
+
+    FIN_puppeting_puppet_denmark = {
+        cost = 20
+
+        available = {
+            DEN = {
+                exists = no
+            }
+            FIN = {
+                owns_state = 37
+            }
+        }
+
+        remove_effect = {
+            DEN = {
+                transfer_state = 37
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 99
+                        }
+                    }
+                    transfer_state = 99
+                }
+            }
+            puppet = DEN
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 50
+        fire_only_once = yes
+    }
+
+    FIN_puppeting_puppet_leningrad = {
+        cost = 20
+
+        available = {
+            LSO = {
+                exists = no
+            }
+            FIN = {
+                owns_state = 195
+            }
+        }
+
+        remove_effect = {
+            LSO = {
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 209
+                        }
+                    }
+                    transfer_state = 209
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 210
+                        }
+                    }
+                    transfer_state = 210
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 824
+                        }
+                    }
+                    transfer_state = 824
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 263
+                        }
+                    }
+                    transfer_state = 263
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 264
+                        }
+                    }
+                    transfer_state = 264
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 246
+                        }
+                    }
+                    transfer_state = 246
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 247
+                        }
+                    }
+                    transfer_state = 247
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 811
+                        }
+                    }
+                    transfer_state = 811
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 351
+                        }
+                    }
+                    transfer_state = 351
+                }
+                if = {
+                    limit = {
+                        FIN = {
+                            owns_state = 214
+                        }
+                    }
+                    transfer_state = 214
+                }
+            }
+            puppet = LSO
+        }
+
+        complete_effect = {
+        }
+
+        days_remove = 50
+        fire_only_once = yes
+    }
+}
+
+FIN_defensive_foreign_outlook = {
+    ## Decisions ##
+}

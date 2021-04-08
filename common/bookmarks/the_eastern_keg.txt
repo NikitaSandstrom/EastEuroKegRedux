@@ -41,11 +41,15 @@ bookmarks = {
 		}
 		"FIN"={
 			history = "FIN_EASTERN_KEG_DESC"
-			ideology = democratic
+			ideology = neutrality
 			ideas = {
 				sisu
+				FIN_disorganized_army
 			}
 			focuses = {
+				FIN_kalliosPresidency
+				FIN_mannerheimsPresidency
+				FIN_svinhufvudsPresidency
 			}
 		}
 		"WRU"={

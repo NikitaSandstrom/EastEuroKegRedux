@@ -69,6 +69,12 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
 		
 		#relative_position_id =
 		x = 5
@@ -103,6 +109,12 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
 		
 		relative_position_id = FIN_fightingTheReds
 		x = 0
@@ -135,6 +147,12 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
 		
 		relative_position_id = FIN_reorganiseTheMilitary
 		x = -1
@@ -168,6 +186,12 @@
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
 
 
 		available = {
@@ -207,6 +231,13 @@
 		prerequisite = { 
 			focus = FIN_reorganiseTheMilitary
 		}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
+
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
@@ -242,6 +273,7 @@
 				}
 				add_dynamic_modifier = {
 					modifier = FIN_defending_the_Kannas
+					scope = FIN
 				}
 			}
 		}
@@ -255,6 +287,13 @@
 		prerequisite = { 
 			focus = FIN_defenseOfTheKannas
 		}
+
+		bypass = {
+			NOT = {
+				country_exists = RFI
+			}
+		}
+		
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
@@ -296,13 +335,8 @@
 		}
 
 		available = {
-			AND = {
-				NOT = {
-					has_war_with = RFI
-				}
-				NOT = {
-					country_exists = RFI
-				}
+			NOT = {
+				country_exists = RFI
 			}
 		}
 
@@ -405,8 +439,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			# Events for releasing Prisoners #
-		}
+			country_event = {
+				id = finland.1
+			}
+		}	
 	}
 
 
@@ -606,7 +642,7 @@
 	# Hold the Elections #
 	focus = {
 		id = FIN_holdTheElections
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_FIN_elections
 		prerequisite = { 
 			focus = FIN_dealWithTheExtremists
 		}
@@ -630,7 +666,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			# Events for the election #
+			country_event = {
+				id = finland.2
+			}
 		}
 	}
 
@@ -679,7 +717,7 @@
 	# Prominence of IKL #
 	focus = {
 		id = FIN_prominenceOfIKL
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FIN_IKL
 		prerequisite = { 
 			focus = FIN_riseOfFascism
 		}
@@ -748,6 +786,23 @@
 				limit = {
 					fascism < 0.5
 				}
+				create_country_leader = {
+                    name = "Baron Carl GE Mannerheim"
+                    desc = BARON_CGE_MANNERHEIM_DESC
+                    picture = "Portrait_Finland_CGE_Mannerheim.dds"
+                    expire = "1951.01.27"
+                    ideology = moderatism 
+                    traits = {
+                        great_war_hero
+                        nationalist_symbol 
+                        stout_defender
+                    }
+                }
+                set_party_name = {
+                    ideology = neutrality
+                    long_name = FIN_mannerheim_coup_long
+                    name = FIN_mannerheim_coup
+                }
 				start_civil_war = {
 					ideology = neutrality
 					size = 0.4
@@ -761,6 +816,7 @@
 
 					#keep_political_leader = yes
 				}
+				set_country_flag = FIN_fas_civil_war_occurred
 
 
 				else = {
@@ -777,6 +833,11 @@
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { 
 			focus = FIN_IKLsCoup
+		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
 		}
 		#mutually_exclusive = { 
 		#	focus =  
@@ -812,6 +873,11 @@
 		prerequisite = { 
 			focus = FIN_secureSupportOfTheArmy
 		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
+		}
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
@@ -845,6 +911,11 @@
 		prerequisite = { 
 			focus = FIN_IKLsCoup
 		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
+		}
 		#mutually_exclusive = { 
 		#	focus =  
 		#}
@@ -877,6 +948,11 @@
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { 
 			focus = FIN_securingThePeoplesSupport
+		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
 		}
 		#mutually_exclusive = { 
 		#	focus =  
@@ -913,6 +989,11 @@
 		}
 		prerequisite = {
 			focus = FIN_counterCommunistInfluencce
+		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_mannerheim_wins_civil_war
+			}
 		}
 		#mutually_exclusive = { 
 		#	focus =  
@@ -1124,7 +1205,11 @@
 
 		completion_reward = {
 			add_political_power = 25
-			#Event to Join the Axis
+			GER = {
+				country_event = {
+					id = finland.3
+				}
+			}
 		}
 	}
 
@@ -1147,11 +1232,8 @@
 			}
 		}
 
-		bypass = { # CHANGE TO HAS_FLAG IN EVENTS #
-			has_relation_modifier = {
-				target = GER
-				modifier = FIN_kicked_from_german_embassy
-			}
+		bypass = {
+			has_country_flag = FIN_germans_refused_request
 		}
 		
 		relative_position_id = FIN_allianceWithGermany
@@ -1550,6 +1632,9 @@
 		mutually_exclusive = { 
 			focus =  FIN_IKLsCoup
 		}
+		bypass = {
+			has_country_flag = FIN_mannerheim_wins_civil_war
+		}
 		
 		relative_position_id = FIN_prominenceOfIKL
 		x = 5
@@ -1604,7 +1689,7 @@
 	# Organise the Civil Guard #
 	focus = {
 		id = FIN_organiseTheCivilGuard
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_goal_FIN_conscription
 		prerequisite = { 
 			focus = FIN_mannerheimsIntervention
 		}
@@ -1815,7 +1900,7 @@
 	# The Election #
 	focus = {
 		id = FIN_theElection
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_FIN_elections
 		prerequisite = { 
 			focus = FIN_setTheElectionDate
 		}
@@ -1828,7 +1913,7 @@
 		y = 1
 		
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -1839,7 +1924,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			#Add Event for Elections
+			country_event = {
+				id = finland.7
+			}
 			remove_ideas = FIN_suspended_democracy
 		}
 	}
@@ -2234,7 +2321,7 @@
 	# Swedish Claims #
 	focus = {
 		id = FIN_swedishClaims
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FIN_swedish_claims
 		prerequisite = { 
 			focus = FIN_towardsAnEmpire
 		}
@@ -2353,7 +2440,7 @@
 	# Claim Estonia #
 	focus = {
 		id = FIN_claimEstonia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FIN_baltic_claims
 		prerequisite = { 
 			focus = FIN_proclaimGreaterFinland
 		}
@@ -2397,7 +2484,7 @@
 	# Liberate the Livonians #
 	focus = {
 		id = FIN_liberateLivonia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FIN_baltic_claims
 		prerequisite = { 
 			focus = FIN_proclaimGreaterFinland
 		}
@@ -2439,7 +2526,7 @@
 	# Subjugate Our Enemies #
 	focus = {
 		id = FIN_subjugateOurEnemies
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FIN_colonial_holdings
 		prerequisite = { 
 			focus = FIN_proclaimGreaterFinland
 		}
@@ -2991,9 +3078,9 @@
 		#	focus =  
 		#}
 
-		#available = {
-		#	in events, create flag has_kallio_as_leader
-		#}
+		available = {
+			has_country_flag = kallio_chosen
+		}
 		
 		#relative_position_id = 
 		x = 18
@@ -3019,7 +3106,7 @@
 	# Kallio's Policies #
 	focus = {
 		id = FIN_kalliosPolicies
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_FIN_Maalaisliitto
 		prerequisite = { 
 			focus = FIN_kalliosPresidency
 		}
@@ -3084,7 +3171,7 @@
 	# Include SDP in Government #
 	focus = {
 		id = FIN_includeSDP
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_goal_FIN_SDP
 		prerequisite = { 
 			focus = FIN_neutralForeignPolicy
 		}
@@ -3121,7 +3208,7 @@
 	# Agricultural Reforms #
 	focus = {
 		id = FIN_agriculturalReforms
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_FIN_agrarianism
 		prerequisite = { 
 			focus = FIN_includeSDP
 		}
@@ -3408,7 +3495,7 @@
 	# Expand VL #
 	focus = {
 		id = FIN_expandVL
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FIN_VL
 		prerequisite = { 
 			focus = FIN_buildUpWarIndustry
 		}
@@ -3545,7 +3632,9 @@
 		#	focus =  
 		#}
 
-		## Has Flag has_MannerheimPresident ##
+		available = {
+			has_country_flag = mannerheim_chosen
+		}
 		
 		#relative_position_id =
 		x = 23
@@ -3786,7 +3875,7 @@
 	# Increase Conscription #
 	focus = {
 		id = FIN_increaseConscription
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_goal_FIN_conscription
 		prerequisite = { 
 			focus = FIN_expandKarelianAirDefense
 		}
@@ -3811,7 +3900,7 @@
 
 		completion_reward = {
 			add_ideas = FIN_increased_conscription_law
-			add_stability = -0.03
+			add_stability = -0.05
 			add_war_support = 0.02
 		}
 	}
@@ -4192,7 +4281,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			# Add Event for expanding Ties with Sweden #
+			SWE = {
+				country_event = {
+					id = finland.8
+				}
+			}
 		}
 	}
 
@@ -4354,7 +4447,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			# Add Event for the 1919 Agreement #
+			ENG = {
+				country_event = {
+					id = finland.11
+				}
+			}
 		}
 	}
 
@@ -4461,7 +4558,9 @@
 		#	focus =  
 		#}
 
-		## ADD FLAG FOR has_SvinPresident for available ##
+		available = {
+			has_country_flag = svin_chosen
+		}
 		
 		#relative_position_id = 
 		x = 22
@@ -4576,7 +4675,7 @@
 
 		completion_reward = {
 			add_political_power = 25
-			# Add Decisions to boost businesses +52 984 980 06869
+			# Add Decisions to boost businesses
 		}
 	}
 
@@ -4647,6 +4746,7 @@
 
 		completion_reward = {
 			# Decisions to invest in research and development of arms #
+			# Add Idea to make Designers cheaper in PP
 		}
 	}
 
