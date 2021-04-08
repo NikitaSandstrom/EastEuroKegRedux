@@ -58,7 +58,7 @@
 	# Fighting the War #
 	focus = {
 		id = RFI_fighting_the_war
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_defence
 		#prerequisite = { focus = }
 		
 		x = 3
@@ -82,7 +82,7 @@
 	# Reorganise our military #
 	focus = {
 		id = RFI_reorganise_our_military
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_secret_rearmament
 		prerequisite = {
 			focus = RFI_fighting_the_war
 		}
@@ -108,7 +108,7 @@
 	# Prepare Against White Offensives #
 	focus = {
 		id = RFI_prepare_against_white_offensives
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_prc_infiltration
 		prerequisite = {
 			focus = RFI_reorganise_our_military
 		}
@@ -134,7 +134,7 @@
 	# Co-ordinate With Our Allies #
 	focus = {
 		id = RFI_coordinate_with_allies
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = {
 			focus = RFI_prepare_against_white_offensives
 		}
@@ -160,7 +160,7 @@
 	# Emergency Conscription #
 	focus = {
 		id = RFI_emergency_conscription
-		icon = GFX_goal_generic_war_with_comintern
+		icon = "GFX_goal_FIN_conscription"
 		prerequisite = {
 			focus = RFI_fighting_the_war
 		}
@@ -186,7 +186,7 @@
 	# Raise Militas #
 	focus = {
 		id = RFI_raise_militas
-		icon = GFX_goal_generic_war_with_comintern
+		icon = "GFX_focus_generic_military_academy"
 		prerequisite = {
 			focus = RFI_emergency_conscription
 		}
@@ -212,7 +212,7 @@
 	# Force People Into Factories #
 	focus = {
 		id = RFI_force_into_factories
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_soviet_construction
 		prerequisite = {
 			focus = RFI_raise_militas
 		}
@@ -238,7 +238,7 @@
 	# Victory at a Great Cost #
 	focus = {
 		id = RFI_victory_great_cost
-		icon = GFX_goal_generic_war_with_comintern
+		icon = "GFX_goal_generic_dangerous_deal"
 		prerequisite = {
 			focus = RFI_coordinate_with_allies
 		}
@@ -276,7 +276,7 @@
 	# Rebuilding the Country #
 	focus = {
 		id = RFI_rebuilding_country
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_production
 		#prerequisite = {
 		#	focus = RFI_victory_great_cost
 		#}
@@ -302,7 +302,7 @@
 	# Industrialise Karelia #
 	focus = {
 		id = RFI_industrialise_karelia
-		icon = GFX_goal_generic_war_with_comintern
+		icon = "GFX_goal_generic_production2"
 		prerequisite = {
 			focus = RFI_rebuilding_country
 		}
@@ -328,7 +328,7 @@
 	# Form Militas for Policing #
 	focus = {
 		id = RFI_form_milita_police
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_support_the_left_right
 		#prerequisite = {
 		#	focus = RFI_raise_militas
 		#}
@@ -380,7 +380,7 @@
 	# Repeal Wartime Laws #
 	focus = {
 		id = RFI_repeal_wartime_laws
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = {
 			focus = RFI_industrialise_karelia
 		}
@@ -410,7 +410,7 @@
 	# Rebuilding Finland #
 	focus = {
 		id = RFI_rebuilding_finland
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_industry_2
 		prerequisite = {
 			focus = RFI_industrialise_karelia
 		}
@@ -440,7 +440,7 @@
 	# Crack Down on Counter-revolutionaries #
 	focus = {
 		id = RFI_crack_down_counter_revolutionary
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = {
 			focus = RFI_rebuilding_finland
 		}
@@ -466,7 +466,7 @@
 	# Integrating Finland into Socialist Republic #
 	focus = {
 		id = RFI_integrate_finland
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_FIN_SDP
 		prerequisite = {
 			focus = RFI_crack_down_counter_revolutionary
 		}
@@ -492,7 +492,7 @@
 	# Integrating Finland into Socialist Republic #
 	focus = {
 		id = RFI_request_murmansk
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_join_comintern
 		prerequisite = {
 			focus = RFI_integrate_finland
 		}
@@ -518,7 +518,7 @@
 	# Proclaim Finno-Karelian SR #
 	focus = {
 		id = RFI_proclaim_finno_karelia_sr
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_YUG_pan_slavic_congress
 		prerequisite = {
 			focus = RFI_integrate_finland
 		}
@@ -549,7 +549,7 @@
 	# Preparations for New Leadership #
 	focus = {
 		id = RFI_prep_new_leadership
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_self_management
 		#prerequisite = { }
 		
 		x = 13
@@ -573,7 +573,7 @@
 	# The Two Candidates #
 	focus = {
 		id = RFI_the_two_candidates
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = {
 			focus = RFI_prep_new_leadership
 		}
@@ -599,7 +599,7 @@
 	# Delegate the Council's Duties #
 	focus = {
 		id = RFI_delegate_council_duties
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_treaty
 		prerequisite = {
 			focus = RFI_the_two_candidates
 		}
@@ -625,7 +625,7 @@
 	# The Council Supports Aaltonen #
 	focus = {
 		id = RFI_support_aaltonen
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = RFI_the_two_candidates
 		}
@@ -655,7 +655,7 @@
 	# The Council Supports Kuusinen #
 	focus = {
 		id = RFI_support_kuusinen
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = RFI_the_two_candidates
 		}
@@ -685,7 +685,7 @@
 	# Announce Election Date #
 	focus = {
 		id = RFI_announce_election_date
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_FIN_elections
 		prerequisite = {
 			focus = RFI_delegate_council_duties
 		}
@@ -716,7 +716,7 @@
 	# Announce the Winner #
 	focus = {
 		id = RFI_announce_winner
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = {
 			focus = RFI_announce_election_date
 		}
@@ -742,7 +742,7 @@
 	# Disband the Council #
 	focus = {
 		id = RFI_disband_council
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_FIN_SDP
 		prerequisite = {
 			focus = RFI_announce_winner
 		}
@@ -773,7 +773,7 @@
 	# Aaltonen's Finland #
 	focus = {
 		id = RFI_aaltonens_finland
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_soviet_politics
 		#prerequisite = { }
 		
 		x = 4
@@ -797,7 +797,7 @@
 	# Our Own Path #
 	focus = {
 		id = RFI_our_own_path
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_little_entente
 		prerequisite = {
 			focus = RFI_aaltonens_finland
 		}
@@ -823,7 +823,7 @@
 	# Focus on Home First #
 	focus = {
 		id = RFI_home_front_focus
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_construction
 		prerequisite = {
 			focus = RFI_our_own_path
 		}
@@ -849,7 +849,7 @@
 	# Industrialising Karelia (Aaltonen) #
 	focus = {
 		id = RFI_industrialise_karelia_aaltonen
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_construction2
 		prerequisite = {
 			focus = RFI_home_front_focus
 		}
@@ -875,7 +875,7 @@
 	# Industrialising Rural Finland #
 	focus = {
 		id = RFI_industrialise_rural_finland
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = {
 			focus = RFI_home_front_focus
 		}
@@ -901,7 +901,7 @@
 	# Expand Our Military Industry #
 	focus = {
 		id = RFI_expand_military_industry
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = {
 			focus = RFI_industrialise_karelia_aaltonen
 		}
@@ -931,7 +931,7 @@
 	# Improving Quality of Life #
 	focus = {
 		id = RFI_improving_quality_life
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_concessions
 		prerequisite = {
 			focus = RFI_expand_military_industry
 		}
@@ -957,7 +957,7 @@
 	# Promote Unionization #
 	focus = {
 		id = RFI_promote_unionization
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		prerequisite = {
 			focus = RFI_expand_military_industry
 		}
@@ -983,7 +983,7 @@
 	# Improving Railway Network #
 	focus = {
 		id = RFI_improving_rail_network
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = {
 			focus = RFI_improving_quality_life
 		}
@@ -1013,7 +1013,7 @@
 	# Invest in Schools #
 	focus = {
 		id = RFI_invest_in_schools
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_socialist_science
 		prerequisite = {
 			focus = RFI_improving_rail_network
 		}
@@ -1039,7 +1039,7 @@
 	# Improve Healthcare #
 	focus = {
 		id = RFI_improve_healthcare
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = RFI_improving_rail_network
 		}
@@ -1065,7 +1065,7 @@
 	# Finnish Socialism #
 	focus = {
 		id = RFI_finnish_socialism
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_join_comintern
 		prerequisite = {
 			focus = RFI_invest_in_schools
 		}
@@ -1095,7 +1095,7 @@
 	# Nordic Socialism #
 	focus = {
 		id = RFI_nordic_socialism
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_support_fourth_int
 		prerequisite = {
 			focus = RFI_finnish_socialism
 		}
@@ -1126,7 +1126,7 @@
 	# Preparing to Continue Our Revolution #
 	focus = {
 		id = RFI_prepare_continue_revolution
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = {
 			focus = RFI_finnish_socialism
 		}
@@ -1152,7 +1152,7 @@
 	# Form Worker Brigades #
 	focus = {
 		id = RFI_form_worker_brigades
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_FIN_conscription
 		prerequisite = {
 			focus = RFI_prepare_continue_revolution
 		}
@@ -1178,7 +1178,7 @@
 	# Integrate the Red Guard into the Army #
 	focus = {
 		id = RFI_integrate_red_guard_into_army
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_military_mission
 		prerequisite = {
 			focus = RFI_form_worker_brigades
 		}
@@ -1230,7 +1230,7 @@
 	# Red Norway #
 	focus = {
 		id = RFI_red_norway
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = RFI_spread_revoltion
 		}
@@ -1256,7 +1256,7 @@
 	# Red Sweden #
 	focus = {
 		id = RFI_red_sweden
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = RFI_spread_revoltion
 		}
@@ -1282,7 +1282,7 @@
 	# Red Denmark #
 	focus = {
 		id = RFI_red_denmark
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = RFI_spread_revoltion
 		}
@@ -1308,7 +1308,7 @@
 	# Victory in the North #
 	focus = {
 		id = RFI_victory_in_north
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_support_communism
 		prerequisite = {
 			focus = RFI_red_norway
 		}
@@ -1347,7 +1347,7 @@
 	# Kuusinen's Finland #
 	focus = {
 		id = RFI_kuusinen_finland
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_soviet_politics
 		
 		x = 12
 		y = 10
@@ -1369,7 +1369,7 @@
 	# Loyalty to Leningrad #
 	focus = {
 		id = RFI_loyalty_leningrad
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = {
 			focus = RFI_kuusinen_finland
 		}
@@ -1395,7 +1395,7 @@
 	# Follow Leningrad's Example #
 	focus = {
 		id = RFI_follow_leningrad_example
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = RFI_loyalty_leningrad
 		}
@@ -1421,7 +1421,7 @@
 	# Push for Membership into the CCCP #
 	focus = {
 		id = RFI_push_for_CCCP_membership
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_CZE_german_puppet
 		prerequisite = {
 			focus = RFI_follow_leningrad_example
 		}
@@ -1452,7 +1452,7 @@
 	# Collectivisation #
 	focus = {
 		id = RFI_collectivisation
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_FIN_agrarianism
 		prerequisite = {
 			focus = RFI_follow_leningrad_example
 		}
@@ -1478,7 +1478,7 @@
 	# Industrialisation #
 	focus = {
 		id = RFI_industrialisation
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_industry_1
 		prerequisite = {
 			focus = RFI_collectivisation
 		}
@@ -1504,7 +1504,7 @@
 	# Expand our Military Industry (Kuusinen) #
 	focus = {
 		id = RFI_expand_military_industry_kuusinen
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_combined_arms
 		prerequisite = {
 			focus = RFI_industrialisation
 		}
@@ -1530,7 +1530,7 @@
 	# Expand Our Civilian Industry #
 	focus = {
 		id = RFI_expand_civilian_industry
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_reichsautobahn
 		prerequisite = {
 			focus = RFI_industrialisation
 		}
@@ -1556,7 +1556,7 @@
 	# Year 1 of 5 Year Plan #
 	focus = {
 		id = RFI_5_year_plan_1
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_industry_2
 		prerequisite = {
 			focus = RFI_expand_military_industry_kuusinen
 		}
@@ -1586,7 +1586,7 @@
 	# Year 2 of 5 Year Plan #
 	focus = {
 		id = RFI_5_year_plan_2
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = {
 			focus = RFI_5_year_plan_1
 		}
@@ -1612,7 +1612,7 @@
 	# Year 3 of 5 Year Plan #
 	focus = {
 		id = RFI_5_year_plan_3
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = {
 			focus = RFI_5_year_plan_2
 		}
@@ -1638,7 +1638,7 @@
 	# Year 4 of 5 Year Plan #
 	focus = {
 		id = RFI_5_year_plan_4
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_tungsten
 		prerequisite = {
 			focus = RFI_5_year_plan_3
 		}
@@ -1664,7 +1664,7 @@
 	# Year 5 of 5 Year Plan #
 	focus = {
 		id = RFI_5_year_plan_5
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_soviet_construction
 		prerequisite = {
 			focus = RFI_5_year_plan_4
 		}
@@ -1695,7 +1695,7 @@
 	# Establish Labor Camps #
 	focus = {
 		id = RFI_establish_labor_camps
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = RFI_follow_leningrad_example
 		}
@@ -1721,7 +1721,7 @@
 	# Penal Battalions #
 	focus = {
 		id = RFI_penal_battalions
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_military_sphere
 		prerequisite = {
 			focus = RFI_establish_labor_camps
 		}
@@ -1747,7 +1747,7 @@
 	# Militarisation #
 	focus = {
 		id = RFI_militarisation
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_army_doctrines
 		prerequisite = {
 			focus = RFI_follow_leningrad_example
 		}
@@ -1773,7 +1773,7 @@
 	# Conscription #
 	focus = {
 		id = RFI_conscription
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_little_entente
 		prerequisite = {
 			focus = RFI_militarisation
 		}
@@ -1799,7 +1799,7 @@
 	# Increase the Military Budget #
 	focus = {
 		id = RFI_increase_military_budget
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_tank_production
 		prerequisite = {
 			focus = RFI_conscription
 		}
@@ -1825,7 +1825,7 @@
 	# Improve Military Training #
 	focus = {
 		id = RFI_improve_military_training
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_chi_army_reform
 		prerequisite = {
 			focus = RFI_increase_military_budget
 		}
@@ -1851,7 +1851,7 @@
 	# Co-ordinate with the Russians #
 	focus = {
 		id = RFI_coordination_russia
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = {
 			focus = RFI_increase_military_budget
 		}
@@ -1877,7 +1877,7 @@
 	# Military Operations #
 	focus = {
 		id = RFI_military_operations
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = {
 			focus = RFI_increase_military_budget
 		}
@@ -1903,7 +1903,7 @@
 	# Support Russian Unification #
 	focus = {
 		id = RFI_support_russian_unification
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_ger_strike_at_the_source
 		prerequisite = {
 			focus = RFI_coordination_russia
 		}
@@ -1933,7 +1933,7 @@
 	# Topple Nordic Capitalists #
 	focus = {
 		id = RFI_topple_nordic_capitalists
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = {
 			focus = RFI_coordination_russia
 		}
@@ -1963,7 +1963,7 @@
 	# Topple the Baltics #
 	focus = {
 		id = RFI_topple_baltics
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_FIN_baltic_claims
 		prerequisite = {
 			focus = RFI_military_operations
 		}
@@ -1989,7 +1989,7 @@
 	# Red Russia #
 	focus = {
 		id = RFI_red_russia
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = RFI_support_russian_unification
 		}
@@ -2049,7 +2049,7 @@
 	# A Red Baltic #
 	focus = {
 		id = RFI_red_baltic
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = RFI_topple_baltics
 		}
@@ -2075,7 +2075,7 @@
 	# Strike Down Eagle #
 	focus = {
 		id = RFI_strike_down_eagle
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_usa_focus_on_europe
 		prerequisite = {
 			focus = RFI_red_russia
 		}
@@ -2109,7 +2109,7 @@
 	# Eagle has been Brought Down #
 	focus = {
 		id = RFI_eagle_brought_down
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 		prerequisite = {
 			focus = RFI_strike_down_eagle
 		}
@@ -2135,7 +2135,7 @@
 	# Strike Down Western Capitalists #
 	focus = {
 		id = RFI_strike_the_west
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_generic_strike_at_democracy3
 		prerequisite = {
 			focus = RFI_eagle_brought_down
 		}
