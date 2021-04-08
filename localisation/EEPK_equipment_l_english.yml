@@ -325,22 +325,22 @@
 
  RCT_infantry_equipment_1:0 "SVT-38/40 & RGD-33"
  RCT_infantry_equipment_1_short:0 "SVT-38/40 & RGD-33"
- RCT_infantry_equipment_2:0 "PPSh-40 & TM-38"
+ RCT_infantry_equipment_2:0 "PPSh-40"
  RCT_infantry_equipment_2_short:0 "PPSh-40"
- RCT_infantry_equipment_3:0 "Avtomat Shpagin & PG-82"
- RCT_infantry_equipment_3_short:0 "ASh-44 & PG-82"
+ RCT_infantry_equipment_3:0 "Avtomat Shpagin"
+ RCT_infantry_equipment_3_short:0 "ASh-44"
  NOV_infantry_equipment_1:0 "SVT-38/40 & RGD-33"
  NOV_infantry_equipment_1_short:0 "SVT-38/40 & RGD-33"
- NOV_infantry_equipment_2:0 "PPBV-42 & TM-38"
+ NOV_infantry_equipment_2:0 "PPBV-42"
  NOV_infantry_equipment_2_short:0 "PPBV-42"
- NOV_infantry_equipment_3:0 "Avtomat Alexandrovich i Ivanov & PG-82"
- NOV_infantry_equipment_3_short:0 "AAI-45 & PG-82"
+ NOV_infantry_equipment_3:0 "Avtomat Alexandrovich i Ivanov"
+ NOV_infantry_equipment_3_short:0 "AAI-45"
  KFT_infantry_equipment_1:0 "SVT-38/40 & RGD-33"
  KFT_infantry_equipment_1_short:0 "SVT-38/40 & RGD-33"
- KFT_infantry_equipment_2:0 "PPT-27 & TM-38"
+ KFT_infantry_equipment_2:0 "PPT-27"
  KFT_infantry_equipment_2_short:0 "PPT-27"
- KFT_infantry_equipment_3:0 "Avtomat Bulkin & PG-82"
- KFT_infantry_equipment_3_short:0 "AB-44 & PG-82"
+ KFT_infantry_equipment_3:0 "Avtomat Bulkin"
+ KFT_infantry_equipment_3_short:0 "AB-44"
 
  
 
@@ -941,16 +941,16 @@
  ##################
  MFC_infantry_equipment_1:0 "Muscovite Guns I"
  MFC_infantry_equipment_1_short:0 "Muscovite Guns I"
- MFC_infantry_equipment_2:0 "PPK-41 & TM-38"
+ MFC_infantry_equipment_2:0 "PPK-41"
  MFC_infantry_equipment_2_short:0 "PPK-41"
- MFC_infantry_equipment_3:0 "Avtomat Tokarev & PG-82"
- MFC_infantry_equipment_3_short:0 "AT-44 & PG-82"
+ MFC_infantry_equipment_3:0 "Avtomat Tokareva"
+ MFC_infantry_equipment_3_short:0 "AT-44"
  WRU_infantry_equipment_1:0 "Belarussian Guns I"
  WRU_infantry_equipment_1_short:0 "Belarussian Guns I"
  WRU_infantry_equipment_2:0 "Belarussian Guns II"
  WRU_infantry_equipment_2_short:0 "Belarussian Guns II"
- WRU_infantry_equipment_3:0 "Kuzmishchev Avtomat & PG-82"
- WRU_infantry_equipment_3_short:0 "KA-44 & PG-82"
+ WRU_infantry_equipment_3:0 "Avtomat Kuzmishcheva"
+ WRU_infantry_equipment_3_short:0 "KA-44"
 
 
 
@@ -964,8 +964,8 @@
  LSO_infantry_equipment_1_short:0 "Leningrad Guns I"
  LSO_infantry_equipment_2:0 "PPD-34/38"
  LSO_infantry_equipment_2_short:0 "PPD-34/38"
- LSO_infantry_equipment_3:0 "Avtomat Sudaev & PG-82"
- LSO_infantry_equipment_3_short:0 "AS-44 & PG-82"
+ LSO_infantry_equipment_3:0 "Avtomat Sudayeva"
+ LSO_infantry_equipment_3_short:0 "AS-44"
  
 
 
@@ -980,10 +980,10 @@
  ################
  RFR_infantry_equipment_1:0 "Russian Guns I"
  RFR_infantry_equipment_1_short:0 "Russian Guns I"
- RFR_infantry_equipment_2:0 "PPK-42 & TM-38"
+ RFR_infantry_equipment_2:0 "PPK-42"
  RFR_infantry_equipment_2_short:0 "PPK-42"
- RFR_infantry_equipment_3:0 "Avtomat Kabankov & PG-82"
- RFR_infantry_equipment_3_short:0 "AK-44 & PG-82"
+ RFR_infantry_equipment_3:0 "Avtomat Kabankova"
+ RFR_infantry_equipment_3_short:0 "AK-44"
 
 
 
@@ -994,28 +994,28 @@
  ####################
  KYI_infantry_equipment_1:0 "Kyivan Guns I"
  KYI_infantry_equipment_1_short:0 "Kyivan Guns I"
- KYI_infantry_equipment_2:0 "VMP m1930 & TM-38"
+ KYI_infantry_equipment_2:0 "VMP M1930"
  KYI_infantry_equipment_2_short:0 "VMP-30"
- KYI_infantry_equipment_3:0 "Avtomat Kalashnyk & PG-82"
- KYI_infantry_equipment_3_short:0 "AK-54 & PG-82"
+ KYI_infantry_equipment_3:0 "Avtomat Kostenka"
+ KYI_infantry_equipment_3_short:0 "AK-54"
  SLB_infantry_equipment_1:0 "Slobodan Guns I"
  SLB_infantry_equipment_1_short:0 "Slobodan Guns I"
  SLB_infantry_equipment_2:0 "Slobodan Guns II"
  SLB_infantry_equipment_2_short:0 "Slobodan Guns II"
- SLB_infantry_equipment_3:0 "Avtomat Katyuk & PG-82"
- SLB_infantry_equipment_3_short:0 "AK-53 & PG-82"
+ SLB_infantry_equipment_3:0 "Avtomat Katyuka"
+ SLB_infantry_equipment_3_short:0 "AK-53"
  ZHY_infantry_equipment_1:0 "Odessan Guns I"
  ZHY_infantry_equipment_1_short:0 "Odessan Guns I"
  ZHY_infantry_equipment_2:0 "Odessan Guns II"
  ZHY_infantry_equipment_2_short:0 "Odessan Guns II"
- ZHY_infantry_equipment_3:0 "Avtomat Korovin & PG-82"
- ZHY_infantry_equipment_3_short:0 "AK-45 & PG-82"
+ ZHY_infantry_equipment_3:0 "Avtomat Korovina"
+ ZHY_infantry_equipment_3_short:0 "AK-45"
  TAT_infantry_equipment_1:0 "Tatar Guns I"
  TAT_infantry_equipment_1_short:0 "Tatar Guns I" 
- TAT_infantry_equipment_2:0 "PPT-27 & TM-38"
+ TAT_infantry_equipment_2:0 "PPT-27"
  TAT_infantry_equipment_2_short:0 "PPT-27"
- TAT_infantry_equipment_3:0 "Avtomat Bulkin & PG-82"
- TAT_infantry_equipment_3_short:0 "AB-44 & PG-82"
+ TAT_infantry_equipment_3:0 "Avtomat Bulkina"
+ TAT_infantry_equipment_3_short:0 "AB-44"
 
 
 
@@ -1025,10 +1025,10 @@
  ####################
  TCA_infantry_equipment_1:0 "Caucasian Guns I"
  TCA_infantry_equipment_1_short:0 "Caucasian Guns I" 
- TCA_infantry_equipment_2:0 "Pistolet Pulemyot Madsen m1945 & TM-38"
+ TCA_infantry_equipment_2:0 "Pistolet Pulemyot Madsen m1945"
  TCA_infantry_equipment_2_short:0 "PPM-45"
- TCA_infantry_equipment_3:0 "Avtomat Alexandrovich i Kashtanov & PG-82"
- TCA_infantry_equipment_3_short:0 "AAK-45 & PG-82"
+ TCA_infantry_equipment_3:0 "Avtomat Alexandrova i Kashtanova"
+ TCA_infantry_equipment_3_short:0 "AiAK-45"
 
 
 

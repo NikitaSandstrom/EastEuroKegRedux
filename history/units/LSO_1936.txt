@@ -108,7 +108,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 9
 		}
-		location = 213   
+		location = 11032   
 		division_template = "Krasnozamenaya Diviziya"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.85
