@@ -1,0 +1,2162 @@
+﻿focus_tree = {
+	id = red_finland_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = RFI
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 800 }
+
+#	focus = {
+#		id = RFI_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id =
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+
+	#////////////\\\\\\\\\\\\#
+	### CIVIL WAR  FOCUSES ###
+	##########################
+
+	
+	# Fighting the War #
+	focus = {
+		id = RFI_fighting_the_war
+		icon = GFX_goal_generic_defence
+		#prerequisite = { focus = }
+		
+		x = 3
+		y = 0
+		#relative_position_id = 
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+	# Reorganise our military #
+	focus = {
+		id = RFI_reorganise_our_military
+		icon = GFX_focus_secret_rearmament
+		prerequisite = {
+			focus = RFI_fighting_the_war
+		}
+		
+		x = -2
+		y = 1
+		relative_position_id = RFI_fighting_the_war
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Prepare Against White Offensives #
+	focus = {
+		id = RFI_prepare_against_white_offensives
+		icon = GFX_focus_prc_infiltration
+		prerequisite = {
+			focus = RFI_reorganise_our_military
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_reorganise_our_military
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Co-ordinate With Our Allies #
+	focus = {
+		id = RFI_coordinate_with_allies
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = {
+			focus = RFI_prepare_against_white_offensives
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_prepare_against_white_offensives
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Emergency Conscription #
+	focus = {
+		id = RFI_emergency_conscription
+		icon = "GFX_goal_FIN_conscription"
+		prerequisite = {
+			focus = RFI_fighting_the_war
+		}
+		
+		x = 2
+		y = 1
+		relative_position_id = RFI_fighting_the_war
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Raise Militas #
+	focus = {
+		id = RFI_raise_militas
+		icon = "GFX_focus_generic_military_academy"
+		prerequisite = {
+			focus = RFI_emergency_conscription
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_emergency_conscription
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Force People Into Factories #
+	focus = {
+		id = RFI_force_into_factories
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = {
+			focus = RFI_raise_militas
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_raise_militas
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Victory at a Great Cost #
+	focus = {
+		id = RFI_victory_great_cost
+		icon = "GFX_goal_generic_dangerous_deal"
+		prerequisite = {
+			focus = RFI_coordinate_with_allies
+		}
+
+		prerequisite = {
+			focus = RFI_force_into_factories
+		}
+		
+		x = 2
+		y = 1
+		relative_position_id = RFI_coordinate_with_allies
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+
+
+
+	#//////////////\\\\\\\\\\\\\\#
+	### POST-CIVIL WAR FOCUSES ###
+	##############################
+
+
+	# Rebuilding the Country #
+	focus = {
+		id = RFI_rebuilding_country
+		icon = GFX_goal_generic_production
+		#prerequisite = {
+		#	focus = RFI_victory_great_cost
+		#}
+		
+		x = 8
+		y = 1
+		#relative_position_id = RFI_victory_great_cost
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Industrialise Karelia #
+	focus = {
+		id = RFI_industrialise_karelia
+		icon = "GFX_goal_generic_production2"
+		prerequisite = {
+			focus = RFI_rebuilding_country
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_rebuilding_country
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Form Militas for Policing #
+	focus = {
+		id = RFI_form_milita_police
+		icon = GFX_focus_generic_support_the_left_right
+		#prerequisite = {
+		#	focus = RFI_raise_militas
+		#}
+		
+		x = 10
+		y = 1
+		#relative_position_id = RFI_raise_militas
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Establish Regional Defense Councils #
+	focus = {
+		id = RFI_regional_defense_councils
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_form_milita_police
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_form_milita_police
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Repeal Wartime Laws #
+	focus = {
+		id = RFI_repeal_wartime_laws
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = {
+			focus = RFI_industrialise_karelia
+		}
+
+		prerequisite = {
+			focus = RFI_regional_defense_councils
+		}
+		
+		x = -3
+		y = 1
+		relative_position_id = RFI_regional_defense_councils
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Rebuilding Finland #
+	focus = {
+		id = RFI_rebuilding_finland
+		icon = GFX_focus_generic_industry_2
+		prerequisite = {
+			focus = RFI_industrialise_karelia
+		}
+
+		prerequisite = {
+			focus = RFI_regional_defense_councils
+		}
+		
+		x = 1
+		y = 2
+		relative_position_id = RFI_industrialise_karelia
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Crack Down on Counter-revolutionaries #
+	focus = {
+		id = RFI_crack_down_counter_revolutionary
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {
+			focus = RFI_rebuilding_finland
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_rebuilding_finland
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Integrating Finland into Socialist Republic #
+	focus = {
+		id = RFI_integrate_finland
+		icon = GFX_goal_FIN_SDP
+		prerequisite = {
+			focus = RFI_crack_down_counter_revolutionary
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_crack_down_counter_revolutionary
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Integrating Finland into Socialist Republic #
+	focus = {
+		id = RFI_request_murmansk
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = {
+			focus = RFI_integrate_finland
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = RFI_integrate_finland
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Proclaim Finno-Karelian SR #
+	focus = {
+		id = RFI_proclaim_finno_karelia_sr
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = {
+			focus = RFI_integrate_finland
+		}
+		
+		x = 0
+		y = 2
+		relative_position_id = RFI_integrate_finland
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	#///////////////\\\\\\\\\\\\\\\#
+	### PREP  FOR NEW LEADERSHIP ###
+	################################
+
+	# Preparations for New Leadership #
+	focus = {
+		id = RFI_prep_new_leadership
+		icon = GFX_focus_generic_self_management
+		#prerequisite = { }
+		
+		x = 13
+		y = 2
+		#relative_position_id = RFI_integrate_finland
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# The Two Candidates #
+	focus = {
+		id = RFI_the_two_candidates
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = {
+			focus = RFI_prep_new_leadership
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_prep_new_leadership
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Delegate the Council's Duties #
+	focus = {
+		id = RFI_delegate_council_duties
+		icon = GFX_focus_generic_treaty
+		prerequisite = {
+			focus = RFI_the_two_candidates
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = RFI_the_two_candidates
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# The Council Supports Aaltonen #
+	focus = {
+		id = RFI_support_aaltonen
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = RFI_the_two_candidates
+		}
+
+		mutually_exclusive = {
+			focus = RFI_support_kuusinen
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = RFI_the_two_candidates
+
+		cost = 1
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# The Council Supports Kuusinen #
+	focus = {
+		id = RFI_support_kuusinen
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = RFI_the_two_candidates
+		}
+
+		mutually_exclusive = {
+			focus = RFI_support_aaltonen
+		}
+		
+		x = 3
+		y = 1
+		relative_position_id = RFI_the_two_candidates
+
+		cost = 1
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Announce Election Date #
+	focus = {
+		id = RFI_announce_election_date
+		icon = GFX_goal_FIN_elections
+		prerequisite = {
+			focus = RFI_delegate_council_duties
+		}
+
+		prerequisite = {
+			focus = RFI_support_aaltonen
+			focus = RFI_support_kuusinen
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = RFI_delegate_council_duties
+
+		cost = 1
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Announce the Winner #
+	focus = {
+		id = RFI_announce_winner
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {
+			focus = RFI_announce_election_date
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_announce_election_date
+
+		cost = 1
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Disband the Council #
+	focus = {
+		id = RFI_disband_council
+		icon = GFX_goal_FIN_SDP
+		prerequisite = {
+			focus = RFI_announce_winner
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_announce_winner
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	#////////////\\\\\\\\\\\\#
+	### AALTONEN'S FINLAND ###
+	##########################
+
+	# Aaltonen's Finland #
+	focus = {
+		id = RFI_aaltonens_finland
+		icon = GFX_focus_generic_soviet_politics
+		#prerequisite = { }
+		
+		x = 4
+		y = 10
+		#relative_position_id =
+
+		cost = 5
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Our Own Path #
+	focus = {
+		id = RFI_our_own_path
+		icon = GFX_focus_generic_little_entente
+		prerequisite = {
+			focus = RFI_aaltonens_finland
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_aaltonens_finland
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Focus on Home First #
+	focus = {
+		id = RFI_home_front_focus
+		icon = GFX_goal_generic_construction
+		prerequisite = {
+			focus = RFI_our_own_path
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_our_own_path
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Industrialising Karelia (Aaltonen) #
+	focus = {
+		id = RFI_industrialise_karelia_aaltonen
+		icon = GFX_goal_generic_construction2
+		prerequisite = {
+			focus = RFI_home_front_focus
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = RFI_home_front_focus
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Industrialising Rural Finland #
+	focus = {
+		id = RFI_industrialise_rural_finland
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {
+			focus = RFI_home_front_focus
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = RFI_home_front_focus
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Expand Our Military Industry #
+	focus = {
+		id = RFI_expand_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {
+			focus = RFI_industrialise_karelia_aaltonen
+		}
+
+		prerequisite = {
+			focus = RFI_industrialise_rural_finland
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = RFI_industrialise_karelia_aaltonen
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Improving Quality of Life #
+	focus = {
+		id = RFI_improving_quality_life
+		icon = GFX_focus_generic_concessions
+		prerequisite = {
+			focus = RFI_expand_military_industry
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = RFI_expand_military_industry
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Promote Unionization #
+	focus = {
+		id = RFI_promote_unionization
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = {
+			focus = RFI_expand_military_industry
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = RFI_expand_military_industry
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Improving Railway Network #
+	focus = {
+		id = RFI_improving_rail_network
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {
+			focus = RFI_improving_quality_life
+		}
+
+		prerequisite = {
+			focus = RFI_promote_unionization
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = RFI_improving_quality_life
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Invest in Schools #
+	focus = {
+		id = RFI_invest_in_schools
+		icon = GFX_focus_generic_socialist_science
+		prerequisite = {
+			focus = RFI_improving_rail_network
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = RFI_improving_rail_network
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Improve Healthcare #
+	focus = {
+		id = RFI_improve_healthcare
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = RFI_improving_rail_network
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = RFI_improving_rail_network
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Finnish Socialism #
+	focus = {
+		id = RFI_finnish_socialism
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = {
+			focus = RFI_invest_in_schools
+		}
+
+		prerequisite = {
+			focus = RFI_improve_healthcare
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = RFI_invest_in_schools
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Nordic Socialism #
+	focus = {
+		id = RFI_nordic_socialism
+		icon = GFX_goal_support_fourth_int
+		prerequisite = {
+			focus = RFI_finnish_socialism
+		}
+		
+		x = -3
+		y = 1
+		relative_position_id = RFI_finnish_socialism
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	#///////////////\\\\\\\\\\\\\\\#
+	### AALTONEN FOREIGN AFFAIRS ###
+	################################
+
+	# Preparing to Continue Our Revolution #
+	focus = {
+		id = RFI_prepare_continue_revolution
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = {
+			focus = RFI_finnish_socialism
+		}
+		
+		x = 2
+		y = 1
+		relative_position_id = RFI_finnish_socialism
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Form Worker Brigades #
+	focus = {
+		id = RFI_form_worker_brigades
+		icon = GFX_goal_FIN_conscription
+		prerequisite = {
+			focus = RFI_prepare_continue_revolution
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_prepare_continue_revolution
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Integrate the Red Guard into the Army #
+	focus = {
+		id = RFI_integrate_red_guard_into_army
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {
+			focus = RFI_form_worker_brigades
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_form_worker_brigades
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Spread the Revolution #
+	focus = {
+		id = RFI_spread_revoltion
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_integrate_red_guard_into_army
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_integrate_red_guard_into_army
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Red Norway #
+	focus = {
+		id = RFI_red_norway
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = RFI_spread_revoltion
+		}
+		
+		x = -2
+		y = 1
+		relative_position_id = RFI_spread_revoltion
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Red Sweden #
+	focus = {
+		id = RFI_red_sweden
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = RFI_spread_revoltion
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_spread_revoltion
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Red Denmark #
+	focus = {
+		id = RFI_red_denmark
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = RFI_spread_revoltion
+		}
+		
+		x = 2
+		y = 1
+		relative_position_id = RFI_spread_revoltion
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Victory in the North #
+	focus = {
+		id = RFI_victory_in_north
+		icon = GFX_goal_support_communism
+		prerequisite = {
+			focus = RFI_red_norway
+		}
+
+		prerequisite = {
+			focus = RFI_red_sweden
+		}
+
+		prerequisite = {
+			focus = RFI_red_denmark
+		}
+		
+		x = 2
+		y = 1
+		relative_position_id = RFI_red_norway
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	#////////////\\\\\\\\\\\\#
+	### KUUSINEN'S FINLAND ###
+	##########################
+
+	# Kuusinen's Finland #
+	focus = {
+		id = RFI_kuusinen_finland
+		icon = GFX_focus_generic_soviet_politics
+		
+		x = 12
+		y = 10
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Loyalty to Leningrad #
+	focus = {
+		id = RFI_loyalty_leningrad
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = {
+			focus = RFI_kuusinen_finland
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_kuusinen_finland
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Follow Leningrad's Example #
+	focus = {
+		id = RFI_follow_leningrad_example
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = RFI_loyalty_leningrad
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_loyalty_leningrad
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Push for Membership into the CCCP #
+	focus = {
+		id = RFI_push_for_CCCP_membership
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = {
+			focus = RFI_follow_leningrad_example
+		}
+		
+		x = -3
+		y = 1
+		relative_position_id = RFI_follow_leningrad_example
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	#/////////////\\\\\\\\\\\\\#
+	### KUUSINEN 5 YEAR PLAN ###
+	############################
+
+	# Collectivisation #
+	focus = {
+		id = RFI_collectivisation
+		icon = GFX_goal_FIN_agrarianism
+		prerequisite = {
+			focus = RFI_follow_leningrad_example
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = RFI_follow_leningrad_example
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Industrialisation #
+	focus = {
+		id = RFI_industrialisation
+		icon = GFX_focus_generic_industry_1
+		prerequisite = {
+			focus = RFI_collectivisation
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_collectivisation
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Expand our Military Industry (Kuusinen) #
+	focus = {
+		id = RFI_expand_military_industry_kuusinen
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = {
+			focus = RFI_industrialisation
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = RFI_industrialisation
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Expand Our Civilian Industry #
+	focus = {
+		id = RFI_expand_civilian_industry
+		icon = GFX_goal_reichsautobahn
+		prerequisite = {
+			focus = RFI_industrialisation
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = RFI_industrialisation
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Year 1 of 5 Year Plan #
+	focus = {
+		id = RFI_5_year_plan_1
+		icon = GFX_focus_generic_industry_2
+		prerequisite = {
+			focus = RFI_expand_military_industry_kuusinen
+		}
+
+		prerequisite = { 
+			focus = RFI_expand_civilian_industry
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = RFI_expand_military_industry_kuusinen
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Year 2 of 5 Year Plan #
+	focus = {
+		id = RFI_5_year_plan_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {
+			focus = RFI_5_year_plan_1
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_5_year_plan_1
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Year 3 of 5 Year Plan #
+	focus = {
+		id = RFI_5_year_plan_3
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {
+			focus = RFI_5_year_plan_2
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_5_year_plan_2
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Year 4 of 5 Year Plan #
+	focus = {
+		id = RFI_5_year_plan_4
+		icon = GFX_focus_generic_tungsten
+		prerequisite = {
+			focus = RFI_5_year_plan_3
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_5_year_plan_3
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Year 5 of 5 Year Plan #
+	focus = {
+		id = RFI_5_year_plan_5
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = {
+			focus = RFI_5_year_plan_4
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_5_year_plan_4
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	#////////////\\\\\\\\\\\\#
+	### LABOR AND MILITARY ###
+	##########################
+
+	# Establish Labor Camps #
+	focus = {
+		id = RFI_establish_labor_camps
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = RFI_follow_leningrad_example
+		}
+		
+		x = 2
+		y = 1
+		relative_position_id = RFI_follow_leningrad_example
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Penal Battalions #
+	focus = {
+		id = RFI_penal_battalions
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = {
+			focus = RFI_establish_labor_camps
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_establish_labor_camps
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Militarisation #
+	focus = {
+		id = RFI_militarisation
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = RFI_follow_leningrad_example
+		}
+		
+		x = 4
+		y = 1
+		relative_position_id = RFI_follow_leningrad_example
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Conscription #
+	focus = {
+		id = RFI_conscription
+		icon = GFX_focus_generic_little_entente
+		prerequisite = {
+			focus = RFI_militarisation
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_militarisation
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Increase the Military Budget #
+	focus = {
+		id = RFI_increase_military_budget
+		icon = GFX_focus_generic_tank_production
+		prerequisite = {
+			focus = RFI_conscription
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_conscription
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Improve Military Training #
+	focus = {
+		id = RFI_improve_military_training
+		icon = GFX_focus_chi_army_reform
+		prerequisite = {
+			focus = RFI_increase_military_budget
+		}
+		
+		x = -2
+		y = 1
+		relative_position_id = RFI_increase_military_budget
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Co-ordinate with the Russians #
+	focus = {
+		id = RFI_coordination_russia
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = {
+			focus = RFI_increase_military_budget
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_increase_military_budget
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Military Operations #
+	focus = {
+		id = RFI_military_operations
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {
+			focus = RFI_increase_military_budget
+		}
+		
+		x = 2
+		y = 1
+		relative_position_id = RFI_increase_military_budget
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Support Russian Unification #
+	focus = {
+		id = RFI_support_russian_unification
+		icon = GFX_focus_ger_strike_at_the_source
+		prerequisite = {
+			focus = RFI_coordination_russia
+		}
+
+		prerequisite = {
+			focus = RFI_military_operations
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = RFI_coordination_russia
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Topple Nordic Capitalists #
+	focus = {
+		id = RFI_topple_nordic_capitalists
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = {
+			focus = RFI_coordination_russia
+		}
+
+		prerequisite = {
+			focus = RFI_military_operations
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = RFI_coordination_russia
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Topple the Baltics #
+	focus = {
+		id = RFI_topple_baltics
+		icon = GFX_goal_FIN_baltic_claims
+		prerequisite = {
+			focus = RFI_military_operations
+		}
+		
+		x = 2
+		y = 1
+		relative_position_id = RFI_military_operations
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Red Russia #
+	focus = {
+		id = RFI_red_russia
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = RFI_support_russian_unification
+		}
+
+		prerequisite = {
+			focus = RFI_topple_nordic_capitalists
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_support_russian_unification
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# The North is Secure #
+	focus = {
+		id = RFI_north_secured
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = RFI_support_russian_unification
+		}
+
+		prerequisite = {
+			focus = RFI_topple_nordic_capitalists
+		}
+		
+		x = 2
+		y = 1
+		relative_position_id = RFI_support_russian_unification
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# A Red Baltic #
+	focus = {
+		id = RFI_red_baltic
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = RFI_topple_baltics
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_topple_baltics
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Strike Down Eagle #
+	focus = {
+		id = RFI_strike_down_eagle
+		icon = GFX_focus_usa_focus_on_europe
+		prerequisite = {
+			focus = RFI_red_russia
+		}
+
+		prerequisite = {
+			focus = RFI_north_secured
+		}
+
+		prerequisite = {
+			focus = RFI_red_baltic
+		}
+		
+		x = 3
+		y = 1
+		relative_position_id = RFI_red_russia
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Eagle has been Brought Down #
+	focus = {
+		id = RFI_eagle_brought_down
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		prerequisite = {
+			focus = RFI_strike_down_eagle
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_strike_down_eagle
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Strike Down Western Capitalists #
+	focus = {
+		id = RFI_strike_the_west
+		icon = GFX_focus_generic_strike_at_democracy3
+		prerequisite = {
+			focus = RFI_eagle_brought_down
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = RFI_eagle_brought_down
+
+		cost = 10
+
+		#available = {}
+		#bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	
+}		
