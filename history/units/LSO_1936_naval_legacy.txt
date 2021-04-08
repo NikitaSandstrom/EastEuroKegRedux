@@ -1,0 +1,27 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### Baltic Fleet -- Leningrad
+	fleet = {
+		name = "Baltiyskiy Flot"
+		naval_base = 3151 # Leningrad
+		task_force = {				
+			name = "Baltiyskiy Flot"
+			location = 3151 # Leningrad
+			ship = { name = "Marat" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = LSO } } }
+			ship = { name = "Oktyabrskaya Revolutsiya" definition = battleship equipment = { battleship_1 = { amount = 1 owner = LSO } } }
+			# 3ya Flotiliya Esmintsev
+			ship = { name = "Engels" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = LSO } } }
+			ship = { name = "Artyom" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = LSO } } }
+			ship = { name = "Volodarskiy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = LSO } } }
+			ship = { name = "Yakov Sverdlov" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = LSO } } }
+			ship = { name = "Frunze" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = LSO } } }
+			# 4ya Flotiliya Esmintsev
+			ship = { name = "Lenin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = LSO } } }		
+			ship = { name = "Voykov" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = LSO } } }		
+			ship = { name = "Rykov" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = LSO } } }		
+			ship = { name = "Karl Libknekht" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = LSO } } }		
+		}	
+	}
+} 

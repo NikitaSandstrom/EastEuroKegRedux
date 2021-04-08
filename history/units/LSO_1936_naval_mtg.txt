@@ -1,0 +1,28 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### Baltic Fleet -- Leningrad
+	fleet = {
+		name = "Baltiyskiy Flot"
+		naval_base = 3151 # Leningrad
+		task_force = {				
+			name = "Baltiyskiy Flot"
+			location = 3151 # Leningrad
+			ship = { name = "Marat" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = LSO version_name = "Marat Class" } } }
+			ship = { name = "Oktyabrskaya Revolutsiya" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = LSO version_name = "Marat Class" } } }
+			ship = { name = "Marti" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LSO version_name = "Marti Class" } } }
+			# 3ya Flotiliya Esmintsev
+			ship = { name = "Engels" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = LSO version_name = "Orfey Class" } } }
+			ship = { name = "Artyom" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = LSO version_name = "Orfey Class" } } }
+			ship = { name = "Volodarskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = LSO version_name = "Orfey Class" } } }
+			ship = { name = "Yakov Sverdlov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = LSO version_name = "Orfey Class" } } }
+			ship = { name = "Frunze" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = LSO version_name = "Orfey Class" } } }
+			# 4ya Flotiliya Esmintsev
+			ship = { name = "Lenin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = LSO version_name = "Orfey Class" } } }		
+			ship = { name = "Voykov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = LSO version_name = "Orfey Class" } } }		
+			ship = { name = "Rykov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = LSO version_name = "Orfey Class" } } }		
+			ship = { name = "Karl Libknekht" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = LSO version_name = "Orfey Class" } } }		
+		}	
+	}
+}
