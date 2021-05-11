@@ -12,7 +12,7 @@
 	
 	default = no
 
-	continuous_focus_position = { x = 50 y = 800 }
+	continuous_focus_position = { x = 50 y = 2000 }
 
 #	focus = {
 #		id = RFI_
@@ -55,7 +55,7 @@
 	##########################
 
 	
-	# Fighting the War #
+	# Fighting the War # 
 	focus = {
 		id = RFI_fighting_the_war
 		icon = GFX_goal_generic_defence
@@ -75,7 +75,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_idea = RFI_second_revolution
 		}
 	}
 
@@ -101,7 +101,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_idea = RFI_reorganised_military
 		}
 	}
 
@@ -127,7 +127,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			# Add Decisions for preparing against white offensives
 		}
 	}
 
@@ -153,7 +153,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			# Add Decisions for getting stuff from Leningrad or call into War
 		}
 	}
 
@@ -179,7 +179,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_idea = RFI_emergency_conscription_idea
 		}
 	}
 
@@ -205,7 +205,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_stability = -0.05
+			add_party_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			# Add Decision to raise Militias #
 		}
 	}
 
@@ -231,7 +236,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_manpower = -10000
+			add_idea = RFI_expanded_weapons_production
 		}
 	}
 
@@ -253,7 +259,12 @@
 
 		cost = 10
 
-		#available = {}
+		available = {
+			has_war = no
+			NOT = {
+				country_exists = FIN
+			}
+		}
 		#bypass = {}
 
 		cancel_if_invalid = yes
@@ -281,8 +292,8 @@
 		#	focus = RFI_victory_great_cost
 		#}
 		
-		x = 8
-		y = 1
+		x = 2
+		y = 6
 		#relative_position_id = RFI_victory_great_cost
 
 		cost = 10
@@ -333,8 +344,8 @@
 		#	focus = RFI_raise_militas
 		#}
 		
-		x = 10
-		y = 1
+		x = 4
+		y = 6
 		#relative_position_id = RFI_raise_militas
 
 		cost = 10
@@ -552,8 +563,8 @@
 		icon = GFX_focus_generic_self_management
 		#prerequisite = { }
 		
-		x = 13
-		y = 2
+		x = 7
+		y = 4
 		#relative_position_id = RFI_integrate_finland
 
 		cost = 10
@@ -776,8 +787,8 @@
 		icon = GFX_focus_generic_soviet_politics
 		#prerequisite = { }
 		
-		x = 4
-		y = 10
+		x = 15
+		y = 0
 		#relative_position_id =
 
 		cost = 5
@@ -1349,8 +1360,8 @@
 		id = RFI_kuusinen_finland
 		icon = GFX_focus_generic_soviet_politics
 		
-		x = 12
-		y = 10
+		x = 23
+		y = 0
 
 		cost = 10
 

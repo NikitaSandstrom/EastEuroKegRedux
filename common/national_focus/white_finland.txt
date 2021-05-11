@@ -12,7 +12,7 @@
 	
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1600 }
+	continuous_focus_position = { x = 2000 y = 1400 }
 
 #	focus = {
 #		id = FIN_
@@ -1963,7 +1963,7 @@
 		}
 		
 		#relative_position_id = 
-		x = 17
+		x = 42
 		y = 0
 		
 
@@ -3083,8 +3083,8 @@
 		}
 		
 		#relative_position_id = 
-		x = 18
-		y = 14
+		x = 22
+		y = 0
 		
 
 		cost = 1
@@ -3637,8 +3637,8 @@
 		}
 		
 		#relative_position_id =
-		x = 23
-		y = 14
+		x = 27
+		y = 0
 		
 
 		cost = 5
@@ -4563,8 +4563,8 @@
 		}
 		
 		#relative_position_id = 
-		x = 22
-		y = 7
+		x = 12
+		y = 0
 		
 
 		cost = 2

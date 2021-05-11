@@ -1,12 +1,17 @@
 
 state={
-	id=194
+	id=194 
 	name="STATE_194"
 	resources={
 		oil=2.000
 	}
 
 	history={
+		victory_points = {
+			11313 1 
+		}
+
+
 		owner = WRU
 		buildings = {
 			infrastructure = 3
