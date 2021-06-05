@@ -75,7 +75,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_idea = RFI_second_revolution
+			add_ideas = RFI_second_revolution
 		}
 	}
 
@@ -101,7 +101,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_idea = RFI_reorganised_military
+			add_ideas = RFI_reorganised_military
 		}
 	}
 
@@ -179,7 +179,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_idea = RFI_emergency_conscription_idea
+			add_ideas = RFI_emergency_conscription_idea
 		}
 	}
 
@@ -206,7 +206,7 @@
 
 		completion_reward = {
 			add_stability = -0.05
-			add_party_popularity = {
+			add_popularity = {
 				ideology = communism
 				popularity = 0.05
 			}
@@ -237,7 +237,7 @@
 
 		completion_reward = {
 			add_manpower = -10000
-			add_idea = RFI_expanded_weapons_production
+			add_ideas = RFI_expanded_weapons_production
 		}
 	}
 
@@ -272,7 +272,15 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			# Maybe turn into an event for flavor #
+			add_timed_idea = {
+				idea = RFI_victory_at_a_great_cost
+				days = 280
+			}
+			add_timed_idea = {
+				idea = RFI_exhausted_nation_1
+				days = 730
+			}
 		}
 	}
 
@@ -288,9 +296,9 @@
 	focus = {
 		id = RFI_rebuilding_country
 		icon = GFX_goal_generic_production
-		#prerequisite = {
-		#	focus = RFI_victory_great_cost
-		#}
+		prerequisite = {
+			focus = RFI_victory_great_cost
+		}
 		
 		x = 2
 		y = 6
@@ -306,7 +314,14 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RFI_rebuilding_the_nation
+				days = 280
+			}
+			swap_ideas = {
+				remove_idea = RFI_exhausted_nation_1
+				add_idea = RFI_exhausted_nation_2
+			}
 		}
 	}
 
@@ -332,7 +347,42 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			818 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			819 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			215 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			swap_ideas = {
+				remove_idea = RFI_exhausted_nation_2
+				add_idea = RFI_exhausted_nation_3
+			}
 		}
 	}
 
@@ -340,9 +390,9 @@
 	focus = {
 		id = RFI_form_milita_police
 		icon = GFX_focus_generic_support_the_left_right
-		#prerequisite = {
-		#	focus = RFI_raise_militas
-		#}
+		prerequisite = {
+			focus = RFI_victory_great_cost
+		}
 		
 		x = 4
 		y = 6

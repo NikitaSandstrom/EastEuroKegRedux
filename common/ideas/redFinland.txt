@@ -78,7 +78,10 @@ ideas = {
 			}
 		}
 
-        RFI_victory_at_a_great_cost = {
+
+		# EXHAUSTED NATION IDEAS #
+
+        RFI_exhausted_nation_1 = {
 
 			picture = FIN_disorganised_military
 
@@ -87,8 +90,65 @@ ideas = {
 			}
 
 			modifier = {
-				stability_weekly = 0.005
-                recruitable_population = -0.025
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.50
+                recruitable_population = -0.05
+				army_org_factor = -0.25
+				army_defence_factor = -0.10
+				army_attack_factor = -0.10
+			}
+		}
+
+		RFI_exhausted_nation_2 = {
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.20
+				production_speed_buildings_factor = -0.25
+                recruitable_population = -0.05
+				army_org_factor = -0.25
+				army_defence_factor = -0.10
+				army_attack_factor = -0.10
+			}
+		}
+
+		RFI_exhausted_nation_3 = {
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.1
+                recruitable_population = -0.05
+				army_org_factor = -0.25
+				army_defence_factor = -0.10
+				army_attack_factor = -0.10
+			}
+		}
+
+
+		RFI_rebuilding_the_nation = {
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.50
+				industry_repair_factor = 0.50
+				industry_free_repair_factor = 0.15
+
 			}
 		}
 		
