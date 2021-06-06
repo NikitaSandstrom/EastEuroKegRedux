@@ -151,6 +151,51 @@ ideas = {
 
 			}
 		}
+
+		RFI_police_militias = {
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				resistance_growth_on_our_occupied_states = -0.25
+				compliance_growth_on_our_occupied_states = 0.25
+
+			}
+		}
+
+		RFI_regional_defense_council_idea = {
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				resistance_growth_on_our_occupied_states = -0.10
+				army_core_defence_factor = 0.10
+
+			}
+		}
+
+		RFI_cracking_down_on_reactionists = {
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				resistance_growth_on_our_occupied_states = -0.15
+				stability_factor = 0.10
+
+			}
+		}
 		
 	}
 }
