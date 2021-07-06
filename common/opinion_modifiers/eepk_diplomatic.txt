@@ -65,4 +65,10 @@ opinion_modifiers = {
 	FIN_declined_alliance = {
 		value = -50
 	}
+
+
+
+	RFI_split_with_leningrad = {
+		value = -25
+	}
 }

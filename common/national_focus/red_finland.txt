@@ -614,7 +614,7 @@
 		}
 	}
 
-	# Integrating Finland into Socialist Republic #
+	# Requesting Murmansk #
 	focus = {
 		id = RFI_request_murmansk
 		icon = GFX_focus_generic_join_comintern
@@ -636,7 +636,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			#Add event to ask Leningrad for Murmansk
 		}
 	}
 
@@ -662,7 +662,18 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			# Rename nation to Suomi-Karjala Socialist Republic
+
+			add_stability = 0.05
+			set_capital = 111
+
+			IF = {
+				NOT = {
+					owns_state = 213
+				}
+
+				add_state_claim = 213
+			}
 		}
 	}
 
@@ -683,7 +694,9 @@
 
 		cost = 10
 
-		#available = {}
+		available = {
+			has_war = no
+		}
 		#bypass = {}
 
 		cancel_if_invalid = yes
@@ -691,7 +704,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_political_power = 80
 		}
 	}
 
@@ -717,7 +730,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_political_power = 250
+
+			# Add Flavor Text regarding choosing a candidate #
+			# Probably do something similar to Netherlands mechanic #
 		}
 	}
 
@@ -743,7 +759,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_political_power = 70
 		}
 	}
 
@@ -773,7 +789,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			# Unlock Decisions to increase standing #
 		}
 	}
 
@@ -803,7 +819,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			# Unlock Decisions to increase standing #
 		}
 	}
 
@@ -834,7 +850,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			# Start timed event #
 		}
 	}
 
@@ -860,7 +876,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			# Add event announcing winner #
+
+			add_stability = 0.05
 		}
 	}
 
@@ -886,7 +904,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_political_power = 100
 		}
 	}
 
@@ -915,7 +934,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_political_power = 50
 		}
 	}
 
@@ -941,7 +960,16 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = RFI_our_own_path_idea
+			add_opinion_modifier = {
+				target = LSO
+				modifier = RFI_split_with_leningrad
+			}
+
+			reverse_add_opinion_modifier = {
+				target = LSO
+				modifier = RFI_split_with_leningrad
+			}
 		}
 	}
 
@@ -967,7 +995,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RFI_developing_socialism_1
+				days = 730
+			}
 		}
 	}
 
@@ -993,7 +1024,39 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			215 = {
+				add_extra_state_shared_building_slots = 3
+
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = RFI_developing_socialism_1
+				}
+				swap_ideas = {
+					remove_idea = RFI_developing_socialism_1
+					add_idea = RFI_developing_socialism_2_1
+				}
+
+				else_if = {
+					has_idea = RFI_developing_socialism_3_1
+				}
+				swap_ideas = {
+					remove_idea = RFI_developing_socialism_3_1
+					add_idea = RFI_developing_socialism_4
+				}
+			}
 		}
 	}
 
@@ -1019,7 +1082,51 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			817 = {
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			815 = {
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			148 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = RFI_developing_socialism_1
+				}
+				swap_ideas = {
+					remove_idea = RFI_developing_socialism_1
+					add_idea = RFI_developing_socialism_3_1
+				}
+
+				else_if = {
+					has_idea = RFI_developing_socialism_2_1
+				}
+				swap_ideas = {
+					remove_idea = RFI_developing_socialism_2_1
+					add_idea = RFI_developing_socialism_4
+				}
+			}
 		}
 	}
 
@@ -1049,7 +1156,35 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			111 = {
+				add_extra_state_shared_building_slots = 2
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			215 = {
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			817 = {
+				add_extra_state_shared_building_slots = 2
+
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1075,7 +1210,23 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = RFI_developing_socialism_4
+				}
+				swap_ideas = {
+					remove_idea = RFI_developing_socialism_4
+					add_idea = RFI_developing_socialism_5_1
+				}
+
+				else_if = {
+					has_idea = RFI_developing_socialism_6_1
+				}
+				swap_ideas = {
+					remove_idea = RFI_developing_socialism_6_1
+					add_idea = RFI_developing_socialism_7
+				}
+			}
 		}
 	}
 
@@ -1101,7 +1252,23 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = RFI_developing_socialism_4
+				}
+				swap_ideas = {
+					remove_idea = RFI_developing_socialism_4
+					add_idea = RFI_developing_socialism_6_1
+				}
+
+				else_if = {
+					has_idea = RFI_developing_socialism_5_1
+				}
+				swap_ideas = {
+					remove_idea = RFI_developing_socialism_5_1
+					add_idea = RFI_developing_socialism_7
+				}
+			}
 		}
 	}
 
@@ -1131,7 +1298,60 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = {
+				RFI_developing_socialism_8
+			}
+
+			## IF INFRASTRUCTURE GOES ABOVE 10, THAT IS COMPLETELY ACCEPTABLE BECAUSE ##
+			## I REALLY DON'T CARE, LET FINLAND BE SUPER INDUSTRIALIZED ##
+
+			111 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			146 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			215 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			817 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			815 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			814 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1157,7 +1377,27 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = {
+				RFI_well_funded_schools
+			}
+
+			if = {
+				limit = {
+					has_idea = RFI_developing_socialism_8
+				}
+				swap_ideas = {
+					remove_idea = RFI_developing_socialism_8
+					add_idea = RFI_developing_socialism_9
+				}
+
+				else_if = {
+					has_idea = RFI_developing_socialism_9
+				}
+				swap_ideas = {
+					remove_idea = RFI_developing_socialism_9
+					add_idea = RFI_developing_socialism_10
+				}
+			}
 		}
 	}
 
@@ -1183,7 +1423,27 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = {
+				RFI_excellent_hospitals
+			}
+
+			if = {
+				limit = {
+					has_idea = RFI_developing_socialism_8
+				}
+				swap_ideas = {
+					remove_idea = RFI_developing_socialism_8
+					add_idea = RFI_developing_socialism_9
+				}
+
+				else_if = {
+					has_idea = RFI_developing_socialism_9
+				}
+				swap_ideas = {
+					remove_idea = RFI_developing_socialism_9
+					add_idea = RFI_developing_socialism_10
+				}
+			}
 		}
 	}
 
@@ -1213,7 +1473,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			remove_ideas = {
+				RFI_developing_socialism_10
+			}
+			add_ideas = {
+				RFI_finnish_socialism_idea
+			}
 		}
 	}
 
@@ -1231,7 +1496,52 @@
 
 		cost = 10
 
-		#available = {}
+		available = {
+			# Change this to owns all Nordic States or via Puppets in custom text
+			OR = {
+				RFR = { # Case where Finland takes all
+					OR = {
+						AND = {
+							owns_state = 144
+							owns_state = 143
+							owns_state = 142
+							owns_state = 110
+						}
+
+						AND = {
+							owns_state = 666
+							owns_state = 38
+							owns_state = 140
+							owns_state = 141
+							owns_state = 139
+							owns_state = 124
+							owns_state = 138
+						}
+					
+						AND = {
+							owns_state = 37
+							owns_state = 99
+							owns_state = 101
+							owns_state = 100
+							owns_state = 337
+						}
+					}
+				}
+				AND = { # Case where Finland Puppets all
+					SWE = {
+						is_puppet_of = RFR
+					}
+
+					NOR = {
+						is_puppet_of = RFR
+					}
+					
+					DEN = {
+						is_puppet_of = RFR
+					}
+				}	
+			}
+		}
 		#bypass = {}
 
 		cancel_if_invalid = yes
@@ -1239,7 +1549,60 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			remove_ideas = {
+				RFI_finnish_socialism_idea
+			}
+			add_ideas = {
+				RFI_nordic_socialism_idea
+			}
+
+			if = {
+				limit = {
+					SWE = {
+						AND = {
+							exists = yes
+							is_puppet_of = RFR
+						}
+					}
+				}
+				SWE = {
+					add_ideas = {
+						RFI_nordic_socialism_idea
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NOR = {
+						AND = {
+							exists = yes
+							is_puppet_of = RFR
+						}
+					}
+				}
+				NOR = {
+					add_ideas = {
+						RFI_nordic_socialism_idea
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					DEN = {
+						AND = {
+							exists = yes
+							is_puppet_of = RFR
+						}
+					}
+				}
+				DEN = {
+					add_ideas = {
+						RFI_nordic_socialism_idea
+					}
+				}
+			}
 		}
 	}
 

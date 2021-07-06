@@ -196,6 +196,252 @@ ideas = {
 
 			}
 		}
+
+		RFI_our_own_path_idea = {
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				communism_drift = 0.03
+				stability_factor = 0.05
+			}
+		}
+
+		RFI_developing_socialism_1 = {
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = 0.25
+			}
+		}
+
+		# Developing Socialism Complicated Stuff #
+		###################################################################################
+
+		RFI_developing_socialism_2_1 = { #Industrialize Karelia First
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.35
+				production_speed_industrial_complex_factor = 0.35
+				production_speed_arms_factory_factor = 0.35
+			}
+		}
+
+		RFI_developing_socialism_3_1 = { #Industrialize Rural Finland First
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.30
+				production_speed_industrial_complex_factor = 0.30
+				production_speed_arms_factory_factor = 0.30
+			}
+		}
+
+		RFI_developing_socialism_4 = { #Both of them Together
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.40
+				production_speed_industrial_complex_factor = 0.40
+				production_speed_arms_factory_factor = 0.40
+			}
+		}
+
+		RFI_developing_socialism_5_1 = { #Improving Quality of Life First
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.40
+				production_speed_industrial_complex_factor = 0.40
+				production_speed_arms_factory_factor = 0.40
+
+				stability_weekly = 0.03
+			}
+		}
+
+		RFI_developing_socialism_6_1 = { #Promote Unionization First
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.40
+				production_speed_industrial_complex_factor = 0.40
+				production_speed_arms_factory_factor = 0.40
+
+				production_speed_buildings_factor = 0.05 
+			}
+		}
+
+		RFI_developing_socialism_7 = { #Both Together
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.40
+				production_speed_industrial_complex_factor = 0.40
+				production_speed_arms_factory_factor = 0.40
+
+				stability_weekly = 0.03
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		RFI_developing_socialism_8 = { #Improving Infrastructure
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.50
+				production_speed_industrial_complex_factor = 0.40
+				production_speed_arms_factory_factor = 0.40
+
+				stability_weekly = 0.03
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		RFI_developing_socialism_9 = { #Weekly Stab boost #1
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.50
+				production_speed_industrial_complex_factor = 0.40
+				production_speed_arms_factory_factor = 0.40
+
+				stability_weekly = 0.04
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		RFI_developing_socialism_10 = { #Weekly Stab boost #2
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.50
+				production_speed_industrial_complex_factor = 0.40
+				production_speed_arms_factory_factor = 0.40
+
+				stability_weekly = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+
+		###########################################################################
+
+		RFI_well_funded_schools = {
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+
+		RFI_excellent_hospitals = {
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				attrition = -0.10 #Check to make sure negative reduces attrition
+				experience_loss_factor = -0.05 #Same thing
+			}
+		}
+
+		RFI_finnish_socialism_idea = {
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.35
+				communism_drift = 0.03
+				stability_factor = 0.25
+			}
+		}
+
+		RFI_nordic_socialism_idea = {
+
+			picture = FIN_disorganised_military
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.55
+				communism_drift = 0.05
+				stability_factor = 0.30
+				weekly_manpower = 250
+			}
+		}
+
+		
 		
 	}
 }
