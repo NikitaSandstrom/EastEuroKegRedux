@@ -1502,6 +1502,9 @@
 				RFR = { # Case where Finland takes all
 					OR = {
 						AND = {
+							NOR = {
+								exists = no
+							}
 							owns_state = 144
 							owns_state = 143
 							owns_state = 142
@@ -1509,6 +1512,9 @@
 						}
 
 						AND = {
+							SWE = {
+								exists = no
+							}
 							owns_state = 666
 							owns_state = 38
 							owns_state = 140
@@ -1519,6 +1525,9 @@
 						}
 					
 						AND = {
+							DEN = {
+								exists = no
+							}
 							owns_state = 37
 							owns_state = 99
 							owns_state = 101
@@ -1633,7 +1642,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RFI_war_preparations
+				days = 140
+			}
 		}
 	}
 
@@ -1659,7 +1671,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = {
+				RFI_worker_brigades
+			}
 		}
 	}
 
@@ -1685,7 +1699,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = RFI_punakaarti
+				add_idea = RFI_puna_armeija
+			}
 		}
 	}
 
@@ -1703,7 +1720,11 @@
 
 		cost = 10
 
-		#available = {}
+		available = {
+			has_army_manpower = {
+				size > 200000
+			}
+		}
 		#bypass = {}
 
 		cancel_if_invalid = yes
@@ -1711,7 +1732,13 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_war_support = 0.10
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+
+			# ADD DECISIONS FOR COMMUNIST SUPPORT IN NORDICS #
 		}
 	}
 
@@ -1729,7 +1756,11 @@
 
 		cost = 10
 
-		#available = {}
+		available = {
+			NOR = {
+				communism > 0.40
+			}
+		}
 		#bypass = {}
 
 		cancel_if_invalid = yes
@@ -1737,7 +1768,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = NOR
+			}
 		}
 	}
 
@@ -1755,7 +1789,12 @@
 
 		cost = 10
 
-		#available = {}
+		available = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SWE
+			}
+		}
 		#bypass = {}
 
 		cancel_if_invalid = yes
@@ -1763,7 +1802,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SWE
+			}
 		}
 	}
 
@@ -1781,7 +1823,12 @@
 
 		cost = 10
 
-		#available = {}
+		available = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = DEN
+			}
+		}
 		#bypass = {}
 
 		cancel_if_invalid = yes
@@ -1789,7 +1836,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = DEN
+			}
 		}
 	}
 
@@ -1815,7 +1865,61 @@
 
 		cost = 10
 
-		#available = {}
+		available = {
+			# Change this to owns all Nordic States or via Puppets in custom text
+			OR = {
+				RFR = { # Case where Finland takes all
+					OR = {
+						AND = {
+							NOR = {
+								exists = no
+							}
+							owns_state = 144
+							owns_state = 143
+							owns_state = 142
+							owns_state = 110
+						}
+
+						AND = {
+							SWE = {
+								exists = no
+							}
+							owns_state = 666
+							owns_state = 38
+							owns_state = 140
+							owns_state = 141
+							owns_state = 139
+							owns_state = 124
+							owns_state = 138
+						}
+					
+						AND = {
+							DEN = {
+								exists = no
+							}
+							owns_state = 37
+							owns_state = 99
+							owns_state = 101
+							owns_state = 100
+							owns_state = 337
+						}
+					}
+				}
+				AND = { # Case where Finland Puppets all
+					SWE = {
+						is_puppet_of = RFR
+					}
+
+					NOR = {
+						is_puppet_of = RFR
+					}
+					
+					DEN = {
+						is_puppet_of = RFR
+					}
+				}	
+			}
+		}
 		#bypass = {}
 
 		cancel_if_invalid = yes
@@ -1823,7 +1927,46 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_stability = 0.05
+			if = {
+				limit = {
+					SWE = {
+						exists = yes
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.15
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NOR = {
+						exists = yes
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.15
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					DEN = {
+						exists = yes
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.15
+					}
+				}
+			}
+
+
+
+			## ADD DECISIONS FOR SPREADING COMMUNISM AND INVADING ##
 		}
 	}
 
@@ -1840,7 +1983,7 @@
 		x = 23
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		#available = {}
 		#bypass = {}
@@ -1850,7 +1993,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_political_power = 50
 		}
 	}
 
@@ -1876,7 +2019,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = {
+				RFI_loyalty_to_leningrad
+			}
+
+			#Spawn Event whether to be puppeted by Leningrad
 		}
 	}
 
@@ -1902,7 +2049,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = {
+				RFI_leninist_principles
+			}
 		}
 	}
 

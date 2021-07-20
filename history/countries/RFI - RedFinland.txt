@@ -3,6 +3,7 @@
 add_ideas = {
 	limited_conscription
     sisu
+	RFR_punakaarti
 }
 
 set_technology = {
